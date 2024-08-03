@@ -1,0 +1,20 @@
+/* Right-to-left collapse effect */
+.navbar-collapse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  background-color: #f8f9fa;
+  z-index: 1000;
+}
+
+.navbar-collapse.show {
+  transform: translateX(0);
+}
+
+.navbar-toggler {
+  z-index: 1001;
+}

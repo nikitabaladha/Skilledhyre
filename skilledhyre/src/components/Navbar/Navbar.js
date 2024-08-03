@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src="/docs/5.0/assets/brand/bootstrap-logo.svg"
-            alt=""
+            alt="Logo"
             width="30"
             height="24"
           />
@@ -16,33 +24,34 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          onClick={toggleNavbar}
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded={isCollapsed ? "true" : "false"}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className={`navbar-collapse ${isCollapsed ? "show" : ""}`}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/about-company">
                 About Company
               </Link>
             </li>
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
-                data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Services
@@ -52,17 +61,17 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/action">
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/another-action">
                     Another action
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/something-else">
                     Something else here
                   </Link>
                 </li>
@@ -71,10 +80,9 @@ const Navbar = () => {
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
-                data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Staffing
@@ -84,34 +92,33 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/action">
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/another-action">
                     Another action
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/something-else">
                     Something else here
                   </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/hire-developers">
                 Hire Developers
               </Link>
             </li>
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
-                data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 For Agencies
@@ -121,33 +128,36 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/action">
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/another-action">
                     Another action
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/something-else">
                     Something else here
                   </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/get-in-touch">
                 Get In Touch
               </Link>
             </li>
           </ul>
-          <button className="btn btn-outline-success" type="submit">
-            Get a Quote
-          </button>
+          <div className="d-flex align-items-center">
+            <button className="btn btn-outline-success me-2" type="submit">
+              Get a Quote
+            </button>
+          </div>
         </div>
       </div>
+      <FaSearch />
     </nav>
   );
 };
