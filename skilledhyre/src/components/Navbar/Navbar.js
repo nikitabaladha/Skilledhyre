@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,6 +9,10 @@ const Navbar = () => {
 
   const toggleNavbar = () => {
     setIsCollapsed(!isCollapsed);
+  };
+
+  const closeNavbar = () => {
+    setIsCollapsed(false);
   };
 
   return (
@@ -21,20 +26,25 @@ const Navbar = () => {
             height="24"
           />
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={toggleNavbar}
-          aria-controls="navbarSupportedContent"
-          aria-expanded={isCollapsed ? "true" : "false"}
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        {!isCollapsed && (
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={toggleNavbar}
+            aria-controls="navbarSupportedContent"
+            aria-expanded={isCollapsed ? "true" : "false"}
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        )}
         <div
           className={`navbar-collapse ${isCollapsed ? "show" : ""}`}
           id="navbarSupportedContent"
         >
+          {isCollapsed && (
+            <RxCross1 className="navbar-close" onClick={closeNavbar} />
+          )}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
@@ -53,6 +63,7 @@ const Navbar = () => {
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
+                data-bs-toggle="dropdown"
               >
                 Services
               </Link>
@@ -84,6 +95,7 @@ const Navbar = () => {
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
+                data-bs-toggle="dropdown"
               >
                 Staffing
               </Link>
@@ -120,6 +132,7 @@ const Navbar = () => {
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
+                data-bs-toggle="dropdown"
               >
                 For Agencies
               </Link>
@@ -150,11 +163,9 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div className="d-flex align-items-center">
-            <button className="btn btn-outline-success me-2" type="submit">
-              Get a Quote
-            </button>
-          </div>
+          <button className="btn navbar-btn me-2" type="submit">
+            Get a Quote
+          </button>
         </div>
       </div>
       <FaSearch />

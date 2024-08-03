@@ -1,14 +1,19 @@
-/* Right-to-left collapse effect */
+/* Right-to-left collapse Navbar effect - Navbar container styling */
+.navbar {
+  position: relative;
+}
+
 .navbar-collapse {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  width: 250px;
+  width: 300px;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   background-color: #f8f9fa;
   z-index: 1000;
+  border: none;
 }
 
 .navbar-collapse.show {
@@ -17,4 +22,72 @@
 
 .navbar-toggler {
   z-index: 1001;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-close {
+  margin-left: 200px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.navbar-btn {
+  border-radius: 30px;
+  border-color: black;
+}
+
+/* Responsive adjustments for navbar collapse */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    position: relative;
+    width: auto;
+    transform: none;
+    background-color: transparent;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+/* Nav-item hover effect*/
+
+nav ul li a {
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.2s ease-in-out;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
 }
