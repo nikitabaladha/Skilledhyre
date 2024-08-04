@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import AboutUs from "../AboutUs/AboutUs";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <h1>Welcome to Home Page</h1>
+      <AboutUs />
     </>
   );
 };

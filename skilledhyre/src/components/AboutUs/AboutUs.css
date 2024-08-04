@@ -1,0 +1,136 @@
+/* ----------------------------------
+   About Us Section Styles
+---------------------------------- */
+
+.about-us-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.about-us {
+  background-color: #1459ba;
+}
+
+.about-us-content {
+  padding: 110px;
+}
+
+/* ----------------------------------
+     Text Styles
+  ---------------------------------- */
+
+.find-out-more-text {
+  color: #0ec6ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about-us-description {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.about-us-title {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------
+     Button Styles
+  ---------------------------------- */
+
+.start-now-button {
+  color: #fff;
+  background: #fe4c1c;
+  text-align: left;
+  padding: 5px 5px 5px 28px;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: 0;
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* ----------------------------------
+     Icon Styles
+  ---------------------------------- */
+
+.arrow-icon {
+  background-color: #ffffff;
+  color: #fe4c1c;
+  border-radius: 50px;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 14px;
+}
+
+.play-icon {
+  width: 48px;
+  height: 48px;
+  line-height: 49px;
+  font-size: 18px;
+  color: #00c3ff;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  align-items: center;
+  box-shadow: 0 12px 24px rgba(126, 173, 235, 0.4);
+  cursor: pointer;
+}
+
+.play-icon:hover {
+  background-color: #00c3ff;
+  color: white;
+}
+
+/* ----------------------------------
+     How It Works Container
+  ---------------------------------- */
+
+.how-it-works-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.how-it-works-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 15px;
+  font-family: "Red Hat Display", sans-serif;
+}

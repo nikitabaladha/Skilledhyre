@@ -64,6 +64,11 @@
   font-weight: bold;
 }
 
+#brand-logo {
+  width: 80px;
+  height: 80px;
+}
+
 /* Responsive adjustments for navbar collapse */
 
 @media (min-width: 992px) {
@@ -111,7 +116,6 @@ nav ul li a:hover::before {
 }
 
 .dropdown-menu {
-  display: none;
   position: absolute;
   top: 230%;
   left: 0;
@@ -123,16 +127,9 @@ nav ul li a:hover::before {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Animation keyframes for sliding up dropdown menu */
-@keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Dropdown-item specific styling */
@@ -153,14 +150,20 @@ nav ul li a:hover::before {
   background-color: transparent;
 }
 
+/* Animation keyframes for sliding up dropdown menu */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .search-icon {
   margin-left: 1rem;
   color: white;
   font-size: 1.2rem;
-}
-
-#brand-logo {
-  width: 90px;
-  height: 90px;
-  margin-left: 5px;
 }
