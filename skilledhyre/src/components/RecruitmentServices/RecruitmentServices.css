@@ -1,0 +1,105 @@
+/* Header styles for the services section */
+.services-header {
+  color: #121bc9;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+/* Title styles for the services section */
+.services-title {
+  color: #080303;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+/* Card title styles for each service */
+.services-card-title {
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Text styles for the descriptions inside each service card */
+.services-text {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+  color: #606060;
+}
+
+/* Styles for the service card container */
+.services-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 45px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/* Styles for the row containing the service cards */
+.service-card-row {
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+/* Additional styles for the card body */
+.service-card-body {
+  margin-top: 30px;
+}
+
+/* Styles for the decorative dots in the header */
+.dot {
+  color: #121bc9;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Animation styles for zoom-in effect on cards */
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Keyframes for zoom-in animation (WebKit-specific) */
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for zoom-in animation */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
