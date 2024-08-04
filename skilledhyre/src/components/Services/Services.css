@@ -1,6 +1,13 @@
 /* Header styles for the services section */
-.recruitment-services-header {
-  color: #121bc9;
+.services {
+  background-color: #1459ba;
+}
+.spacer {
+  height: 50px;
+}
+
+.services-header {
+  color: #0ec6ff;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -10,37 +17,40 @@
 }
 
 /* Title styles for the services section */
-.recruitment-services-title {
-  color: #080303;
+.services-title {
   position: relative;
-  z-index: 2;
-  margin-bottom: 25px;
   font-size: 36px;
   font-weight: 900;
   line-height: 1.2;
-  margin: 0 0 20px;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Card title styles for each service */
+.services-card-title {
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
   font-family: "Red Hat Display", sans-serif;
   text-align: center;
 }
 
-/* Card title styles for each service */
-.recruitment-services-card-title {
-  margin-bottom: 14px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
 /* Text styles for the descriptions inside each service card */
-.recruitment-services-text {
+.services-text {
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
   line-height: 1.875;
   font-weight: 400;
-  color: #606060;
+  color: #c5ddff;
+  text-align: center;
 }
 
 /* Styles for the service card container */
-.recruitment-services-card {
+.services-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 50px;
   position: relative;
@@ -48,23 +58,24 @@
   box-sizing: border-box;
   text-align: center;
   border-radius: 25px;
+  background-color: #1459ba;
 }
 
 /* Styles for the row containing the service cards */
-.recruitment-services-card-row {
+.services-card-row {
   margin-left: 50px;
   margin-right: 50px;
   justify-content: center;
 }
 
 /* Additional styles for the card body */
-.recruitment-services-card-body {
+.services-card-body {
   margin-top: 30px;
 }
 
 /* Styles for the decorative dots in the header */
-.recruitment-services-dot {
-  color: #121bc9;
+.services-dot {
+  color: #0ec6ff;
   font-size: 25px;
   margin-right: 10px;
   margin-left: 10px;
@@ -102,4 +113,12 @@
   50% {
     opacity: 1;
   }
+}
+
+/*  */
+.services-card-icon {
+  font-size: 40px;
+  line-height: 1;
+  font-family: Flaticon;
+  color: #0ec6ff;
 }

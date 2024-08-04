@@ -4,19 +4,22 @@ import "./RecruitmentServices.css";
 function RecruitmentServices() {
   return (
     <div className="container mt-5">
-      <h6 className="text-center mb-4 services-header">
-        <span className="dot">•</span>RECRUITMENT SERVICES WE PROVIDE
-        <span className="dot">•</span>
+      <h6 className="text-center mb-4 recruitment-services-header">
+        <span className="recruitment-services-dot">•</span>RECRUITMENT SERVICES
+        WE PROVIDE
+        <span className="recruitment-services-dot">•</span>
       </h6>
-      <h2 className="text-center mb-4 services-title">RECRUITMENT</h2>
-      <div className="row service-card-row">
+      <h2 className="text-center mb-4 recruitment-services-title">
+        RECRUITMENT
+      </h2>
+      <div className="row recruitment-services-card-row">
         <div className="col-md-4 mb-4">
-          <div className="card services-card zoomIn">
-            <div className="service-card-body">
-              <h5 className="card-title services-card-title">
+          <div className="card recruitment-services-card zoomIn">
+            <div className="recruitment-services-card-body">
+              <h5 className="card-title recruitment-services-card-title">
                 Permanent Staffing
               </h5>
-              <p className="card-text services-text">
+              <p className="card-text recruitment-services-text">
                 Permanent Staffing Placing permanent employees & absorbing them
                 into your organized Environment is a very Difficult & serious
                 commitment, so it's better to choose right person to make this
@@ -26,12 +29,12 @@ function RecruitmentServices() {
           </div>
         </div>
         <div className="col-md-4 mb-4">
-          <div className="card services-card zoomIn">
-            <div className="service-card-body">
-              <h5 className="card-title services-card-title">
+          <div className="card recruitment-services-card zoomIn">
+            <div className="recruitment-services-card-body">
+              <h5 className="card-title recruitment-services-card-title">
                 Contract Staffing
               </h5>
-              <p className="card-text services-text">
+              <p className="card-text recruitment-services-text">
                 Filling a long-term vacancy time consuming, costly process.
                 Working with our recruitment agency represents the opportunity
                 to cut all of that out providing Contractual staff.
@@ -40,10 +43,12 @@ function RecruitmentServices() {
           </div>
         </div>
         <div className="col-md-4 mb-4">
-          <div className="card services-card zoomIn">
-            <div className="service-card-body">
-              <h5 className="card-title services-card-title">RPO</h5>
-              <p className="card-text services-text">
+          <div className="card recruitment-services-card zoomIn">
+            <div className="recruitment-services-card-body">
+              <h5 className="card-title recruitment-services-card-title">
+                RPO
+              </h5>
+              <p className="card-text recruitment-services-text">
                 RPO Attract, engage and hire top-class talents for your
                 organization with business-driven, people-focused recruitment
                 solutions as individual as your business.
