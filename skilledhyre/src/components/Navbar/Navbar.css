@@ -1,6 +1,10 @@
 /* Right-to-left collapse Navbar effect - Navbar container styling */
 .navbar {
   position: relative;
+  height: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #2424a1, #7b1fa2, #f44336);
 }
 
 .navbar-collapse {
@@ -25,7 +29,8 @@
 }
 
 .navbar-brand {
-  margin-right: auto;
+  margin-right: 100px;
+  margin-left: 50px;
 }
 
 .navbar-close {
@@ -39,11 +44,12 @@
 }
 
 .nav-item {
-  margin: 0;
+  margin-right: 1rem;
 }
 
 .nav-link {
   padding: 0.5rem 1rem;
+  color: white !important;
 }
 
 .navbar-toggler {
@@ -52,10 +58,14 @@
 
 .navbar-btn {
   border-radius: 30px;
-  border-color: black;
+  background-color: #00c3ff;
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
 }
 
 /* Responsive adjustments for navbar collapse */
+
 @media (min-width: 992px) {
   .navbar-collapse {
     position: relative;
@@ -79,15 +89,78 @@ nav ul li a {
 nav ul li a::before {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -45px;
   left: 50%;
   transform: translateX(-50%);
   width: 0%;
-  height: 2px;
-  background-color: #007bff;
+  height: 5px;
+  background-color: #00c3ff;
   transition: width 0.2s ease-in-out;
+  border-radius: 5px;
 }
 
 nav ul li a:hover::before {
   width: 100%;
+}
+
+/* Dropdown hover effect */
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: slideUp 0.3s ease-in-out forwards;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 230%;
+  left: 0;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Animation keyframes for sliding up dropdown menu */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Dropdown-item specific styling */
+
+.dropdown-item {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item::before {
+  content: none;
+}
+
+.dropdown-item:hover {
+  color: red;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+.search-icon {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#brand-logo {
+  width: 90px;
+  height: 90px;
+  margin-left: 5px;
 }

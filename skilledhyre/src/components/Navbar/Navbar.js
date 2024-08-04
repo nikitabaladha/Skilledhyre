@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
+import brandLogoImage from "../../images/brand-logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 992);
+      if (window.innerWidth >= 992) {
+        setIsCollapsed(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const toggleNavbar = () => {
     setIsCollapsed(!isCollapsed);
@@ -16,11 +30,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
-            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+            id="brand-logo"
+            src={brandLogoImage}
             alt="Logo"
             width="30"
             height="24"
@@ -42,133 +57,139 @@ const Navbar = () => {
           className={`navbar-collapse ${isCollapsed ? "show" : ""}`}
           id="navbarSupportedContent"
         >
-          {isCollapsed && (
+          {isCollapsed && isMobile && (
             <RxCross1 className="navbar-close" onClick={closeNavbar} />
           )}
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about-company">
-                About Company
-              </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                aria-expanded="false"
-                data-bs-toggle="dropdown"
-              >
-                Services
-              </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/action">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/another-action">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/something-else">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                aria-expanded="false"
-                data-bs-toggle="dropdown"
-              >
-                Staffing
-              </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/action">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/another-action">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/something-else">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/hire-developers">
-                Hire Developers
-              </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                aria-expanded="false"
-                data-bs-toggle="dropdown"
-              >
-                For Agencies
-              </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/action">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/another-action">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/something-else">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/get-in-touch">
-                Get In Touch
-              </Link>
-            </li>
-          </ul>
-          <button className="btn navbar-btn me-2" type="submit">
-            Get a Quote
-          </button>
+          <div>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about-company">
+                  About Company
+                </Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  Services
+                </Link>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <Link className="dropdown-item" to="/action">
+                      Action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      Another action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/something-else">
+                      Something else here
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  Staffing
+                </Link>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <Link className="dropdown-item" to="/action">
+                      Action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      Another action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/something-else">
+                      Something else here
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/hire-developers">
+                  Hire Developers
+                </Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  For Agencies
+                </Link>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <Link className="dropdown-item" to="/action">
+                      Action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      Another action
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/something-else">
+                      Something else here
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/get-in-touch">
+                  Get In Touch
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button className="btn navbar-btn me-2" type="submit">
+              Get a Quote
+            </button>
+          </div>
+          <div className="search-icon">
+            <FaSearch />
+          </div>
         </div>
       </div>
-      <FaSearch />
     </nav>
   );
 };
