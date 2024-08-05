@@ -32,21 +32,23 @@ const ProgressCard = ({ title, percentage }) => {
   }, [inView, percentage]);
 
   return (
-    <div className="progress-card" ref={ref}>
+    <div className={`progress-card ${inView ? "slideInUp" : ""}`} ref={ref}>
       <div className="progress-bar-container">
         <CircularProgressbar
           value={progress}
           text={`${progress}%`}
           styles={buildStyles({
             textSize: "16px",
-            pathColor: "#007bff",
-            textColor: "#007bff",
-            trailColor: "#d6d6d6",
-            backgroundColor: "#f8f8f8",
+            // fontWeight: "bold",
+            pathColor: "#00c3ff",
+            textColor: "#FFFFFF",
+            trailColor: "#1459ba",
+            backgroundColor: "#1459ba",
           })}
+          strokeWidth={10}
+          className="percentage-text"
         />
         <div className="outer-circle"></div>{" "}
-        {/* Outer circle around percentage text */}
       </div>
       <h4 className="progress-title">{title}</h4>
     </div>

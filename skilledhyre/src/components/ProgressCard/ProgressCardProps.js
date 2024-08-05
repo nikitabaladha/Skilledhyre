@@ -1,12 +1,29 @@
-// App.js
 import React from "react";
 import ProgressCard from "./ProgressCard";
+import { Container } from "react-bootstrap";
+import "./ProgressCard.css"; // Import the CSS file
 
 const ProgressCardProps = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
-      <ProgressCard title="Hard Workers" percentage={66} />
-    </div>
+    <Container
+      fluid
+      className="progress-props d-flex align-items-center justify-content-center"
+    >
+      <div className="row">
+        <div className="col-md-3">
+          <ProgressCard title="Happy Clients" percentage={75} />
+        </div>
+        <div className="col-md-3">
+          <ProgressCard title="Projects" percentage={71} />
+        </div>
+        <div className="col-md-3">
+          <ProgressCard title="Support" percentage={88} />
+        </div>
+        <div className="col-md-3">
+          <ProgressCard title="Hard Workers" percentage={85} />
+        </div>
+      </div>
+    </Container>
   );
 };
 
