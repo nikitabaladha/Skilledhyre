@@ -3,13 +3,13 @@ import "./RecruitmentServices.css";
 
 function RecruitmentServices() {
   return (
-    <div className="container mt-5">
-      <h6 className="text-center mb-4 recruitment-services-header">
+    <div className="container mt-5 mb-4">
+      <h6 className="text-center mb-2 recruitment-services-sub-heading">
         <span className="recruitment-services-dot">•</span>RECRUITMENT SERVICES
         WE PROVIDE
         <span className="recruitment-services-dot">•</span>
       </h6>
-      <h2 className="text-center mb-4 recruitment-services-title">
+      <h2 className="text-center mb-4 recruitment-services-heading">
         RECRUITMENT
       </h2>
       <div className="row recruitment-services-card-row">

@@ -4,6 +4,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import RecruitmentServices from "../RecruitmentServices/RecruitmentServices";
 import Services from "../Services/Services";
 import AboutUs2 from "../AboutUs-2/AboutUs-2";
+import ProgressCardProps from "../ProgressCard/ProgressCardProps.js";
 const Home = () => {
   return (
     <>
@@ -12,6 +13,8 @@ const Home = () => {
       <RecruitmentServices />
       <Services />
       <AboutUs2 />
+
+      <ProgressCardProps />
     </>
   );
 };
