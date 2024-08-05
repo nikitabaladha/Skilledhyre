@@ -16,7 +16,10 @@
 
 /* Padding and spacing for the content within the About Us section */
 .about-us-content {
-  padding: 110px;
+  padding-left: 110px;
+  padding-right: 130px;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 /* ----------------------------------

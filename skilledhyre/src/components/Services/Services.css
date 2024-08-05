@@ -3,7 +3,7 @@
   background-color: #1459ba;
 }
 .spacer {
-  height: 50px;
+  height: 70px;
 }
 
 .services-header {
@@ -63,8 +63,8 @@
 
 /* Styles for the row containing the service cards */
 .services-card-row {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
   justify-content: center;
 }
 

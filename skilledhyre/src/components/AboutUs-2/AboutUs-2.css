@@ -1,0 +1,60 @@
+.aboutus-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.aboutus {
+  background-color: #1459ba;
+}
+
+.aboutus-content {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 160px;
+}
+
+.aboutus-dot {
+  color: #0ec6ff;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.aboutus-sub-heading {
+  color: #0ec6ff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: auto;
+  line-height: 1.2em;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: left;
+}
+
+.aboutus-description {
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  margin: 0;
+  color: #c5ddff;
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Red Hat Text", sans-serif;
+  cursor: auto;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.aboutus-heading {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 20px;
+  position: relative;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import aboutUsImage from "../../images/about-us.png";
+import aboutUsImage from "../../images/about-us-1.png";
 
 import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <Container fluid className="p-5 about-us">
+    <Container fluid className="about-us">
       <Row>
         <Col
           md={6}
