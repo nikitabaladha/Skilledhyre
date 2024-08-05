@@ -1,0 +1,111 @@
+.seo {
+  background-color: #1459ba;
+}
+
+.seo-sub-heading {
+  color: #0ec6ff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: auto;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: left;
+  margin-left: 200px;
+}
+
+.seo-heading {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: auto;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  font-family: "Red Hat Display", sans-serif;
+  display: block;
+  text-align: left;
+  margin-left: 200px;
+}
+
+.seo-card-title {
+  color: #ffffff;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  font-family: "Red Hat Display", sans-serif;
+  display: block;
+  text-align: center;
+}
+
+.seo-card {
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #1459ba;
+  border-radius: 20px;
+  border: 0.5px solid #77acfd;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 160px;
+  margin: 15px;
+}
+
+.seo-card-icon {
+  text-shadow: 8px 8px 18px rgba(1, 96, 231, 0.3);
+  font-size: 32px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seo-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seo-view-more-button {
+  color: #fff;
+  background: #fe4c1c;
+  text-align: left;
+  padding: 5px 5px 5px 28px;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 120px;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: 0;
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 25px;
+  box-shadow: 8px 8px 18px 0px rgba(254, 76, 28, 0.3);
+}
+
+.seo-arrow-icon {
+  background-color: #ffffff;
+  color: #fe4c1c;
+  border-radius: 50px;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 14px;
+}
