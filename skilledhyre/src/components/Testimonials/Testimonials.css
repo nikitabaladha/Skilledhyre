@@ -104,7 +104,7 @@
   background-color: #ffffff;
   box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
   border-radius: 50px;
-  font-size: 2rem;
+  font-size: 1rem;
   width: 45px;
   height: 45px;
   line-height: 50px;
@@ -112,4 +112,10 @@
   align-items: center;
   justify-content: center;
   color: #0ec6ff;
+}
+
+/* Hover effect for the carousel arrow icons, changing background and icon color */
+.carousel-arrow-icon:hover {
+  background-color: #00c3ff;
+  color: white;
 }
