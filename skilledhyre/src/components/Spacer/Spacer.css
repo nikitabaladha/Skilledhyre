@@ -1,13 +1,18 @@
+/* Spacer Component CSS */
+
+/* Upper spacer: Dark blue background with a specific height */
 .upper-spacer {
   background-color: #0049b1;
   height: 120px;
 }
 
+/* Lower spacer: Slightly lighter blue background with a different height */
 .lower-spacer {
   background-color: #1458b9;
   height: 60px;
 }
 
+/* Spacer image: Set width and height for the image */
 .spacer-img {
   width: 1519px;
   height: 250px;

@@ -1,0 +1,115 @@
+/* Testimonials.css */
+
+/* General styling for the testimonial section */
+.testimonial {
+  padding-top: 30px;
+}
+
+/* Styling for the sub-heading in the testimonial section */
+.testimonial-sub-heading {
+  color: #d83535;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+/* Styling for the dots in the sub-heading */
+.testimonial-dot {
+  color: #d83535;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Styling for the main heading in the testimonial section */
+.heading {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #1a1b1e;
+  font-family: "Red Hat Display", sans-serif;
+  display: block;
+  text-align: center;
+}
+
+/* Styling for the client's name in the testimonial */
+.testimonial-name {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styling for the client's profession in the testimonial */
+.testimonial-profession {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  color: #606060;
+}
+
+/* Styling for the testimonial text */
+.carousel-text {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #606060;
+}
+
+/* Container styling for the carousel */
+.carousel-container {
+  position: relative;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/* Styling for the carousel controls */
+.carousel-controls {
+  position: absolute;
+  top: 40%; /* Position the controls vertically */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* General styling for the left and right arrow icons */
+.left-arrow,
+.right-arrow {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Additional styling for the left arrow icon */
+.left-arrow {
+  margin-left: 20px;
+}
+
+/* Additional styling for the right arrow icon */
+.right-arrow {
+  margin-right: 20px;
+}
+
+/* Styling for the carousel arrow icons */
+.carousel-arrow-icon {
+  background-color: #ffffff;
+  box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
+  border-radius: 50px;
+  font-size: 2rem;
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0ec6ff;
+}

@@ -1,3 +1,6 @@
+/* ProgressCard Component CSS */
+
+/* Container for individual progress cards */
 .progress-card {
   width: 270px;
   height: 290px;
@@ -12,6 +15,7 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
+/* Container for the circular progress bar */
 .progress-bar-container {
   position: relative;
   width: 195px;
@@ -22,6 +26,7 @@
   vertical-align: baseline;
 }
 
+/* Outer circle styling around the progress bar */
 .outer-circle {
   position: absolute;
   top: 98px;
@@ -38,6 +43,7 @@
   transform: translate(-50%, -50%);
 }
 
+/* Styling for the title below the progress bar */
 .progress-title {
   margin-top: 10px;
   font-size: 22px;
@@ -48,12 +54,13 @@
   margin: 15px 0 0;
 }
 
+/* Container for the progress cards, sets background color and padding */
 .progress-props {
   background-color: #0049b1;
   padding-top: 120px;
 }
 
-/* ProgressCard.css */
+/* Animation for sliding the cards in from below */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
@@ -63,6 +70,7 @@
   animation-fill-mode: both;
 }
 
+/* Keyframes for the slideInUp animation */
 @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translateY(100%);
@@ -87,7 +95,7 @@
   }
 }
 
-/* Existing styles from previous code */
+/* Additional styling for the percentage text inside the progress bar */
 .percentage-text {
   font-weight: bold;
 }

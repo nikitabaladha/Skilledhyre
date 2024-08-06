@@ -6,7 +6,7 @@ import { faPieChart } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "./ProcessDrivenSEO.css";
 import seoImage1 from "../../images/seo-1.png";
-import seoImage2 from "../../images/seo-2.png"; // Example images
+import seoImage2 from "../../images/seo-2.png";
 import seoImage3 from "../../images/seo-3.png";
 import seoImage4 from "../../images/seo-4.png";
 import seoImage5 from "../../images/seo-5.png";
@@ -77,7 +77,7 @@ const ProcessDrivenSEO = () => {
             href="/start-now"
             className="seo-button seo-view-more-button"
           >
-            View More{" "}
+            View More
             <IoIosArrowRoundForward className="seo-arrow-icon seo-view-more-arrow-icon" />
           </Button>
         </div>

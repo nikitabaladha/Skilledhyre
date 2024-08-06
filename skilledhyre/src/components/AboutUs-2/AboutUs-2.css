@@ -1,3 +1,11 @@
+/* Background and Layout */
+
+/* About Us Section Background */
+.aboutus {
+  background-color: #0049b1;
+}
+
+/* About Us Image */
 .aboutus-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -5,16 +13,18 @@
   position: fixed;
 }
 
-.aboutus {
-  background-color: #0049b1;
-}
+/* Content Layout */
 
+/* About Us Content Padding */
 .aboutus-content {
   padding-top: 50px;
   padding-right: 0px;
   padding-left: 160px;
 }
 
+/* Typography */
+
+/* Dot Icon in Sub-heading */
 .aboutus-dot {
   color: #0ec6ff;
   font-size: 25px;
@@ -22,6 +32,7 @@
   margin-left: 10px;
 }
 
+/* About Us Sub-heading */
 .aboutus-sub-heading {
   color: #0ec6ff;
   font-size: 14px;
@@ -34,10 +45,10 @@
   text-align: left;
 }
 
+/* About Us Description */
 .aboutus-description {
   box-sizing: border-box;
   margin: 0 0 20px;
-  margin: 0;
   color: #c5ddff;
   font-size: 22px;
   line-height: 36px;
@@ -47,6 +58,7 @@
   unicode-bidi: isolate;
 }
 
+/* About Us Heading */
 .aboutus-heading {
   color: #ffffff;
   font-size: 36px;
