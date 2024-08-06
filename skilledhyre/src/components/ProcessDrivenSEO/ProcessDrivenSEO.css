@@ -109,3 +109,10 @@
   line-height: 40px;
   margin-left: 14px;
 }
+
+.set-dot {
+  color: #0ec6ff;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}

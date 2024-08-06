@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressCard from "./ProgressCard";
 import { Container } from "react-bootstrap";
-import "./ProgressCard.css"; // Import the CSS file
+import "./ProgressCard.css";
 
 const ProgressCardProps = () => {
   return (

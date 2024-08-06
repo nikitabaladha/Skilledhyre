@@ -11,7 +11,7 @@ const AboutUs2 = () => {
       <Row>
         <Col
           md={6}
-          className="d-flex flex-column justify-content-center align-items-start "
+          className="d-flex flex-column justify-content-center align-content-bottom"
         >
           <div className="aboutus-content">
             <h6 className="aboutus-sub-heading">

@@ -42,8 +42,8 @@ const ProgressCard = ({ title, percentage }) => {
             // fontWeight: "bold",
             pathColor: "#00c3ff",
             textColor: "#FFFFFF",
-            trailColor: "#1459ba",
-            backgroundColor: "#1459ba",
+            trailColor: "#0049b1",
+            backgroundColor: "#0049b1",
           })}
           strokeWidth={10}
           className="percentage-text"

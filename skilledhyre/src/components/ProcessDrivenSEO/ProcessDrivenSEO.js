@@ -9,7 +9,6 @@ import "./ProcessDrivenSEO.css";
 const ProcessDrivenSEO = () => {
   return (
     <>
-      <div className="spacer"></div>
       <div className="container-fluid seo">
         <div className="row">
           <div className="col-md-8">

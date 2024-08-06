@@ -6,15 +6,23 @@ import Services from "../Services/Services";
 import AboutUs2 from "../AboutUs-2/AboutUs-2";
 import ProgressCardProps from "../ProgressCard/ProgressCardProps.js";
 import ProcessDrivenSEO from "../ProcessDrivenSEO/ProcessDrivenSEO.js";
+import Spacer from "../Spacer/Spacer.js";
+
+import "./Home.css";
+
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <AboutUs />
+      <div className="background-container">
+        <Navbar />
+        <AboutUs />
+      </div>
+      <div className="spacer"></div>
       <RecruitmentServices />
       <Services />
       <AboutUs2 />
       <ProgressCardProps />
+      <Spacer />
       <ProcessDrivenSEO />
     </>
   );

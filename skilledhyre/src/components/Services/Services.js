@@ -14,7 +14,7 @@ import {
 function Services() {
   return (
     <div className="container-fluid services">
-      <div class="spacer"></div>
+      <div class="space"></div>
       <div className="container">
         <h6 className="text-center mb-4 services-header">
           <span className="services-dot">•</span>OUR SERVICES

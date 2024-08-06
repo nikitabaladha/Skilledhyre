@@ -2,15 +2,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  position: fixed;
 }
 
 .aboutus {
-  background-color: #1459ba;
-  padding-bottom: 100px;
+  background-color: #0049b1;
 }
 
 .aboutus-content {
-  padding-top: 0px;
+  padding-top: 50px;
   padding-right: 0px;
   padding-left: 160px;
 }
