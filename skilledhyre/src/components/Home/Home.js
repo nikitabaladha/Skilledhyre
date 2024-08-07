@@ -8,6 +8,7 @@ import ProgressCardProps from "../ProgressCard/ProgressCardProps.js";
 import ProcessDrivenSEO from "../ProcessDrivenSEO/ProcessDrivenSEO.js";
 import Spacer from "../Spacer/Spacer.js";
 import Testimonials from "../Testimonials/Testimonials.js";
+import ContactCards from "../ContactCards/ContactCards.js";
 
 import "./Home.css";
 
@@ -26,6 +27,7 @@ const Home = () => {
       <Spacer />
       <ProcessDrivenSEO />
       <Testimonials />
+      <ContactCards />
     </>
   );
 };
