@@ -1,7 +1,7 @@
-.contact-card-text1 {
-  color: #000000;
-  text-align: center;
-  font-size: 22px;
+/* Contact Card Styles */
+.contact-card-container {
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .contact-card {
@@ -14,12 +14,12 @@
   padding-bottom: 0px;
 }
 
-.contact-card-text2 {
-  color: #1c1212;
-  font-family: var(--e-global-typography-text-font-family), Sans-serif;
-  font-size: 16px;
-  line-height: 1.875;
-  font-weight: 490;
+.contact-card-icon {
+  color: #e32c2c;
+  font-size: 75px;
+  line-height: 1;
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 .contact-card-title {
@@ -30,27 +30,35 @@
   line-height: 1.2;
 }
 
-.contact-card-icon {
-  color: #e32c2c;
-  font-size: 75px;
-  line-height: 1;
-  padding-bottom: 30px;
-  padding-top: 10px;
+.contact-card-text1 {
+  color: #000000;
+  text-align: center;
+  font-size: 22px;
 }
 
-.contact-card-container {
-  padding-left: 150px;
-  padding-right: 150px;
+.contact-card-text2 {
+  color: #1c1212;
+  font-family: var(--e-global-typography-text-font-family), Sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 490;
 }
 
+/* Contact Form Styles */
 .contact-form-container {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 50px;
 }
 
-.map-container iframe {
-  margin-right: 0px;
+.contact-form {
+  padding-left: 0px;
+  padding-top: 15px;
+}
+
+.contact-form .text-field::placeholder {
+  color: #888888;
+  opacity: 1;
 }
 
 .text-field {
@@ -61,11 +69,12 @@
   margin-bottom: 20px;
 }
 
-.contact-form {
-  padding-left: 0px;
-  padding-top: 15px;
+/* Map Container Styles */
+.map-container iframe {
+  margin-right: 0px;
 }
 
+/* Button Styles */
 .get-in-touch-button {
   color: #fff;
   background: #ff4d6f;
@@ -90,6 +99,29 @@
   box-shadow: 8px 8px 18px 0px rgba(255, 77, 111, 0.3);
 }
 
+.get-in-touch-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust color if needed */
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.get-in-touch-button:hover::before {
+  left: 100%;
+}
+
+.get-in-touch-button:hover {
+  color: white;
+  background: #ff4d6f;
+  border-color: #ff4d6f;
+}
+
+/* Arrow Icon Styles */
 .arrow-icon {
   background-color: #ffffff;
   color: #fe4c1c;
@@ -99,10 +131,4 @@
   height: 40px;
   line-height: 40px;
   margin-left: 14px;
-}
-
-/* Contact form placeholder text color */
-.contact-form .text-field::placeholder {
-  color: #888888;
-  opacity: 1;
 }

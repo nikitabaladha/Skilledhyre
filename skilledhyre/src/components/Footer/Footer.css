@@ -1,3 +1,4 @@
+/* Social Media Icon Styling */
 .social-media-icon {
   background-color: #ffffff;
   color: #0049b1;
@@ -11,6 +12,11 @@
   padding: 10px;
 }
 
+.social-media-icon:hover {
+  background-color: aliceblue;
+}
+
+/* Social Icons Container */
 .social-icons {
   display: flex;
   flex-direction: row;
@@ -19,6 +25,7 @@
   margin-top: 40px;
 }
 
+/* Footer Heading Styling */
 .footer-heading {
   color: #ffffff;
   font-family: "Red Hat Display", Sans-serif;
@@ -29,6 +36,7 @@
   box-sizing: border-box;
 }
 
+/* Footer Text Styling */
 .footer-text {
   color: #ffffff;
   font-family: "Red Hat Text", Sans-serif;
@@ -40,11 +48,13 @@
   padding-top: 5px;
 }
 
+/* Footer Content Styling */
 .footer-content {
   text-align: left;
   margin-bottom: 50px;
 }
 
+/* Footer Container Styling */
 .footer-container {
   padding-left: 150px;
   padding-right: 150px;
@@ -52,24 +62,29 @@
   background-color: #005fd7;
 }
 
+/* Footer Link Styling */
 .footer-link {
   padding-left: 0px;
 }
 
+/* List Item Styling */
 li {
   padding-bottom: 10px;
 }
 
+/* SVG Container Styling */
 .svg-container {
   text-align: center;
   background-color: #005fd7;
 }
 
+/* SVG Path Styling */
 .svg-path {
   width: 100%;
   height: auto;
 }
 
+/* Span Text Styling */
 .span-text {
   color: #9ee8ff;
   font-family: "Red Hat Text", sans-serif;

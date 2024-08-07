@@ -84,7 +84,7 @@ const ProcessDrivenSEO = () => {
         </div>
         <div className="col-md-4">
           <Button
-            variant="secondary"
+            // variant="secondary"
             href="/start-now"
             className="seo-button seo-view-more-button"
           >
@@ -123,7 +123,7 @@ const ProcessDrivenSEO = () => {
               </p>
             </div>
             <Button
-              variant="secondary"
+              // variant="secondary"
               href="/start-now"
               className="seo-button seo-learn-more-button"
             >

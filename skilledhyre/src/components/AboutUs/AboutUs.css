@@ -108,6 +108,7 @@
 .start-now-button:hover {
   color: white;
   background-color: #fe4c1c;
+  border-color: #fe4c1c;
 }
 
 .start-now-button .arrow-icon {

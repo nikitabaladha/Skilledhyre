@@ -72,11 +72,7 @@ function ContactCards() {
                 rows="4"
               ></textarea>
 
-              <Button
-                variant="secondary"
-                href="/start-now"
-                className="ml-2 get-in-touch-button"
-              >
+              <Button href="/start-now" className="ml-2 get-in-touch-button">
                 Get In Touch <IoIosArrowRoundForward className="arrow-icon" />
               </Button>
             </form>
