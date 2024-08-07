@@ -9,6 +9,7 @@ import ProcessDrivenSEO from "../ProcessDrivenSEO/ProcessDrivenSEO.js";
 import Spacer from "../Spacer/Spacer.js";
 import Testimonials from "../Testimonials/Testimonials.js";
 import ContactCards from "../ContactCards/ContactCards.js";
+import Footer from "../Footer/Footer.js";
 
 import "./Home.css";
 
@@ -28,6 +29,7 @@ const Home = () => {
       <ProcessDrivenSEO />
       <Testimonials />
       <ContactCards />
+      <Footer />
     </>
   );
 };
