@@ -1,7 +1,7 @@
 /* Right-to-left collapse Navbar effect - Navbar container styling */
 .navbar {
   position: relative;
-  height: 120px;
+  padding: 18px;
   font-size: 15px;
   font-weight: bold;
   background: linear-gradient(
@@ -35,7 +35,7 @@
 
 .navbar-brand {
   margin-right: 100px;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .navbar-close {
@@ -45,16 +45,20 @@
 }
 
 .navbar-nav {
-  margin: 0;
+  margin-right: 0px;
 }
 
 .nav-item {
-  margin-right: 1rem;
+  margin-right: 1.4rem;
 }
 
 .nav-link {
   padding: 0.5rem 1rem;
   color: white !important;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  list-style: none;
 }
 
 .navbar-toggler {
@@ -63,16 +67,24 @@
 
 /* Button styles */
 .navbar-btn {
-  border-radius: 30px;
   background-color: #00c3ff;
   color: white;
   font-weight: bold;
-  padding: 10px 20px;
   position: relative;
   overflow: hidden;
-  border: none;
-  outline: none;
   cursor: pointer;
+  box-shadow: 12px 12px 30px 0px rgba(0, 139.00000000000006, 153, 0.3);
+  font-size: 16px;
+  padding: 16px 28px 16px 28px;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  outline: 0;
+  font-family: "Red Hat Display", sans-serif;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-right: 10px;
 }
 
 /* Add transition effect for background */
@@ -101,6 +113,7 @@
 #brand-logo {
   width: 80px;
   height: 80px;
+  margin-right: 25px;
 }
 
 /* Responsive adjustments for navbar collapse */
@@ -196,7 +209,18 @@ nav ul li a:hover::before {
 }
 
 .search-icon {
-  margin-left: 1rem;
+  margin-left: 4px;
   color: white;
-  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 10px;
 }

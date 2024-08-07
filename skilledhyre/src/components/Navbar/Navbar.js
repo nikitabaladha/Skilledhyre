@@ -89,17 +89,47 @@ const Navbar = () => {
                 >
                   <li>
                     <Link className="dropdown-item" to="/action">
-                      Action
+                      WEBSITE DESIGN
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/another-action">
-                      Another action
+                      WEB DEVELOPMENT
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/something-else">
-                      Something else here
+                      Software Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      E-Commerce Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      Digital Marketing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      Mobile Application Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      E- Learning Solution
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      ERP SOLUTION
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      API Integration
                     </Link>
                   </li>
                 </ul>
@@ -121,18 +151,34 @@ const Navbar = () => {
                 >
                   <li>
                     <Link className="dropdown-item" to="/action">
-                      Action
+                      Permanent Staffing
                     </Link>
                   </li>
-                  <li>
-                    <Link className="dropdown-item" to="/another-action">
-                      Another action
-                    </Link>
-                  </li>
+
                   <li>
                     <Link className="dropdown-item" to="/something-else">
-                      Something else here
+                      Contract Staffing
                     </Link>
+                    <li>
+                      <Link className="dropdown-item" to="/another-action">
+                        HR Consulting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/another-action">
+                        Contract to Hire
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/another-action">
+                        RPO
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/another-action">
+                        Head Hunting
+                      </Link>
+                    </li>
                   </li>
                 </ul>
               </li>
@@ -158,17 +204,32 @@ const Navbar = () => {
                 >
                   <li>
                     <Link className="dropdown-item" to="/action">
-                      Action
+                      White Label Digital Marketing
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/another-action">
-                      Another action
+                      White Label Web Development
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/something-else">
-                      Something else here
+                      White Label App Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/action">
+                      Outsourced Software Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/another-action">
+                      Dedicated Software Teams
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/something-else">
+                      Dedicated Marketing Teams
                     </Link>
                   </li>
                 </ul>
@@ -180,10 +241,13 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          <button className="navbar-btn me-2" type="submit">
+            Get a Quote
+          </button>
           <div>
-            <button className="navbar-btn me-2" type="submit">
+            {/* <button className="navbar-btn me-2" type="submit">
               Get a Quote
-            </button>
+            </button> */}
           </div>
           <div className="search-icon">
             <FaSearch />

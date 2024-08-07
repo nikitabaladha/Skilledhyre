@@ -30,7 +30,7 @@ function RecruitmentServices() {
       </h6>
       <h2 className="text-center recruitment-services-heading">RECRUITMENT</h2>
       <div className="row recruitment-services-card-row">
-        <div className="col-md-4 mb-4">
+        <div className="col-md-4 col-sm-12 xs-12 mb-4">
           <div className="recruitment-services-card">
             <div className="recruitment-services-card-body">
               <h5 className="recruitment-services-card-title">
@@ -45,7 +45,7 @@ function RecruitmentServices() {
             </div>
           </div>
         </div>
-        <div className="col-md-4 mb-4">
+        <div className="col-md-4 col-sm-12 xs-12 mb-4">
           <div className="recruitment-services-card">
             <div className="recruitment-services-card-body">
               <h5 className="recruitment-services-card-title">
@@ -59,7 +59,7 @@ function RecruitmentServices() {
             </div>
           </div>
         </div>
-        <div className="col-md-4 mb-4">
+        <div className="col-md-4 col-sm-12 xs-12 mb-4">
           <div className="recruitment-services-card">
             <div className="recruitment-services-card-body">
               <h5 className="recruitment-services-card-title">RPO</h5>

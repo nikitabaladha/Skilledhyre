@@ -23,7 +23,7 @@ function Services() {
           IT Services
         </h2>
         <div className="row services-card-row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <GrPieChart className="services-card-icon" />
@@ -36,7 +36,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12  mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <AiOutlineFundProjectionScreen className="services-card-icon" />
@@ -49,7 +49,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12  mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <HiOutlineClipboardDocumentList className="services-card-icon" />
@@ -64,7 +64,7 @@ function Services() {
           </div>
         </div>
         <div className="row services-card-row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <ImSearch className="services-card-icon" />,
@@ -77,7 +77,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <BiCodeBlock className="services-card-icon" />,
@@ -90,7 +90,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <TbCloudComputing className="services-card-icon" />
@@ -105,7 +105,7 @@ function Services() {
           </div>
         </div>
         <div className="row services-card-row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <GrPieChart className="services-card-icon" />
@@ -118,7 +118,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <TbCloudComputing className="services-card-icon" />
@@ -132,7 +132,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-sm-12 col-xs-12 mb-4">
             <div className="services-card">
               <div className="services-card-body">
                 <TbCloudComputing className="services-card-icon" />

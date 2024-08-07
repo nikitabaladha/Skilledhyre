@@ -69,3 +69,97 @@
   text-align: left;
   box-sizing: border-box;
 }
+
+/* Media Queries */
+
+/* Mobile devices (small screens, less than 576px) */
+@media (max-width: 575.98px) {
+  .aboutus {
+    background-color: #0049b1;
+  }
+
+  .aboutus-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .aboutus-image {
+    margin-top: 20px;
+  }
+
+  .aboutus-sub-heading {
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .aboutus-heading {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .aboutus-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .aboutus-dot {
+    font-size: 20px;
+  }
+}
+
+/* Tablets (medium screens, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .aboutus-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .aboutus-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutus-heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .aboutus-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .aboutus-dot {
+    font-size: 22px;
+  }
+}
+
+/* Desktops (large screens, 768px and above) */
+@media (min-width: 768px) {
+  .aboutus-content {
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-left: 180px;
+    text-align: left;
+  }
+
+  .aboutus-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  .aboutus-heading {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .aboutus-description {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .aboutus-dot {
+    font-size: 25px;
+  }
+}
