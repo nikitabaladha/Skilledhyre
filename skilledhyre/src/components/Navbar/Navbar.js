@@ -181,7 +181,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <button className="btn navbar-btn me-2" type="submit">
+            <button className="navbar-btn me-2" type="submit">
               Get a Quote
             </button>
           </div>
