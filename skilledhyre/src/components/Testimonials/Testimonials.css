@@ -3,6 +3,7 @@
 /* General styling for the testimonial section */
 .testimonial {
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 
 /* Styling for the sub-heading in the testimonial section */
@@ -105,7 +106,7 @@
   background-color: #ffffff;
   box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 20px;
   width: 45px;
   height: 45px;
   line-height: 50px;

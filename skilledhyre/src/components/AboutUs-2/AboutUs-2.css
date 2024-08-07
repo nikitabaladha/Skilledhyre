@@ -19,7 +19,7 @@
 .aboutus-content {
   padding-top: 50px;
   padding-right: 0px;
-  padding-left: 160px;
+  padding-left: 180px;
 }
 
 /* Typography */
@@ -48,7 +48,6 @@
 /* About Us Description */
 .aboutus-description {
   box-sizing: border-box;
-  margin: 0 0 20px;
   color: #c5ddff;
   font-size: 22px;
   line-height: 36px;

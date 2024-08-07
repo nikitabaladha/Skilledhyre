@@ -59,16 +59,16 @@ function ContactCards() {
               <input
                 type="text"
                 className="form-control text-field"
-                placeholder="Your Name"
+                placeholder="Your Name *"
               />
               <input
                 type="email"
                 className="form-control text-field"
-                placeholder="Your Email"
+                placeholder="Your Email *"
               />
               <textarea
                 className="form-control text-field"
-                placeholder="Your Message"
+                placeholder="Message..."
                 rows="4"
               ></textarea>
 

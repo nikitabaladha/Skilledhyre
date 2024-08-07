@@ -1,16 +1,21 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button } from "react-bootstrap";
+import { Button, Container, Row, Col, Image } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { faPieChart } from "@fortawesome/free-solid-svg-icons";
-import { Container, Row, Col, Image } from "react-bootstrap";
 import "./ProcessDrivenSEO.css";
+
 import seoImage1 from "../../images/seo-1.png";
 import seoImage2 from "../../images/seo-2.png";
 import seoImage3 from "../../images/seo-3.png";
 import seoImage4 from "../../images/seo-4.png";
 import seoImage5 from "../../images/seo-5.png";
 import seoImage6 from "../../images/seo-6.png";
+
+import { GrPieChart } from "react-icons/gr";
+import { ImSearch } from "react-icons/im";
+import { BiCodeBlock } from "react-icons/bi";
+import { TbCloudComputing } from "react-icons/tb";
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 const ProcessDrivenSEO = () => {
   const [activeCard, setActiveCard] = useState(0);
@@ -19,38 +24,44 @@ const ProcessDrivenSEO = () => {
     {
       title: "Website Design",
       description:
-        "With the growing use of internet, it has become essential for businesses to mark their web presence. However, a mere website is not enough.",
+        "With the growing use of the internet, it has become essential for businesses to mark their web presence. However, a mere website is not enough.",
       image: seoImage1,
+      icon: <GrPieChart className="seo-card-icon" />,
     },
     {
       title: "Software Development",
       description:
-        "Our software development experinced  professionals at skilledhyre offer high quality and effective software applications that suits the requirements of our clients.",
+        "Our software development experienced professionals at Skilledhyre offer high-quality and effective software applications that suit the requirements of our clients.",
       image: seoImage2,
+      icon: <AiOutlineFundProjectionScreen className="seo-card-icon" />,
     },
     {
       title: "E-Commerce Development",
       description:
-        "E commerce is a perfect way to buy and sell the products online. Therefore, E commerce is a quick and convenient way to exchange goods and services with Skilledhyre.",
+        "E-commerce is a perfect way to buy and sell the products online. Therefore, E-commerce is a quick and convenient way to exchange goods and services with Skilledhyre.",
       image: seoImage3,
+      icon: <HiOutlineClipboardDocumentList className="seo-card-icon" />,
     },
     {
       title: "What is SEO Optimization?",
       description:
-        "At their core, keywords are one of — if not the most — single important component of a successful SEO campaign. Keywords refer to the words typed into a search box - be it on Google, Bing, or Yahoo. However, there is much more to keywords than just that.The keywords typed into a search box reveal certain details about customers and how they go about searching for things. Knowing this, it's important to target keywords that mimic your customer's minds and search tendencies.",
+        "At their core, keywords are one of — if not the most — single important component of a successful SEO campaign. Keywords refer to the words typed into a search box - be it on Google, Bing, or Yahoo. However, there is much more to keywords than just that. The keywords typed into a search box reveal certain details about customers and how they go about searching for things. Knowing this, it's important to target keywords that mimic your customer's minds and search tendencies.",
       image: seoImage4,
+      icon: <ImSearch className="seo-card-icon" />,
     },
     {
       title: "What is Web Development?",
       description:
-        "Internet is the power that has been making the businesses prosper and grow in current times. Therefore, to make businesses make the most of this power",
+        "The Internet is the power that has been making the businesses prosper and grow in current times. Therefore, to make businesses make the most of this power",
       image: seoImage5,
+      icon: <BiCodeBlock className="seo-card-icon" />,
     },
     {
       title: "What is PCC Advertising?",
       description:
-        "At their core, keywords are one of — if not the most — single important component of a successful SEO campaign. Keywords refer to the words typed into a search box - be it on Google, Bing, or Yahoo. However, there is much more to keywords than just that.The keywords typed into a search box reveal certain details about customers and how they go about searching for things. Knowing this, it's important to target keywords that mimic your customer's minds and search tendencies.",
+        "At their core, keywords are one of — if not the most — single important component of a successful SEO campaign. Keywords refer to the words typed into a search box - be it on Google, Bing, or Yahoo. However, there is much more to keywords than just that. The keywords typed into a search box reveal certain details about customers and how they go about searching for things. Knowing this, it's important to target keywords that mimic your customer's minds and search tendencies.",
       image: seoImage6,
+      icon: <TbCloudComputing className="seo-card-icon" />,
     },
   ];
 
@@ -93,7 +104,7 @@ const ProcessDrivenSEO = () => {
               }`}
               onClick={() => handleCardClick(index)}
             >
-              <FontAwesomeIcon icon={faPieChart} className="seo-card-icon" />
+              {card.icon}
               <h5 className="seo-card-title">{card.title}</h5>
             </div>
           ))}

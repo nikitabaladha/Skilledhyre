@@ -1,0 +1,21 @@
+.fixed-icon {
+  background-color: #ffffff;
+  color: #00c3ff;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  margin-left: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-weight: 400;
+  box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
+  justify-content: center;
+  margin-right: 20px;
+}

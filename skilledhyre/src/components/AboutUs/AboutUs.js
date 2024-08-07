@@ -23,12 +23,10 @@ const AboutUs = () => {
           <h2 className="mb-4 about-us-title">
             Skilledhyre as a skilled, experienced team of IT services
           </h2>
-
           <div className="how-it-works-container">
             <i className="fas fa-play play-icon"></i>
             <p className="how-it-works-text">How It Works</p>
           </div>
-
           <Button
             variant="secondary"
             href="/start-now"

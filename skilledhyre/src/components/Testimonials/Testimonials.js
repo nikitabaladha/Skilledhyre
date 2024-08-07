@@ -56,12 +56,12 @@ const Testimonials = () => {
         <div className="carousel-controls">
           <IoIosArrowRoundBack
             onClick={() => carouselRef.prev()}
-            className="carousel-arrow-icon carousel-learn-more-arrow-icon left-arrow"
+            className="carousel-arrow-icon left-arrow"
           />
 
           <IoIosArrowRoundForward
             onClick={() => carouselRef.next()}
-            className="carousel-arrow-icon carousel-learn-more-arrow-icon right-arrow"
+            className="carousel-arrow-icon  right-arrow"
           />
         </div>
       </div>

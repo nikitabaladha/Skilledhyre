@@ -100,3 +100,9 @@
   line-height: 40px;
   margin-left: 14px;
 }
+
+/* Contact form placeholder text color */
+.contact-form .text-field::placeholder {
+  color: #888888;
+  opacity: 1;
+}

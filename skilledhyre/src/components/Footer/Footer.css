@@ -1,7 +1,6 @@
 .social-media-icon {
   background-color: #ffffff;
   color: #0049b1;
-
   border-radius: 50%;
   font-size: 25px;
   width: 40px;
@@ -43,12 +42,13 @@
 
 .footer-content {
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .footer-container {
   padding-left: 150px;
   padding-right: 150px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   background-color: #005fd7;
 }
 
