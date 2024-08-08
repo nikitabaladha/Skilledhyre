@@ -17,7 +17,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="background-container">
+      <div className="background-container navbar-aboutus">
         <Navbar />
         <AboutUs />
       </div>

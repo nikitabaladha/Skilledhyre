@@ -267,9 +267,10 @@
 .mirror-image {
   background-image: url("../../images/mirror-image.png"),
     url("../../images/mirror-bottom.jpg"), url("../../images/seo-left.png");
-  background-color: rgba(30, 108, 218, 0.8);
+  background-color: #1458b9;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-attachment: scroll, scroll, scroll;
   background-position: right bottom, center bottom, 0 15%;
   background-size: 500px 700px, 1550px 200px, 160px 260px;
+  z-index: -1;
 }
