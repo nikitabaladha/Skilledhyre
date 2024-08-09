@@ -1,4 +1,3 @@
-/* Fixed Icon Styling */
 .fixed-icon {
   background-color: #ffffff;
   color: #00c3ff;
@@ -13,12 +12,21 @@
   text-align: center;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: -80px;
   z-index: 1000;
   font-weight: 400;
   box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
   justify-content: center;
   margin-right: 20px;
+  transition: right 0.3s ease-in-out; /* Add transition to right property */
+}
+
+.fixed-icon.show {
+  right: 20px; /* Update right property instead of animation */
+}
+
+.fixed-icon.hide {
+  right: -80px; /* Update right property instead of animation */
 }
 
 .fixed-icon:hover {
