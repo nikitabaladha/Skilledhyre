@@ -1,3 +1,4 @@
+// ProcessDrivenSEO.js
 import React, { useState } from "react";
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -16,6 +17,8 @@ import { BiCodeBlock } from "react-icons/bi";
 import { TbCloudComputing } from "react-icons/tb";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+
+import Animation from "./Animation"; // Import the animation component
 
 const ProcessDrivenSEO = () => {
   const [activeCard, setActiveCard] = useState(0);
@@ -71,6 +74,7 @@ const ProcessDrivenSEO = () => {
 
   return (
     <div className="container-fluid seo mirror-image bottom-mirror-image">
+      <Animation />
       <div className="row">
         <div className="col-md-8">
           <h6 className="mb-4 seo-sub-heading">
@@ -93,7 +97,6 @@ const ProcessDrivenSEO = () => {
           </Button>
         </div>
       </div>
-
       <div className="container">
         <div className="row seo-card-row">
           {cardsData.map((card, index) => (
@@ -110,7 +113,6 @@ const ProcessDrivenSEO = () => {
           ))}
         </div>
       </div>
-
       <Container fluid className="seo-bottom-row">
         <Row>
           <Col md={6} className="d-flex flex-column justify-content-center">

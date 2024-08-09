@@ -1,6 +1,7 @@
 /* SEO Section Container */
 .seo {
   padding-bottom: 320px;
+  position: relative;
 }
 
 /* Sub-heading styling */
@@ -272,5 +273,18 @@
   background-attachment: scroll, scroll, scroll;
   background-position: right bottom, center bottom, 0 15%;
   background-size: 500px 700px, 1550px 200px, 160px 260px;
+  z-index: -1;
+}
+
+/* ============= */
+
+/* ProcessDrivenSEO.css */
+
+.seo canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
