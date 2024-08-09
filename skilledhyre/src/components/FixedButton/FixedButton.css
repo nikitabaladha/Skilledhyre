@@ -18,15 +18,15 @@
   box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
   justify-content: center;
   margin-right: 20px;
-  transition: right 0.3s ease-in-out; /* Add transition to right property */
+  transition: right 0.3s ease-in-out;
 }
 
 .fixed-icon.show {
-  right: 20px; /* Update right property instead of animation */
+  right: 20px;
 }
 
 .fixed-icon.hide {
-  right: -80px; /* Update right property instead of animation */
+  right: -80px;
 }
 
 .fixed-icon:hover {

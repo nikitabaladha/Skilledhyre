@@ -18,7 +18,7 @@ import { TbCloudComputing } from "react-icons/tb";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
-import Animation from "./Animation"; // Import the animation component
+import Animation from "./Animation";
 
 const ProcessDrivenSEO = () => {
   const [activeCard, setActiveCard] = useState(0);
