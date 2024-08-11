@@ -1,7 +1,7 @@
 /* SEO Section Container */
 .seo {
   padding-bottom: 320px;
-  position: relative;
+  /* position: fixed; */
 }
 
 /* Sub-heading styling */
@@ -262,6 +262,7 @@
 /* Bottom Section Padding */
 .seo-bottom-row {
   padding-top: 80px;
+  position: relative;
 }
 
 /* Background Images and Styling */
@@ -276,15 +277,137 @@
   z-index: -1;
 }
 
-/* ============= */
+/* ========================== */
 
-/* ProcessDrivenSEO.css */
+@media only screen and (max-width: 767px) {
+  .seo {
+    padding-bottom: 100px;
+  }
 
-.seo canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  /* Sub-heading styling */
+  .seo-sub-heading {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  /* Main heading styling */
+  .seo-heading {
+    margin-left: 25px;
+    font-size: 24px;
+    margin-bottom: 10px !important;
+  }
+
+  /* Card title styling */
+  .seo-card-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* SEO Card Container */
+  .seo-card {
+    width: 90%;
+    max-width: 300px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  /* Card icon styling */
+  .seo-card-icon {
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  /* Card Row Container */
+  .seo-card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Button Styling */
+  .seo-button {
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    width: 160px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .seo-view-more-button {
+    font-size: 14px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Learn More Button Styling */
+  .seo-learn-more-button {
+    font-size: 14px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Bottom Section Heading */
+  .seo-bottom-heading {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  /* Description Text Styling */
+  .seo-description {
+    font-size: 14px;
+    margin-left: 20px;
+    line-height: 2;
+  }
+
+  /* Image Styling */
+  .seo-image {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Learn More Button Position */
+  .seo-learn-more-button {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  /* Bottom Content Margin */
+  .seo-bottom-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Background Images and Styling */
+  .mirror-image {
+    background-image: url("../../images/mirror-image.png"),
+      url("../../images/mirror-bottom.jpg");
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  .seo-card-row {
+    margin: 0;
+  }
+}
+
+/* Slick Slider Override */
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-dots {
+  bottom: 10px;
 }

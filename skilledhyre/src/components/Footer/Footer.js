@@ -1,77 +1,3 @@
-// import React from "react";
-
-// import { FaFacebook } from "react-icons/fa";
-// import { FaTwitter } from "react-icons/fa";
-// import { FaLinkedin } from "react-icons/fa";
-// import { FaPinterest } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import "./Footer.css";
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer mt-5 py-3 bg-primary footer-container">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-md-3 footer-content">
-//             <h5 className="footer-heading">Skilledhyre</h5>
-//             <p className="footer-text">
-//               Office no - 606 Tower A,I-thum
-//               <br />
-//               Noida sector 62, 201309
-//             </p>
-//           </div>
-//           <div className="col-md-3 footer-content">
-//             <h5 className="footer-heading">Services</h5>
-//             <ul className="footer-text footer-link">
-//               <li>Web Development</li>
-//               <li>Software Development</li>
-//               <li>E-Commerce Development</li>
-//               <li>Digital Marketing (SEO)</li>
-//             </ul>
-//           </div>
-//           <div className="col-md-3 footer-content">
-//             <h5 className="footer-heading">Company</h5>
-//             <ul className="footer-text footer-link">
-//               <li>About Company</li>
-//               <li>Services</li>
-//               <li>Staffing</li>
-//               <li>Hire Developers</li>
-//             </ul>
-//           </div>
-//           <div className="col-md-3 footer-content">
-//             <h5 className="footer-heading">Connect us</h5>
-//             <p>
-//               Follow our social media presence to stay updated about company.
-//             </p>
-//             <div className="social-icons">
-//               <FaFacebook className="social-media-icon" />
-
-//               <FaTwitter className="social-media-icon" />
-
-//               <FaLinkedin className="social-media-icon" />
-
-//               <FaPinterest className="social-media-icon" />
-
-//               <FaInstagram className="social-media-icon" />
-//             </div>
-//           </div>
-//         </div>
-//         <div className="row mt-4">
-//           <div className="col-12 text-center">
-//             <p className="footer-text">
-//               Copyright © 2024 <span>Skilledhyre</span>. All Rights Reserved.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-// =================================================================
-
 import React from "react";
 import {
   FaFacebook,
@@ -103,7 +29,7 @@ const Footer = () => {
       <footer className="footer footer-container">
         <div className="container">
           <div className="row">
-            <div className="col-md-3 footer-content">
+            <div className="col-md-3 col-sm-12 footer-content">
               <h5 className="footer-heading">Skilledhyre</h5>
               <p className="footer-text">
                 Office no - 606 Tower A,I-thum
@@ -111,7 +37,7 @@ const Footer = () => {
                 Noida sector 62, 201309
               </p>
             </div>
-            <div className="col-md-3 footer-content">
+            <div className="col-md-3 col-sm-12 footer-content">
               <h5 className="footer-heading">Services</h5>
               <ul className="footer-text footer-link">
                 <li>Web Development</li>
@@ -120,7 +46,7 @@ const Footer = () => {
                 <li>Digital Marketing (SEO)</li>
               </ul>
             </div>
-            <div className="col-md-3 footer-content">
+            <div className="col-md-3 col-sm-12 footer-content">
               <h5 className="footer-heading">Company</h5>
               <ul className="footer-text footer-link">
                 <li>About Company</li>
@@ -129,7 +55,7 @@ const Footer = () => {
                 <li>Hire Developers</li>
               </ul>
             </div>
-            <div className="col-md-3 footer-content">
+            <div className="col-md-3 col-sm-12 footer-content">
               <h5 className="footer-heading">Connect us</h5>
               <p className="span-text">
                 Follow our social media presence to stay updated about company.

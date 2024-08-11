@@ -27,7 +27,7 @@
 }
 
 /* Styling for the main heading in the testimonial section */
-.heading {
+.testimonial-heading {
   position: relative;
   margin-bottom: 25px;
   font-size: 36px;
@@ -120,4 +120,64 @@
 .carousel-arrow-icon:hover {
   background-color: #00c3ff;
   color: white;
+}
+
+/* Media query for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+  .testimonial {
+    padding-top: 20px; /* Adjust padding for smaller screens */
+    padding-bottom: 60px; /* Adjust padding for smaller screens */
+  }
+
+  .testimonial-sub-heading {
+    font-size: 14px; /* Smaller font size for sub-heading */
+    line-height: 1.1; /* Adjust line height */
+  }
+
+  .testimonial-dot {
+    font-size: 20px; /* Smaller dot size */
+    margin: 0 5px; /* Adjust margins */
+  }
+
+  .testimonial-heading {
+    font-size: 24px; /* Smaller font size for heading */
+    margin-bottom: 15px; /* Adjust margin for heading */
+  }
+
+  .carousel-text {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-name,
+  .testimonial-profession {
+    font-size: 16px; /* Smaller font size for name and profession */
+  }
+
+  .carousel-container {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    margin-right: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .carousel-controls {
+    top: 30%; /* Adjust vertical position of controls */
+    margin-left: 10px; /* Adjust margin for left arrow */
+    margin-right: 10px; /* Adjust margin for right arrow */
+  }
+
+  .carousel-arrow-icon {
+    font-size: 18px; /* Smaller font size for arrow icons */
+    width: 35px; /* Adjust width */
+    height: 35px; /* Adjust height */
+    line-height: 35px; /* Adjust line height */
+  }
+
+  .left-arrow {
+    margin-left: 10px; /* Adjust margin for left arrow */
+  }
+
+  .right-arrow {
+    margin-right: 10px; /* Adjust margin for right arrow */
+  }
 }

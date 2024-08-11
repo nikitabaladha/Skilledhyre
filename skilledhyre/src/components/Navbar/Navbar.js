@@ -7,6 +7,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   useEffect(() => {
@@ -18,6 +19,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("resize", handleResize);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

@@ -53,7 +53,7 @@ class Animation extends Component {
       <canvas
         ref={this.canvasRef}
         style={{
-          position: "absolute",
+          position: "relative",
           top: 0,
           left: 0,
           width: "100%",

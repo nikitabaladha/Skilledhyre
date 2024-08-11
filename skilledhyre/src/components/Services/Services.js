@@ -13,11 +13,11 @@ function Services() {
     <div className="container-fluid services">
       <div class="space"></div>
       <div className="container">
-        <h6 className="text-center mb-4 services-header">
+        <h6 className="text-center mb-4 services-sub-heading">
           <span className="services-dot">•</span>OUR SERVICES
           <span className="services-dot">•</span>
         </h6>
-        <h2 className="text-center services-title">
+        <h2 className="text-center services-heading">
           Introduce Best
           <br></br>
           IT Services

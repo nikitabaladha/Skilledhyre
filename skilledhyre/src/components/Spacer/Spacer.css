@@ -17,3 +17,22 @@
   width: 1519px;
   height: 250px;
 }
+
+/* Media query for small devices */
+@media only screen and (max-width: 767px) {
+  /* Adjust the spacer image for small devices */
+  .spacer-img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    content: url("../../images/spacer-for-phone.jpg"); /* Use a different image for small devices */
+  }
+
+  /* Adjust spacer heights if needed */
+  .upper-spacer {
+    height: 80px; /* Example height adjustment */
+  }
+
+  .lower-spacer {
+    height: 40px; /* Example height adjustment */
+  }
+}

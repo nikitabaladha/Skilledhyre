@@ -13,7 +13,7 @@ const Testimonials = () => {
         <span className="testimonial-dot">•</span>OUR CLIENTS
         <span className="testimonial-dot">•</span>
       </h6>
-      <h2 className="heading">Testimonials</h2>
+      <h2 className="testimonial-heading">Testimonials</h2>
       <div className="carousel-container">
         <Carousel
           ref={(el) => (carouselRef = el)}

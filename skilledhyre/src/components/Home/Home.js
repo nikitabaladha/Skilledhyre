@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <div className="background-container navbar-aboutus">
-        <Navbar />
+        {/* <Navbar /> */}
         <AboutUs />
       </div>
       <div className="spacer"></div>

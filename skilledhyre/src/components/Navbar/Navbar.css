@@ -16,13 +16,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+
+  height: 100% !important;
   width: 300px;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   background-color: #f8f9fa;
-  z-index: 1000;
+  z-index: 1;
   border: none;
+  /* overflow: hidden; */
 }
 
 .navbar-collapse.show {
@@ -39,6 +41,7 @@
 }
 
 .navbar-close {
+  position: absolute;
   margin-left: 200px;
   margin-top: 20px;
   font-size: 1.5rem;
@@ -114,20 +117,6 @@
   width: 80px;
   height: 80px;
   margin-right: 25px;
-}
-
-/* Responsive adjustments for navbar collapse */
-@media (min-width: 992px) {
-  .navbar-collapse {
-    position: relative;
-    width: auto;
-    transform: none;
-    background-color: transparent;
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
 }
 
 /* Nav-item hover effect*/
@@ -223,4 +212,65 @@ nav ul li a:hover::before {
   font-size: 17px;
   font-weight: 700;
   margin-right: 10px;
+}
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-close {
+    font-size: 14px;
+    color: #78869b;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+
+  .navbar-btn {
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #brand-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+
+/* Responsive adjustments for navbar collapse */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    position: relative;
+    width: auto;
+    transform: none;
+    background-color: transparent;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+/* Navbar collapse state styles */
+.navbar-collapse.show .nav-link,
+.navbar-collapse.show .dropdown-item {
+  color: black !important;
+}
+
+.navbar-collapse.show .nav-link:hover,
+.navbar-collapse.show .dropdown-item:hover {
+  color: red !important;
 }

@@ -92,3 +92,53 @@ li {
   font-size: 16px;
   padding-top: 5px;
 }
+
+/* Media query for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+  .footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+  }
+
+  .footer-content {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .footer-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .social-icons {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .social-media-icon {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+  }
+
+  li {
+    padding-bottom: 5px;
+  }
+
+  /* Span Text Styling */
+  .span-text {
+    font-size: 14px;
+  }
+
+  /* SVG Container Styling */
+  .svg-container {
+    text-align: center;
+  }
+}
