@@ -111,6 +111,7 @@
 }
 
 /* Media query for phone devices with a max-width of 767px */
+
 @media only screen and (max-width: 767px) {
   .recruitment-container {
     padding-left: 15px;
@@ -162,6 +163,7 @@
 }
 
 /* Media query for devices with a screen width between 768px and 1024px */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .recruitment-container {
     padding-left: 15px;

@@ -23,10 +23,10 @@
 }
 
 /* ----------------------------------
-       Text Styles
+   Text Styles
 ---------------------------------- */
 
-/* Styles for the "Find Out More" text, including color and font properties */
+/* Styles for the "Find Out More" text */
 .find-out-more-text {
   color: #0ec6ff;
   font-size: 16px;
@@ -34,58 +34,49 @@
   text-transform: uppercase;
   line-height: 1.4em;
   font-family: "Red Hat Display", sans-serif;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
-/* Styles for the main description text in the About Us section */
+/* Styles for the main description text */
 .about-us-description {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   color: #ffffff;
   font-size: 16px;
   line-height: 36px;
   font-family: "Red Hat Text", sans-serif;
 }
 
-/* Styles for the title text in the About Us section */
+/* Styles for the title text */
 .about-us-title {
   color: #ffffff;
   font-size: 30px;
   line-height: 40px;
   font-weight: 900;
   font-family: "Red Hat Display", sans-serif;
-  padding: 0;
   margin-top: 0;
   box-sizing: border-box;
 }
 
 /* ----------------------------------
-       Button Styles
+   Button Styles
 ---------------------------------- */
 
-/* Styles for the "Start Now" button, including color, background, and layout */
+/* Styles for the "Start Now" button */
 .start-now-button {
   color: #fff;
   background: #fe4c1c;
   text-align: left;
   padding: 5px 5px 5px 28px;
   font-size: 16px;
-  line-height: 1;
   display: inline-block;
-  margin: 0;
-  white-space: nowrap;
-  vertical-align: middle;
   font-weight: bold;
-  letter-spacing: 0;
   cursor: pointer;
   border: 1px solid transparent;
-  outline: 0;
+  border-radius: 25px;
   position: relative;
   font-family: "Red Hat Display", sans-serif;
   overflow: hidden;
   box-sizing: border-box;
-  border-radius: 25px;
 }
 
 .start-now-button::before {
@@ -97,7 +88,6 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   transition: left 0.4s ease;
-  z-index: 0;
 }
 
 .start-now-button:hover::before {
@@ -116,10 +106,10 @@
 }
 
 /* ----------------------------------
-       Icon Styles
+   Icon Styles
 ---------------------------------- */
 
-/* Styles for an arrow icon, including background, color, and dimensions */
+/* Styles for the arrow icon */
 .arrow-icon {
   background-color: #ffffff;
   color: #fe4c1c;
@@ -131,36 +121,32 @@
   margin-left: 14px;
 }
 
-/* Styles for a play button icon, including size, color, and hover effect */
+/* Styles for the play button icon */
 .play-icon {
   width: 48px;
   height: 48px;
-  line-height: 49px;
   font-size: 18px;
   color: #00c3ff;
   border-radius: 50%;
   background-color: white;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  align-items: center;
+  margin: 10px 0 10px 10px;
   box-shadow: 0 12px 24px rgba(126, 173, 235, 0.4);
   cursor: pointer;
-
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-/* Hover effect for the play button icon, changing background and text color */
 .play-icon:hover {
   background-color: #00c3ff;
   color: white;
 }
 
 /* ----------------------------------
-       How It Works Container
+   How It Works Container
 ---------------------------------- */
 
-/* Styles for the container of the "How It Works" section, using flexbox */
+/* Styles for the "How It Works" section */
 .how-it-works-container {
   display: flex;
   align-items: center;
@@ -170,7 +156,6 @@
   box-sizing: border-box;
 }
 
-/* Styles for the text in the "How It Works" section, including color and font */
 .how-it-works-text {
   color: #ffffff;
   font-size: 16px;
@@ -184,7 +169,7 @@
    Responsive Media Queries
 ---------------------------------- */
 
-/* Media query for Phone devices with a max-width of 767px */
+/* Phone devices with a max-width of 767px */
 @media only screen and (max-width: 767px) {
   .about-us {
     display: flex;
@@ -195,10 +180,7 @@
   }
 
   .about-us-content {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 15px;
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -249,9 +231,6 @@
     width: 40px;
     height: 40px;
     font-size: 16px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
     margin-left: 130px;
   }
 
@@ -264,12 +243,11 @@
   .how-it-works-text {
     font-size: 14px;
     margin-top: 10px;
-    text-align: center;
     margin-left: 125px;
   }
 }
 
-/* Media query for tablet devices with a screen width between 768px and 1024px */
+/* Tablet devices with a screen width between 768px and 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .about-us {
     display: flex;
@@ -299,7 +277,6 @@
   .find-out-more-text {
     font-size: 18px;
     margin-bottom: 10px;
-    text-align: center;
     padding-left: 230px;
     padding-right: 230px;
   }
@@ -321,10 +298,7 @@
     font-size: 15px;
     padding: 8px 8px 8px 16px;
     border-radius: 35px;
-    margin-left: 260px;
-    margin-right: 260px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 260px;
   }
 
   .arrow-icon {

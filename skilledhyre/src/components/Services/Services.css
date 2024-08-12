@@ -107,7 +107,7 @@
   margin-bottom: 20px;
 }
 
-/* Media Queries for phone devices*/
+/* Responsive Media Queries for phone devices max-width 767px*/
 
 @media only screen and (max-width: 767px) {
   .services-sub-heading {
@@ -152,7 +152,8 @@
   }
 }
 
-/* Media Queries for tablet devices*/
+/*Responsive Media Queries for tablet devices min-width-768px to max-width-1024px*/
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .services-sub-heading {
     font-size: 16px;

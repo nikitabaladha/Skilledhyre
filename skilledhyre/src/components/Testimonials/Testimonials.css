@@ -123,25 +123,26 @@
 }
 
 /* Media query for screens with a maximum width of 767px */
+
 @media only screen and (max-width: 767px) {
   .testimonial {
-    padding-top: 20px; /* Adjust padding for smaller screens */
-    padding-bottom: 60px; /* Adjust padding for smaller screens */
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 
   .testimonial-sub-heading {
-    font-size: 14px; /* Smaller font size for sub-heading */
-    line-height: 1.1; /* Adjust line height */
+    font-size: 14px;
+    line-height: 1.1;
   }
 
   .testimonial-dot {
-    font-size: 20px; /* Smaller dot size */
-    margin: 0 5px; /* Adjust margins */
+    font-size: 20px;
+    margin: 0 5px;
   }
 
   .testimonial-heading {
-    font-size: 24px; /* Smaller font size for heading */
-    margin-bottom: 15px; /* Adjust margin for heading */
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 
   .carousel-text {
@@ -152,35 +153,37 @@
 
   .testimonial-name,
   .testimonial-profession {
-    font-size: 16px; /* Smaller font size for name and profession */
+    font-size: 16px;
   }
 
   .carousel-container {
-    margin-left: 20px; /* Adjust margin for smaller screens */
-    margin-right: 20px; /* Adjust margin for smaller screens */
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .carousel-controls {
-    top: 30%; /* Adjust vertical position of controls */
-    margin-left: 10px; /* Adjust margin for left arrow */
-    margin-right: 10px; /* Adjust margin for right arrow */
+    top: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .carousel-arrow-icon {
-    font-size: 18px; /* Smaller font size for arrow icons */
-    width: 35px; /* Adjust width */
-    height: 35px; /* Adjust height */
-    line-height: 35px; /* Adjust line height */
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
   }
 
   .left-arrow {
-    margin-left: 10px; /* Adjust margin for left arrow */
+    margin-left: 10px;
   }
 
   .right-arrow {
-    margin-right: 10px; /* Adjust margin for right arrow */
+    margin-right: 10px;
   }
 }
+
+/* Media query for Tablet device screens with a minimum width 768px to maximum width of 1024px */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .carousel-container {

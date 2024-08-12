@@ -1,9 +1,14 @@
-/* Contact Card Styles */
+/*----------------------------------------------------------*/
+/*  Contact Card Container Styles  */
+/*----------------------------------------------------------*/
 .contact-card-container {
   padding-left: 150px;
   padding-right: 150px;
 }
 
+/*----------------------------------------------------------*/
+/*  Contact Card Styles  */
+/*----------------------------------------------------------*/
 .contact-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -44,7 +49,9 @@
   font-weight: 490;
 }
 
-/* Contact Form Styles */
+/*----------------------------------------------------------*/
+/*  Contact Form Container Styles  */
+/*----------------------------------------------------------*/
 .contact-form-container {
   padding-left: 0px;
   padding-right: 0px;
@@ -56,11 +63,17 @@
   padding-top: 15px;
 }
 
+/*----------------------------------------------------------*/
+/*  Placeholder Text Styles  */
+/*----------------------------------------------------------*/
 .contact-form .text-field::placeholder {
   color: #888888;
   opacity: 1;
 }
 
+/*----------------------------------------------------------*/
+/*  Text Field Styles  */
+/*----------------------------------------------------------*/
 .text-field {
   border-radius: 25px;
   padding-top: 12px;
@@ -69,12 +82,16 @@
   margin-bottom: 20px;
 }
 
-/* Map Container Styles */
+/*----------------------------------------------------------*/
+/*  Map Container Styles  */
+/*----------------------------------------------------------*/
 .map-container iframe {
   margin-right: 0px;
 }
 
-/* Button Styles */
+/*----------------------------------------------------------*/
+/*  Get In Touch Button Styles  */
+/*----------------------------------------------------------*/
 .get-in-touch-button {
   color: #fff;
   background: #ff4d6f;
@@ -99,6 +116,9 @@
   box-shadow: 8px 8px 18px 0px rgba(255, 77, 111, 0.3);
 }
 
+/*----------------------------------------------------------*/
+/*  Button Hover Effect  */
+/*----------------------------------------------------------*/
 .get-in-touch-button::before {
   content: "";
   position: absolute;
@@ -106,7 +126,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2); /* Adjust color if needed */
+  background-color: rgba(255, 255, 255, 0.2);
   transition: left 0.4s ease;
   z-index: 0;
 }
@@ -121,7 +141,9 @@
   border-color: #ff4d6f;
 }
 
-/* Arrow Icon Styles */
+/*----------------------------------------------------------*/
+/*  Arrow Icon Styles  */
+/*----------------------------------------------------------*/
 .arrow-icon {
   background-color: #ffffff;
   color: #fe4c1c;
@@ -133,14 +155,17 @@
   margin-left: 14px;
 }
 
-/* Media query for screens with a maximum width of 767px */
+/*----------------------------------------------------------*/
+/*  Responsive Styles  */
+/*----------------------------------------------------------*/
+
+/* For screens up to 767px */
 @media only screen and (max-width: 767px) {
   .contact-card-container {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* Contact Card Styles */
   .contact-card {
     width: 100%;
     height: auto;
@@ -210,7 +235,6 @@
     padding-right: 30px;
   }
 
-  /* Contact Card Styles */
   .contact-card {
     width: 230px;
     height: 190px;
@@ -235,43 +259,21 @@
     font-size: 15px;
   }
 
-  .contact-form-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .contact-form container {
-    width: 50%; /* Both containers will take up 50% of the width */
-
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
-  }
-
-  .text-field {
-    border-radius: 22px;
-    padding-top: 11px;
-    padding-left: 18px;
-    padding-bottom: 11px;
-    margin-bottom: 18px;
-  }
-
-  .map-container iframe {
+  .map-container {
+    flex: 0 0 auto;
     width: 50%;
-    height: 300px;
   }
 
-  /* Button Styles */
-  .get-in-touch-button {
-    font-size: 15px;
-    padding: 8px 8px 8px 8px;
-    border-radius: 35px;
+  iframe {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
   }
 
-  .arrow-icon {
-    font-size: 1rem;
-    width: 38px;
-    height: 38px;
-    line-height: 38px;
-    margin-left: 12px;
+  .contact-form-container {
+    padding-left: 10px;
+    padding-right: 0px;
+    flex: 0 0 auto;
+    width: 50%;
   }
 }

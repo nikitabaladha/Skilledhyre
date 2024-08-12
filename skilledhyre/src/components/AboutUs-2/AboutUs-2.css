@@ -7,6 +7,7 @@
   background-color: #0049b1;
 }
 
+/* Dot style in the "About Us" heading */
 .aboutus-dot {
   color: #0ec6ff;
   font-size: 25px;
@@ -14,7 +15,7 @@
   margin-left: 10px;
 }
 
-/* Styles for the image used in the About Us section background */
+/* Background image settings */
 .aboutus-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,10 +30,10 @@
 }
 
 /* ----------------------------------
-       Text Styles
+   Text Styles
 ---------------------------------- */
 
-/* Styles for the "Find Out More" text, including color and font properties */
+/* Sub-heading text style */
 .aboutus-sub-heading {
   color: #0ec6ff;
   font-size: 16px;
@@ -45,7 +46,7 @@
   margin-bottom: 10px;
 }
 
-/* Styles for the main description text in the About Us section */
+/* Description text style */
 .aboutus-description {
   margin: 0 0 20px;
   color: #c5ddff;
@@ -54,7 +55,7 @@
   font-family: "Red Hat Text", sans-serif;
 }
 
-/* Styles for the title text in the About Us section */
+/* Main heading text style */
 .aboutus-heading {
   color: #ffffff;
   font-size: 36px;
@@ -66,8 +67,11 @@
   box-sizing: border-box;
 }
 
-/* Media Queries */
+/* ----------------------------------
+   Media Queries for Responsive Design
+---------------------------------- */
 
+/* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   .aboutus {
     padding: 20px 40px 20px 40px;
@@ -108,7 +112,7 @@
   }
 }
 
-/* Media query for tablet devices with a screen width between 768px and 1024px */
+/* Media query for tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .aboutus {
     display: flex;

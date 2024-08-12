@@ -277,37 +277,33 @@
   z-index: -1;
 }
 
-/* ========================== */
+/* Responsive style for Mobile devices less than 767px*/
 
 @media only screen and (max-width: 767px) {
   .seo {
     padding-bottom: 100px;
   }
 
-  /* Sub-heading styling */
   .seo-sub-heading {
-    margin-left: 15px;
+    margin-left: 35px;
     font-size: 14px;
   }
 
-  /* Main heading styling */
   .seo-heading {
-    margin-left: 25px;
+    margin-left: 45px;
     font-size: 24px;
     margin-bottom: 10px !important;
   }
 
-  /* Card title styling */
   .seo-card-title {
     font-size: 20px;
     text-align: center;
   }
 
-  /* SEO Card Container */
   .seo-card {
     width: 90%;
-    max-width: 300px;
-    height: 150px;
+    max-width: 350px;
+    height: 130px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -317,21 +313,18 @@
     border-radius: 15px;
   }
 
-  /* Card icon styling */
   .seo-card-icon {
     margin-left: 0;
     font-size: 30px;
   }
 
-  /* Card Row Container */
   .seo-card-row {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Button Styling */
   .seo-button {
-    margin-left: 25px;
+    margin-left: 45px;
     margin-top: 30px;
     width: 100%;
     padding: 10px;
@@ -349,7 +342,6 @@
     align-items: center;
   }
 
-  /* Learn More Button Styling */
   .seo-learn-more-button {
     font-size: 14px;
     padding: 5px 5px 5px 20px;
@@ -358,39 +350,33 @@
     align-items: center;
   }
 
-  /* Bottom Section Heading */
   .seo-bottom-heading {
     font-size: 28px;
     margin-left: 20px;
   }
 
-  /* Description Text Styling */
   .seo-description {
     font-size: 14px;
     margin-left: 20px;
     line-height: 2;
   }
 
-  /* Image Styling */
   .seo-image {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
   }
 
-  /* Learn More Button Position */
   .seo-learn-more-button {
     margin-left: 20px;
     margin-top: 20px;
   }
 
-  /* Bottom Content Margin */
   .seo-bottom-content {
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* Background Images and Styling */
   .mirror-image {
     background-image: url("../../images/mirror-image.png"),
       url("../../images/mirror-bottom.jpg");
@@ -408,30 +394,33 @@
   .seo-card {
     width: calc(50% - 15px);
     margin: 7.5px;
+    margin-bottom: 15px;
   }
 }
 
-/* For screens between 768px and 1024px */
+/* Responsive style for Tablet devices screens between 768px and 1024px */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .col-md-8 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .col-md-6 {
+
+  .seo-bottom-left,
+  .seo-bottom-right {
     flex: 0 0 auto;
     width: 100%;
   }
+
   .seo {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
-  /* Sub-heading styling */
   .seo-sub-heading {
     margin-left: 35px;
     font-size: 14px;
   }
 
-  /* Main heading styling */
   .seo-heading {
     margin-left: 45px;
     font-size: 35px;
@@ -440,32 +429,28 @@
     line-height: 1.2;
   }
 
-  /* Card title styling */
   .seo-card-title {
     font-size: 24px;
     text-align: center;
   }
 
-  /* SEO Card Container */
   .seo-card {
     width: calc(33.333% - 15px);
     margin: 7.5px;
+    margin-bottom: 10px;
   }
 
-  /* Card icon styling */
   .seo-card-icon {
     margin-bottom: 20px;
     font-size: 30px;
   }
 
-  /* Card Row Container */
   .seo-card-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* Button Styling */
   .seo-button {
     margin-left: 40px;
     margin-top: 0px;
@@ -482,7 +467,6 @@
     width: 150px;
   }
 
-  /* Arrow Icon Styling */
   .seo-arrow-icon {
     font-size: 1rem;
     width: 30px;
@@ -490,18 +474,15 @@
     line-height: 30px;
   }
 
-  /* Dot Icon Styling */
   .seo-dot {
     font-size: 20px;
   }
 
-  /* Bottom Section Heading */
   .seo-bottom-heading {
     font-size: 28px;
     padding-left: 10px;
   }
 
-  /* Description Text Styling */
   .seo-description {
     width: 100%;
     height: auto !important;
@@ -510,30 +491,26 @@
     padding-left: 10px;
   }
 
-  /* Image Styling */
   .seo-image {
     width: 100%;
     height: auto !important;
+    margin-left: 0px;
   }
 
-  /* Learn More Button Position */
   .seo-learn-more-button {
     margin-left: 30px;
     margin-top: 5px;
   }
 
-  /* Bottom Content Margin */
   .seo-bottom-content {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  /* Bottom Section Padding */
   .seo-bottom-row {
     padding-top: 50px;
   }
 
-  /* Background Images and Styling */
   .mirror-image {
     background-size: 400px 600px, 1000px 200px, 120px 180px;
     background-position: right bottom, center bottom, 0 10%;

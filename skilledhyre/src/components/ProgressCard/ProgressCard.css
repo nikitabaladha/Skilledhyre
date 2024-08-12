@@ -84,24 +84,12 @@
   }
 }
 
-@keyframes slideInUp {
-  0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
 /* Additional styling for the percentage text inside the progress bar */
 .percentage-text {
   font-weight: bold;
 }
 
-/* Mobile devices (small screens, less than 767px) */
+/* Responsive Mobile devices style (small screens, less than 767px) */
 @media only screen and (max-width: 767px) {
   .progress-card {
     width: 100%;
@@ -136,6 +124,8 @@
     font-size: 14px;
   }
 }
+
+/* Responsive Tablet devices style (screens between 768px to 1024px) */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .progress-props .col-md-3 {

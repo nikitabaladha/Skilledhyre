@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .social-media-icon:hover {
@@ -93,7 +94,9 @@ li {
   padding-top: 5px;
 }
 
-/* Media query for screens with a maximum width of 767px */
+/* Media Queries */
+
+/* For screens with a maximum width of 767px (Mobile) */
 @media only screen and (max-width: 767px) {
   .footer-container {
     padding-left: 15px;
@@ -142,6 +145,8 @@ li {
     text-align: center;
   }
 }
+
+/* For screens with a width between 768px and 1024px (Tablet) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .footer-container {
     padding-left: 10px;
@@ -170,9 +175,9 @@ li {
   }
 
   .social-media-icon {
-    font-size: 50px;
-    width: 50%px;
-    height: 50%;
+    font-size: 100px;
+    width: 50px;
+    height: 30px;
     padding: 4px;
   }
 

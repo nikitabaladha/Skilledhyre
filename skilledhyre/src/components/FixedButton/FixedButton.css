@@ -1,3 +1,4 @@
+/* Fixed Button Styles */
 .fixed-icon {
   background-color: #ffffff;
   color: #00c3ff;
@@ -21,14 +22,17 @@
   transition: right 0.3s ease-in-out;
 }
 
+/* Show Button Styles */
 .fixed-icon.show {
   right: 20px;
 }
 
+/* Hide Button Styles */
 .fixed-icon.hide {
   right: -80px;
 }
 
+/* Button Hover Effect */
 .fixed-icon:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease-in-out;
