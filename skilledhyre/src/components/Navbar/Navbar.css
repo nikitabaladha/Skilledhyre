@@ -14,9 +14,6 @@
   cursor: pointer;
 }
 
-.collapsed .close {
-  display: none;
-}
 .close:hover {
   color: #333;
 }
