@@ -1,4 +1,26 @@
-/* Right-to-left collapse Navbar effect - Navbar container styling */
+.dropdown-header {
+  padding: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  border: none !important;
+  background-color: white;
+  font-weight: 500;
+  color: #78869b;
+  cursor: pointer;
+}
+
+.collapsed .close {
+  display: none;
+}
+.close:hover {
+  color: #333;
+}
+
 .navbar {
   position: relative;
   padding: 18px;
@@ -12,63 +34,24 @@
   );
 }
 
-.navbar-collapse {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  height: 100% !important;
-  width: 300px;
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-  background-color: #f8f9fa;
-  z-index: 1;
-  border: none;
-  /* overflow: hidden; */
-}
-
-.navbar-collapse.show {
-  transform: translateX(0);
-}
-
-.navbar-toggler {
-  z-index: 1001;
-}
-
 .navbar-brand {
   margin-right: 100px;
   margin-left: 35px;
 }
 
-.navbar-close {
-  position: absolute;
-  margin-left: 200px;
-  margin-top: 20px;
-  font-size: 1.5rem;
-}
-
-.navbar-nav {
-  margin-right: 0px;
-}
-
-.nav-item {
-  margin-right: 1.4rem;
-}
-
 .nav-link {
-  padding: 0.5rem 1rem;
-  color: white !important;
+  padding: 1rem 1rem;
+  color: white;
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   font-weight: 700;
   list-style: none;
 }
 
-.navbar-toggler {
-  margin-left: auto;
+.home-link {
+  color: white !important;
 }
 
-/* Button styles */
 .navbar-btn {
   background-color: #00c3ff;
   color: white;
@@ -90,7 +73,6 @@
   margin-right: 10px;
 }
 
-/* Add transition effect for background */
 .navbar-btn::before {
   content: "";
   position: absolute;
@@ -103,7 +85,6 @@
   z-index: 0;
 }
 
-/* Hover effect */
 .navbar-btn:hover::before {
   left: 100%;
 }
@@ -118,8 +99,6 @@
   height: 80px;
   margin-right: 25px;
 }
-
-/* Nav-item hover effect*/
 
 nav ul li a {
   text-decoration: none;
@@ -143,8 +122,6 @@ nav ul li a:hover::before {
   width: 100%;
 }
 
-/* Dropdown hover effect */
-
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   animation: slideUp 0.3s ease-in-out forwards;
@@ -152,7 +129,7 @@ nav ul li a:hover::before {
 
 .dropdown-menu {
   position: absolute;
-  top: 230%;
+  top: 100%;
   left: 0;
   background-color: white;
   border-radius: 1rem;
@@ -160,6 +137,8 @@ nav ul li a:hover::before {
   transform: translateY(20px);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  font-family: "Red Hat Display", sans-serif;
+  color: #78869b;
 }
 
 .dropdown-menu.show {
@@ -167,12 +146,16 @@ nav ul li a:hover::before {
   transform: translateY(0);
 }
 
-/* Dropdown-item specific styling */
-
 .dropdown-item {
   position: relative;
   text-decoration: none;
   color: black;
+  font-weight: 700;
+  font-size: 14px;
+
+  font-size: 15px;
+  padding-left: 30px;
+  line-height: 2;
 }
 
 .dropdown-item::before {
@@ -180,12 +163,19 @@ nav ul li a:hover::before {
 }
 
 .dropdown-item:hover {
-  color: red;
+  color: #00c3ff;
   margin-left: 10px;
   background-color: transparent;
 }
 
-/* Animation keyframes for sliding up dropdown menu */
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(20px);
@@ -214,63 +204,56 @@ nav ul li a:hover::before {
   margin-right: 10px;
 }
 
-/* Mobile (up to 480px) */
-@media (max-width: 480px) {
-  .navbar {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .navbar-brand {
-    margin-right: 20px;
-    margin-left: 10px;
-  }
-
-  .navbar-close {
-    font-size: 14px;
-    color: #78869b;
-    cursor: pointer;
-  }
-
-  .navbar-nav {
-    margin-right: 0;
-  }
-
-  .navbar-btn {
-    font-size: 14px;
-    padding: 12px 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  #brand-logo {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-  }
-}
-
-/* Responsive adjustments for navbar collapse */
-@media (min-width: 992px) {
+@media only screen and (max-width: 767px) {
   .navbar-collapse {
-    position: relative;
-    width: auto;
-    transform: none;
-    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    border-left: 1px solid #ddd;
+    padding: 15px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
   }
 
-  .navbar-toggler {
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .home-link {
+    color: black !important;
+    padding-top: 40px;
+  }
+
+  .nav-link {
+    color: rgba(17, 17, 17, 0.656) !important;
+    font-family: "Red Hat Display", sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .navbar-collapse.show .nav-link:hover {
+    color: #fe4c1c !important;
+  }
+
+  .navbar-collapse.show .dropdown-item {
+    color: black;
+  }
+
+  .navbar-collapse.show .dropdown-item:hover {
+    color: #fe4c1c !important;
+  }
+
+  .get-a-quote {
     display: none;
   }
 }
 
-/* Navbar collapse state styles */
-.navbar-collapse.show .nav-link,
-.navbar-collapse.show .dropdown-item {
-  color: black !important;
-}
-
-.navbar-collapse.show .nav-link:hover,
-.navbar-collapse.show .dropdown-item:hover {
-  color: red !important;
+@media (min-width: 769px) {
+  .close {
+    display: none;
+  }
 }
