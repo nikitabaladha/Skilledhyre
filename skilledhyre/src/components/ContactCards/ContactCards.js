@@ -42,7 +42,7 @@ function ContactCards() {
 
       <div className="container-fluid contact-form">
         <div className="row">
-          <div className="col-md-6 map-container">
+          <div className="col-md-6 col-sm-2 map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.086412379796!2d77.36987507495655!3d28.627172134325072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5f6bf0e729b%3A0x4c68e44d9e70a67f!2sI-Thum%20Tower%20-%20office%20space%20in%20IThum%20Noida%20Sector%2062!5e0!3m2!1sen!2sin!4v1723001883419!5m2!1sen!2sin"
               width="560"
@@ -54,7 +54,7 @@ function ContactCards() {
               title="I-Thum Tower Office Location"
             ></iframe>
           </div>
-          <div className="col-md-6 contact-form-container">
+          <div className="col-md-6 col-sm-2 contact-form-container">
             <form className="contact-form">
               <input
                 type="text"

@@ -1,30 +1,12 @@
-/* Background and Layout */
+/* ----------------------------------
+   About Us Section Styles
+---------------------------------- */
 
-/* About Us Section Background */
+/* Background color for the About Us section */
 .aboutus {
   background-color: #0049b1;
 }
 
-/* About Us Image */
-.aboutus-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  position: fixed;
-}
-
-/* Content Layout */
-
-/* About Us Content Padding */
-.aboutus-content {
-  padding-top: 50px;
-  padding-right: 0px;
-  padding-left: 180px;
-}
-
-/* Typography */
-
-/* Dot Icon in Sub-heading */
 .aboutus-dot {
   color: #0ec6ff;
   font-size: 25px;
@@ -32,41 +14,55 @@
   margin-left: 10px;
 }
 
-/* About Us Sub-heading */
-.aboutus-sub-heading {
-  color: #0ec6ff;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  cursor: auto;
-  line-height: 1.2em;
-  font-family: "Red Hat Display", sans-serif;
-  text-align: left;
+/* Styles for the image used in the About Us section background */
+.aboutus-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 
-/* About Us Description */
+/* Padding and spacing for the content within the About Us section */
+.aboutus-content {
+  padding-top: 50px;
+  padding-right: 0px;
+  padding-left: 180px;
+}
+
+/* ----------------------------------
+       Text Styles
+---------------------------------- */
+
+/* Styles for the "Find Out More" text, including color and font properties */
+.aboutus-sub-heading {
+  color: #0ec6ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Styles for the main description text in the About Us section */
 .aboutus-description {
-  box-sizing: border-box;
+  margin: 0 0 20px;
   color: #c5ddff;
   font-size: 22px;
   line-height: 36px;
   font-family: "Red Hat Text", sans-serif;
-  cursor: auto;
-  display: block;
-  unicode-bidi: isolate;
 }
 
-/* About Us Heading */
+/* Styles for the title text in the About Us section */
 .aboutus-heading {
   color: #ffffff;
   font-size: 36px;
   line-height: 48px;
-  margin: 0 0 20px;
-  position: relative;
   font-weight: 900;
   font-family: "Red Hat Display", sans-serif;
-  text-align: left;
+  padding: 0;
+  margin-top: 0;
   box-sizing: border-box;
 }
 
@@ -74,48 +70,81 @@
 
 @media only screen and (max-width: 767px) {
   .aboutus {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
   }
 
-  /* About Us Content Layout */
   .aboutus-content {
     padding: 20px 15px;
-    text-align: center;
   }
 
-  /* About Us Heading */
   .aboutus-heading {
     font-size: 24px;
     margin-bottom: 20px;
     line-height: 36px;
   }
 
-  /* About Us Sub-heading */
   .aboutus-sub-heading {
     font-size: 14px;
     margin-bottom: 20px;
   }
 
-  /* About Us Description */
   .aboutus-description {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2;
     margin-bottom: 20px;
   }
 
-  /* Dot Icon in Sub-heading */
   .aboutus-dot {
     font-size: 20px;
   }
 
-  /* About Us Image */
-  .about-us-image {
+  .aboutus-image {
     margin-top: 20px;
   }
 
-  /* Ensure image scales properly */
-  .about-us-image img {
+  .aboutus-image img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+/* Media query for tablet devices with a screen width between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px 60px 40px;
+  }
+
+  .aboutus-image,
+  .aboutus-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .aboutus-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .aboutus-content {
+    padding: 20px;
+  }
+
+  .aboutus-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .aboutus-description {
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 2;
+  }
+
+  .aboutus-sub-heading {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }

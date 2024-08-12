@@ -401,9 +401,145 @@
   .seo-card-row {
     margin: 0;
   }
+
+  .seo-card-row {
+    flex-wrap: wrap;
+  }
+  .seo-card {
+    width: calc(50% - 15px);
+    margin: 7.5px;
+  }
 }
 
-/* Slick Slider Override */
+/* For screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .seo {
+    padding-bottom: 100px;
+  }
+
+  /* Sub-heading styling */
+  .seo-sub-heading {
+    margin-left: 35px;
+    font-size: 14px;
+  }
+
+  /* Main heading styling */
+  .seo-heading {
+    margin-left: 45px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    line-height: 1.2;
+  }
+
+  /* Card title styling */
+  .seo-card-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* SEO Card Container */
+  .seo-card {
+    width: calc(33.333% - 15px);
+    margin: 7.5px;
+  }
+
+  /* Card icon styling */
+  .seo-card-icon {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  /* Card Row Container */
+  .seo-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Button Styling */
+  .seo-button {
+    margin-left: 40px;
+    margin-top: 0px;
+    max-width: 150px;
+    padding: 10px 10px 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .seo-view-more-button,
+  .seo-learn-more-button {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  /* Arrow Icon Styling */
+  .seo-arrow-icon {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  /* Dot Icon Styling */
+  .seo-dot {
+    font-size: 20px;
+  }
+
+  /* Bottom Section Heading */
+  .seo-bottom-heading {
+    font-size: 28px;
+    padding-left: 10px;
+  }
+
+  /* Description Text Styling */
+  .seo-description {
+    width: 100%;
+    height: auto !important;
+    font-size: 16px;
+    line-height: 2;
+    padding-left: 10px;
+  }
+
+  /* Image Styling */
+  .seo-image {
+    width: 100%;
+    height: auto !important;
+  }
+
+  /* Learn More Button Position */
+  .seo-learn-more-button {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+
+  /* Bottom Content Margin */
+  .seo-bottom-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Bottom Section Padding */
+  .seo-bottom-row {
+    padding-top: 50px;
+  }
+
+  /* Background Images and Styling */
+  .mirror-image {
+    background-size: 400px 600px, 1000px 200px, 120px 180px;
+    background-position: right bottom, center bottom, 0 10%;
+  }
+}
+
 .slick-slide {
   padding: 0 10px;
 }

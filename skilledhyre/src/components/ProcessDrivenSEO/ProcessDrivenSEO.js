@@ -172,6 +172,9 @@ import Animation from "./Animation";
 const ProcessDrivenSEO = () => {
   const [activeCard, setActiveCard] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+  const [isTablet, setIsTablet] = useState(
+    window.innerWidth >= 768 && window.innerWidth <= 1024
+  );
 
   const cardsData = [
     {
@@ -221,6 +224,7 @@ const ProcessDrivenSEO = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 767);
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth <= 1024);
     };
     window.addEventListener("resize", handleResize);
     return () => {
@@ -232,10 +236,26 @@ const ProcessDrivenSEO = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: isTablet ? 3 : 1,
     slidesToScroll: 1,
-    centerMode: false, // Ensure that center mode is off
-    centerPadding: "0px", // Remove padding around center slide
+    centerMode: false,
+    centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const handleCardClick = (index) => {
@@ -246,7 +266,7 @@ const ProcessDrivenSEO = () => {
     <div className="container-fluid seo mirror-image bottom-mirror-image">
       {/* <Animation /> */}
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-8 col-sm-12">
           <h6 className="mb-4 seo-sub-heading">
             <span className="seo-dot">•</span>Build your small business
           </h6>
@@ -256,7 +276,7 @@ const ProcessDrivenSEO = () => {
             Process-Driven SEO
           </h2>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 col-sm-12">
           <Button href="/start-now" className="seo-button seo-view-more-button">
             View More
             <IoIosArrowRoundForward className="seo-arrow-icon seo-view-more-arrow-icon" />
@@ -266,7 +286,7 @@ const ProcessDrivenSEO = () => {
 
       <Container>
         <Row className="seo-card-row">
-          {isMobile ? (
+          {isMobile || isTablet ? (
             <Slider {...settings}>
               {cardsData.map((card, index) => (
                 <div

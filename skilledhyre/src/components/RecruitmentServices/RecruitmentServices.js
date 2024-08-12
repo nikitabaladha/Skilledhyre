@@ -22,7 +22,7 @@ function RecruitmentServices() {
   }, []);
 
   return (
-    <div className="container mt-5 mb-4">
+    <div className=" recruitment-container mt-5 mb-4">
       <h6 className="text-center mb-2 recruitment-services-sub-heading">
         <span className="recruitment-services-dot">•</span>RECRUITMENT SERVICES
         WE PROVIDE

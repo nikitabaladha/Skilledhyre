@@ -52,6 +52,10 @@
   border-radius: 25px;
 }
 
+.recruitment-container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
 /* Styles for the row containing the service cards */
 .recruitment-services-card-row {
   margin-left: 50px;
@@ -106,15 +110,13 @@
   }
 }
 
-/* ================================================================== */
-/* Media query for devices with a max-width of 767px */
+/* Media query for phone devices with a max-width of 767px */
 @media only screen and (max-width: 767px) {
-  .container {
+  .recruitment-container {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* Header styles */
   .recruitment-services-sub-heading {
     font-size: 14px;
     margin-bottom: 8px;
@@ -125,7 +127,6 @@
     margin-bottom: 20px;
   }
 
-  /* Card styles */
   .recruitment-services-card-row {
     margin-left: 0;
     margin-right: 0;
@@ -148,16 +149,65 @@
     line-height: 2;
   }
 
-  /* Adjustments for text alignment */
   .recruitment-services-dot {
     font-size: 20px;
     margin-right: 5px;
     margin-left: 5px;
   }
 
-  /* Animation styles */
   .zoomIn {
     -webkit-animation-duration: 0.7s;
     animation-duration: 0.7s;
+  }
+}
+
+/* Media query for devices with a screen width between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .recruitment-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .recruitment-services-sub-heading {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .recruitment-services-heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .recruitment-services-card-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .recruitment-services-card {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .recruitment-services-card-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .recruitment-services-text {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .recruitment-services-dot {
+    font-size: 22px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .zoomIn {
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
   }
 }

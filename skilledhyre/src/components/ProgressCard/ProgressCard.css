@@ -58,6 +58,7 @@
 .progress-props {
   background-color: #0049b1;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* Animation for sliding the cards in from below */
@@ -133,5 +134,22 @@
 
   .percentage-text {
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .progress-props .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .progress-card {
+    margin-bottom: 20px;
+  }
+
+  .progress-props {
+    background-color: #0049b1;
+    padding-left: 70px;
+    padding-right: 40px;
   }
 }

@@ -95,7 +95,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2); /* Adjust color if needed */
+  background-color: rgba(255, 255, 255, 0.2);
   transition: left 0.4s ease;
   z-index: 0;
 }
@@ -180,13 +180,11 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
-/* ================= */
-
 /* ----------------------------------
    Responsive Media Queries
 ---------------------------------- */
 
-/* Media query for devices with a max-width of 767px */
+/* Media query for Phone devices with a max-width of 767px */
 @media only screen and (max-width: 767px) {
   .about-us {
     display: flex;
@@ -195,7 +193,7 @@
     text-align: center;
     padding-top: 50px;
   }
-  /* Adjust the padding for better spacing on small screens */
+
   .about-us-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -205,14 +203,12 @@
     box-sizing: border-box;
   }
 
-  /* Adjust image settings for better responsiveness */
   .about-us-image img {
     width: 100%;
     height: auto;
     justify-content: center;
   }
 
-  /* Adjust the text styles for better readability */
   .find-out-more-text {
     font-size: 14px;
     margin-bottom: 8px;
@@ -270,5 +266,91 @@
     margin-top: 10px;
     text-align: center;
     margin-left: 125px;
+  }
+}
+
+/* Media query for tablet devices with a screen width between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 15px;
+  }
+
+  .about-us-image,
+  .about-us-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-us-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .about-us-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .find-out-more-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+
+  .about-us-title {
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .about-us-description {
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .start-now-button {
+    font-size: 15px;
+    padding: 8px 8px 8px 16px;
+    border-radius: 35px;
+    margin-left: 260px;
+    margin-right: 260px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .arrow-icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .play-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    margin-left: 250px;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .how-it-works-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .how-it-works-text {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
   }
 }

@@ -39,7 +39,6 @@ const ProgressCard = ({ title, percentage }) => {
           text={`${progress}%`}
           styles={buildStyles({
             textSize: "16px",
-            // fontWeight: "bold",
             pathColor: "#00c3ff",
             textColor: "#FFFFFF",
             trailColor: "#0049b1",

@@ -202,3 +202,76 @@
     margin-left: 10px;
   }
 }
+
+/* For screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-card-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* Contact Card Styles */
+  .contact-card {
+    width: 230px;
+    height: 190px;
+    margin-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .contact-card-icon {
+    font-size: 65px;
+  }
+
+  .contact-card-title {
+    font-size: 15px;
+  }
+
+  .contact-card-text1 {
+    font-size: 22px;
+  }
+
+  .contact-card-text2 {
+    font-size: 15px;
+  }
+
+  .contact-form-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-form container {
+    width: 50%; /* Both containers will take up 50% of the width */
+
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+
+  .text-field {
+    border-radius: 22px;
+    padding-top: 11px;
+    padding-left: 18px;
+    padding-bottom: 11px;
+    margin-bottom: 18px;
+  }
+
+  .map-container iframe {
+    width: 50%;
+    height: 300px;
+  }
+
+  /* Button Styles */
+  .get-in-touch-button {
+    font-size: 15px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 35px;
+  }
+
+  .arrow-icon {
+    font-size: 1rem;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 12px;
+  }
+}

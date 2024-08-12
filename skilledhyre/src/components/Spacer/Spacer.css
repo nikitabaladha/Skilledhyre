@@ -1,17 +1,3 @@
-/* Spacer Component CSS */
-
-/* Upper spacer: Dark blue background with a specific height */
-.upper-spacer {
-  background-color: #0049b1;
-  height: 120px;
-}
-
-/* Lower spacer: Slightly lighter blue background with a different height */
-.lower-spacer {
-  background-color: #1458b9;
-  height: 60px;
-}
-
 /* Spacer image: Set width and height for the image */
 .spacer-img {
   width: 1519px;
@@ -20,19 +6,17 @@
 
 /* Media query for small devices */
 @media only screen and (max-width: 767px) {
-  /* Adjust the spacer image for small devices */
   .spacer-img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    content: url("../../images/spacer-for-phone.jpg"); /* Use a different image for small devices */
+    width: 100%;
+    height: auto;
+    content: url("../../images/spacer-for-phone.jpg");
   }
+}
 
-  /* Adjust spacer heights if needed */
-  .upper-spacer {
-    height: 80px; /* Example height adjustment */
-  }
-
-  .lower-spacer {
-    height: 40px; /* Example height adjustment */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .spacer-img {
+    width: 100%;
+    height: auto;
+    content: url("../../images/spacer-for-tablet.jpg");
   }
 }
