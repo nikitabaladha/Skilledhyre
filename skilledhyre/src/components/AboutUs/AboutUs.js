@@ -24,7 +24,9 @@ const AboutUs = () => {
             Skilledhyre as a skilled, experienced team of IT services
           </h2>
           <div className="how-it-works-container">
-            <i className="fas fa-play play-icon"></i>
+            <div className="play-icon-wrapper">
+              <i className="fas fa-play play-icon"></i>
+            </div>
             <p className="how-it-works-text">How It Works</p>
           </div>
           <Button
