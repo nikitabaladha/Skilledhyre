@@ -66,47 +66,49 @@ const Navbar = () => {
               >
                 <li>
                   <Link className="dropdown-item" to="/action">
-                    WEBSITE DESIGN
+                    <span className="dropdown-dot">•</span> WEBSITE DESIGN
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    WEB DEVELOPMENT
+                    <span className="dropdown-dot">•</span> WEB DEVELOPMENT
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/something-else">
-                    Software Development
+                    <span className="dropdown-dot">•</span> Software Development
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    E-Commerce Development
+                    <span className="dropdown-dot">•</span> E-Commerce
+                    Development
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    Digital Marketing
+                    <span className="dropdown-dot">•</span> Digital Marketing
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    Mobile Application Development
+                    <span className="dropdown-dot">•</span> Mobile Application
+                    Development
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    E-Learning Solution
+                    <span className="dropdown-dot">•</span> E-Learning Solution
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    ERP SOLUTION
+                    <span className="dropdown-dot">•</span> ERP SOLUTION
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    API Integration
+                    <span className="dropdown-dot">•</span> API Integration
                   </Link>
                 </li>
               </ul>
@@ -129,32 +131,32 @@ const Navbar = () => {
               >
                 <li>
                   <Link className="dropdown-item" to="/action">
-                    Permanent Staffing
+                    <span className="dropdown-dot">•</span> Permanent Staffing
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/something-else">
-                    Contract Staffing
+                    <span className="dropdown-dot">•</span> Contract Staffing
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    HR Consulting
+                    <span className="dropdown-dot">•</span> HR Consulting
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    Contract to Hire
+                    <span className="dropdown-dot">•</span> Contract to Hire
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    RPO
+                    <span className="dropdown-dot">•</span> RPO
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    Head Hunting
+                    <span className="dropdown-dot">•</span> Head Hunting
                   </Link>
                 </li>
               </ul>
@@ -183,32 +185,38 @@ const Navbar = () => {
               >
                 <li>
                   <Link className="dropdown-item" to="/action">
-                    White Label Digital Marketing
+                    <span className="dropdown-dot">•</span> White Label Digital
+                    Marketing
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    White Label Web Development
+                    <span className="dropdown-dot">•</span> White Label Web
+                    Development
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/something-else">
-                    White Label App Development
+                    <span className="dropdown-dot">•</span> White Label App
+                    Development
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/action">
-                    Outsourced Software Development
+                    <span className="dropdown-dot">•</span> Outsourced Software
+                    Development
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/another-action">
-                    Dedicated Software Teams
+                    <span className="dropdown-dot">•</span> Dedicated Software
+                    Teams
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/something-else">
-                    Dedicated Marketing Teams
+                    <span className="dropdown-dot">•</span> Dedicated Marketing
+                    Teams
                   </Link>
                 </li>
               </ul>

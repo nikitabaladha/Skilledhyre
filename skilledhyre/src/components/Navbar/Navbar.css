@@ -45,6 +45,10 @@
   list-style: none;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
 .home-link {
   color: white !important;
 }
@@ -153,6 +157,22 @@ nav ul li a:hover::before {
   line-height: 2;
 }
 
+.dropdown-dot {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00c3ff;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.dropdown-item:hover .dropdown-dot {
+  opacity: 1;
+}
+
 .dropdown-item::before {
   content: none;
 }
@@ -221,6 +241,7 @@ nav ul li a:hover::before {
 
   .navbar-collapse {
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     bottom: 0;
@@ -313,6 +334,7 @@ nav ul li a:hover::before {
 
   .navbar-collapse {
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     bottom: 0;

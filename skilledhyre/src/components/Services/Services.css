@@ -29,7 +29,6 @@
 
 /* Title styles for the services section */
 .services-heading {
-  position: relative;
   font-size: 36px;
   font-weight: 900;
   line-height: 1.2;
@@ -55,7 +54,7 @@
   padding-right: 50px;
   padding-bottom: 30px;
   padding-top: 30px;
-  position: relative;
+
   overflow: hidden;
   box-sizing: border-box;
   text-align: center;

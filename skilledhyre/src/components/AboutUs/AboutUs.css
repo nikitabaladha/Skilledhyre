@@ -73,7 +73,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 25px;
-  position: relative;
+
   font-family: "Red Hat Display", sans-serif;
   overflow: hidden;
   box-sizing: border-box;
@@ -98,11 +98,6 @@
   color: white;
   background-color: #fe4c1c;
   border-color: #fe4c1c;
-}
-
-.start-now-button .arrow-icon {
-  position: relative;
-  z-index: 1;
 }
 
 /* ----------------------------------

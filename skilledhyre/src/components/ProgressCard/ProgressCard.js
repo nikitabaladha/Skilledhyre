@@ -47,7 +47,7 @@ const ProgressCard = ({ title, percentage }) => {
           strokeWidth={10}
           className="percentage-text"
         />
-        <div className="outer-circle"></div>{" "}
+        <div className="outer-circle"></div>
       </div>
       <h4 className="progress-title">{title}</h4>
     </div>

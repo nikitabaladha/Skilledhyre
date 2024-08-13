@@ -28,7 +28,6 @@
 
 /* Styling for the main heading in the testimonial section */
 .testimonial-heading {
-  position: relative;
   margin-bottom: 25px;
   font-size: 36px;
   font-weight: 900;
@@ -76,7 +75,7 @@
 /* Styling for the carousel controls */
 .carousel-controls {
   position: absolute;
-  top: 40%; /* Position the controls vertically */
+  top: 40%;
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,168 @@
+/* ProgressCard Component CSS */
+
+/* Container for individual progress cards */
+.progress-card {
+  width: 270px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: #0049b1;
+  text-align: center;
+
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.progress-bar-container {
+  position: static;
+}
+/* Container for the circular progress bar */
+.progress-bar-container {
+  /* position: relative; */
+  width: 195px;
+  height: 195px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: baseline;
+  /* z-index: 1; */
+}
+
+/* Outer circle styling around the progress bar */
+.outer-circle {
+  position: relative;
+  top: 98px;
+  left: 98px;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 18px solid #003f99;
+  box-sizing: border-box;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Styling for the title below the progress bar */
+.progress-title {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 15px 0 0;
+}
+
+/* Container for the progress cards, sets background color and padding */
+.progress-props {
+  background-color: #0049b1;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Animation for sliding the cards in from below */
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Keyframes for the slideInUp animation */
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Additional styling for the percentage text inside the progress bar */
+.percentage-text {
+  font-weight: bold;
+}
+
+/* Responsive Mobile devices style (small screens, less than 767px) */
+@media only screen and (max-width: 767px) {
+  .progress-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .progress-bar-container {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 10px;
+  }
+
+  .progress-bar-container {
+    position: static;
+  }
+  .outer-circle {
+    /* position: relative;
+    width: 90px;
+    height: 90px;
+    border-width: 12px;
+    position: absolute;
+    top: 85px;
+    left: 85px; */
+
+    top: -98px;
+    left: 98px;
+    /* width: 125px;
+    height: 125px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 18px solid #003f99;
+    box-sizing: border-box;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+
+  .progress-title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .percentage-text {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Tablet devices style (screens between 768px to 1024px) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .progress-props .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .progress-card {
+    margin-bottom: 20px;
+  }
+
+  .progress-props {
+    background-color: #0049b1;
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+}

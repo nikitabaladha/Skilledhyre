@@ -1,9 +1,15 @@
-/* SEO Section Container */
-.seo {
+SEO Section Container .seo {
   padding-bottom: 320px;
-  /* position: relative; */
+  position: relative;
 }
-
+.onum-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 /* Sub-heading styling */
 .seo-sub-heading {
   color: #0ec6ff;
@@ -20,6 +26,8 @@
 
 /* Main heading styling */
 .seo-heading {
+  position: relative;
+  z-index: 2;
   box-sizing: border-box;
   color: #fff;
   cursor: auto;
@@ -49,6 +57,7 @@
 
 /* SEO Card Container */
 .seo-card {
+  position: relative;
   padding: 15px;
   box-sizing: border-box;
   text-align: center;
@@ -129,6 +138,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   outline: 0;
+  position: relative;
   font-family: "Red Hat Display", sans-serif;
   overflow: hidden;
   box-sizing: border-box;
@@ -258,24 +268,35 @@
 /* Bottom Section Padding */
 .seo-bottom-row {
   padding-top: 80px;
+  position: relative;
 }
 
 /* Background Images and Styling */
-.seo-background-image {
+/* .mirror-image {
+  background-image: url("../../images/mirror-image.png"),
+    url("../../images/mirror-bottom.jpg"), url("../../images/seo-left.png");
+  background-color: #1458b9;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll;
+  background-position: right bottom, center bottom, 0 15%;
+  background-size: 500px 700px, 1550px 200px, 160px 260px;
+  z-index: -1;
+} */
+
+.mirror-image {
   background-image: url("../../images/seo-bottom.png"),
     url("../../images/seo-left.png");
   background-color: #1458b9;
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll, scroll;
   background-position: center bottom, 0 15%;
-  background-size: 1600px 800px, 160px 260px;
+  background-size: 2000px 800px, 160px 260px;
+  z-index: -1;
 }
-
 /* Responsive style for Mobile devices less than 767px*/
 
 @media only screen and (max-width: 767px) {
   .seo {
-    padding-top: 10px;
     padding-bottom: 100px;
   }
 
@@ -372,11 +393,11 @@
     margin-right: 0;
   }
 
-  .seo-background-image {
-    background-image: url("../../images/seo-bottom-phone.png");
-    background-size: cover;
-    background-position: bottom;
-    background-size: 400px 800px;
+  .mirror-image {
+    background-image: url("../../images/mirror-image.png"),
+      url("../../images/mirror-bottom.jpg");
+    background-size: cover, cover;
+    background-position: center, center;
   }
 
   .seo-card-row {
@@ -409,7 +430,6 @@
 
   .seo {
     padding-bottom: 50px;
-    padding-top: 50px;
   }
 
   .seo-sub-heading {
@@ -507,11 +527,9 @@
     padding-top: 50px;
   }
 
-  .seo-background-image {
-    background-image: url("../../images/seo-bottom.png");
-    background-size: cover;
-    background-position: bottom;
-    background-size: 800px 500px;
+  .mirror-image {
+    background-size: 400px 600px, 1000px 200px, 120px 180px;
+    background-position: right bottom, center bottom, 0 10%;
   }
 }
 
