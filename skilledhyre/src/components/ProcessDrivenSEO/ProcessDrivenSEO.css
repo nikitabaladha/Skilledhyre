@@ -280,6 +280,7 @@
 
 @media only screen and (max-width: 767px) {
   .seo {
+    padding-top: 10px;
     padding-bottom: 100px;
   }
 
@@ -413,6 +414,7 @@
 
   .seo {
     padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .seo-sub-heading {
