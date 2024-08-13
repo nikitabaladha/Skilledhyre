@@ -139,11 +139,6 @@ li {
   .span-text {
     font-size: 14px;
   }
-
-  /* SVG Container Styling */
-  .svg-container {
-    text-align: center;
-  }
 }
 
 /* For screens with a width between 768px and 1024px (Tablet) */
@@ -185,13 +180,7 @@ li {
     padding-bottom: 8px;
   }
 
-  /* Span Text Styling */
   .span-text {
     font-size: 15px;
-  }
-
-  /* SVG Container Styling */
-  .svg-container {
-    text-align: center;
   }
 }
