@@ -5,9 +5,9 @@ class Animation extends Component {
     super(props);
     this.canvasRef = React.createRef();
     this.opts = {
-      amount: 8,
+      amount: 10,
       radius: 1,
-      thickness: 2,
+      thickness: 0.8,
       rotSpeed: 0.1,
       gravity: 0.8,
     };
@@ -56,7 +56,7 @@ class Animation extends Component {
           top: 0,
           left: 0,
           width: "100%",
-          height: "70%",
+          height: "100%",
         }}
       />
     );
@@ -77,6 +77,7 @@ class Dot {
   update() {
     this.pos.x += this.vel.x;
     this.pos.y += this.vel.y;
+
     if (this.pos.y > window.innerHeight) {
       this.pos.y = 0;
     }
