@@ -5,7 +5,7 @@ class Animation extends Component {
     super(props);
     this.canvasRef = React.createRef();
     this.opts = {
-      amount: 6,
+      amount: 8,
       radius: 1,
       thickness: 2,
       rotSpeed: 0.1,
