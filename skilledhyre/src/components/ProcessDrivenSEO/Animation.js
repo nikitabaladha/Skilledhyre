@@ -1,4 +1,3 @@
-// Animation.js
 import React, { Component } from "react";
 
 class Animation extends Component {
@@ -53,7 +52,7 @@ class Animation extends Component {
       <canvas
         ref={this.canvasRef}
         style={{
-          position: "relative",
+          position: "absolute",
           top: 0,
           left: 0,
           width: "100%",

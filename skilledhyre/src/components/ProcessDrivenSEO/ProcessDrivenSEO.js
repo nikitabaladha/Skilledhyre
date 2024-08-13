@@ -3,6 +3,7 @@ import { Button, Container, Row, Col, Image } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Slider from "react-slick";
 import "./ProcessDrivenSEO.css";
+import Animation from "./Animation";
 
 import seoImage1 from "../../images/seo-1.png";
 import seoImage2 from "../../images/seo-2.png";
@@ -121,7 +122,8 @@ const ProcessDrivenSEO = () => {
   };
 
   return (
-    <div className="container-fluid seo mirror-image bottom-mirror-image">
+    <div className="container-fluid seo seo-background-image">
+      <Animation />
       <div className="row">
         <div className="col-md-8 col-sm-12">
           <h6 className="mb-4 seo-sub-heading">

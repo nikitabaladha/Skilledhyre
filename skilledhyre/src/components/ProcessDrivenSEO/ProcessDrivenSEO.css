@@ -1,7 +1,7 @@
 /* SEO Section Container */
 .seo {
   padding-bottom: 320px;
-  /* position: fixed; */
+  /* position: relative; */
 }
 
 /* Sub-heading styling */
@@ -21,7 +21,7 @@
 /* Main heading styling */
 .seo-heading {
   position: relative;
-  z-index: 2;
+
   box-sizing: border-box;
   color: #fff;
   cursor: auto;
@@ -266,15 +266,14 @@
 }
 
 /* Background Images and Styling */
-.mirror-image {
-  background-image: url("../../images/mirror-image.png"),
-    url("../../images/mirror-bottom.jpg"), url("../../images/seo-left.png");
+.seo-background-image {
+  background-image: url("../../images/seo-bottom.png"),
+    url("../../images/seo-left.png");
   background-color: #1458b9;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll;
-  background-position: right bottom, center bottom, 0 15%;
-  background-size: 500px 700px, 1550px 200px, 160px 260px;
-  z-index: -1;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  background-position: center bottom, 0 15%;
+  background-size: 1600px 800px, 160px 260px;
 }
 
 /* Responsive style for Mobile devices less than 767px*/
@@ -377,11 +376,11 @@
     margin-right: 0;
   }
 
-  .mirror-image {
-    background-image: url("../../images/mirror-image.png"),
-      url("../../images/mirror-bottom.jpg");
-    background-size: cover, cover;
-    background-position: center, center;
+  .seo-background-image {
+    background-image: url("../../images/seo-bottom-phone.png");
+    background-size: cover;
+    background-position: bottom;
+    background-size: 400px 800px;
   }
 
   .seo-card-row {
@@ -511,9 +510,11 @@
     padding-top: 50px;
   }
 
-  .mirror-image {
-    background-size: 400px 600px, 1000px 200px, 120px 180px;
-    background-position: right bottom, center bottom, 0 10%;
+  .seo-background-image {
+    background-image: url("../../images/seo-bottom.png");
+    background-size: cover;
+    background-position: bottom;
+    background-size: 800px 500px;
   }
 }
 
