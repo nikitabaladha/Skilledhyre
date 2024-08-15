@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import Navbar from "../../HomeSection/Navbar/Navbar";
 import "./WebsiteDesign.css";
 import websiteDesignImage2 from "../../../images/WebsiteDesignImages/website-design-2.png";
@@ -7,21 +8,42 @@ import websiteDesignImage3 from "../../../images/WebsiteDesignImages/website-des
 import websiteDesignImage4 from "../../../images/WebsiteDesignImages/website-design-4.png";
 import websiteDesignImage5 from "../../../images/WebsiteDesignImages/website-design-5.png";
 import Footer from "../../HomeSection/Footer/Footer";
-import { PiGreaterThanLight } from "react-icons/pi";
 
 const WebsiteDesign = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(
+        ".web-des-left-img, .web-des-right-img"
+      );
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          element.classList.add("slide-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <Navbar />
-      <>
+
+      <div className="web-des">
         {/* First Row*/}
         <div className="container-fluid web-des-first">
           <div>
             <h1>WEBSITE DESIGN</h1>
             <p>
-              <Link className="homepage-link">Home</Link>
-              <span className="greater-than-icon">
-                <PiGreaterThanLight />
+              <Link to="/" className="homepage-link">
+                Home
+              </Link>
+              <span class="material-symbols-outlined greater-than-icon">
+                chevron_right
               </span>
               <span className="current-page">WEBSITE DESIGN</span>
             </p>
@@ -38,10 +60,13 @@ const WebsiteDesign = () => {
                 className="web-des-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center">
-              <h6 className="display-4">Website Development</h6>
+            <div className="col-md-6 d-flex flex-column web-des-sec-content">
+              <h6>
+                <span className="recruitment-services-dot">•</span>Website
+                Development
+              </h6>
               <h2>User-Centered Design</h2>
-              <p className="">
+              <p>
                 Skilledhyre has a number of clients from different businesses.
                 This has enhanced our experience of offering attractive and
                 effective website designs for various businesses in different
@@ -63,11 +88,11 @@ const WebsiteDesign = () => {
         </div>
 
         {/* Third row */}
-        {/* <div className="container-fluid web-des-thi">
+        <div className="container-fluid web-des-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center">
+            <div className="col-md-6 d-flex flex-column web-des-thi-content">
               <h2>A strategic approach to website design and development</h2>
-              <p className="">
+              <p>
                 In this growing era of Internet, web presence is an essential
                 element for any business to grow. Yet, a creating a mere website
                 is not enough. Meeting the expectations of their growing
@@ -90,21 +115,21 @@ const WebsiteDesign = () => {
               />
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* Fourth row */}
-        {/* <div className="container-fluid web-des-fourth">
+        <div className="container-fluid web-des-fourth">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center">
-              <div className="col-md-12">
+            <div className="col-md-6 d-flex flex-column justify-content-center web-des-card">
+              <div className="col-md-12 ">
                 <img
                   src={websiteDesignImage4}
                   alt="Website Design"
-                  className="web-des-bottom-img"
+                  className="web-des-card-img"
                 />
               </div>
-              <div>
-                <h2>Make beautiful, conversion-focused websites</h2>
+              <div className="web-des-fourth-content">
+                <h3>Make beautiful, conversion-focused websites</h3>
                 <p>
                   Our objective is not just to offer pleasing designs to our
                   clients but also effective message that draws the attention of
@@ -120,16 +145,16 @@ const WebsiteDesign = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 d-flex flex-column justify-content-center web-des-card">
               <div>
                 <img
                   src={websiteDesignImage5}
                   alt="Website Design"
-                  className="web-des-bottom-img"
+                  className="web-des-card-img"
                 />
               </div>
-              <div>
-                <h2>We Understand</h2>
+              <div className="web-des-fourth-content">
+                <h3>We Understand</h3>
                 <p>
                   That every company has A different requirement. The same web
                   application does not work for everyone. Hence, we offer tailor
@@ -148,10 +173,10 @@ const WebsiteDesign = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <Footer />
-      </>
+      </div>
     </>
   );
 };

@@ -1,5 +1,9 @@
 /* WebsiteDesign.css */
 
+.web-des {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 .web-des-first {
   background-image: url("../../../images/WebsiteDesignImages/website-design-1.jpg");
   background-size: cover;
@@ -9,7 +13,6 @@
 }
 
 .web-des-first {
-  font-family: "Red Hat Display", sans-serif;
   display: block;
   text-align: center;
 }
@@ -29,14 +32,16 @@
   line-height: 1.875;
 }
 
+.homepage-link:hover {
+  color: orangered;
+}
 .web-des-first p {
   padding-top: 20px;
 }
 
 .greater-than-icon {
-  font-size: 11px;
   color: #a5b7d2;
-  font-weight: 500;
+  vertical-align: middle;
 }
 
 .current-page {
@@ -51,11 +56,155 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
+  padding-top: 30px;
+}
+
+.web-des-sec h6 {
+  color: #074bb6;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.web-des-sec h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.web-des-thi h2 {
+  color: #083bcc;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: "Times New Roman", Sans-serif;
+}
+
+.web-des-sec-content {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.web-des-thi-content {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.web-des-sec p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.web-des-thi p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.web-des-sec-dot {
+  color: #074bb6;
+  font-size: 14px;
 }
 
 .web-des-sec {
-  /* background-color: #f2f2f2; */
-  /* padding: 50px 0; */
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.web-des-thi {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.web-des-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0px;
+  margin: 10px;
+  width: calc(50% - 30px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.web-des-card-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.web-des-card:hover .web-des-card-img {
+  transform: scale(1.1);
+}
+
+.web-des-fourth {
+  padding-top: 20px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.web-des-fourth-content {
+  text-align: center;
+  padding: 40px 40px 40px 40px;
+}
+
+.web-des-card:hover .web-des-fourth-content h3 {
+  color: #074bb6;
+}
+
+.web-des-fourth-content h3 {
+  color: #000;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.web-des-fourth-content p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+/* WebsiteDesign.css */
+
+/* Initial state - hide and position below */
+.web-des-left-img,
+.web-des-right-img {
+  opacity: 0;
+  transform: translateY(100px); /* Start 100px below */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* When the element is in view, apply the slide-in animation */
+.slide-in {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.web-des-left-img.slide-in,
+.web-des-right-img.slide-in {
+  animation: slideInFromBottom 1s ease-out forwards;
 }
