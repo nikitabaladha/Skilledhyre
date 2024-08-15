@@ -1,0 +1,61 @@
+/* WebsiteDesign.css */
+
+.web-des-first {
+  background-image: url("../../../images/WebsiteDesignImages/website-design-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.web-des-first {
+  font-family: "Red Hat Display", sans-serif;
+  display: block;
+  text-align: center;
+}
+
+.web-des-first h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.homepage-link {
+  color: #a5b7d2;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.web-des-first p {
+  padding-top: 20px;
+}
+
+.greater-than-icon {
+  font-size: 11px;
+  color: #a5b7d2;
+  font-weight: 500;
+}
+
+.current-page {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #1a1b1e;
+}
+
+.web-des-left-img,
+.web-des-right-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.web-des-sec {
+  /* background-color: #f2f2f2; */
+  /* padding: 50px 0; */
+}

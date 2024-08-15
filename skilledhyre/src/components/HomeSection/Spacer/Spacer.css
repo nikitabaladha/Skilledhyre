@@ -9,7 +9,7 @@
   .spacer-img {
     width: 100%;
     height: auto;
-    content: url("../../images/spacer-for-phone.jpg");
+    content: url("../../../images/spacer-for-phone.jpg");
   }
 }
 
@@ -17,6 +17,6 @@
   .spacer-img {
     width: 100%;
     height: auto;
-    content: url("../../images/spacer-for-tablet.jpg");
+    content: url("../../../images/spacer-for-tablet.jpg");
   }
 }

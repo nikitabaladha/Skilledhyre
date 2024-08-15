@@ -5,12 +5,12 @@ import Slider from "react-slick";
 import "./ProcessDrivenSEO.css";
 import Animation from "./Animation";
 
-import seoImage1 from "../../images/seo-1.png";
-import seoImage2 from "../../images/seo-2.png";
-import seoImage3 from "../../images/seo-3.png";
-import seoImage4 from "../../images/seo-4.png";
-import seoImage5 from "../../images/seo-5.png";
-import seoImage6 from "../../images/seo-6.png";
+import seoImage1 from "../../../images/seo-1.png";
+import seoImage2 from "../../../images/seo-2.png";
+import seoImage3 from "../../../images/seo-3.png";
+import seoImage4 from "../../../images/seo-4.png";
+import seoImage5 from "../../../images/seo-5.png";
+import seoImage6 from "../../../images/seo-6.png";
 
 import { GrPieChart } from "react-icons/gr";
 import { ImSearch } from "react-icons/im";

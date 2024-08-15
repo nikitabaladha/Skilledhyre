@@ -1,6 +1,6 @@
 /* Unified container for background image */
 .background-container {
-  background-image: url("../../images/navbar-aboutus.png");
+  background-image: url("../../../images/navbar-aboutus.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

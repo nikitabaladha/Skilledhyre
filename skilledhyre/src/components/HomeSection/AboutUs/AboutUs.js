@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import aboutUsImage from "../../images/about-us-1.png";
+
+import aboutUsImage from "../../../images/about-us-1.png";
 
 import "./AboutUs.css";
 

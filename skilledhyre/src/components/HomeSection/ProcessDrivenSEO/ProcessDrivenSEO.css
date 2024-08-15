@@ -263,8 +263,8 @@
 
 /* Background Images and Styling */
 .seo-background-image {
-  background-image: url("../../images/seo-bottom.png"),
-    url("../../images/seo-left.png");
+  background-image: url("../../../images/seo-bottom.png"),
+    url("../../../images/seo-left.png");
   background-color: #1458b9;
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll, scroll;
@@ -374,7 +374,7 @@
   }
 
   .seo-background-image {
-    background-image: url("../../images/seo-bottom-phone.png");
+    background-image: url("../../../images/seo-bottom-phone.png");
     background-size: cover;
     background-position: bottom;
     background-size: 400px 800px;
@@ -509,7 +509,7 @@
   }
 
   .seo-background-image {
-    background-image: url("../../images/seo-bottom.png");
+    background-image: url("../../../images/seo-bottom.png");
     background-size: cover;
     background-position: bottom;
     background-size: 800px 500px;

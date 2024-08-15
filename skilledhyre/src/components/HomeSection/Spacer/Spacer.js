@@ -1,6 +1,6 @@
 import React from "react";
 import "./Spacer.css";
-import spacerImage from "../../images/spacer.jpg";
+import spacerImage from "../../../images/spacer.jpg";
 
 const Spacer = () => {
   return (
