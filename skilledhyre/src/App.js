@@ -18,6 +18,11 @@ import InfluencerMarketing from "./components/ServicesSection/InfluencerMarketin
 import Branding from "./components/ServicesSection/Branding/Branding";
 
 import PermanentStaffing from "./components/StaffingSection/PermanentStaffing/PermanentStaffing";
+import ContractStaffing from "./components/StaffingSection/ContractStaffing/ContractStaffing";
+import HRConsulting from "./components/StaffingSection/HRConsulting/HRConsulting";
+import ContractToHire from "./components/StaffingSection/ContractToHire/ContractToHire";
+import RPO from "./components/StaffingSection/RPO/RPO";
+import HeadHunting from "./components/StaffingSection/HeadHunting/HeadHunting";
 
 function App() {
   return (
@@ -43,6 +48,11 @@ function App() {
           />
 
           <Route path="/permanent-staffing" element={<PermanentStaffing />} />
+          <Route path="/contract-staffing" element={<ContractStaffing />} />
+          <Route path="/hr-consulting" element={<HRConsulting />} />
+          <Route path="/contract-to-hire" element={<ContractToHire />} />
+          <Route path="/rpo" element={<RPO />} />
+          <Route path="/head-hunting" element={<HeadHunting />} />
         </Routes>
       </Router>
     </div>

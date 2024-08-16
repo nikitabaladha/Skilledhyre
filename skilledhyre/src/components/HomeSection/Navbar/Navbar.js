@@ -481,27 +481,27 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/something-else">
+                  <Link className="dropdown-item" to="/contract-staffing">
                     <span className="dropdown-dot">•</span> Contract Staffing
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/hr-consulting">
                     <span className="dropdown-dot">•</span> HR Consulting
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/contract-to-hire">
                     <span className="dropdown-dot">•</span> Contract to Hire
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/rpo">
                     <span className="dropdown-dot">•</span> RPO
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/head-hunting">
                     <span className="dropdown-dot">•</span> Head Hunting
                   </Link>
                 </li>
