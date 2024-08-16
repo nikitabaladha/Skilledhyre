@@ -1,0 +1,122 @@
+/* WebsiteDesign.css */
+
+.staffing {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.staffing-first {
+  background-image: url("../../images/ServicesSubPageImages/ser-sub-common-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.staffing-first {
+  display: block;
+  text-align: center;
+}
+
+.staffing-first h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.homepage-link {
+  color: #a5b7d2;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.homepage-link:hover {
+  color: orangered;
+}
+
+.staffing-first p {
+  padding-top: 20px;
+}
+
+.greater-than-icon {
+  color: #a5b7d2;
+  vertical-align: middle;
+}
+
+.current-page {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #1a1b1e;
+}
+
+.staffing-sec {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.staffing-dot {
+  color: #074bb6;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.staffing-thi {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.staffing-card-icon {
+  color: white;
+  font-size: 75px;
+  line-height: 1;
+  padding-bottom: 30px;
+  margin-right: 10px;
+}
+
+.staffing-card {
+  padding: 35px 25px 35px 20px;
+  border-style: solid;
+  border-width: 0px 0px 0px 30px;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 380px;
+}
+
+.staffing-card-1 {
+  background-color: #9c27b0;
+}
+
+.staffing-card-2 {
+  background-color: #00bcd4;
+}
+
+.staffing-card-3 {
+  background-color: #4caf50;
+}
+.staffing-card-4 {
+  background-color: #ff9800;
+}
+.staffing-card-5 {
+  background-color: #f33527;
+}
+.staffing-card-6 {
+  background-color: #e91e63;
+}
+
+.staffing-card-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: left;
+}
+
+.staffing-card-body {
+  display: flex;
+}

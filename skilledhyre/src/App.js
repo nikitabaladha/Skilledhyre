@@ -15,8 +15,9 @@ import ELearningSolution from "./components/ServicesSection/ELearningSolution/EL
 import ERPSolution from "./components/ServicesSection/ERPSolution/ERPSolution";
 import APIIntegration from "./components/ServicesSection/APIIntegration/APIIntegration";
 import InfluencerMarketing from "./components/ServicesSection/InfluencerMarketing/InfluencerMarketing";
-
 import Branding from "./components/ServicesSection/Branding/Branding";
+
+import PermanentStaffing from "./components/StaffingSection/PermanentStaffing/PermanentStaffing";
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
             path="/influencer-marketing"
             element={<InfluencerMarketing />}
           />
+
+          <Route path="/permanent-staffing" element={<PermanentStaffing />} />
         </Routes>
       </Router>
     </div>

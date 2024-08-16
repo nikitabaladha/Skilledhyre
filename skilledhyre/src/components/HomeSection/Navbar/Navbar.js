@@ -476,7 +476,7 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" to="/action">
+                  <Link className="dropdown-item" to="/permanent-staffing">
                     <span className="dropdown-dot">•</span> Permanent Staffing
                   </Link>
                 </li>
