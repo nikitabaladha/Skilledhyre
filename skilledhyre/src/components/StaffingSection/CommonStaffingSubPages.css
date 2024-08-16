@@ -55,17 +55,92 @@
 .staffing-sec {
   padding-left: 180px;
   padding-right: 180px;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.staffing-sec h6 {
+  color: #1a3cc3;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.staffing-sec h2 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #1a1b1e;
+  text-align: left;
+}
+
+.staffing-sec p {
+  color: #332d2d;
+  font-size: 16px;
+  line-height: 1.875;
 }
 
 .staffing-dot {
   color: #074bb6;
-  font-size: 20px;
+  font-size: 25px;
   padding-right: 10px;
 }
 
 .staffing-thi {
   padding-left: 180px;
   padding-right: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.staffing-thi-content {
+  text-align: center;
+}
+
+.staffing-thi h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1a1b1e;
+  text-align: center;
+}
+
+.staffing-dot-dash-line {
+  color: #074bb6;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staffing-decorative-dot {
+  font-size: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+  line-height: 1;
+}
+
+.staffing-decorative-line {
+  display: inline-block;
+  padding-top: 0px;
+  width: 50px;
+  height: 4px;
+  background-color: #074bb6;
+  margin-left: 5px;
+}
+
+.staffing-thi p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+}
+
+.staffing-card-row {
+  padding-top: 20px;
 }
 
 .staffing-card-icon {
@@ -83,8 +158,8 @@
   border-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
-  width: 380px;
+  padding-bottom: 15px;
+  width: 375px;
 }
 
 .staffing-card-1 {
@@ -113,10 +188,156 @@
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
-  font-family: "Red Hat Display", sans-serif;
   text-align: left;
 }
 
 .staffing-card-body {
   display: flex;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  margin-left: -35px;
+  margin-bottom: 45px;
+  background-color: #0039e4;
+  background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+  border-radius: 50%;
+  box-shadow: 10px 10px 30px 0px rgba(2, 156, 236, 0.3);
+}
+
+.staffing-four {
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.staffing-four-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  position: relative;
+  padding: 85px 35px 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.staffing-four-image {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  vertical-align: middle;
+}
+
+.staffing-four-arrow-image {
+  position: absolute;
+  top: -13px;
+  right: -70px;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.staffing-four-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #1a1b1e;
+}
+
+.staffing-four-card-text {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.staffing-four-card-body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.staffing-fif {
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.staffing-fif-content {
+  text-align: center;
+}
+
+.staffing-fif h2 {
+  color: #020101;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.staffing-fif-card {
+  border-style: solid;
+  border-width: 0px 0px 0px 5px;
+  border-color: #ffcc03;
+  box-shadow: 29px 29px 60px 0px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 60px 60px 40px 60px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 0%;
+}
+
+.staffing-fif-card-text {
+  margin: 0px 0px 25px 0px;
+  font-family: "Lato", Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1b1e;
+  text-align: left;
+}
+
+.staffing-fif-card-button {
+  text-align: right;
+}
+
+.staffing-fif-card .contact-us {
+  padding: 21px 55px 21px 55px;
+  font-family: "Lato", Sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #1815ce;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ffcc03;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 19px 19px 40px 0px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  outline: 0;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.staffing-fif-card .contact-us:hover {
+  background-color: #ffcc03;
 }

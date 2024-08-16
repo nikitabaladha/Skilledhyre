@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Card, Button } from "react-bootstrap";
 
 import Navbar from "../../HomeSection/Navbar/Navbar";
 import "../CommonStaffingSubPages.css";
@@ -12,6 +13,12 @@ import { FaRegHandshake } from "react-icons/fa";
 import { LuPencilRuler } from "react-icons/lu";
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2";
 import { MdOutlineStars } from "react-icons/md";
+import { RxDotsHorizontal } from "react-icons/rx";
+
+import researchCardImage from "../../../images/StaffingSubPageImages/research-card.png";
+import planningCardImage from "../../../images/StaffingSubPageImages/planning-card.png";
+import driveCardImage from "../../../images/StaffingSubPageImages/drive-card.jpg";
+import StaffingArrowImage from "../../../images/StaffingSubPageImages/staffing-arrow.png";
 
 const PermanentStaffing = () => {
   return (
@@ -64,96 +71,211 @@ const PermanentStaffing = () => {
         </div>
 
         {/* Third row */}
-
         <div className="container-fluid staffing-thi">
-          <div className="row contact-card-row">
-            <div className="col-md-4">
-              <div className="staffing-card staffing-card-1">
-                <div className="staffing-card-body">
-                  <div>
-                    <FiShoppingBag className="staffing-card-icon" />
-                  </div>
-                  <div>
-                    <h3 className="staffing-card-text">
-                      Fast-track Recruitment Services.
-                    </h3>
+          <div className="staffing-thi-content">
+            <h2>WHAT SKILLEDHYRE DELIVERS THROUGH PERMANENT STAFFING?</h2>
+
+            <div className="staffing-dot-dash-line">
+              <span className="staffing-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="staffing-decorative-line"></span>
+            </div>
+
+            <p>
+              Do you want to show your information with less gap? Then you
+              should definitely use this style!
+            </p>
+          </div>
+
+          <div className="container-fluid">
+            <div className="row staffing-card-row">
+              <div className="col-md-4">
+                <div className="staffing-card staffing-card-1">
+                  <div className="staffing-card-body">
+                    <div>
+                      <FiShoppingBag className="staffing-card-icon" />
+                    </div>
+                    <div>
+                      <h3 className="staffing-card-text">
+                        Fast-track Recruitment Services.
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="staffing-card staffing-card-2">
-                <div className="staffing-card-body">
-                  <div>
-                    <BsStopwatch className="staffing-card-icon" />
-                  </div>
-                  <div>
-                    <h3 className="staffing-card-text">
-                      Expertise in hiring process.
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="staffing-card staffing-card-3">
-                <div className="staffing-card-body">
-                  <div>
-                    <FaRegHandshake className="staffing-card-icon" />
-                  </div>
-                  <div>
-                    <h3 className="staffing-card-text">
-                      Expert recruitment team.
-                    </h3>
+              <div className="col-md-4">
+                <div className="staffing-card staffing-card-2">
+                  <div className="staffing-card-body">
+                    <div>
+                      <BsStopwatch className="staffing-card-icon" />
+                    </div>
+                    <div>
+                      <h3 className="staffing-card-text">
+                        Expertise in hiring process.
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="staffing-card staffing-card-4">
-                <div className="staffing-card-body">
-                  <div>
-                    <LuPencilRuler className="staffing-card-icon" />
-                  </div>
-                  <div>
-                    <h3 className="staffing-card-text">
-                      Talents Search Specialist are in MBA HR
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="staffing-card staffing-card-5">
-                <div className="staffing-card-body">
-                  <div>
-                    <HiOutlineDocumentMagnifyingGlass className="staffing-card-icon" />
-                  </div>
-                  <div>
-                    <h3 className="staffing-card-text">
-                      Staffing within budget.
-                    </h3>
+              <div className="col-md-4">
+                <div className="staffing-card staffing-card-3">
+                  <div className="staffing-card-body">
+                    <div>
+                      <FaRegHandshake className="staffing-card-icon" />
+                    </div>
+                    <div>
+                      <h3 className="staffing-card-text">
+                        Expert recruitment team.
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="staffing-card staffing-card-6">
-                <div className="staffing-card-body">
-                  <div>
-                    <MdOutlineStars className="staffing-card-icon" />
+              <div className="col-md-4">
+                <div className="staffing-card staffing-card-4">
+                  <div className="staffing-card-body">
+                    <div>
+                      <LuPencilRuler className="staffing-card-icon" />
+                    </div>
+                    <div>
+                      <h3 className="staffing-card-text">
+                        Talents Search Specialist are in MBA HR
+                      </h3>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="staffing-card-text">
-                      Fast-tTransparent and flexible.
-                    </h3>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="staffing-card staffing-card-5">
+                  <div className="staffing-card-body">
+                    <div>
+                      <HiOutlineDocumentMagnifyingGlass className="staffing-card-icon" />
+                    </div>
+                    <div>
+                      <h3 className="staffing-card-text">
+                        Staffing within budget.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="staffing-card staffing-card-6">
+                  <div className="staffing-card-body">
+                    <div>
+                      <MdOutlineStars className="staffing-card-icon" />
+                    </div>
+                    <div>
+                      <h3 className="staffing-card-text">
+                        Fast-tTransparent and flexible.
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="div-with-two-colors"></div> */}
+
+        {/* Fourth row */}
+        <div className="container-fluid staffing-four">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="staffing-four-card">
+                <img
+                  src={StaffingArrowImage}
+                  alt="Flask"
+                  className="staffing-four-arrow-image"
+                />
+                <div className="circle">01</div>
+                <div className="staffing-four-card-body">
+                  <img
+                    src={researchCardImage}
+                    alt="Flask"
+                    className="staffing-four-image"
+                  />
+                  <h5 className="staffing-four-card-title">Research</h5>
+                  <p className="staffing-four-card-text">
+                    Replacement for a person who left, or whether it's a new
+                    position
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="staffing-four-card">
+                <img
+                  src={StaffingArrowImage}
+                  alt="Flask"
+                  className="staffing-four-arrow-image"
+                />
+                <div className="circle">02</div>
+                <div className="staffing-four-card-body">
+                  <img
+                    src={planningCardImage}
+                    alt="Clipboard"
+                    className="staffing-four-image"
+                  />
+                  <h5 className="staffing-four-card-title">Planning</h5>
+                  <p className="staffing-four-card-text">
+                    We plan before starting recruitment to get positive result
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="staffing-four-card">
+                <img
+                  src={StaffingArrowImage}
+                  alt="Flask"
+                  className="staffing-four-arrow-image"
+                />
+                <div className="circle">03</div>
+                <div className="staffing-four-card-body">
+                  <img
+                    src={driveCardImage}
+                    alt="Drive"
+                    className="staffing-four-image"
+                  />
+                  <h5 className="staffing-four-card-title">Drive</h5>
+                  <p className="staffing-four-card-text">
+                    We are expert in Interview Drive for Bulk Hiring
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fifth row */}
+        <div className="container-fluid staffing-fif">
+          <div className="staffing-fif-content">
+            <h2>Call to Action</h2>
+            <div className="staffing-dot-dash-line">
+              <span className="staffing-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="staffing-decorative-line"></span>
+            </div>
+          </div>
+
+          <Card className="staffing-fif-card">
+            <Card.Body>
+              <div className="d-flex justify-content-between align-items-center">
+                <Card.Text className="staffing-fif-card-text">
+                  Do You Have An Interesting Projects?
+                </Card.Text>
+                <div className="staffing-fif-card-button">
+                  <Button className="contact-us">Contact Us</Button>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </div>
+
         <Footer />
       </div>
     </>
