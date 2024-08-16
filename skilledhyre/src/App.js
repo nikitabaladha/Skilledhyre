@@ -7,9 +7,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/HomeSection/Home/Home";
 import Service from "./components/ServicesSection/Service/Service";
-import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WEbsiteDesign";
+import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WebsiteDesign";
 import WebsiteDevelopment from "./components/ServicesSection/WebDevelopment/WebDevelopment";
 import SoftwareDevelopment from "./components/ServicesSection/SoftwareDevelopment/SoftwareDevelopment";
+import EComDevelopment from "./components/ServicesSection/EComDevelopment/EComDevelopment";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             path="/software-development"
             element={<SoftwareDevelopment />}
           />
+          <Route path="/e-com-development" element={<EComDevelopment />} />
         </Routes>
       </Router>
     </div>

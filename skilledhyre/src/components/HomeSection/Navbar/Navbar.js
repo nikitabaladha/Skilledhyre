@@ -359,7 +359,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/e-com-development">
                     <span className="dropdown-dot">•</span> E-Commerce
                     Development
                   </Link>

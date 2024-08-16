@@ -1,10 +1,10 @@
-/* WebsiteDesign.css */
+/* WebsiteDesign.css
 
-.web-dev {
+.e-com-dev {
   font-family: "Red Hat Display", sans-serif;
 }
 
-.web-dev-first {
+.e-com-dev-first {
   background-image: url("../../../images/WebsiteDesignImages/website-design-1.jpg");
   background-size: cover;
   background-position: center;
@@ -12,12 +12,12 @@
   padding: 100px;
 }
 
-.web-dev-first {
+.e-com-dev-first {
   display: block;
   text-align: center;
 }
 
-.web-dev-first h1 {
+.e-com-dev-first h1 {
   font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
@@ -36,7 +36,7 @@
   color: orangered;
 }
 
-.web-dev-first p {
+.e-com-dev-first p {
   padding-top: 20px;
 }
 
@@ -52,8 +52,8 @@
   color: #1a1b1e;
 }
 
-.web-dev-left-img,
-.web-dev-right-img {
+.e-com-dev-left-img,
+.e-com-dev-right-img {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -62,7 +62,7 @@
   padding-top: 30px;
 }
 
-.web-dev-sec h6 {
+.e-com-dev-sec h6 {
   color: #074bb6;
   font-size: 14px;
   font-weight: bold;
@@ -71,7 +71,7 @@
   text-transform: uppercase;
 }
 
-.web-dev-sec h2 {
+.e-com-dev-sec h2 {
   margin-bottom: 20px;
   font-size: 36px;
   font-weight: 900;
@@ -79,7 +79,7 @@
   color: #1a1b1e;
 }
 
-.web-dev-thi h2 {
+.e-com-dev-thi h2 {
   color: #083bcc;
   font-size: 30px;
   font-weight: 600;
@@ -87,44 +87,44 @@
   font-family: "Times New Roman", Sans-serif;
 }
 
-.web-dev-sec-content {
+.e-com-dev-sec-content {
   text-align: left;
   padding-top: 30px;
 }
 
-.web-dev-thi-content {
+.e-com-dev-thi-content {
   text-align: left;
   padding-top: 30px;
 }
 
-.web-dev-sec p {
+.e-com-dev-sec p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
 }
 
-.web-dev-thi p {
+.e-com-dev-thi p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
 }
 
-.web-dev-sec-dot {
+.e-com-dev-sec-dot {
   color: #074bb6;
   font-size: 14px;
 }
 
-.web-dev-sec {
+.e-com-dev-sec {
   padding-left: 150px;
   padding-right: 150px;
 }
 
-.web-dev-thi {
+.e-com-dev-thi {
   padding-left: 180px;
   padding-right: 180px;
 }
 
-.web-dev-card {
+.e-com-dev-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   box-sizing: border-box;
@@ -135,7 +135,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.web-dev-card-img {
+.soft-dev-card-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,26 +143,26 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.web-dev-card:hover .web-dev-card-img {
+.soft-dev-card:hover .soft-dev-card-img {
   transform: scale(1.1);
 }
 
-.web-dev-fourth {
+.soft-dev-fourth {
   padding-top: 20px;
   padding-left: 180px;
   padding-right: 180px;
 }
 
-.web-dev-fourth-content {
+.soft-dev-fourth-content {
   text-align: center;
   padding: 40px 40px 40px 40px;
 }
 
-.web-dev-card:hover .web-dev-fourth-content h3 {
+.soft-dev-card:hover .soft-dev-fourth-content h3 {
   color: #074bb6;
 }
 
-.web-dev-fourth-content h3 {
+.soft-dev-fourth-content h3 {
   color: #000;
   display: block;
   font-weight: 700;
@@ -171,25 +171,23 @@
   margin-bottom: 20px;
 }
 
-.web-dev-fourth-content p {
+.soft-dev-fourth-content p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
   font-weight: 400;
 }
 
-/* Initial state - hide and position below */
-.web-dev-left-img,
-.web-dev-right-img {
+.soft-dev-left-img,
+.soft-dev-right-img {
   opacity: 0;
   transform: translateY(100px);
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-/* When the element is in view, apply the slide-in animation */
 .slide-in {
   opacity: 1;
-  transform: translateY(0); /* Move to original position */
+  transform: translateY(0);
 }
 
 @keyframes slideInFromBottom {
@@ -203,7 +201,7 @@
   }
 }
 
-.web-dev-left-img.slide-in,
-.web-dev-right-img.slide-in {
+.soft-dev-left-img.slide-in,
+.soft-dev-right-img.slide-in {
   animation: slideInFromBottom 1s ease-out forwards;
-}
+} */

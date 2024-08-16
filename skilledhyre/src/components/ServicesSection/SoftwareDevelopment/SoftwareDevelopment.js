@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import softwareDevelopmentImage2 from "../../../images/SoftwareDevelopmentImages/software-development-2.jpg";
-import softwareDevelopmentImage3 from "../../../images/SoftwareDevelopmentImages/software-development-3.png";
-import softwareDevelopmentImage4 from "../../../images/SoftwareDevelopmentImages/software-development-4.png";
-import softwareDevelopmentImage5 from "../../../images/SoftwareDevelopmentImages/software-development-5.png";
+import softwareDevelopmentImage1 from "../../../images/ServicesSubPageImages/software-development-1.jpg";
+import softwareDevelopmentImage2 from "../../../images/ServicesSubPageImages/software-development-2.png";
+import softwareDevelopmentImage3 from "../../../images/ServicesSubPageImages/software-development-3.png";
+import softwareDevelopmentImage4 from "../../../images/ServicesSubPageImages/software-development-4.png";
 import Footer from "../../HomeSection/Footer/Footer";
 import Navbar from "../../HomeSection/Navbar/Navbar";
-import "./SoftwareDevelopment.css";
+import "../CommonServiceSubPages.css";
 
 const WebsiteDevelopment = () => {
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(
-        ".soft-dev-left-img, .soft-dev-right-img"
+        ".ser-sub-left-img, .ser-sub-right-img"
       );
       elements.forEach((element) => {
         const rect = element.getBoundingClientRect();
@@ -33,9 +33,9 @@ const WebsiteDevelopment = () => {
     <>
       <Navbar />
 
-      <div className="soft-dev">
+      <div className="ser-sub">
         {/* First Row*/}
-        <div className="container-fluid soft-dev-first">
+        <div className="container-fluid ser-sub-first">
           <div>
             <h1>Software Development</h1>
             <p>
@@ -51,19 +51,18 @@ const WebsiteDevelopment = () => {
         </div>
 
         {/* Second-row */}
-        <div className="container-fluid soft-dev-sec">
+        <div className="container-fluid ser-sub-sec">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center">
               <img
-                src={softwareDevelopmentImage2}
+                src={softwareDevelopmentImage1}
                 alt="Website Design"
-                className="soft-dev-left-img"
+                className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column soft-dev-sec-content">
+            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
               <h6>
-                <span className="recruitment-services-dot">•</span>Software
-                Development
+                <span className="ser-sub-dot">•</span>Software Development
               </h6>
               <h2>What we do</h2>
               <p>
@@ -83,9 +82,9 @@ const WebsiteDevelopment = () => {
         </div>
 
         {/* Third row */}
-        <div className="container-fluid soft-dev-thi">
+        <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column soft-dev-thi-content">
+            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
               <h2>Why hire us for your software development needs?</h2>
               <p>
                 Over the years software has become integral part of our life and
@@ -104,26 +103,26 @@ const WebsiteDevelopment = () => {
             </div>
             <div className="col-md-6 d-flex align-items-center">
               <img
-                src={softwareDevelopmentImage3}
+                src={softwareDevelopmentImage2}
                 alt="Website Design"
-                className="soft-dev-right-img"
+                className="ser-sub-right-img"
               />
             </div>
           </div>
         </div>
 
         {/* Fourth row */}
-        <div className="container-fluid soft-dev-fourth">
+        <div className="container-fluid ser-sub-fourth">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center soft-dev-card">
+            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img
-                  src={softwareDevelopmentImage4}
+                  src={softwareDevelopmentImage3}
                   alt="Website Design"
-                  className="soft-dev-card-img"
+                  className="ser-sub-card-img"
                 />
               </div>
-              <div className="soft-dev-fourth-content">
+              <div className="ser-sub-fourth-content">
                 <h3>We serve several industries</h3>
                 <p>
                   We are a renowned and a trustworthy name in the market where
@@ -137,15 +136,15 @@ const WebsiteDevelopment = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center soft-dev-card">
+            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div>
                 <img
-                  src={softwareDevelopmentImage5}
+                  src={softwareDevelopmentImage4}
                   alt="Website Design"
-                  className="soft-dev-card-img"
+                  className="ser-sub-card-img"
                 />
               </div>
-              <div className="soft-dev-fourth-content">
+              <div className="ser-sub-fourth-content">
                 <h3>Our software developers work in an extraordinary manner</h3>
                 <p>
                   We go that extra mile to help our clients and contribute to

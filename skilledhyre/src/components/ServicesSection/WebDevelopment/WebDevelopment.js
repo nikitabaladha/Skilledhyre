@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import webDevelopmentImage2 from "../../../images/WebDevelopmentImages/web-development-2.png";
-import webDevelopmentImage3 from "../../../images/WebDevelopmentImages/web-development-3.png";
-import webDevelopmentImage4 from "../../../images/WebDevelopmentImages/web-development-4.png";
-import webDevelopmentImage5 from "../../../images/WebDevelopmentImages/web-development-5.jpg";
+import webDevelopmentImage1 from "../../../images/ServicesSubPageImages/web-development-1.png";
+import webDevelopmentImage2 from "../../../images/ServicesSubPageImages/web-development-2.png";
+import webDevelopmentImage3 from "../../../images/ServicesSubPageImages/web-development-3.png";
+import webDevelopmentImage4 from "../../../images/ServicesSubPageImages/web-development-4.jpg";
 import Footer from "../../HomeSection/Footer/Footer";
 import Navbar from "../../HomeSection/Navbar/Navbar";
-import "./WebDevelopment.css";
+import "../CommonServiceSubPages.css";
 
 const WebsiteDevelopment = () => {
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(
-        ".web-dev-left-img, .web-dev-right-img"
+        ".ser-sub-left-img, .ser-sub-right-img"
       );
       elements.forEach((element) => {
         const rect = element.getBoundingClientRect();
@@ -33,9 +33,9 @@ const WebsiteDevelopment = () => {
     <>
       <Navbar />
 
-      <div className="web-dev">
+      <div className="ser-sub">
         {/* First Row*/}
-        <div className="container-fluid web-dev-first">
+        <div className="container-fluid ser-sub-first">
           <div>
             <h1>Web Development</h1>
             <p>
@@ -51,19 +51,18 @@ const WebsiteDevelopment = () => {
         </div>
 
         {/* Second-row */}
-        <div className="container-fluid web-dev-sec">
+        <div className="container-fluid ser-sub-sec">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center">
               <img
-                src={webDevelopmentImage2}
+                src={webDevelopmentImage1}
                 alt="Website Design"
-                className="web-dev-left-img"
+                className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column web-dev-sec-content">
+            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
               <h6>
-                <span className="recruitment-services-dot">•</span>Web
-                Development
+                <span className="ser-sub-dot">•</span>Web Development
               </h6>
               <h2>What we do</h2>
               <p>
@@ -79,9 +78,9 @@ const WebsiteDevelopment = () => {
         </div>
 
         {/* Third row */}
-        <div className="container-fluid web-dev-thi">
+        <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column web-dev-thi-content">
+            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
               <h2>Tailor Made Web Application Development</h2>
               <p>
                 Internet is the power that has been making the businesses
@@ -104,26 +103,26 @@ const WebsiteDevelopment = () => {
             </div>
             <div className="col-md-6 d-flex align-items-center">
               <img
-                src={webDevelopmentImage3}
+                src={webDevelopmentImage2}
                 alt="Website Design"
-                className="web-dev-right-img"
+                className="ser-sub-right-img"
               />
             </div>
           </div>
         </div>
 
         {/* Fourth row */}
-        <div className="container-fluid web-dev-fourth">
+        <div className="container-fluid ser-sub-fourth">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center web-dev-card">
+            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img
-                  src={webDevelopmentImage4}
+                  src={webDevelopmentImage3}
                   alt="Website Design"
-                  className="web-dev-card-img"
+                  className="ser-sub-card-img"
                 />
               </div>
-              <div className="web-dev-fourth-content">
+              <div className="ser-sub-fourth-content">
                 <h3>We Have Been Developing Web Applications</h3>
                 <p>
                   For event management system, Interactive database system,
@@ -143,15 +142,15 @@ const WebsiteDevelopment = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center web-dev-card">
+            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div>
                 <img
-                  src={webDevelopmentImage5}
+                  src={webDevelopmentImage4}
                   alt="Website Design"
-                  className="web-dev-card-img"
+                  className="ser-sub-card-img"
                 />
               </div>
-              <div className="web-dev-fourth-content">
+              <div className="ser-sub-fourth-content">
                 <h3>We Develop As per Client's Requirements</h3>
                 <p>
                   That every business has A different requirement and different

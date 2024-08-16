@@ -1,23 +1,23 @@
 /* WebsiteDesign.css */
 
-.web-des {
+.ser-sub {
   font-family: "Red Hat Display", sans-serif;
 }
 
-.web-des-first {
-  background-image: url("../../../images/WebsiteDesignImages/website-design-1.jpg");
+.ser-sub-first {
+  background-image: url("../../images/ServicesSubPageImages/ser-sub-common-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px;
 }
 
-.web-des-first {
+.ser-sub-first {
   display: block;
   text-align: center;
 }
 
-.web-des-first h1 {
+.ser-sub-first h1 {
   font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
@@ -35,7 +35,8 @@
 .homepage-link:hover {
   color: orangered;
 }
-.web-des-first p {
+
+.ser-sub-first p {
   padding-top: 20px;
 }
 
@@ -51,8 +52,8 @@
   color: #1a1b1e;
 }
 
-.web-des-left-img,
-.web-des-right-img {
+.ser-sub-left-img,
+.ser-sub-right-img {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -61,7 +62,11 @@
   padding-top: 30px;
 }
 
-.web-des-sec h6 {
+.ser-sub-left-img {
+  padding-left: 30px;
+}
+
+.ser-sub-sec h6 {
   color: #074bb6;
   font-size: 14px;
   font-weight: bold;
@@ -70,7 +75,7 @@
   text-transform: uppercase;
 }
 
-.web-des-sec h2 {
+.ser-sub-sec h2 {
   margin-bottom: 20px;
   font-size: 36px;
   font-weight: 900;
@@ -78,7 +83,7 @@
   color: #1a1b1e;
 }
 
-.web-des-thi h2 {
+.ser-sub-thi h2 {
   color: #083bcc;
   font-size: 30px;
   font-weight: 600;
@@ -86,44 +91,45 @@
   font-family: "Times New Roman", Sans-serif;
 }
 
-.web-des-sec-content {
+.ser-sub-sec-content {
   text-align: left;
   padding-top: 30px;
 }
 
-.web-des-thi-content {
+.ser-sub-thi-content {
   text-align: left;
   padding-top: 30px;
 }
 
-.web-des-sec p {
+.ser-sub-sec p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
 }
 
-.web-des-thi p {
+.ser-sub-thi p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
 }
 
-.web-des-sec-dot {
+.ser-sub-dot {
   color: #074bb6;
-  font-size: 14px;
+  font-size: 20px;
+  padding-right: 10px;
 }
 
-.web-des-sec {
+.ser-sub-sec {
   padding-left: 150px;
   padding-right: 150px;
 }
 
-.web-des-thi {
+.ser-sub-thi {
   padding-left: 180px;
   padding-right: 180px;
 }
 
-.web-des-card {
+.ser-sub-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   box-sizing: border-box;
@@ -134,7 +140,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.web-des-card-img {
+.ser-sub-card-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,26 +148,26 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.web-des-card:hover .web-des-card-img {
+.ser-sub-card:hover .ser-sub-card-img {
   transform: scale(1.1);
 }
 
-.web-des-fourth {
+.ser-sub-fourth {
   padding-top: 20px;
   padding-left: 180px;
   padding-right: 180px;
 }
 
-.web-des-fourth-content {
+.ser-sub-fourth-content {
   text-align: center;
   padding: 40px 40px 40px 40px;
 }
 
-.web-des-card:hover .web-des-fourth-content h3 {
+.ser-sub-card:hover .ser-sub-fourth-content h3 {
   color: #074bb6;
 }
 
-.web-des-fourth-content h3 {
+.ser-sub-fourth-content h3 {
   color: #000;
   display: block;
   font-weight: 700;
@@ -170,27 +176,25 @@
   margin-bottom: 20px;
 }
 
-.web-des-fourth-content p {
+.ser-sub-fourth-content p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
   font-weight: 400;
 }
 
-/* WebsiteDesign.css */
-
 /* Initial state - hide and position below */
-.web-des-left-img,
-.web-des-right-img {
+.ser-sub-des-left-img,
+.ser-sub-right-img {
   opacity: 0;
-  transform: translateY(100px); /* Start 100px below */
+  transform: translateY(100px);
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 /* When the element is in view, apply the slide-in animation */
 .slide-in {
   opacity: 1;
-  transform: translateY(0); /* Move to original position */
+  transform: translateY(0);
 }
 
 @keyframes slideInFromBottom {
@@ -204,7 +208,7 @@
   }
 }
 
-.web-des-left-img.slide-in,
-.web-des-right-img.slide-in {
+.ser-sub-left-img.slide-in,
+.ser-sub-right-img.slide-in {
   animation: slideInFromBottom 1s ease-out forwards;
 }
