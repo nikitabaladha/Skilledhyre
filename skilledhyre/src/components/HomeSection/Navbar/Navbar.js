@@ -400,7 +400,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/e-learning-solution">
                     <span className="dropdown-dot">•</span> E-Learning Solution
                   </Link>
                 </li>

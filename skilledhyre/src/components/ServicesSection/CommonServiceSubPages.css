@@ -66,6 +66,10 @@
   padding-left: 30px;
 }
 
+.ser-sub-right-img {
+  padding-right: 50px;
+}
+
 .ser-sub-sec h6 {
   color: #074bb6;
   font-size: 14px;
@@ -91,12 +95,25 @@
   font-family: "Times New Roman", Sans-serif;
 }
 
+.ser-sub-fif h2 {
+  color: #083bcc;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: "Times New Roman", Sans-serif;
+}
+
 .ser-sub-sec-content {
   text-align: left;
   padding-top: 30px;
 }
 
 .ser-sub-thi-content {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.ser-sub-fif-content {
   text-align: left;
   padding-top: 30px;
 }
@@ -108,6 +125,12 @@
 }
 
 .ser-sub-thi p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.ser-sub-fif p {
   color: #606060;
   font-size: 16px;
   line-height: 1.875;
@@ -127,6 +150,12 @@
 .ser-sub-thi {
   padding-left: 180px;
   padding-right: 180px;
+}
+
+.ser-sub-fif {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 20px;
 }
 
 .ser-sub-card {

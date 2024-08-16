@@ -11,6 +11,7 @@ import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WebsiteDes
 import WebsiteDevelopment from "./components/ServicesSection/WebDevelopment/WebDevelopment";
 import SoftwareDevelopment from "./components/ServicesSection/SoftwareDevelopment/SoftwareDevelopment";
 import EComDevelopment from "./components/ServicesSection/EComDevelopment/EComDevelopment";
+import ELearningSolution from "./components/ServicesSection/ELearningSolution/ELearningSolution";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             element={<SoftwareDevelopment />}
           />
           <Route path="/e-com-development" element={<EComDevelopment />} />
+          <Route path="/e-learning-solution" element={<ELearningSolution />} />
         </Routes>
       </Router>
     </div>

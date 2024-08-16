@@ -3,6 +3,7 @@ import WebsiteDesign from "../WebsiteDesign/WebsiteDesign.js";
 import WebDevelopment from "../WebDevelopment/WebDevelopment";
 import SoftwareDevelopment from "../SoftwareDevelopment/SoftwareDevelopment";
 import EComDevelopment from "../EComDevelopment/EComDevelopment";
+import ELearningSolution from "../ELearningSolution/ELearningSolution.js";
 
 const service = () => {
   return (
@@ -11,6 +12,7 @@ const service = () => {
       <WebDevelopment />
       <SoftwareDevelopment />
       <EComDevelopment />
+      <ELearningSolution />
     </>
   );
 };
