@@ -6,6 +6,7 @@ import EComDevelopment from "../EComDevelopment/EComDevelopment";
 import ELearningSolution from "../ELearningSolution/ELearningSolution.js";
 import ERPSolution from "../ERPSolution/ERPSolution.js";
 import APIIntegration from "../APIIntegration/APIIntegration.js";
+import InfluencerMarketing from "../InfluencerMarketing/InfluencerMarketing.js";
 
 const service = () => {
   return (
@@ -17,6 +18,7 @@ const service = () => {
       <ELearningSolution />
       <ERPSolution />
       <APIIntegration />
+      <InfluencerMarketing />
     </>
   );
 };

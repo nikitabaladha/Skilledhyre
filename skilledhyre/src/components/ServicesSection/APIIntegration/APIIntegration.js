@@ -10,7 +10,7 @@ import Footer from "../../HomeSection/Footer/Footer";
 import Navbar from "../../HomeSection/Navbar/Navbar";
 import "../CommonServiceSubPages.css";
 
-const ELearningSolution = () => {
+const APIIntegration = () => {
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(
@@ -156,4 +156,4 @@ const ELearningSolution = () => {
   );
 };
 
-export default ELearningSolution;
+export default APIIntegration;

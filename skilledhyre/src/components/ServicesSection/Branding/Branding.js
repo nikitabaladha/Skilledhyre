@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import softwareDevelopmentImage1 from "../../../images/ServicesSubPageImages/software-development-1.jpg";
-import softwareDevelopmentImage2 from "../../../images/ServicesSubPageImages/software-development-2.png";
-import softwareDevelopmentImage3 from "../../../images/ServicesSubPageImages/software-development-3.png";
-import softwareDevelopmentImage4 from "../../../images/ServicesSubPageImages/software-development-4.png";
+import brandingImage1 from "../../../images/ServicesSubPageImages/branding-1.jpg";
+import brandingImage2 from "../../../images/ServicesSubPageImages/branding-2.png";
+import brandingImage3 from "../../../images/ServicesSubPageImages/branding-3.png";
+import brandingImage4 from "../../../images/ServicesSubPageImages/branding-4.png";
+
 import Footer from "../../HomeSection/Footer/Footer";
 import Navbar from "../../HomeSection/Navbar/Navbar";
+
 import "../CommonServiceSubPages.css";
 
-const SoftwareDevelopment = () => {
+const Branding = () => {
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(
@@ -37,7 +39,7 @@ const SoftwareDevelopment = () => {
         {/* First Row*/}
         <div className="container-fluid ser-sub-first">
           <div>
-            <h1>Software Development</h1>
+            <h1>Branding</h1>
             <p>
               <Link to="/" className="homepage-link">
                 Home
@@ -45,7 +47,7 @@ const SoftwareDevelopment = () => {
               <span class="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <span className="current-page">Software Development</span>
+              <span className="current-page">Branding</span>
             </p>
           </div>
         </div>
@@ -55,7 +57,7 @@ const SoftwareDevelopment = () => {
           <div className="row">
             <div className="col-md-6 d-flex align-items-center">
               <img
-                src={softwareDevelopmentImage1}
+                src={brandingImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
@@ -87,7 +89,7 @@ const SoftwareDevelopment = () => {
             <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
               <h2>Why hire us for your software development needs?</h2>
               <p>
-                Over the years software has become integral part of our life and
+                over the years software has become integral part of our life and
                 bsuniness, we are using software applications today’s in evry
                 aspect of life.across all industries softwares are used to
                 deliver quality ,fast and automated results.as the time is
@@ -103,7 +105,7 @@ const SoftwareDevelopment = () => {
             </div>
             <div className="col-md-6 d-flex align-items-center">
               <img
-                src={softwareDevelopmentImage2}
+                src={brandingImage2}
                 alt="Website Design"
                 className="ser-sub-right-img"
               />
@@ -117,7 +119,7 @@ const SoftwareDevelopment = () => {
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img
-                  src={softwareDevelopmentImage3}
+                  src={brandingImage3}
                   alt="Website Design"
                   className="ser-sub-card-img"
                 />
@@ -139,7 +141,7 @@ const SoftwareDevelopment = () => {
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div>
                 <img
-                  src={softwareDevelopmentImage4}
+                  src={brandingImage4}
                   alt="Website Design"
                   className="ser-sub-card-img"
                 />
@@ -166,4 +168,4 @@ const SoftwareDevelopment = () => {
   );
 };
 
-export default SoftwareDevelopment;
+export default Branding;

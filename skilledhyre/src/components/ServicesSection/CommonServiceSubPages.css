@@ -241,3 +241,15 @@
 .ser-sub-right-img.slide-in {
   animation: slideInFromBottom 1s ease-out forwards;
 }
+
+.influencer-fif h3 {
+  color: #083bcc;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: "Times New Roman", Sans-serif;
+}
+
+.influencer-fif {
+  padding-bottom: 20px;
+}

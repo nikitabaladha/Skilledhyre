@@ -9,7 +9,7 @@ import Footer from "../../HomeSection/Footer/Footer";
 import Navbar from "../../HomeSection/Navbar/Navbar";
 import "../CommonServiceSubPages.css";
 
-const WebsiteDevelopment = () => {
+const EComDevelopment = () => {
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(
@@ -170,4 +170,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default EComDevelopment;

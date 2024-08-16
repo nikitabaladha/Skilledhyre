@@ -370,39 +370,51 @@ const Navbar = () => {
                   </Link>
                   <ul className="dropdown-menu dropdown-submenu">
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Branding
+                      <Link className="dropdown-item" to="/branding">
+                        <span className="dropdown-dot">•</span> Branding
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Search Engine Optimization
+                      <Link
+                        className="dropdown-item"
+                        to="/search-engine-optimization"
+                      >
+                        <span className="dropdown-dot">•</span>Search Engine
+                        Optimization
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Social Media Marketing
+                      <Link
+                        className="dropdown-item"
+                        to="/social-media-marketing"
+                      >
+                        <span className="dropdown-dot">•</span>Social Media
+                        Marketing
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        PPC Management
+                      <Link className="dropdown-item" to="/ppc-management">
+                        <span className="dropdown-dot">•</span>PPC Management
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Content Marketing
+                      <Link className="dropdown-item" to="content-marketing">
+                        <span className="dropdown-dot">•</span>Content Marketing
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Influencer Marketing
+                      <Link
+                        className="dropdown-item"
+                        to="/influencer-marketing"
+                      >
+                        <span className="dropdown-dot">•</span>Influencer
+                        Marketing
                       </Link>
                     </li>
                   </ul>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Mobile Application
                     Development
@@ -429,7 +441,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <Link className="dropdown-item" to="/e-learning-solution">
                     <span className="dropdown-dot">•</span> E-Learning Solution

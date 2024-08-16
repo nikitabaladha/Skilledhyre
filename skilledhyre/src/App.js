@@ -14,6 +14,9 @@ import EComDevelopment from "./components/ServicesSection/EComDevelopment/EComDe
 import ELearningSolution from "./components/ServicesSection/ELearningSolution/ELearningSolution";
 import ERPSolution from "./components/ServicesSection/ERPSolution/ERPSolution";
 import APIIntegration from "./components/ServicesSection/APIIntegration/APIIntegration";
+import InfluencerMarketing from "./components/ServicesSection/InfluencerMarketing/InfluencerMarketing";
+
+import Branding from "./components/ServicesSection/Branding/Branding";
 
 function App() {
   return (
@@ -32,6 +35,11 @@ function App() {
           <Route path="/e-learning-solution" element={<ELearningSolution />} />
           <Route path="/erp-solution" element={<ERPSolution />} />
           <Route path="/api-integration" element={<APIIntegration />} />
+          <Route path="/branding" element={<Branding />} />
+          <Route
+            path="/influencer-marketing"
+            element={<InfluencerMarketing />}
+          />
         </Routes>
       </Router>
     </div>
