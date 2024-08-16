@@ -363,41 +363,72 @@ const Navbar = () => {
                     <span className="dropdown-dot">•</span> E-Commerce
                     Development
                   </Link>
-                  <ul class="dropdown-menu dropdown-submenu">
+                </li>
+                <li>
+                  <Link className="dropdown-item">
+                    <span className="dropdown-dot">•</span> Digital Marketing
+                  </Link>
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
-                      <a class="dropdown-item" href="#">
-                        Submenu item 1
-                      </a>
+                      <Link className="dropdown-item" href="#">
+                        Branding
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
-                        Submenu item 2
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Submenu item 4
-                      </a>
+                      <Link className="dropdown-item" href="#">
+                        Search Engine Optimization
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
-                        Submenu item 5
-                      </a>
+                      <Link className="dropdown-item" href="#">
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        PPC Management
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        Content Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        Influencer Marketing
+                      </Link>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link className="dropdown-item" to="/another-action">
-                    <span className="dropdown-dot">•</span> Digital Marketing
-                  </Link>
-                </li>
 
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Mobile Application
                     Development
                   </Link>
+                  <ul className="dropdown-menu dropdown-submenu">
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        IPhone App Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        Android App Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        Hybrid App Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="#">
+                        React App Development
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/e-learning-solution">
