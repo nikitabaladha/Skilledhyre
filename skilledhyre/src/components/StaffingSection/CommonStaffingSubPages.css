@@ -341,3 +341,16 @@
 .staffing-fif-card .contact-us:hover {
   background-color: #ffcc03;
 }
+
+/* Combined class for initial state - hide and position below */
+.slide-target {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* When the element is in view, apply the slide-in animation */
+.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}

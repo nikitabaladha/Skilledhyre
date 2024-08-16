@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 
@@ -21,6 +21,24 @@ import driveCardImage from "../../../images/StaffingSubPageImages/drive-card.jpg
 import StaffingArrowImage from "../../../images/StaffingSubPageImages/staffing-arrow.png";
 
 const PermanentStaffing = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".slide-target");
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          element.classList.add("slide-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -43,7 +61,7 @@ const PermanentStaffing = () => {
         </div>
 
         {/* Second-row */}
-        <div className="container-fluid staffing-sec">
+        <div className="container-fluid staffing-sec slide-target">
           <h6>
             <span className="staffing-dot">•</span>Staffing
           </h6>
@@ -71,7 +89,7 @@ const PermanentStaffing = () => {
         </div>
 
         {/* Third row */}
-        <div className="container-fluid staffing-thi">
+        <div className="container-fluid staffing-thi slide-target">
           <div className="staffing-thi-content">
             <h2>WHAT SKILLEDHYRE DELIVERS THROUGH PERMANENT STAFFING?</h2>
 
@@ -179,7 +197,7 @@ const PermanentStaffing = () => {
         </div>
 
         {/* Fourth row */}
-        <div className="container-fluid staffing-four">
+        <div className="container-fluid staffing-four slide-target">
           <div className="row">
             <div className="col-md-4">
               <div className="staffing-four-card">
