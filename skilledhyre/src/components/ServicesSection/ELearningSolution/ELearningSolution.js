@@ -46,7 +46,7 @@ const ELearningSolution = () => {
               <span class="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <span className="current-page">E -Learning Solution</span>
+              <span className="current-page">E - Learning Solution</span>
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const ELearningSolution = () => {
               <h6>
                 <span className="ser-sub-dot">•</span>E-Learning Solution
               </h6>
-              <h2>E-Learning Solution What we do</h2>
+              <h2>What we do</h2>
               <p>
                 We help organizations in developing digital training modules. We
                 transform your company literature, and mundane in-person

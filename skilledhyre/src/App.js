@@ -12,6 +12,8 @@ import WebsiteDevelopment from "./components/ServicesSection/WebDevelopment/WebD
 import SoftwareDevelopment from "./components/ServicesSection/SoftwareDevelopment/SoftwareDevelopment";
 import EComDevelopment from "./components/ServicesSection/EComDevelopment/EComDevelopment";
 import ELearningSolution from "./components/ServicesSection/ELearningSolution/ELearningSolution";
+import ERPSolution from "./components/ServicesSection/ERPSolution/ERPSolution";
+import APIIntegration from "./components/ServicesSection/APIIntegration/APIIntegration";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           />
           <Route path="/e-com-development" element={<EComDevelopment />} />
           <Route path="/e-learning-solution" element={<ELearningSolution />} />
+          <Route path="/erp-solution" element={<ERPSolution />} />
+          <Route path="/api-integration" element={<APIIntegration />} />
         </Routes>
       </Router>
     </div>

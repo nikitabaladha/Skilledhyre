@@ -405,12 +405,12 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/erp-solution">
                     <span className="dropdown-dot">•</span> ERP SOLUTION
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link className="dropdown-item" to="/api-integration">
                     <span className="dropdown-dot">•</span> API Integration
                   </Link>
                 </li>
