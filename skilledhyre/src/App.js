@@ -17,6 +17,8 @@ import APIIntegration from "./components/ServicesSection/APIIntegration/APIInteg
 import InfluencerMarketing from "./components/ServicesSection/InfluencerMarketing/InfluencerMarketing";
 import Branding from "./components/ServicesSection/Branding/Branding";
 
+import SocialMediaMarketing from "./components/ServicesSection/SocialMediaMarketing/SocialMediaMarketing";
+
 import PermanentStaffing from "./components/StaffingSection/PermanentStaffing/PermanentStaffing";
 import ContractStaffing from "./components/StaffingSection/ContractStaffing/ContractStaffing";
 import HRConsulting from "./components/StaffingSection/HRConsulting/HRConsulting";
@@ -50,6 +52,11 @@ function App() {
           <Route
             path="/influencer-marketing"
             element={<InfluencerMarketing />}
+          />
+
+          <Route
+            path="/social-media-marketing"
+            element={<SocialMediaMarketing />}
           />
 
           <Route path="/permanent-staffing" element={<PermanentStaffing />} />
