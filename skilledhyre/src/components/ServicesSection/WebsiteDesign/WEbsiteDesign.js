@@ -120,7 +120,7 @@ const WebsiteDesign = () => {
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
+            <div className="col-md-6 d-flex flex-column ser-sub-card">
               <div className="col-md-12 ">
                 <img
                   src={websiteDesignImage3}

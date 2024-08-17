@@ -24,6 +24,11 @@ import ContractToHire from "./components/StaffingSection/ContractToHire/Contract
 import RPO from "./components/StaffingSection/RPO/RPO";
 import HeadHunting from "./components/StaffingSection/HeadHunting/HeadHunting";
 
+import IPhoneAppDevelopment from "./components/ServicesSection/IPhoneAppDevelopment/IPhoneAppDevelopment";
+import AndroidAppDevelopment from "./components/ServicesSection/AndroidAppDevelopment/AndroidAppDevelopment";
+import HybridAppDevelopment from "./components/ServicesSection/HybridAppDevelopment/HybridAppDevelopment";
+import ReactAppDevelopment from "./components/ServicesSection/ReactNativeAppDevelopment/ReactNativeAppDevelopment";
+
 function App() {
   return (
     <div className="App">
@@ -53,6 +58,23 @@ function App() {
           <Route path="/contract-to-hire" element={<ContractToHire />} />
           <Route path="/rpo" element={<RPO />} />
           <Route path="/head-hunting" element={<HeadHunting />} />
+
+          <Route
+            path="/iphone-app-development"
+            element={<IPhoneAppDevelopment />}
+          />
+          <Route
+            path="/android-app-development"
+            element={<AndroidAppDevelopment />}
+          />
+          <Route
+            path="/hybrid-app-development"
+            element={<HybridAppDevelopment />}
+          />
+          <Route
+            path="/react-app-development"
+            element={<ReactAppDevelopment />}
+          />
         </Routes>
       </Router>
     </div>

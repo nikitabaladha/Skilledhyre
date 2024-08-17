@@ -364,7 +364,7 @@ const Navbar = () => {
                     Development
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Digital Marketing
                   </Link>
@@ -412,36 +412,48 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
 
-                {/* <li>
+                <li>
                   <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Mobile Application
                     Development
                   </Link>
                   <ul className="dropdown-menu dropdown-submenu">
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link
+                        className="dropdown-item"
+                        to="/iphone-app-development"
+                      >
                         IPhone App Development
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link
+                        className="dropdown-item"
+                        to="/android-app-development"
+                      >
                         Android App Development
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link
+                        className="dropdown-item"
+                        to="/hybrid-app-development"
+                      >
                         Hybrid App Development
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link
+                        className="dropdown-item"
+                        to="/react-app-development"
+                      >
                         React App Development
                       </Link>
                     </li>
                   </ul>
-                </li> */}
+                </li>
                 <li>
                   <Link className="dropdown-item" to="/e-learning-solution">
                     <span className="dropdown-dot">•</span> E-Learning Solution
