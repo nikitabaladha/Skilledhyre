@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { IoIosArrowRoundForward } from "react-icons/io";
+
+import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 
 import "../CommonSocialMediaPPC.css";
 import Navbar from "../../HomeSection/Navbar/Navbar";
@@ -19,6 +20,11 @@ import cardTop3 from "../../../images/ServicesSubPageImages/svg-card-3.png";
 import cardBottom1 from "../../../images/ServicesSubPageImages/social-media-card-bottom-1.png";
 import cardBottom2 from "../../../images/ServicesSubPageImages/social-media-card-bottom-2.png";
 import cardBottom3 from "../../../images/ServicesSubPageImages/social-media-card-bottom-3.png";
+
+import slickSlider1 from "../../../images/ServicesSubPageImages/social-media-marketing-slide-1.jpg";
+import slickSlider2 from "../../../images/ServicesSubPageImages/social-media-marketing-slide-2.jpg";
+import slickSlider3 from "../../../images/ServicesSubPageImages/social-media-marketing-slide-3.jpg";
+
 const SocialMediaMarketing = () => {
   const features = [
     {
@@ -102,6 +108,73 @@ const SocialMediaMarketing = () => {
       ],
     },
   ];
+
+  const realTestimonials = [
+    {
+      id: 1,
+      TestimonialsImage: slickSlider1,
+      description:
+        "I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.",
+      name: "Emilia Clarke",
+      profession: "Designer",
+    },
+    {
+      id: 2,
+      TestimonialsImage: slickSlider2,
+      description:
+        "Skilledhyre has increased our traffic, keywords, and conversion. We’ve enjoyed working with them and consider them a strategic business partner.",
+      name: "Maria Kloop",
+      profession: "Developer",
+    },
+    {
+      id: 3,
+      TestimonialsImage: slickSlider3,
+      description:
+        "Skilledhyre has increased our traffic, keywords, and conversion. We’ve enjoyed working with them and consider them a strategic business partner.",
+      name: "Taylor Green",
+      profession: "Client of Company",
+    },
+  ];
+
+  //   const [currentIndex, setCurrentIndex] = useState(0);
+
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       setCurrentIndex((prevIndex) =>
+  //         prevIndex === realTestimonials.length - 1 ? 0 : prevIndex + 1
+  //       );
+  //     }, 5000);
+
+  //     return () => clearInterval(interval);
+  //   }, [realTestimonials.length]);
+
+  //   const currentTestimonial = realTestimonials[currentIndex];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === realTestimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [realTestimonials.length]);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === realTestimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? realTestimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  const currentTestimonial = realTestimonials[currentIndex];
+
   return (
     <>
       <Navbar />
@@ -257,8 +330,57 @@ const SocialMediaMarketing = () => {
           </div>
         </div>
 
-        <Footer />
+        {/* Fifth row */}
+        <div className="container-fluid social-media-ppc-fif-section">
+          <div className="row">
+            <div className="col-md-4 d-flex flex-column justify-content-center social-media-ppc-fif-content">
+              <h6>
+                <span className="social-media-ppc-dot">•</span>REAL TESTIMONIALS
+              </h6>
+              <h2>What They Say About Our Company?</h2>
+              <div>
+                <IoIosArrowRoundBack
+                  className="social-media-ppc-arrow-icon"
+                  onClick={handlePrev}
+                />
+
+                <IoIosArrowRoundForward
+                  className="social-media-ppc-arrow-icon"
+                  onClick={handleNext}
+                />
+              </div>
+            </div>
+
+            <div className="col-md-8 d-flex social-media-ppc-fif-card-section">
+              <div className="social-media-ppc-fif-card-background"></div>
+              <div className="social-media-ppc-fif-card">
+                <div
+                  className="social-media-ppc-fif-slide"
+                  key={currentTestimonial.id}
+                >
+                  <div className="social-media-ppc-fif-slide-image-container">
+                    <img
+                      src={currentTestimonial.TestimonialsImage}
+                      alt={currentTestimonial.name}
+                      className="social-media-ppc-fif-slide-image"
+                    />
+                  </div>
+
+                  <div className="social-media-ppc-fif-slide-content">
+                    <p>{currentTestimonial.description}</p>
+                    <h5>{currentTestimonial.name}</h5>
+                    <p className="profession-text">
+                      {currentTestimonial.profession}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <Footer />
     </>
   );
 };
