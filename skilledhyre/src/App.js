@@ -19,6 +19,7 @@ import Branding from "./components/ServicesSection/Branding/Branding";
 
 import SocialMediaMarketing from "./components/ServicesSection/SocialMediaMarketing/SocialMediaMarketing";
 import PPCManagement from "./components/ServicesSection/PPCManagement/PPCManagement";
+import ContentMarketing from "./components/ServicesSection/ContentMarketing/ContentMarketing";
 
 import PermanentStaffing from "./components/StaffingSection/PermanentStaffing/PermanentStaffing";
 import ContractStaffing from "./components/StaffingSection/ContractStaffing/ContractStaffing";
@@ -31,6 +32,8 @@ import IPhoneAppDevelopment from "./components/ServicesSection/IPhoneAppDevelopm
 import AndroidAppDevelopment from "./components/ServicesSection/AndroidAppDevelopment/AndroidAppDevelopment";
 import HybridAppDevelopment from "./components/ServicesSection/HybridAppDevelopment/HybridAppDevelopment";
 import ReactAppDevelopment from "./components/ServicesSection/ReactNativeAppDevelopment/ReactNativeAppDevelopment";
+
+import YourComponent from "./components/ServicesSection/ContentMarketing/YourComponent";
 
 function App() {
   return (
@@ -60,6 +63,7 @@ function App() {
             element={<SocialMediaMarketing />}
           />
           <Route path="/ppc-management" element={<PPCManagement />} />
+          <Route path="/content-marketing" element={<ContentMarketing />} />
 
           <Route path="/permanent-staffing" element={<PermanentStaffing />} />
           <Route path="/contract-staffing" element={<ContractStaffing />} />
@@ -84,6 +88,8 @@ function App() {
             path="/react-app-development"
             element={<ReactAppDevelopment />}
           />
+
+          <Route path="/your-component" element={<YourComponent />} />
         </Routes>
       </Router>
     </div>

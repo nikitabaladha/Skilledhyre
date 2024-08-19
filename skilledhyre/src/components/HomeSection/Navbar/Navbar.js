@@ -398,7 +398,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="content-marketing">
+                      <Link className="dropdown-item" to="/content-marketing">
                         <span className="dropdown-dot">•</span>Content Marketing
                       </Link>
                     </li>

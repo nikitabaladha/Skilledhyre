@@ -1,0 +1,426 @@
+/* first row */
+
+.ser-sub {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.ser-sub-first {
+  background-image: url("../../../images/ServicesSubPageImages/ser-sub-common-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.ser-sub-first {
+  display: block;
+  text-align: center;
+}
+
+.ser-sub-first h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.homepage-link {
+  color: #a5b7d2;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.homepage-link:hover {
+  color: orangered;
+}
+
+.ser-sub-first p {
+  padding-top: 20px;
+}
+
+.greater-than-icon {
+  color: #a5b7d2;
+  vertical-align: middle;
+}
+
+.current-page {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #1a1b1e;
+}
+
+/* Second row */
+
+.content-marketing-sec {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 100px;
+}
+
+.content-marketing-sec-card {
+  padding: 35px 35px 26px;
+  background-color: #fff;
+  box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+  border-radius: 15px;
+  font-family: "Red Hat Text", sans-serif;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.content-marketing-sec-card:hover {
+  background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+  background-color: #0039e4;
+}
+
+.content-marketing-sec-card:hover .small-number {
+  background-color: white !important;
+  color: #04dbf1 !important;
+  background-image: linear-gradient(145deg, #fff, #fff);
+}
+
+.content-marketing-sec-card:hover .content-marketing-sec-card-content h5,
+.content-marketing-sec-card:hover .content-marketing-sec-card-content p {
+  color: #fff !important;
+}
+
+.content-marketing-sec-card:hover .small-number {
+  color: #04dbf1;
+  background-color: white;
+}
+
+.content-marketing-sec-card:hover .big-number {
+  color: #32d8fa;
+}
+
+.small-number {
+  float: left;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #0039e4;
+  background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+  box-shadow: 8px 8px 20px 0px rgba(42, 67, 113, 0.3);
+  font-size: 16px;
+}
+
+.content-marketing-sec-card-content {
+  padding-left: 75px;
+}
+
+.content-marketing-sec-card-content p {
+  color: #606060;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.content-marketing-sec-card-content h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1b1e;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.big-number {
+  padding-left: 320px;
+  bottom: -9px;
+  font-size: 88px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1;
+  color: rgba(165, 183, 210, 0.2);
+  display: overlay;
+  position: absolute;
+}
+
+/* Third row */
+
+.content-marketing-thi {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 100px;
+}
+
+.content-marketing-thi-content {
+  text-align: left;
+  font-family: "Red Hat Display", sans-serif;
+  padding-left: 80px;
+}
+
+.content-marketing-dot {
+  font-size: 22px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.content-marketing-thi h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a5b7d2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.content-marketing-thi h2 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.content-marketing-thi p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.content-marketing-thi-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  max-width: 600px;
+  height: auto;
+  padding-top: 30px;
+}
+
+/* Fourth row */
+
+.content-marketing-four-section {
+  text-align: center;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: #f4f4f4;
+}
+
+.content-marketing-four-section h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a5b7d2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.content-marketing-four-section h2 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.content-marketing-four-section p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.content-marketing-four {
+  padding-top: 20px;
+}
+
+.content-marketing-four-circle {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.circle-card-1 {
+  width: 400px;
+  box-sizing: border-box;
+  text-align: right;
+  z-index: 2;
+  position: absolute;
+  top: 120px;
+  left: 125px;
+}
+
+.circle-card-2 {
+  width: 400px;
+  box-sizing: border-box;
+  text-align: left;
+  position: absolute;
+  top: 120px;
+  right: 120px;
+}
+
+.circle-card-3 {
+  width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  bottom: -90px;
+  left: 470px;
+}
+
+.circle-card-1 h3,
+.circle-card-2 h3,
+.circle-card-3 h3 {
+  color: #1a1b1e;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.circle-card-1 p,
+.circle-card-2 p,
+.circle-card-3 p {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: inherit;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.circle-card-1 p {
+  padding-right: 140px;
+}
+
+.circle-card-1 h3 {
+  padding-right: 140px;
+}
+
+.circle-card-2 p {
+  padding-left: 140px;
+}
+
+.circle-card-2 h3 {
+  padding-left: 140px;
+}
+
+.content-marketing-four-circle-svg-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.svg-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: url(#gradient);
+  stroke-width: 50;
+  fill: none;
+}
+
+.content-marketing-four-circle-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+}
+
+.content-marketing-four-circle-card-number-1 {
+  color: #00c3ff;
+  float: right;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.15);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: 20px;
+}
+
+.content-marketing-four-circle-card-number-2 {
+  color: #0160e7;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.15);
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.content-marketing-four-circle-card-number-3 {
+  color: #fe4c1c;
+  float: center;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.15);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.number-3 {
+  padding-left: 150px;
+}
+.content-marketing-four-circle-card-item-dot-1 {
+  background-color: #00c3ff;
+  box-shadow: 8px 8px 18px 0px rgba(0, 195, 255, 0.4);
+  content: "";
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: right;
+}
+.dot-1 {
+  padding-left: 240px;
+}
+
+.dot-2 {
+  padding-left: 140px;
+}
+.dot-3 {
+  padding-left: 30px;
+}
+
+.content-marketing-four-circle-card-item-dot-2 {
+  background-color: #0160e7;
+  box-shadow: 8px 8px 18px 0px rgba(1, 96, 231, 0.4);
+  content: "";
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: right;
+}
+
+.content-marketing-four-circle-card-item-dot-3 {
+  background-color: #fe4c1c;
+  box-shadow: 8px 8px 18px 0px rgba(254, 76, 28, 0.4);
+  content: "";
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
