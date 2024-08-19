@@ -18,6 +18,7 @@ import InfluencerMarketing from "./components/ServicesSection/InfluencerMarketin
 import Branding from "./components/ServicesSection/Branding/Branding";
 
 import SocialMediaMarketing from "./components/ServicesSection/SocialMediaMarketing/SocialMediaMarketing";
+import PPCManagement from "./components/ServicesSection/PPCManagement/PPCManagement";
 
 import PermanentStaffing from "./components/StaffingSection/PermanentStaffing/PermanentStaffing";
 import ContractStaffing from "./components/StaffingSection/ContractStaffing/ContractStaffing";
@@ -58,6 +59,7 @@ function App() {
             path="/social-media-marketing"
             element={<SocialMediaMarketing />}
           />
+          <Route path="/ppc-management" element={<PPCManagement />} />
 
           <Route path="/permanent-staffing" element={<PermanentStaffing />} />
           <Route path="/contract-staffing" element={<ContractStaffing />} />
