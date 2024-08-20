@@ -5,6 +5,7 @@ import "./ContentMarketing.css";
 
 import Navbar from "../../HomeSection/Navbar/Navbar";
 import Footer from "../../HomeSection/Footer/Footer";
+import Animation from "../../HomeSection/ProcessDrivenSEO/Animation";
 
 import contentMarketing1 from "../../../images/ServicesSubPageImages/content-marketing-1.png";
 import contentMarketing2 from "../../../images/ServicesSubPageImages/content-marketing-2.png";
@@ -115,6 +116,7 @@ const ContentMarketing = () => {
 
         {/* Fourth row */}
         <div className="container-fluid content-marketing-four-section">
+          <Animation />
           <div className="content-marketing-four-content">
             <h6>
               <span className="content-marketing-dot">•</span>Verifiable results
@@ -204,6 +206,8 @@ const ContentMarketing = () => {
             </div>
           </div>
         </div>
+
+        {/* Fifth row */}
       </div>
 
       <Footer />
