@@ -9,6 +9,7 @@ import Animation from "../../HomeSection/ProcessDrivenSEO/Animation";
 
 import contentMarketing1 from "../../../images/ServicesSubPageImages/content-marketing-1.png";
 import contentMarketing2 from "../../../images/ServicesSubPageImages/content-marketing-2.png";
+import ContentMarketingProgressCardProps from "./ProgressCard/ContentMarketingProgressCardProps";
 
 const ContentMarketing = () => {
   const features = [
@@ -208,6 +209,9 @@ const ContentMarketing = () => {
         </div>
 
         {/* Fifth row */}
+        <>
+          <ContentMarketingProgressCardProps />
+        </>
       </div>
 
       <Footer />

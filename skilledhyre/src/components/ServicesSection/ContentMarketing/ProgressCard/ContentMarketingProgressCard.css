@@ -1,0 +1,60 @@
+/* Container for individual progress cards */
+.content-marketing-progress-card {
+  width: 270px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.top-card {
+  margin-top: 70px;
+}
+
+.content-marketing-progress-bar-container {
+  position: relative;
+  width: 195px;
+  height: 195px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.content-marketing-outer-circle {
+  position: absolute;
+  top: 98px;
+  left: 98px;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 18px solid #ebf4f9;
+  box-sizing: border-box;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.content-marketing-progress-title {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #000000;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 15px 0 0;
+}
+
+.content-marketing-progress-props {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.content-marketing-percentage-text {
+  font-weight: bold;
+}
