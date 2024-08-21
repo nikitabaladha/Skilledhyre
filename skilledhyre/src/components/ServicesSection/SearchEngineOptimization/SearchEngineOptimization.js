@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import SearchEngineOptimization1 from "../../../images/ServicesSubPageImages/search-engine-optimization-1.png";
-import SearchEngineOptimization2 from "../../../images/ServicesSubPageImages/search-engine-optimization-2.png";
+import SearchEngineOptimization5 from "../../../images/ServicesSubPageImages/search-engine-optimization-5.png";
+import SearchEngineOptimization6 from "../../../images/ServicesSubPageImages/search-engine-optimization-6.png";
+import SearchEngineOptimization7 from "../../../images/ServicesSubPageImages/search-engine-optimization-7.png";
 
 import { ImSearch } from "react-icons/im";
 import { GrPieChart } from "react-icons/gr";
@@ -54,6 +56,27 @@ const SearchEngineOptimization = () => {
       title: "App Development",
       description: "Launching a startup with limited capital? No problem.",
       icon: <HiOutlineClipboardDocumentList />,
+    },
+  ];
+
+  const cardData = [
+    {
+      beforeNumber: "104,457",
+      afterNumber: "314,297",
+      description: "Annual Organic Traffic",
+      imgSrc: SearchEngineOptimization5,
+    },
+    {
+      beforeNumber: "26,740",
+      afterNumber: "34,369",
+      description: "Annual Organic Traffic",
+      imgSrc: SearchEngineOptimization6,
+    },
+    {
+      beforeNumber: "780%",
+      afterNumber: "980%",
+      description: "Annual Organic Traffic",
+      imgSrc: SearchEngineOptimization7,
     },
   ];
 
@@ -176,35 +199,56 @@ const SearchEngineOptimization = () => {
         </div>
 
         {/* Fourth row */}
-        <div className="container-fluid social-media-ppc-four-section">
-          <div className="social-media-ppc-four-content">
+        <div className="container-fluid search-engine-optimization-four">
+          {/* Heading */}
+          <div className="search-engine-optimization-four-content">
             <h6>
-              <span className="social-media-ppc-dot">•</span>real numbers
-              <span className="social-media-ppc-dot">•</span>
+              <span className="search-engine-optimization-dot">•</span>real
+              numbers
+              <span className="search-engine-optimization-dot">•</span>
             </h6>
             <h2>
               Expect Great Things from <br></br>Your SEO Agency
             </h2>
-            <div>
-              <span
-                className="before"
-                style={{ color: isChecked ? "#e1dfdf" : "#00c3ff" }}
-              >
-                Before
-              </span>
-              <span className="toggle-div">
-                <label className="switch">
-                  <input type="checkbox" />
-                  <span className="slider round"></span>
-                </label>
-              </span>
+          </div>
 
-              <span
-                className="after"
-                style={{ color: isChecked ? "#2196f3" : "#e1dfdf" }}
-              >
-                After
-              </span>
+          {/* Toggle button */}
+          <div className="toggle-container">
+            <span className={isChecked ? "before-active" : "before"}>
+              Before
+            </span>
+            <span className="toggle-div">
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  onChange={() => setIsChecked(!isChecked)}
+                />
+                <span className="slider round"></span>
+              </label>
+            </span>
+            <span className={isChecked ? "after-active" : "after"}>After</span>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid search-engine-optimization-four-card-container">
+            <div className="row">
+              {cardData.map((card, index) => (
+                <div className="col-md-4" key={index}>
+                  <div className="search-engine-optimization-four-card">
+                    <div className="search-engine-optimization-four-card-body">
+                      <h2 className={`card-number-${index + 1}`}>
+                        {isChecked ? card.afterNumber : card.beforeNumber}
+                      </h2>
+                      <p>{card.description}</p>
+                    </div>
+                    <img
+                      className="search-engine-optimization-four-card-image"
+                      src={card.imgSrc}
+                      alt={`Card ${index + 1}`}
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -217,15 +217,76 @@
 
 /* Fourth row */
 
-.before {
+.search-engine-optimization-four {
+  text-align: center;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 80px;
 }
-.after {
+
+.search-engine-optimization-dot {
+  font-size: 22px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.search-engine-optimization-four h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a5b7d2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.search-engine-optimization-four h2 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #1a1b1e;
 }
 
 /* Toggle Button */
+.before,
+.after {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.875;
+}
+
+.before-active,
+.after-active {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.875;
+}
+
+.before {
+  color: #00c3ff;
+}
+
+.before-active {
+  color: #a5b7d2;
+}
+
+.after {
+  color: #a5b7d2;
+}
+
+.after-active {
+  color: #0160e7;
+}
+
 .toggle-div {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .switch {
@@ -264,11 +325,11 @@
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #0160e7;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #0160e7;
 }
 
 input:checked + .slider:before {
@@ -281,6 +342,67 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-engine-optimization-four-card {
+  position: relative;
+  box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+  background: #fff;
+  text-align: center;
+  border-radius: 15px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-engine-optimization-four-card-body {
+  padding-bottom: 150px;
+  padding-top: 60px;
+}
+
+.search-engine-optimization-four-card-body h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.search-engine-optimization-four-card-body p {
+  color: #1a1b1e;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.card-number-1 {
+  color: #00c3ff !important;
+}
+
+.card-number-2 {
+  color: rgb(1, 96, 231) !important;
+}
+.card-number-3 {
+  color: rgb(254, 76, 28) !important;
+}
+
+.search-engine-optimization-four-card-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%; /* Ensures the image fits within the card */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /* Sixth row */
