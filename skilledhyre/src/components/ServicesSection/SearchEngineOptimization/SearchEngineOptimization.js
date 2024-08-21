@@ -1,193 +1,239 @@
-// import React, { useEffect } from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-// import influencerMarketingImage1 from "../../../images/ServicesSubPageImages/influencer-marketing-1.jpg";
-// import influencerMarketingImage2 from "../../../images/ServicesSubPageImages/influencer-marketing-2.jpg";
-// import influencerMarketingImage3 from "../../../images/ServicesSubPageImages/influencer-marketing-3.png";
-// import influencerMarketingImage4 from "../../../images/ServicesSubPageImages/influencer-marketing-4.png";
-// import influencerMarketingImage5 from "../../../images/ServicesSubPageImages/influencer-marketing-5.png";
+import SearchEngineOptimization1 from "../../../images/ServicesSubPageImages/search-engine-optimization-1.png";
+import SearchEngineOptimization2 from "../../../images/ServicesSubPageImages/search-engine-optimization-2.png";
 
-// import Footer from "../../HomeSection/Footer/Footer";
-// import Navbar from "../../HomeSection/Navbar/Navbar";
-// import "../CommonServiceSubPages.css";
+import { ImSearch } from "react-icons/im";
+import { GrPieChart } from "react-icons/gr";
+import { BiCodeBlock } from "react-icons/bi";
+import { TbCloudComputing } from "react-icons/tb";
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
-// const InfluencerMarketing = () => {
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const elements = document.querySelectorAll(
-//         ".ser-sub-left-img, .ser-sub-right-img"
-//       );
-//       elements.forEach((element) => {
-//         const rect = element.getBoundingClientRect();
-//         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-//           element.classList.add("slide-in");
-//         }
-//       });
-//     };
+import { Button } from "react-bootstrap";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
-//     window.addEventListener("scroll", handleScroll);
+import Footer from "../../HomeSection/Footer/Footer";
+import Navbar from "../../HomeSection/Navbar/Navbar";
 
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
-//   return (
-//     <>
-//       <Navbar />
+import "./SearchEngineOptimization.css";
 
-//       <div className="ser-sub">
-//         {/* First Row*/}
-//         <div className="container-fluid ser-sub-first">
-//           <div>
-//             <h1>Influencer Marketing</h1>
-//             <p>
-//               <Link to="/" className="homepage-link">
-//                 Home
-//               </Link>
-//               <span class="material-symbols-outlined greater-than-icon">
-//                 chevron_right
-//               </span>
-//               <span className="current-page">Influencer Marketing</span>
-//             </p>
-//           </div>
-//         </div>
+const SearchEngineOptimization = () => {
+  const services = [
+    {
+      title: "SEO Optimization",
+      description:
+        "Get more website traffic, more customers, and more visibility.",
+      icon: <ImSearch />,
+    },
+    {
+      title: "Web Development",
+      description:
+        "Your website has to impress your visitors within just a few seconds.",
+      icon: <BiCodeBlock />,
+    },
+    {
+      title: "PPC Advertising",
+      description:
+        "Target your ideal search phrases and get found at the top of Google’s results.",
+      icon: <TbCloudComputing />,
+    },
+    {
+      title: "Content Marketing",
+      description:
+        "You can provide the answers that your potential customers are looking for.",
+      icon: <GrPieChart />,
+    },
+    {
+      title: "Social Marketing",
+      description: "Create and manage top-performing social campaigns.",
+      icon: <AiOutlineFundProjectionScreen />,
+    },
+    {
+      title: "App Development",
+      description: "Launching a startup with limited capital? No problem.",
+      icon: <HiOutlineClipboardDocumentList />,
+    },
+  ];
 
-//         {/* Second-row */}
-//         <div className="container-fluid ser-sub-sec">
-//           <div className="row">
-//             <div className="col-md-6 d-flex align-items-center">
-//               <img
-//                 src={influencerMarketingImage1}
-//                 alt="Website Design"
-//                 className="ser-sub-left-img"
-//               />
-//             </div>
-//             <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
-//               <h6>
-//                 <span className="ser-sub-dot">•</span>Influencer Marketing
-//               </h6>
-//               <h2>What we do</h2>
-//               <p>
-//                 Influencer marketing is a marketing strategy that uses
-//                 individuals with a significant social media following to promote
-//                 a brand or product. These individuals, known as influencers, are
-//                 typically experts or celebrities in their respective niches or
-//                 industries and have a loyal and engaged audience.
-//               </p>
-//               <p>
-//                 Influencer marketing is based on the idea that people are more
-//                 likely to trust and follow the opinions and recommendations of
-//                 people they admire and respect. As a result, companies partner
-//                 with influencers to promote their products or services to their
-//                 followers, who are likely to be interested in those offerings.
-//               </p>
-//             </div>
-//           </div>
-//         </div>
+  const [isChecked, setIsChecked] = useState(false);
 
-//         {/* Third row */}
-//         <div className="container-fluid ser-sub-thi">
-//           <div className="row">
-//             <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
-//               <h2>Why hire us for your Influencer Marketing needs?</h2>
-//               <p>
-//                 The goal is to increase brand awareness, drive traffic, and
-//                 ultimately, generate sales or conversions. Effective influencer
-//                 marketing requires careful research and selection of the right
-//                 influencer, as well as a clear understanding of the target
-//                 audience and the goals of the campaign. Let the Skilledhyre team
-//                 help you connect with the right influencers and create
-//                 compelling campaigns that resonate with your audience. Get
-//                 started today and see your brand soar to new heights!
-//               </p>
-//             </div>
-//             <div className="col-md-6 d-flex align-items-center">
-//               <img
-//                 src={influencerMarketingImage2}
-//                 alt="Website Design"
-//                 className="ser-sub-right-img"
-//               />
-//             </div>
-//           </div>
-//         </div>
+  const handleToggle = () => {
+    setIsChecked(!isChecked);
+  };
 
-//         {/* Fourth row */}
-//         <div className="container-fluid ser-sub-fourth">
-//           <div className="row">
-//             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
-//               <div className="col-md-12 ">
-//                 <img
-//                   src={influencerMarketingImage3}
-//                   alt="Website Design"
-//                   className="ser-sub-card-img"
-//                 />
-//               </div>
-//               <div className="ser-sub-fourth-content">
-//                 <h3>Influencer outreach and partnerships</h3>
-//                 <p>
-//                   We identify and select the ideal influencers for your brand by
-//                   analyzing their profiles, content quality, audience
-//                   demographics, and engagement metrics. This ensures effective
-//                   partnerships that align with your brand's goals.
-//                 </p>
-//               </div>
-//             </div>
-//             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
-//               <div>
-//                 <img
-//                   src={influencerMarketingImage4}
-//                   alt="Website Design"
-//                   className="ser-sub-card-img"
-//                 />
-//               </div>
-//               <div className="ser-sub-fourth-content">
-//                 <h3>Campaign planning and management</h3>
-//                 <p>
-//                   We manage the entire influencer campaign process, from
-//                   negotiating rates and drafting contracts to overseeing content
-//                   creation and ensuring compliance. Our team handles every
-//                   detail to ensure smooth execution and optimal results.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
+  return (
+    <>
+      <Navbar />
 
-//         {/* Fifth row */}
-//         <div className="container-fluid ser-sub-sec influencer-fif">
-//           <div className="row">
-//             <div className="col-md-6 d-flex align-items-center">
-//               <img
-//                 src={influencerMarketingImage5}
-//                 alt="Website Design"
-//                 className="ser-sub-left-img"
-//               />
-//             </div>
-//             <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
-//               <h3>Content creation</h3>
+      <div className="ser-sub">
+        {/* First Row*/}
+        <div className="container-fluid ser-sub-first">
+          <div>
+            <h1>Search Engine Optimization</h1>
+            <p>
+              <Link to="/" className="homepage-link">
+                Home
+              </Link>
+              <span class="material-symbols-outlined greater-than-icon">
+                chevron_right
+              </span>
+              <span className="current-page">Search Engine Optimization</span>
+            </p>
+          </div>
+        </div>
 
-//               <p>
-//                 We design a tailored influencer marketing strategy based on your
-//                 objectives, audience, and budget. This includes choosing the
-//                 right influencers, content formats, and distribution channels to
-//                 maximize impact.
-//               </p>
+        {/* Second Row */}
+        <div className="container-fluid search-engine-optimization-sec">
+          <div className="row search-engine-optimization-sec-row">
+            {/* Left Column Services */}
+            <div className="col-md-3">
+              {services.slice(0, 3).map((service, index) => (
+                <div
+                  className="search-engine-optimization-sec-row-card"
+                  key={index}
+                >
+                  <div className="row search-engine-optimization-sec-row-card-content-left">
+                    <div className="col-md-8">
+                      <h5>{service.title}</h5>
+                      <p>{service.description}</p>
+                    </div>
+                    <div className="col-md-4 search-engine-optimization-sec-row-card-icon">
+                      {service.icon}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-//               <h3>Analytics and tracking</h3>
-//               <p>
-//                 We provide comprehensive performance tracking and reporting,
-//                 measuring key metrics such as reach, engagement, and ROI. Our
-//                 insights help you evaluate campaign effectiveness and make
-//                 data-driven decisions.
-//               </p>
-//             </div>
-//           </div>
-//         </div>
+            {/* Image Column */}
+            <div className="col-md-6">
+              <div className="search-engine-optimization-sec-row-card-image">
+                <img
+                  src={SearchEngineOptimization1}
+                  alt="Content Marketing Strategy"
+                />
+              </div>
+            </div>
 
-//         <Footer />
-//       </div>
-//     </>
-//   );
-// };
+            {/* Right Column Services */}
+            <div className="col-md-3">
+              {services.slice(3, 6).map((service, index) => (
+                <div
+                  className="search-engine-optimization-sec-row-card"
+                  key={index}
+                >
+                  <div className="row">
+                    <div className="col-md-4 search-engine-optimization-sec-row-card-icon">
+                      {service.icon}
+                    </div>
+                    <div className="col-md-8 search-engine-optimization-sec-row-card-content-right">
+                      <h5>{service.title}</h5>
+                      <p>{service.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-// export default InfluencerMarketing;
+        {/* Third row */}
+        <div className="container-fluid search-engine-optimization-thi">
+          <div className="search-engine-optimization-thi-background-color">
+            <div className="search-engine-optimization-thi-background-image">
+              <div className="search-engine-optimization-thi-heading">
+                <h2>Know your SEO Score!</h2>
+              </div>
+
+              <div className="search-engine-optimization-thi-form-container">
+                <form className="search-engine-optimization-thi-form">
+                  <input
+                    type="text"
+                    className="form-control text-field-1"
+                    placeholder="Your Website URL"
+                  />
+                  <input
+                    type="email"
+                    className="form-control text-field-2"
+                    placeholder="Email"
+                  />
+
+                  <div className="search-engine-optimization-thi-button-div">
+                    <Button
+                      href="/start-now"
+                      className="ml-2 search-engine-optimization-button-thi"
+                    >
+                      Start Now{" "}
+                      <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon " />
+                    </Button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fourth row */}
+        <div className="container-fluid social-media-ppc-four-section">
+          <div className="social-media-ppc-four-content">
+            <h6>
+              <span className="social-media-ppc-dot">•</span>real numbers
+              <span className="social-media-ppc-dot">•</span>
+            </h6>
+            <h2>
+              Expect Great Things from <br></br>Your SEO Agency
+            </h2>
+            <div>
+              <span
+                className="before"
+                style={{ color: isChecked ? "#e1dfdf" : "#00c3ff" }}
+              >
+                Before
+              </span>
+              <span className="toggle-div">
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </span>
+
+              <span
+                className="after"
+                style={{ color: isChecked ? "#2196f3" : "#e1dfdf" }}
+              >
+                After
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Sixth row */}
+        <div className="container-fluid search-engine-optimization-six">
+          <div className="search-engine-optimization-six-background-color">
+            <div className="search-engine-optimization-six-background-image radius-div">
+              <div className="search-engine-optimization-six-heading">
+                <h2>
+                  Take Your Website to Next <br></br> Level Right Now!
+                </h2>
+              </div>
+              <div className="search-engine-optimization-six-button-div">
+                <Button
+                  href="/start-now"
+                  className="ml-2 search-engine-optimization-button-six"
+                >
+                  Start Now
+                  <IoIosArrowRoundForward className="search-engine-optimization-button-six-arrow-icon " />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default SearchEngineOptimization;

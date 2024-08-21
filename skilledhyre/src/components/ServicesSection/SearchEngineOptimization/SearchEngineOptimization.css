@@ -1,0 +1,378 @@
+/* Second row */
+
+.search-engine-optimization-sec {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.search-engine-optimization-sec-row-card {
+  padding-bottom: 40px;
+}
+
+.search-engine-optimization-sec-row-card-content-left h5,
+.search-engine-optimization-sec-row-card-content-right h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #1a1b1e;
+}
+
+.search-engine-optimization-sec-row-card-content-left p,
+.search-engine-optimization-sec-row-card-content-right p {
+  font-size: 14px;
+  color: #606060;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.search-engine-optimization-sec-row-card-icon {
+  color: #00c3ff;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 61px;
+  font-size: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  box-shadow: 8px 8px 16px 0px rgba(50, 197, 242, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.search-engine-optimization-sec-row-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.search-engine-optimization-sec-row-card-image img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.search-engine-optimization-sec-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Third row */
+
+.search-engine-optimization-thi {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.search-engine-optimization-thi-background-color {
+  background: linear-gradient(145deg, #0039e4, #04dbf1);
+  border-radius: 15px;
+  box-shadow: 16px 16px 48px 8px rgba(50, 197, 242, 0.2);
+}
+
+.search-engine-optimization-thi-background-image {
+  background: url("../../../images/ServicesSubPageImages/search-engine-optimization-2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.search-engine-optimization-thi h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.search-engine-optimization-thi-form-container {
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.search-engine-optimization-thi-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.search-engine-optimization-thi-form .text-field::placeholder {
+  color: #7e7e7e !important;
+  opacity: 1;
+}
+
+.text-field-1,
+.text-field-2,
+.search-engine-optimization-thi-button-div {
+  flex: none;
+}
+
+.text-field-1,
+.text-field-2 {
+  width: 250px;
+  box-shadow: none !important;
+}
+
+.search-engine-optimization-thi-button-div {
+  width: 170px;
+}
+
+.text-field-1,
+.text-field-2 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  margin-right: 0;
+}
+
+.text-field-1 {
+  border-radius: 35px 0px 0px 35px;
+  border-right: none;
+}
+
+.text-field-2 {
+  border-radius: 0px 0px 0px 0px;
+  border-left: none;
+  border-right: none;
+}
+
+.search-engine-optimization-thi-button-div {
+  border-radius: 0px 35px 35px 0px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1dfdf;
+  border-left: none;
+  background-color: #ffffff;
+}
+
+.search-engine-optimization-button-thi {
+  color: #fff;
+  background: #ff4d6f;
+  text-align: left;
+  padding: 5px 5px 5px 25px;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: 0;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.search-engine-optimization-button-thi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.search-engine-optimization-button-thi:hover::before {
+  left: 100%;
+}
+
+.search-engine-optimization-button-thi:hover {
+  color: white;
+  background: #ff4d6f;
+  border-color: #ff4d6f;
+}
+
+.search-engine-optimization-button-thi-arrow-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 1rem !important;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 14px;
+}
+
+/* Fourth row */
+
+.before {
+}
+.after {
+}
+
+/* Toggle Button */
+.toggle-div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00c3ff;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Sixth row */
+
+.search-engine-optimization-six-background-image {
+  background: url("../../../images/ServicesSubPageImages/search-engine-optimization-11.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.search-engine-optimization-six {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.search-engine-optimization-six h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.search-engine-optimization-button-six {
+  background-color: #ffffff;
+  color: #fe4c1c;
+  text-align: left;
+  padding: 5px 5px 5px 25px;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: 0;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.search-engine-optimization-button-six::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.search-engine-optimization-button-six:hover::before {
+  left: 100%;
+}
+
+.search-engine-optimization-button-six:hover {
+  color: #fe4c1c;
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.search-engine-optimization-button-six-arrow-icon {
+  background-color: #fe4c1c;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 1rem !important;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 14px;
+}
+
+.search-engine-optimization-six-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-engine-optimization-six-background-color {
+  background: linear-gradient(to bottom, #ff4d37, #ff5351, #ff7a3d, #ff6962);
+  border-radius: 15px;
+  box-shadow: 16px 16px 48px 8px rgba(50, 197, 242, 0.2);
+}
