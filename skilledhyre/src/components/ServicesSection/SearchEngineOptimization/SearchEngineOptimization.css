@@ -219,10 +219,12 @@
 
 .search-engine-optimization-four {
   text-align: center;
+  padding-top: 300px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   position: relative;
+  background-color: #f5fafa;
 }
 
 .search-engine-optimization-dot {
@@ -349,6 +351,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .search-engine-optimization-four-card {
@@ -470,11 +473,17 @@ input:checked + .slider:before {
 
 /* Fifth row */
 
+.search-engine-optimization-fif {
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
 .search-engine-optimization-fif-header {
   font-family: "Red Hat Display", sans-serif;
   text-align: left;
   margin-left: 180px;
 }
+
 .search-engine-optimization-fif-header h6 {
   color: #a5b7d2;
   font-size: 14px;
@@ -521,6 +530,7 @@ input:checked + .slider:before {
 .slider-item-container {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .slider-item-container img {
@@ -559,7 +569,6 @@ input:checked + .slider:before {
   position: absolute;
   top: 180px;
   left: 10;
-
   right: 0;
   bottom: 0;
   display: flex;
