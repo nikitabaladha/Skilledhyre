@@ -466,12 +466,9 @@ input:checked + .slider:before {
   font-weight: 900;
   line-height: 1.2;
   font-family: "Red Hat Display", sans-serif;
-  /* text-align: center; */
 }
 
 /* Fifth row */
-
-/* Sub-heading styling */
 
 .search-engine-optimization-fif-header {
   font-family: "Red Hat Display", sans-serif;
@@ -488,7 +485,6 @@ input:checked + .slider:before {
   line-height: 1;
 }
 
-/* Main heading styling */
 .search-engine-optimization-fif-header h2 {
   box-sizing: border-box;
   color: black;
@@ -520,6 +516,75 @@ input:checked + .slider:before {
 
 .search-engine-optimization-fif-slider-container {
   max-width: 1400px;
+}
+
+.slider-item-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-item-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay h3 {
+  color: #fff;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1;
+  text-align: left;
+}
+
+.overlay p {
+  color: #95e1fa;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.slider-item-container .overlay {
+  position: absolute;
+  top: 180px;
+  left: 10;
+
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  box-sizing: border-box;
+  background-color: #0039e4;
+  background-image: linear-gradient(90deg, #0039e4, #04dbf1);
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(100%);
+  color: #fff;
+  width: 280px;
+  height: 110px;
+}
+
+/* Hover effect */
+.slider-item-container:hover .overlay {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Sixth row */
