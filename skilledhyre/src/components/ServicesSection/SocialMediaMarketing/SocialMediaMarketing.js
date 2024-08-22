@@ -136,19 +136,6 @@ const SocialMediaMarketing = () => {
     },
   ];
 
-  //   const [currentIndex, setCurrentIndex] = useState(0);
-
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       setCurrentIndex((prevIndex) =>
-  //         prevIndex === realTestimonials.length - 1 ? 0 : prevIndex + 1
-  //       );
-  //     }, 5000);
-
-  //     return () => clearInterval(interval);
-  //   }, [realTestimonials.length]);
-
-  //   const currentTestimonial = realTestimonials[currentIndex];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

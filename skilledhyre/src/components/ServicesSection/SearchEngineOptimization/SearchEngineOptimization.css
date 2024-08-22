@@ -219,9 +219,10 @@
 
 .search-engine-optimization-four {
   text-align: center;
-  padding-left: 180px;
-  padding-right: 180px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 80px;
+  position: relative;
 }
 
 .search-engine-optimization-dot {
@@ -356,16 +357,15 @@ input:checked + .slider:before {
   background: #fff;
   text-align: center;
   border-radius: 15px;
-
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 330px;
 }
 
 .search-engine-optimization-four-card-body {
-  padding-bottom: 150px;
-  padding-top: 60px;
+  padding: 60px 15px 150px;
 }
 
 .search-engine-optimization-four-card-body h2 {
@@ -400,9 +400,126 @@ input:checked + .slider:before {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 100%; /* Ensures the image fits within the card */
+  max-width: 100%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.search-engine-optimization-four-card-left-image,
+.search-engine-optimization-four-card-right-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-engine-optimization-four-card-container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-engine-optimization-four-card-left-image {
+  position: absolute;
+  left: 90px;
+  top: 65%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.search-engine-optimization-four-card-right-image {
+  position: absolute;
+  right: 130px;
+  top: 65%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Increment content */
+.search-engine-optimization-increment {
+  padding-top: 100px;
+  padding-left: 180px;
+  padding-right: 180px;
+  text-align: center;
+}
+.span-increment-number {
+  font-size: 48px;
+  line-height: 1;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: #1a1b1e;
+}
+
+.span-number {
+  padding-left: 60px;
+}
+
+.search-engine-optimization-increment-content h6 {
+  font-size: 14px;
+  color: #fe4c1c;
+  margin-top: 13px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+  /* text-align: center; */
+}
+
+/* Fifth row */
+
+/* Sub-heading styling */
+
+.search-engine-optimization-fif-header {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: left;
+  margin-left: 180px;
+}
+.search-engine-optimization-fif-header h6 {
+  color: #a5b7d2;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: auto;
+  line-height: 1;
+}
+
+/* Main heading styling */
+.search-engine-optimization-fif-header h2 {
+  box-sizing: border-box;
+  color: black;
+  cursor: auto;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 20px;
+  display: block;
+}
+
+.search-engine-optimization-fif-header p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.slick-slide img {
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+  height: 300px;
+  width: 500px;
+}
+
+.slick-dots li button:before {
+  color: black;
+}
+
+.search-engine-optimization-fif-slider-container {
+  max-width: 1400px;
 }
 
 /* Sixth row */

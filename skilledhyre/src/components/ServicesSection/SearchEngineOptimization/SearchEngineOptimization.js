@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import SearchEngineOptimization1 from "../../../images/ServicesSubPageImages/search-engine-optimization-1.png";
+import SearchEngineOptimization3 from "../../../images/ServicesSubPageImages/search-engine-optimization-3.png";
+import SearchEngineOptimization4 from "../../../images/ServicesSubPageImages/search-engine-optimization-4.png";
 import SearchEngineOptimization5 from "../../../images/ServicesSubPageImages/search-engine-optimization-5.png";
 import SearchEngineOptimization6 from "../../../images/ServicesSubPageImages/search-engine-optimization-6.png";
 import SearchEngineOptimization7 from "../../../images/ServicesSubPageImages/search-engine-optimization-7.png";
+
+import SearchEngineOptimization8 from "../../../images/ServicesSubPageImages/search-engine-optimization-8.jpg";
+import SearchEngineOptimization9 from "../../../images/ServicesSubPageImages/search-engine-optimization-9.jpg";
+import SearchEngineOptimization10 from "../../../images/ServicesSubPageImages/search-engine-optimization-10.jpg";
+import SearchEngineOptimizationA from "../../../images/ServicesSubPageImages/search-engine-optimization-a.png";
 
 import { ImSearch } from "react-icons/im";
 import { GrPieChart } from "react-icons/gr";
@@ -85,6 +97,53 @@ const SearchEngineOptimization = () => {
   const handleToggle = () => {
     setIsChecked(!isChecked);
   };
+
+  const [activeClients, setActiveClients] = useState(0);
+  const [projectsDone, setProjectsDone] = useState(0);
+  const [teamAdvisors, setTeamAdvisors] = useState(0);
+  const [gloriousYears, setGloriousYears] = useState(0);
+
+  const animateCounter = (finalValue, setValue) => {
+    let startValue = 0;
+    const duration = 2000;
+    const increment = finalValue / (duration / 10);
+
+    const counter = setInterval(() => {
+      startValue += increment;
+      if (startValue >= finalValue) {
+        clearInterval(counter);
+        setValue(finalValue); // Ensure final value is accurate
+      } else {
+        setValue(Math.floor(startValue));
+      }
+    }, 10);
+  };
+
+  useEffect(() => {
+    animateCounter(20, setActiveClients);
+    animateCounter(50, setProjectsDone);
+    animateCounter(25, setTeamAdvisors);
+    animateCounter(2, setGloriousYears);
+  }, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
+  const images = [
+    SearchEngineOptimization8,
+    SearchEngineOptimization9,
+    SearchEngineOptimization10,
+    SearchEngineOptimizationA,
+    SearchEngineOptimization10,
+    SearchEngineOptimization8,
+  ];
 
   return (
     <>
@@ -232,8 +291,17 @@ const SearchEngineOptimization = () => {
           {/* Cards */}
           <div className="container-fluid search-engine-optimization-four-card-container">
             <div className="row">
+              <div className="col-md-1">
+                {" "}
+                <img
+                  className="search-engine-optimization-four-card-left-image"
+                  src={SearchEngineOptimization3}
+                  alt=""
+                />
+              </div>
+
               {cardData.map((card, index) => (
-                <div className="col-md-4" key={index}>
+                <div className="col-md-3" key={index}>
                   <div className="search-engine-optimization-four-card">
                     <div className="search-engine-optimization-four-card-body">
                       <h2 className={`card-number-${index + 1}`}>
@@ -249,7 +317,108 @@ const SearchEngineOptimization = () => {
                   </div>
                 </div>
               ))}
+              <div className="col-md-1">
+                <img
+                  src={SearchEngineOptimization4}
+                  className="search-engine-optimization-four-card-right-image"
+                  alt=""
+                />
+              </div>
             </div>
+          </div>
+
+          {/* increment cards */}
+          <div className="container-fluid search-engine-optimization-increment">
+            <div className="row search-engine-optimization-container justify-content-center">
+              <div className="col-md-3 search-engine-optimization-increment-content d-flex flex-column align-items-center">
+                <div className="span-increment-number">
+                  <span className="span-number">{activeClients}</span>
+                  <span>+</span>
+                </div>
+
+                <h6>
+                  <span className="search-engine-optimization-dot">•</span>
+                  ACTIVE CLIENTS
+                </h6>
+              </div>
+
+              <div className="col-md-3 search-engine-optimization-increment-content">
+                <div className="span-increment-number">
+                  <span className="span-number">{projectsDone}</span>
+                  <span className="span-plus">+</span>
+                </div>
+                <h6>
+                  <span className="search-engine-optimization-dot">•</span>
+                  PROJECTS DONE
+                </h6>
+              </div>
+
+              <div className="col-md-3 search-engine-optimization-increment-content">
+                <div className="span-increment-number">
+                  <span className="span-number">{teamAdvisors}</span>
+                  <span>+</span>
+                </div>
+                <h6>
+                  <span className="search-engine-optimization-dot">•</span>
+                  TEAM ADVISORS
+                </h6>
+              </div>
+
+              <div className="col-md-3 search-engine-optimization-increment-content">
+                <div className="span-increment-number">
+                  <span className="span-number">{gloriousYears}</span>
+                  <span>+</span>
+                </div>
+                <h6>
+                  <span className="search-engine-optimization-dot">•</span>
+                  GLORIOUS YEARS
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fifth row  */}
+        <div className="container-fluid search-engine-optimization-fif">
+          <div className="row">
+            <div className="col-md-8 col-sm-12 ">
+              <div className="search-engine-optimization-fif-header">
+                <h6 className="mb-4 search-engine-optimization-fif-sub-heading">
+                  <span className="search-engine-optimization-dot">•</span>
+                  RECENT PROJECTS
+                </h6>
+                <h2 className="mb-4 search-engine-optimization-fif-heading">
+                  Our Latest Case Studies
+                </h2>
+                <p>
+                  If we had a ‘secret sauce’ it would be our awesome people.
+                  <br></br> We have only professional team!
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 col-sm-12">
+              <Button
+                href="/start-now"
+                className="seo-button seo-view-more-button"
+                style={{ marginTop: "10px" }}
+              >
+                View More
+                <IoIosArrowRoundForward className="seo-arrow-icon seo-view-more-arrow-icon" />
+              </Button>
+            </div>
+          </div>
+          <div className="container search-engine-optimization-fif-slider-container mt-5 mb-5">
+            <Slider {...settings}>
+              {images.map((image, index) => (
+                <div key={index}>
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="img-fluid  mb-5"
+                  />
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
 
