@@ -73,6 +73,9 @@
 .search-engine-optimization-thi {
   padding-left: 180px;
   padding-right: 180px;
+  position: relative;
+  bottom: -160px;
+  z-index: 1;
 }
 
 .search-engine-optimization-thi-background-color {
@@ -603,22 +606,28 @@ input:checked + .slider:before {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 100%;
+  border-radius: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .search-engine-optimization-six {
   padding-left: 180px;
   padding-right: 180px;
+  position: relative;
+  bottom: -50px;
+  z-index: 1;
 }
 
 .search-engine-optimization-six h2 {
   color: #ffffff;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 900;
   font-family: "Red Hat Display", sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
   padding-bottom: 30px;
 }

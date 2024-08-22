@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Animation from "../../HomeSection/ProcessDrivenSEO/Animation";
+
 import SearchEngineOptimization1 from "../../../images/ServicesSubPageImages/search-engine-optimization-1.png";
 import SearchEngineOptimization3 from "../../../images/ServicesSubPageImages/search-engine-optimization-3.png";
 import SearchEngineOptimization4 from "../../../images/ServicesSubPageImages/search-engine-optimization-4.png";
@@ -281,11 +283,12 @@ const SearchEngineOptimization = () => {
 
         {/* Fourth row */}
         <div className="container-fluid search-engine-optimization-four">
+          <Animation />
           {/* Heading */}
           <div className="search-engine-optimization-four-content">
             <h6>
-              <span className="search-engine-optimization-dot">•</span>real
-              numbers
+              <span className="search-engine-optimization-dot">•</span>Real
+              Numbers
               <span className="search-engine-optimization-dot">•</span>
             </h6>
             <h2>
