@@ -602,3 +602,13 @@
   border-radius: 15px;
   z-index: 1;
 }
+
+/* Media Queries */
+
+/* For screens with a maximum width of 767px (Mobile) */
+@media only screen and (max-width: 767px) {
+}
+
+/* For screens with a width between 768px and 1024px (Tablet) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}

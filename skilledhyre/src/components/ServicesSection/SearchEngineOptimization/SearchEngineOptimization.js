@@ -194,7 +194,7 @@ const SearchEngineOptimization = () => {
         <div className="container-fluid search-engine-optimization-sec">
           <div className="row search-engine-optimization-sec-row">
             {/* Left Column Services */}
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-12">
               {services.slice(0, 3).map((service, index) => (
                 <div
                   className="search-engine-optimization-sec-row-card"
@@ -214,7 +214,7 @@ const SearchEngineOptimization = () => {
             </div>
 
             {/* Image Column */}
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="search-engine-optimization-sec-row-card-image">
                 <img
                   src={SearchEngineOptimization1}
@@ -224,17 +224,17 @@ const SearchEngineOptimization = () => {
             </div>
 
             {/* Right Column Services */}
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-12">
               {services.slice(3, 6).map((service, index) => (
                 <div
                   className="search-engine-optimization-sec-row-card"
                   key={index}
                 >
-                  <div className="row">
+                  <div className="row search-engine-optimization-sec-row-card-content-right">
                     <div className="col-md-4 search-engine-optimization-sec-row-card-icon">
                       {service.icon}
                     </div>
-                    <div className="col-md-8 search-engine-optimization-sec-row-card-content-right">
+                    <div className="col-md-8">
                       <h5>{service.title}</h5>
                       <p>{service.description}</p>
                     </div>

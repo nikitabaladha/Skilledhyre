@@ -1,4 +1,4 @@
-/* WebsiteDesign.css */
+/* first-row */
 
 .ser-sub {
   font-family: "Red Hat Display", sans-serif;
@@ -252,4 +252,68 @@
 
 .influencer-fif {
   padding-bottom: 20px;
+}
+
+/* Media Queries */
+
+/* For screens with a maximum width of 767px (Mobile) */
+@media only screen and (max-width: 767px) {
+  /* first-row */
+
+  .ser-sub-first {
+    background-image: url("../../images/ServicesSubPageImages/ser-sub-common-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 400px;
+  }
+
+  .ser-sub-first {
+    display: block;
+    text-align: center;
+  }
+
+  .ser-sub-first h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #1a1b1e;
+  }
+
+  .homepage-link {
+    color: #a5b7d2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .homepage-link:hover {
+    color: orangered;
+  }
+
+  .ser-sub-first p {
+    padding-top: 20px;
+  }
+
+  .greater-than-icon {
+    color: #a5b7d2;
+    vertical-align: middle;
+  }
+
+  .current-page {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #1a1b1e;
+  }
+}
+
+/* For screens with a maximum width of 767px (Mobile) */
+@media only screen and (max-width: 767px) {
+}
+
+/* For screens with a width between 768px and 1024px (Tablet) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }

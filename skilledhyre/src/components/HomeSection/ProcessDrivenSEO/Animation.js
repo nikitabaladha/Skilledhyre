@@ -6,8 +6,8 @@ class Animation extends Component {
     this.canvasRef = React.createRef();
     this.opts = {
       amount: 10,
-      radius: 0.8,
-      thickness: 0.8,
+      radius: 0.5,
+      thickness: 1.4,
       rotSpeed: 0.1,
       gravity: 0.8,
     };
@@ -70,7 +70,7 @@ class Dot {
       Math.random() * window.innerWidth,
       Math.random() * window.innerHeight
     );
-    // this.vel = new Vector2(Math.random() * 2 - 1, Math.random() * 2 - 1);
+
     this.vel = new Vector2(
       Math.random() * 0.5 - 0.25,
       Math.random() * 0.5 - 0.25
