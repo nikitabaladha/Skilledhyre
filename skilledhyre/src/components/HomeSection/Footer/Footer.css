@@ -77,6 +77,9 @@ li {
 .svg-container {
   text-align: center;
   background-color: #005fd7;
+  overflow: hidden;
+  margin: 0; /* Ensure no margin is added around the SVG */
+  padding: 0; /* Ensure no padding is added around the SVG */
 }
 
 /* SVG Path Styling */
@@ -102,6 +105,7 @@ li {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
+    padding-top: 100px;
   }
 
   .footer-content {

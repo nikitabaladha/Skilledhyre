@@ -136,6 +136,37 @@ const SearchEngineOptimization = () => {
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
   };
 
   const images = [
@@ -194,7 +225,7 @@ const SearchEngineOptimization = () => {
         <div className="container-fluid search-engine-optimization-sec">
           <div className="row search-engine-optimization-sec-row">
             {/* Left Column Services */}
-            <div className="col-md-3 col-sm-12">
+            <div className="col-md-3 col-sm-12 search-engine-optimization-sec-left-row">
               {services.slice(0, 3).map((service, index) => (
                 <div
                   className="search-engine-optimization-sec-row-card"
@@ -224,7 +255,7 @@ const SearchEngineOptimization = () => {
             </div>
 
             {/* Right Column Services */}
-            <div className="col-md-3 col-sm-12">
+            <div className="col-md-3 col-sm-12 search-engine-optimization-sec-right-row">
               {services.slice(3, 6).map((service, index) => (
                 <div
                   className="search-engine-optimization-sec-row-card"
@@ -266,7 +297,7 @@ const SearchEngineOptimization = () => {
                     placeholder="Email"
                   />
 
-                  <div className="search-engine-optimization-thi-button-div">
+                  {/* <div className="search-engine-optimization-thi-button-div">
                     <Button
                       href="/start-now"
                       className="ml-2 search-engine-optimization-button-thi"
@@ -274,7 +305,27 @@ const SearchEngineOptimization = () => {
                       Start Now{" "}
                       <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon " />
                     </Button>
+                  </div> */}
+
+                  {/* This div will be hidden on small screens */}
+                  <div className="search-engine-optimization-thi-button-div">
+                    <Button
+                      href="/start-now"
+                      className="ml-2 search-engine-optimization-button-thi"
+                    >
+                      Start Now{" "}
+                      <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon" />
+                    </Button>
                   </div>
+
+                  {/* Button directly for small screens */}
+                  <Button
+                    href="/start-now"
+                    className="ml-2 search-engine-optimization-button-thi d-block d-md-none"
+                  >
+                    Start Now{" "}
+                    <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon" />
+                  </Button>
                 </form>
               </div>
             </div>
@@ -317,7 +368,6 @@ const SearchEngineOptimization = () => {
           <div className="container-fluid search-engine-optimization-four-card-container">
             <div className="row">
               <div className="col-md-1">
-                {" "}
                 <img
                   className="search-engine-optimization-four-card-left-image"
                   src={SearchEngineOptimization3}
@@ -326,7 +376,7 @@ const SearchEngineOptimization = () => {
               </div>
 
               {cardData.map((card, index) => (
-                <div className="col-md-3" key={index}>
+                <div className="col-md-3 col-sm-12" key={index}>
                   <div className="search-engine-optimization-four-card">
                     <div className="search-engine-optimization-four-card-body">
                       <h2 className={`card-number-${index + 1}`}>
@@ -449,7 +499,7 @@ const SearchEngineOptimization = () => {
                   />
                   {imgObj.image !== SearchEngineOptimizationA && (
                     <div className="hover-div">
-                      <div className="overlay">
+                      <div className="overlay show-overlay">
                         <h3>{imgObj.title}</h3>
                         <p>{imgObj.description}</p>
                       </div>

@@ -4,7 +4,6 @@
   padding-left: 180px;
   padding-right: 180px;
   padding-top: 100px;
-  padding-bottom: 100px;
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -156,11 +155,14 @@
 
 .search-engine-optimization-thi-button-div {
   border-radius: 0px 35px 35px 0px;
-  display: flex;
   align-items: center;
   border: 1px solid #e1dfdf;
   border-left: none;
   background-color: #ffffff;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
 }
 
 .search-engine-optimization-button-thi {
@@ -227,7 +229,7 @@
   padding-right: 0px;
   padding-bottom: 100px;
   position: relative;
-  background-color: #f5fafa;
+  background-color: #eff2fa;
 }
 
 .search-engine-optimization-dot {
@@ -702,12 +704,17 @@ input:checked + .slider:before {
 /* For screens with a maximum width of 767px (Mobile) */
 
 @media only screen and (max-width: 767px) {
+  /* first-row */
+  .ser-sub-first {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   /* Second-row */
   .search-engine-optimization-sec {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .search-engine-optimization-sec-row {
@@ -718,6 +725,10 @@ input:checked + .slider:before {
   .search-engine-optimization-sec-row-card {
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  .search-engine-optimization-sec-right-row {
+    padding-top: 80px;
   }
 
   .search-engine-optimization-sec-row-card-content-left,
@@ -743,6 +754,251 @@ input:checked + .slider:before {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  /* Third row */
+  .search-engine-optimization-thi {
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    bottom: -10;
+    z-index: 1;
+    margin-top: 0px;
+  }
+
+  .search-engine-optimization-thi-background-color {
+    border-radius: 15px;
+    box-shadow: 8px 8px 24px 4px rgba(50, 197, 242, 0.2);
+  }
+
+  .search-engine-optimization-thi-background-image {
+    background-size: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .search-engine-optimization-thi h2 {
+    padding-bottom: 20px;
+  }
+  .search-engine-optimization-thi-form-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .search-engine-optimization-thi-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-field-1,
+  .text-field-2 {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .text-field-1 {
+    border-radius: 25px;
+    border-right: 1px solid #e1dfdf;
+  }
+
+  .text-field-2 {
+    border-radius: 25px;
+    border-left: 1px solid #e1dfdf;
+  }
+
+  .search-engine-optimization-thi-button-div {
+    display: none;
+  }
+
+  .search-engine-optimization-button-thi {
+    font-size: 14px;
+    border-radius: 25px;
+    display: block !important;
+  }
+
+  .search-engine-optimization-button-thi-arrow-icon {
+    font-size: 0.8rem !important;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Fourth row */
+  .search-engine-optimization-four {
+    padding-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .search-engine-optimization-four h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  }
+
+  .search-engine-optimization-four h6 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  /* Toggle Button */
+  .toggle-container {
+    padding-bottom: 40px;
+  }
+
+  .before,
+  .after {
+    font-size: 12px;
+  }
+
+  .toggle-div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Cards */
+  .search-engine-optimization-four-card-container .row {
+    flex-direction: column;
+  }
+
+  .search-engine-optimization-four-card {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 320px;
+  }
+
+  .search-engine-optimization-four-card-image {
+    width: 100%;
+  }
+
+  .search-engine-optimization-four-card-left-image,
+  .search-engine-optimization-four-card-right-image {
+    display: none;
+  }
+
+  /* Increment content */
+  .search-engine-optimization-increment {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  .search-engine-optimization-increment-content {
+    margin-bottom: 20px;
+  }
+
+  .search-engine-optimization-increment-content h6 {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Fifth row */
+  .search-engine-optimization-fif {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .search-engine-optimization-fif-header {
+    margin-left: 20px;
+  }
+
+  .seo-button.seo-view-more-button {
+    width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+  }
+
+  .search-engine-optimization-fif-slider-container {
+    max-width: 100%;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slider-item-container {
+    border-radius: 10px;
+  }
+
+  .slider-item-container img {
+    border-radius: 10px;
+  }
+
+  .slider-item-container .overlay {
+    position: absolute;
+    top: 80px;
+    left: 10;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px 10px 30px;
+    box-sizing: border-box;
+    background-color: #0039e4;
+    background-image: linear-gradient(90deg, #0039e4, #04dbf1);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(100%);
+    color: #fff;
+    width: 280px;
+    height: 110px;
+  }
+
+  .slider-item-container .show-overlay {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .search-engine-optimization-six {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .search-engine-optimization-six-background-image {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .search-engine-optimization-six h2 {
+    font-size: 24px;
+  }
+
+  .search-engine-optimization-button-six {
+    font-size: 16px;
+    padding: 6px 6px 6px 30px;
+    width: 170px;
+    border-radius: 25px;
+  }
+
+  .search-engine-optimization-button-six-arrow-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+
+  .search-engine-optimization-six-button-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-engine-optimization-six-background-color {
+    box-shadow: none;
+  }
+}
 /* For screens with a width between 768px and 1024px (Tablet) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 }
