@@ -54,14 +54,14 @@ const WebsiteDesign = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={websiteDesignImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>Website Development
               </h6>
@@ -90,7 +90,7 @@ const WebsiteDesign = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>A strategic approach to website design and development</h2>
               <p>
                 In this growing era of Internet, web presence is an essential
@@ -107,7 +107,7 @@ const WebsiteDesign = () => {
                 you to meet your goals in attracting prospective clientele.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={websiteDesignImage2}
                 alt="Website Design"
@@ -119,9 +119,9 @@ const WebsiteDesign = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column ser-sub-card">
-              <div className="col-md-12 ">
+              <div className="col-md-12">
                 <img
                   src={websiteDesignImage3}
                   alt="Website Design"
@@ -145,6 +145,7 @@ const WebsiteDesign = () => {
                 </p>
               </div>
             </div>
+
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div>
                 <img

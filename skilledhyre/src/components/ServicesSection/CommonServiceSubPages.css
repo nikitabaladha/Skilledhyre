@@ -9,7 +9,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px;
 }
 
 .ser-sub-first {
@@ -120,6 +119,7 @@
 
 .ser-sub-sec p {
   color: #606060;
+
   font-size: 16px;
   line-height: 1.875;
 }
@@ -256,19 +256,9 @@
 
 /* Media Queries */
 
-/* For screens with a maximum width of 767px (Mobile) */
+/* Phone Devices with a Max-Width of 767px */
 @media only screen and (max-width: 767px) {
   /* first-row */
-
-  .ser-sub-first {
-    background-image: url("../../images/ServicesSubPageImages/ser-sub-common-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 400px;
-  }
-
   .ser-sub-first {
     display: block;
     text-align: center;
@@ -308,12 +298,138 @@
     line-height: 1.875;
     color: #1a1b1e;
   }
-}
 
-/* For screens with a maximum width of 767px (Mobile) */
-@media only screen and (max-width: 767px) {
+  .ser-sub-left-img,
+  .ser-sub-right-img {
+    max-width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .ser-sub-sec {
+    padding-top: 50px;
+  }
+
+  .ser-sub-sec,
+  .ser-sub-thi,
+  .ser-sub-fif {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ser-sub-card {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .ser-sub-card-row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .ser-sub-fourth {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ser-sub-fourth-content {
+    padding: 20px;
+  }
+
+  .ser-sub-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
 }
 
 /* For screens with a width between 768px and 1024px (Tablet) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* first-row */
+  .ser-sub-first {
+    display: block;
+    text-align: center;
+  }
+
+  .ser-sub-first h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #1a1b1e;
+  }
+
+  .homepage-link {
+    color: #a5b7d2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .homepage-link:hover {
+    color: orangered;
+  }
+
+  .ser-sub-first p {
+    padding-top: 20px;
+  }
+
+  .greater-than-icon {
+    color: #a5b7d2;
+    vertical-align: middle;
+  }
+
+  .current-page {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #1a1b1e;
+  }
+
+  .ser-sub-left-img,
+  .ser-sub-right-img {
+    max-width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .ser-sub-sec {
+    padding-top: 50px;
+  }
+
+  .ser-sub-sec-content {
+    padding-top: 0px;
+  }
+
+  .ser-sub-thi {
+    padding-top: 50px;
+  }
+
+  .ser-sub-thi-content {
+    padding-top: 0px;
+  }
+
+  .ser-sub-sec,
+  .ser-sub-thi,
+  .ser-sub-fif {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .ser-sub-fourth {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ser-sub-fourth-content {
+    padding: 20px;
+  }
+
+  .ser-sub-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
 }
