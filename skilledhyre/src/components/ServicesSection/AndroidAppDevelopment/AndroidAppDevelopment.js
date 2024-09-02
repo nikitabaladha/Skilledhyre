@@ -54,14 +54,14 @@ const AndroidAppDevelopment = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={androidAppImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>BUILDING SMARTER
                 APPLICATIONS FOR SMART USERS
@@ -84,7 +84,7 @@ const AndroidAppDevelopment = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>What sets us Apart for Android App Development?</h2>
               <p>
                 The team of Skilledhyre experts can be what you are looking for.
@@ -95,7 +95,7 @@ const AndroidAppDevelopment = () => {
                 for you.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={androidAppImage2}
                 alt="Website Design"
@@ -107,7 +107,7 @@ const AndroidAppDevelopment = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column ser-sub-card">
               <div className="col-md-12 ">
                 <img

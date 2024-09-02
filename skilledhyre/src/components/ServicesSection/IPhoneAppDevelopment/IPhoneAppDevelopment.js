@@ -54,14 +54,14 @@ const IPhoneAppDevelopment = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={iphoneAppImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>Web Development
               </h6>
@@ -83,7 +83,7 @@ const IPhoneAppDevelopment = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>Scalability</h2>
               <p>
                 We ensure a scalable iOS application development to facilitate
@@ -92,7 +92,7 @@ const IPhoneAppDevelopment = () => {
                 applications and make them compatible with all platforms.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={iphoneAppImage2}
                 alt="Website Design"
@@ -104,7 +104,7 @@ const IPhoneAppDevelopment = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column ser-sub-card">
               <div className="col-md-12 ">
                 <img

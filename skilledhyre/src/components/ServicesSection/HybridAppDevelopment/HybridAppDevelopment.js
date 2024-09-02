@@ -54,14 +54,14 @@ const HybridAppDevelopment = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={hybridAppImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>HYBRID MOBILE APP
                 DEVELOPMENT
@@ -89,7 +89,7 @@ const HybridAppDevelopment = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>What sets us Apart for Hybrid mobile App Development?</h2>
               <p>
                 With a dedicated and committed team of hybrid mobile app
@@ -104,7 +104,7 @@ const HybridAppDevelopment = () => {
                 apps.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={hybridAppImage2}
                 alt="Website Design"
@@ -116,7 +116,7 @@ const HybridAppDevelopment = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column ser-sub-card">
               <div className="col-md-12 ">
                 <img

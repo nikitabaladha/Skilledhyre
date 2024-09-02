@@ -54,17 +54,17 @@ const ReactNativeAppDevelopment = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={reactNativeAppImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>REACT NATIVE MOBILE APP
-                DEVELOPMENTs
+                DEVELOPMENTS
               </h6>
               <h2>What we do</h2>
               <p>
@@ -83,7 +83,7 @@ const ReactNativeAppDevelopment = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>Hire Skilledhyre for React App Development</h2>
               <p>
                 Skilledhyre is a well-known and leading react native app
@@ -98,7 +98,7 @@ const ReactNativeAppDevelopment = () => {
                 option for the customers.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={reactNativeAppImage2}
                 alt="Website Design"
@@ -110,7 +110,7 @@ const ReactNativeAppDevelopment = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column ser-sub-card">
               <div className="col-md-12 ">
                 <img

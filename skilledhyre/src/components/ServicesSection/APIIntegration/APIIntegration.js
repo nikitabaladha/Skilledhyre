@@ -54,14 +54,14 @@ const APIIntegration = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={apiImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>API Integration
               </h6>
@@ -83,7 +83,7 @@ const APIIntegration = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>Payment Gateway</h2>
               <p>
                 We offer payment gateway integration services for ecommerce
@@ -94,7 +94,7 @@ const APIIntegration = () => {
                 their website.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={apiImage2}
                 alt="Website Design"
@@ -106,7 +106,7 @@ const APIIntegration = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img

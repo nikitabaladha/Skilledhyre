@@ -53,7 +53,7 @@ const WebsiteDevelopment = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={webDevelopmentImage1}
                 alt="Website Design"
@@ -101,7 +101,7 @@ const WebsiteDevelopment = () => {
                 perfectly.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={webDevelopmentImage2}
                 alt="Website Design"
@@ -113,7 +113,7 @@ const WebsiteDevelopment = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img
