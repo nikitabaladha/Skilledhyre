@@ -354,3 +354,104 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Media Queries */
+
+/* Media Queries for Phone Devices with a Max-Width of 767px */
+@media only screen and (max-width: 767px) {
+  .staffing-first {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .staffing-first h1 {
+    font-size: 32px;
+  }
+
+  .staffing-sec,
+  .staffing-thi,
+  .staffing-four,
+  .staffing-fif {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .staffing-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .staffing-fif-card .d-flex {
+    flex-direction: column;
+  }
+
+  .staffing-four-card {
+    padding: 85px 35px 40px;
+    margin: 10px;
+  }
+
+  .staffing-fif-card .contact-us {
+    padding: 20px 40px;
+    margin-top: 15px;
+    align-self: center;
+  }
+
+  .staffing-fif-card {
+    padding: 0px;
+  }
+
+  .staffing-four-arrow-image {
+    display: none;
+  }
+
+  .circle {
+    left: 50%;
+    margin-left: -35px;
+  }
+}
+
+/* Media Queries for Tablet Devices with a width between 768px and 1024px  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .staffing-first {
+    padding: 50px;
+  }
+
+  .staffing-sec,
+  .staffing-thi,
+  .staffing-four,
+  .staffing-fif {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .staffing-card {
+    margin-bottom: 20px;
+  }
+
+  .staffing-fif-card {
+    padding: 40px;
+  }
+
+  .staffing-fif-card .contact-us {
+    padding: 25px 50px;
+    margin-top: 20px;
+  }
+
+  .circle {
+    left: 50%;
+  }
+
+  .staffing-card-row .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .staffing-card {
+    width: 320px;
+  }
+
+  .staffing-fif-card .contact-us {
+    padding: 20px 50px;
+    align-self: center;
+  }
+}

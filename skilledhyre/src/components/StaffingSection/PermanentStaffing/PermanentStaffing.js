@@ -108,7 +108,7 @@ const PermanentStaffing = () => {
 
           <div className="container-fluid">
             <div className="row staffing-card-row">
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-6">
                 <div className="staffing-card staffing-card-1">
                   <div className="staffing-card-body">
                     <div>
@@ -122,7 +122,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-6">
                 <div className="staffing-card staffing-card-2">
                   <div className="staffing-card-body">
                     <div>
@@ -136,7 +136,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-6">
                 <div className="staffing-card staffing-card-3">
                   <div className="staffing-card-body">
                     <div>
@@ -150,7 +150,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-6">
                 <div className="staffing-card staffing-card-4">
                   <div className="staffing-card-body">
                     <div>
@@ -164,7 +164,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-6">
                 <div className="staffing-card staffing-card-5">
                   <div className="staffing-card-body">
                     <div>
@@ -178,7 +178,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-6">
                 <div className="staffing-card staffing-card-6">
                   <div className="staffing-card-body">
                     <div>
@@ -186,7 +186,7 @@ const PermanentStaffing = () => {
                     </div>
                     <div>
                       <h3 className="staffing-card-text">
-                        Fast-tTransparent and flexible.
+                        Fast-Transparent and flexible.
                       </h3>
                     </div>
                   </div>
