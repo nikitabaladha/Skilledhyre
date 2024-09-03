@@ -55,14 +55,14 @@ const InfluencerMarketing = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={influencerMarketingImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>Influencer Marketing
               </h6>
@@ -88,7 +88,7 @@ const InfluencerMarketing = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>Why hire us for your Influencer Marketing needs?</h2>
               <p>
                 The goal is to increase brand awareness, drive traffic, and
@@ -101,7 +101,7 @@ const InfluencerMarketing = () => {
                 started today and see your brand soar to new heights!
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={influencerMarketingImage2}
                 alt="Website Design"
@@ -113,7 +113,7 @@ const InfluencerMarketing = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img
@@ -156,14 +156,14 @@ const InfluencerMarketing = () => {
         {/* Fifth row */}
         <div className="container-fluid ser-sub-sec influencer-fif">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={influencerMarketingImage5}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h3>Content creation</h3>
 
               <p>
