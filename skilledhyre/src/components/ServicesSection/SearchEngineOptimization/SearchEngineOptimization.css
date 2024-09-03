@@ -1,31 +1,48 @@
-/* Second row */
+/* Second row*/
 
 .search-engine-optimization-sec {
   padding-left: 180px;
   padding-right: 180px;
-  padding-top: 100px;
-  font-family: "Red Hat Display", sans-serif;
 }
 
-.search-engine-optimization-sec-row-card {
-  padding-bottom: 40px;
-}
-
-.search-engine-optimization-sec-row-card-content-left h5,
-.search-engine-optimization-sec-row-card-content-right h5 {
-  margin-bottom: 10px;
+.search-engine-optimization-left-content h5,
+.search-engine-optimization-right-content h5 {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.2;
   color: #1a1b1e;
 }
 
-.search-engine-optimization-sec-row-card-content-left p,
-.search-engine-optimization-sec-row-card-content-right p {
+.search-engine-optimization-left-content p,
+.search-engine-optimization-right-content p {
   font-size: 14px;
   color: #606060;
   line-height: 1.875;
   font-weight: 400;
+}
+
+.search-engine-optimization-card-left,
+.search-engine-optimization-card-right {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.search-engine-optimization-sec-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding-top: 120px;
+}
+
+.search-engine-optimization-left-content {
+  text-align: right;
+  padding-top: 50px;
+}
+
+.search-engine-optimization-right-content {
+  text-align: left;
+  padding-top: 50px;
 }
 
 .search-engine-optimization-sec-row-card-icon {
@@ -39,32 +56,10 @@
   width: 60px;
   height: 60px;
   box-shadow: 8px 8px 16px 0px rgba(50, 197, 242, 0.2);
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   margin: auto;
-}
-
-.search-engine-optimization-sec-row-card-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.search-engine-optimization-sec-row-card-image img {
-  width: 100%;
-  max-width: 550px;
-  height: auto;
-  border: none;
-  border-radius: 0;
-  position: relative;
-}
-
-.search-engine-optimization-sec-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Third row */
@@ -256,6 +251,7 @@
 }
 
 /* Toggle Button */
+
 .before,
 .after {
   font-size: 14px;
@@ -421,7 +417,6 @@ input:checked + .slider:before {
 
 .search-engine-optimization-four-card-container .row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   position: relative;
 }
@@ -443,16 +438,17 @@ input:checked + .slider:before {
 }
 
 /* Increment content */
+
 .search-engine-optimization-increment {
   padding-top: 100px;
   padding-left: 180px;
   padding-right: 180px;
   text-align: center;
 }
+
 .span-increment-number {
   font-size: 48px;
   line-height: 1;
-
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   color: #1a1b1e;
@@ -595,7 +591,6 @@ input:checked + .slider:before {
   height: 110px;
 }
 
-/* Hover effect */
 .slider-item-container:hover .overlay {
   opacity: 1;
   transform: translateX(0);
@@ -701,10 +696,14 @@ input:checked + .slider:before {
   box-shadow: 16px 16px 48px 8px rgba(50, 197, 242, 0.2);
 }
 
+@media only screen and (max-width: 767px) {
+}
+
 /* For screens with a maximum width of 767px (Mobile) */
 
 @media only screen and (max-width: 767px) {
   /* first-row */
+
   .ser-sub-first {
     padding-left: 20px;
     padding-right: 20px;
@@ -712,52 +711,60 @@ input:checked + .slider:before {
     padding-bottom: 30px;
   }
 
-  /* Second-row */
-  .search-engine-optimization-sec {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 50px;
-  }
+  /* Second row */
 
-  .search-engine-optimization-sec-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .search-engine-optimization-sec-row-card {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .search-engine-optimization-sec-right-row {
-    padding-top: 80px;
-  }
-
-  .search-engine-optimization-sec-row-card-content-left,
-  .search-engine-optimization-sec-row-card-content-right {
-    display: flex;
-    align-items: center;
-    text-align: left;
-  }
-
-  .search-engine-optimization-sec-row-card-content-left .col-md-8 {
-    max-width: 280px;
-    text-align: right;
-  }
-
-  .search-engine-optimization-sec-row-card-content-right .col-md-8 {
-    max-width: 280px;
-    text-align: left;
-  }
-
-  .search-engine-optimization-sec-row-card-image img {
-    width: 90%;
+  .search-engine-optimization-card {
+    flex: 0 0 100%;
     max-width: 100%;
   }
-}
 
-@media only screen and (max-width: 767px) {
+  .search-engine-optimization-sec {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .search-engine-optimization-card-left .col-md-8,
+  .search-engine-optimization-card-right .col-md-8 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+
+  .search-engine-optimization-left-content {
+    text-align: right;
+  }
+  .search-engine-optimization-right-content {
+    text-align: left;
+  }
+
+  .search-engine-optimization-sec-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .search-engine-optimization-sec-image-container {
+    padding-top: 0px;
+  }
+  .search-engine-optimization-sec-image-container img {
+    width: 90%;
+    height: auto;
+  }
+
+  .search-engine-optimization-sec-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Third row */
+
   .search-engine-optimization-thi {
     padding-left: 35px;
     padding-right: 35px;
@@ -826,10 +833,9 @@ input:checked + .slider:before {
     line-height: 30px;
     margin-left: 10px;
   }
-}
 
-@media only screen and (max-width: 767px) {
   /* Fourth row */
+
   .search-engine-optimization-four {
     padding-top: 250px;
     padding-left: 20px;
@@ -847,7 +853,6 @@ input:checked + .slider:before {
     padding-bottom: 10px;
   }
 
-  /* Toggle Button */
   .toggle-container {
     padding-bottom: 40px;
   }
@@ -862,7 +867,6 @@ input:checked + .slider:before {
     padding-right: 10px;
   }
 
-  /* Cards */
   .search-engine-optimization-four-card-container .row {
     flex-direction: column;
   }
@@ -882,7 +886,6 @@ input:checked + .slider:before {
     display: none;
   }
 
-  /* Increment content */
   .search-engine-optimization-increment {
     padding-top: 50px;
     padding-left: 0px;
@@ -896,13 +899,12 @@ input:checked + .slider:before {
   .search-engine-optimization-increment-content h6 {
     padding-bottom: 20px;
   }
-}
 
-@media only screen and (max-width: 767px) {
   /* Fifth row */
+
   .search-engine-optimization-fif {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .search-engine-optimization-fif-header {
@@ -961,9 +963,9 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateX(0);
   }
-}
 
-@media only screen and (max-width: 767px) {
+  /* Six row */
+
   .search-engine-optimization-six {
     padding-left: 20px;
     padding-right: 20px;
@@ -1001,6 +1003,259 @@ input:checked + .slider:before {
     box-shadow: none;
   }
 }
+
 /* For screens with a width between 768px and 1024px (Tablet) */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* First row */
+
+  .ser-sub-first {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /* Second row */
+
+  .search-engine-optimization-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .search-engine-optimization-sec {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .search-engine-optimization-card-left .col-md-8,
+  .search-engine-optimization-card-right .col-md-8 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+
+  .search-engine-optimization-left-content {
+    text-align: right;
+  }
+  .search-engine-optimization-right-content {
+    text-align: left;
+  }
+
+  .search-engine-optimization-sec-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 0px;
+  }
+
+  /* Third row */
+
+  .search-engine-optimization-thi {
+    padding-left: 35px;
+  }
+
+  .search-engine-optimization-thi-background-color {
+    border-radius: 10px;
+    width: 700px;
+    height: 500px;
+    padding-left: 0px;
+  }
+
+  .search-engine-optimization-thi-form {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-field-1,
+  .text-field-2 {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .search-engine-optimization-button-thi {
+    font-size: 14px;
+  }
+
+  .search-engine-optimization-button-thi-arrow-icon {
+    font-size: 0.7rem !important;
+    width: 45px;
+    height: 45px;
+    line-height: 25px;
+    margin-left: 10px;
+  }
+
+  .text-field-1 {
+    border-radius: 35px;
+  }
+
+  .text-field-2 {
+    border-radius: 35px;
+  }
+
+  .search-engine-optimization-thi-button-div {
+    display: none;
+  }
+
+  .search-engine-optimization-button-thi {
+    border-radius: 35px;
+    display: block !important;
+  }
+
+  .search-engine-optimization-button-thi {
+    padding: 6px 6px 6px 25px;
+    font-size: 18px;
+  }
+
+  /* Fourth row */
+
+  .search-engine-optimization-four {
+    padding-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .search-engine-optimization-four-card-container .row {
+    flex-direction: column;
+    padding-left: 180px;
+  }
+
+  .search-engine-optimization-four-card {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 320px;
+    width: 350px;
+  }
+
+  .search-engine-optimization-four-card-image {
+    width: 100%;
+  }
+
+  .search-engine-optimization-four-card-left-image,
+  .search-engine-optimization-four-card-right-image {
+    display: none;
+  }
+
+  .search-engine-optimization-increment {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  .search-engine-optimization-increment-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .search-engine-optimization-increment-content h6 {
+    padding-bottom: 20px;
+  }
+
+  /* Fifth row */
+
+  .search-engine-optimization-fif {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+
+  .search-engine-optimization-fif .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-engine-optimization-fif-header {
+    margin-left: 20px;
+  }
+
+  .search-engine-optimization-fif .col-md-8 {
+    max-width: 70%;
+  }
+
+  .search-engine-optimization-fif .col-md-4 {
+    max-width: 30%;
+  }
+
+  .search-engine-optimization-fif .col-md-4 {
+    display: flex;
+  }
+
+  .seo-button {
+    width: auto;
+    height: 50px;
+    padding: 8px 16px;
+    margin-top: 0;
+  }
+
+  .slider-item-container .overlay {
+    position: absolute;
+    top: 110px;
+    left: 10;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px 10px 30px;
+    box-sizing: border-box;
+    background-color: #0039e4;
+    background-image: linear-gradient(90deg, #0039e4, #04dbf1);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(100%);
+    color: #fff;
+    width: 280px;
+    height: 110px;
+  }
+
+  .slider-item-container .show-overlay {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Sixth row */
+
+  .search-engine-optimization-six {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .search-engine-optimization-six-background-image {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .search-engine-optimization-button-six {
+    font-size: 16px;
+    padding: 6px 6px 6px 30px;
+    width: 170px;
+    border-radius: 25px;
+  }
+
+  .search-engine-optimization-button-six-arrow-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+
+  .search-engine-optimization-six-button-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-engine-optimization-six-background-color {
+    box-shadow: none;
+  }
 }

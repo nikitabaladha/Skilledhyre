@@ -55,14 +55,14 @@ const Branding = () => {
         {/* Second-row */}
         <div className="container-fluid ser-sub-sec">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={brandingImage1}
                 alt="Website Design"
                 className="ser-sub-left-img"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column ser-sub-sec-content">
+            <div className="col-md-6 ser-sub-sec-content">
               <h6>
                 <span className="ser-sub-dot">•</span>Software Development
               </h6>
@@ -86,7 +86,7 @@ const Branding = () => {
         {/* Third row */}
         <div className="container-fluid ser-sub-thi">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column ser-sub-thi-content">
+            <div className="col-md-6 ser-sub-thi-content">
               <h2>Why hire us for your software development needs?</h2>
               <p>
                 over the years software has become integral part of our life and
@@ -103,7 +103,7 @@ const Branding = () => {
                 sofware functionalities.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 align-items-center">
               <img
                 src={brandingImage2}
                 alt="Website Design"
@@ -115,7 +115,7 @@ const Branding = () => {
 
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
-          <div className="row">
+          <div className="row ser-sub-card-row">
             <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
               <div className="col-md-12 ">
                 <img

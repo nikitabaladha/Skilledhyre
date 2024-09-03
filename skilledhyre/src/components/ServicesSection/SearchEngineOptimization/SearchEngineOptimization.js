@@ -14,7 +14,6 @@ import SearchEngineOptimization4 from "../../../images/ServicesSubPageImages/sea
 import SearchEngineOptimization5 from "../../../images/ServicesSubPageImages/search-engine-optimization-5.png";
 import SearchEngineOptimization6 from "../../../images/ServicesSubPageImages/search-engine-optimization-6.png";
 import SearchEngineOptimization7 from "../../../images/ServicesSubPageImages/search-engine-optimization-7.png";
-
 import SearchEngineOptimization8 from "../../../images/ServicesSubPageImages/search-engine-optimization-8.jpg";
 import SearchEngineOptimization9 from "../../../images/ServicesSubPageImages/search-engine-optimization-9.jpg";
 import SearchEngineOptimization10 from "../../../images/ServicesSubPageImages/search-engine-optimization-10.jpg";
@@ -26,9 +25,9 @@ import { BiCodeBlock } from "react-icons/bi";
 import { TbCloudComputing } from "react-icons/tb";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 import { Button } from "react-bootstrap";
-import { IoIosArrowRoundForward } from "react-icons/io";
 
 import Footer from "../../HomeSection/Footer/Footer";
 import Navbar from "../../HomeSection/Navbar/Navbar";
@@ -142,6 +141,7 @@ const SearchEngineOptimization = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          dots: false,
         },
       },
       {
@@ -149,6 +149,7 @@ const SearchEngineOptimization = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
       {
@@ -156,6 +157,7 @@ const SearchEngineOptimization = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
       {
@@ -223,20 +225,17 @@ const SearchEngineOptimization = () => {
 
         {/* Second Row */}
         <div className="container-fluid search-engine-optimization-sec">
-          <div className="row search-engine-optimization-sec-row">
+          <div className="row">
             {/* Left Column Services */}
-            <div className="col-md-3 col-sm-12 search-engine-optimization-sec-left-row">
+            <div className="col-md-3 col-sm-12 search-engine-optimization-card">
               {services.slice(0, 3).map((service, index) => (
-                <div
-                  className="search-engine-optimization-sec-row-card"
-                  key={index}
-                >
-                  <div className="row search-engine-optimization-sec-row-card-content-left">
-                    <div className="col-md-8">
+                <div key={index}>
+                  <div className="row d-flex align-items-center search-engine-optimization-card-left">
+                    <div className="col-md-8 col-sm-10 search-engine-optimization-left-content">
                       <h5>{service.title}</h5>
                       <p>{service.description}</p>
                     </div>
-                    <div className="col-md-4 search-engine-optimization-sec-row-card-icon">
+                    <div className="col-md-4 col-sm-2 search-engine-optimization-sec-row-card-icon">
                       {service.icon}
                     </div>
                   </div>
@@ -245,27 +244,22 @@ const SearchEngineOptimization = () => {
             </div>
 
             {/* Image Column */}
-            <div className="col-md-6 col-sm-12">
-              <div className="search-engine-optimization-sec-row-card-image">
-                <img
-                  src={SearchEngineOptimization1}
-                  alt="Content Marketing Strategy"
-                />
-              </div>
+            <div className="col-md-6 col-sm-12 search-engine-optimization-sec-image-container">
+              <img
+                src={SearchEngineOptimization1}
+                alt="Content Marketing Strategy"
+              />
             </div>
 
             {/* Right Column Services */}
-            <div className="col-md-3 col-sm-12 search-engine-optimization-sec-right-row">
+            <div className="col-md-3 col-sm-12 search-engine-optimization-card">
               {services.slice(3, 6).map((service, index) => (
-                <div
-                  className="search-engine-optimization-sec-row-card"
-                  key={index}
-                >
-                  <div className="row search-engine-optimization-sec-row-card-content-right">
-                    <div className="col-md-4 search-engine-optimization-sec-row-card-icon">
+                <div key={index}>
+                  <div className="row d-flex align-items-center search-engine-optimization-card-right">
+                    <div className="col-md-4 col-sm-2 search-engine-optimization-sec-row-card-icon">
                       {service.icon}
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-sm-10 search-engine-optimization-right-content">
                       <h5>{service.title}</h5>
                       <p>{service.description}</p>
                     </div>
@@ -296,16 +290,6 @@ const SearchEngineOptimization = () => {
                     className="form-control text-field-2"
                     placeholder="Email"
                   />
-
-                  {/* <div className="search-engine-optimization-thi-button-div">
-                    <Button
-                      href="/start-now"
-                      className="ml-2 search-engine-optimization-button-thi"
-                    >
-                      Start Now{" "}
-                      <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon " />
-                    </Button>
-                  </div> */}
 
                   {/* This div will be hidden on small screens */}
                   <div className="search-engine-optimization-thi-button-div">
@@ -456,7 +440,7 @@ const SearchEngineOptimization = () => {
         {/* Fifth row  */}
         <div className="container-fluid search-engine-optimization-fif">
           <div className="row">
-            <div className="col-md-8 col-sm-12 ">
+            <div className="col-md-8 col-sm-12">
               <div className="search-engine-optimization-fif-header">
                 <h6 className="mb-4 search-engine-optimization-fif-sub-heading">
                   <span className="search-engine-optimization-dot">•</span>

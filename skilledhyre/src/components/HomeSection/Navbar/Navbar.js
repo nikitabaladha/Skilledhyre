@@ -366,7 +366,7 @@ const Navbar = () => {
                 </li>
 
                 {/* Nested links */}
-                {/* <li>
+                <li>
                   <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Digital Marketing
                   </Link>
@@ -414,10 +414,10 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li> */}
+                </li>
 
                 {/* Nested links */}
-                <li>
+                {/* <li>
                   <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Mobile Application
                     Development
@@ -456,7 +456,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <Link className="dropdown-item" to="/e-learning-solution">
                     <span className="dropdown-dot">•</span> E-Learning Solution
