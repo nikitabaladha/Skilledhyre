@@ -186,7 +186,7 @@ const SocialMediaMarketing = () => {
         {/* Second row */}
         <div className="container-fluid social-media-ppc-sec">
           <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center social-media-ppc-sec-content">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center social-media-ppc-sec-content">
               <h6>
                 <span className="social-media-ppc-dot">•</span>We get results
               </h6>
@@ -198,7 +198,7 @@ const SocialMediaMarketing = () => {
                 LinkedIn, Instagram, and more.
               </p>
             </div>
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
+            <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
               <img
                 src={socialMedia1}
                 alt="Website Design"
@@ -354,7 +354,7 @@ const SocialMediaMarketing = () => {
                   </div>
 
                   <div className="social-media-ppc-fif-slide-content">
-                    <p>{currentTestimonial.description}</p>
+                    <p className="text">{currentTestimonial.description}</p>
                     <h5>{currentTestimonial.name}</h5>
                     <p className="profession-text">
                       {currentTestimonial.profession}

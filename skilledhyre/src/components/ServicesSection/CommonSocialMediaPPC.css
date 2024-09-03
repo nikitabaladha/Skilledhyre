@@ -53,6 +53,7 @@
 }
 
 /* Second row */
+
 .social-media-ppc-sec {
   padding-left: 180px;
   padding-right: 180px;
@@ -104,6 +105,7 @@
 }
 
 /* Third row */
+
 .social-media-ppc-thi {
   padding-left: 180px;
   padding-right: 180px;
@@ -515,6 +517,7 @@
 }
 
 /* Styling for the carousel arrow icons */
+
 .social-media-ppc-arrow-icon {
   background-color: #ffffff;
   box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
@@ -607,8 +610,283 @@
 
 /* For screens with a maximum width of 767px (Mobile) */
 @media only screen and (max-width: 767px) {
+  /* Second row */
+
+  .social-media-ppc-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-sec-image {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  /* Third row */
+
+  .social-media-ppc-thi {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .big-number {
+    right: 20px;
+  }
+
+  .social-media-ppc-thi-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .small-number {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .social-media-ppc-thi-card-content {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  /* Fourth row */
+
+  .social-media-ppc-four-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-four {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-four-card {
+    margin-bottom: 50px;
+  }
+
+  .social-media-ppc-four-card-image-top {
+    right: 30px;
+  }
+
+  .social-media-ppc-four-card-image-bottom {
+    left: 0px;
+  }
+
+  .social-media-ppc-four-card-content {
+    padding-top: 10px;
+  }
+
+  .social-media-ppc-four-card-button-container {
+    bottom: -20px;
+  }
+
+  /* Fifth row */
+
+  .social-media-ppc-fif-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+  }
+
+  .social-media-ppc-fif-content {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .social-media-ppc-fif-card-section {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-fif-card-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .social-media-ppc-fif-card {
+    padding: 40px 20px;
+  }
+
+  .social-media-ppc-fif-card-background {
+    display: none;
+  }
+
+  .social-media-ppc-fif-slide-image {
+    width: 80px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .social-media-ppc-fif-slide-content h5 {
+    font-size: 16px;
+  }
+
+  .social-media-ppc-fif-slide-content p {
+    font-size: 16px;
+  }
+
+  .social-media-ppc-fif-slide-content .text {
+    font-size: 20px;
+  }
+
+  .social-media-ppc-arrow-icon {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    margin-right: 10px;
+  }
 }
 
 /* For screens with a width between 768px and 1024px (Tablet) */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Second row */
+
+  .social-media-ppc-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-sec-image {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .social-media-ppc-sec .row {
+    flex-direction: column;
+  }
+
+  .social-media-ppc-sec .row > div {
+    width: 100%;
+  }
+
+  /* Third row */
+
+  .social-media-ppc-thi {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .social-media-ppc-thi-card {
+    padding: 20px;
+    padding-top: 40px;
+  }
+
+  .small-number {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  .big-number {
+    right: 20px;
+  }
+
+  .social-media-ppc-thi .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Fourth row */
+
+  .social-media-ppc-four-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-four-card {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .social-media-ppc-four-card {
+    margin-bottom: 50px;
+  }
+
+  .social-media-ppc-four-card-image-top {
+    right: 60px;
+  }
+
+  .social-media-ppc-four-card-image-bottom {
+    left: 0px;
+  }
+
+  .social-media-ppc-four-card-content {
+    padding-top: 20px;
+  }
+
+  .social-media-ppc-four .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Fifth row */
+
+  .social-media-ppc-fif-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 250px;
+    padding-top: 80px;
+  }
+
+  .social-media-ppc-fif-content {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .social-media-ppc-fif-card-section {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  .social-media-ppc-fif-card-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .social-media-ppc-fif-card {
+    padding: 40px 20px;
+  }
+
+  .social-media-ppc-fif-card {
+    position: relative;
+    z-index: 2;
+    box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+    border-radius: 15px;
+    background: #fff;
+    padding: 80px 50px 70px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 650px;
+    margin-left: 20px;
+    left: 30px;
+    top: 70px;
+  }
+
+  .social-media-ppc-fif-card-background {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 55%;
+    height: 620px;
+    background-color: #0039e4;
+    background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+    box-shadow: 8px 8px 8px 8px rgba(16, 184, 245, 0.15);
+    border-radius: 15px;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+
+  .social-media-ppc-fif-section .col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
