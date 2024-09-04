@@ -34,7 +34,12 @@ import AndroidAppDevelopment from "./components/ServicesSection/AndroidAppDevelo
 import HybridAppDevelopment from "./components/ServicesSection/HybridAppDevelopment/HybridAppDevelopment";
 import ReactAppDevelopment from "./components/ServicesSection/ReactNativeAppDevelopment/ReactNativeAppDevelopment";
 
-// import YourComponent from "./components/ServicesSection/ContentMarketing/YourComponent";
+import WhiteLabelDigitalMarketing from "./components/ForAgencies/WebsiteDesign/WhiteLabelDigitalMarketing";
+import WhiteLabelWebDevelopment from "./components/ForAgencies/WebsiteDesign/WhiteLabelWebDevelopment";
+import WhiteLabeAppDevelopment from "./components/ForAgencies/WebsiteDesign/WhiteLabeAppDevelopment";
+import OutsourcedSoftwareDevelopment from "./components/ForAgencies/WebsiteDesign/OutsourcedSoftwareDevelopment";
+import DedicatedSoftwareTeams from "./components/ForAgencies/WebsiteDesign/DedicatedSoftwareTeams";
+import DedicatedMarketingTeams from "./components/ForAgencies/WebsiteDesign/DedicatedMarketingTeams";
 
 function App() {
   return (
@@ -94,7 +99,33 @@ function App() {
             path="/search-engine-optimization"
             element={<SearchEngineOptimization />}
           />
-          {/* <Route path="/your-component" element={<YourComponent />} /> */}
+
+          {/* For Agencies pages */}
+          <Route
+            path="/white-label-digital-marketing"
+            element={<WhiteLabelDigitalMarketing />}
+          />
+          <Route
+            path="/white-label-web-development"
+            element={<WhiteLabelWebDevelopment />}
+          />
+          <Route
+            path="/white-label-app-development"
+            element={<WhiteLabeAppDevelopment />}
+          />
+          <Route
+            path="/outsourced-software-development"
+            element={<OutsourcedSoftwareDevelopment />}
+          />
+          <Route
+            path="/dedicated-software-teams"
+            element={<DedicatedSoftwareTeams />}
+          />
+
+          <Route
+            path="/dedicated-marketing-teams"
+            element={<DedicatedMarketingTeams />}
+          />
         </Routes>
       </Router>
     </div>

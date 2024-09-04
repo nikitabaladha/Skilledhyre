@@ -545,37 +545,55 @@ const Navbar = () => {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" to="/action">
+                  <Link
+                    className="dropdown-item"
+                    to="/white-label-digital-marketing"
+                  >
                     <span className="dropdown-dot">•</span> White Label Digital
                     Marketing
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link
+                    className="dropdown-item"
+                    to="/white-label-web-development"
+                  >
                     <span className="dropdown-dot">•</span> White Label Web
                     Development
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/something-else">
+                  <Link
+                    className="dropdown-item"
+                    to="/white-label-app-development"
+                  >
                     <span className="dropdown-dot">•</span> White Label App
                     Development
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/action">
+                  <Link
+                    className="dropdown-item"
+                    to="/outsourced-software-development"
+                  >
                     <span className="dropdown-dot">•</span> Outsourced Software
                     Development
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/another-action">
+                  <Link
+                    className="dropdown-item"
+                    to="/dedicated-software-teams"
+                  >
                     <span className="dropdown-dot">•</span> Dedicated Software
                     Teams
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/something-else">
+                  <Link
+                    className="dropdown-item"
+                    to="/dedicated-marketing-teams"
+                  >
                     <span className="dropdown-dot">•</span> Dedicated Marketing
                     Teams
                   </Link>
