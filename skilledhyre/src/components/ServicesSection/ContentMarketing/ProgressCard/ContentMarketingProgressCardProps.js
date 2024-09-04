@@ -10,7 +10,7 @@ const ContentMarketingProgressCardProps = () => {
       className="content-marketing-progress-props d-flex align-items-center justify-content-center"
     >
       <div className="row">
-        <div className="col-md-3 ">
+        <div className="col-md-3">
           <ProgressCard title="SEO & Marketing" percentage={75} />
         </div>
         <div className="col-md-3 top-card ">

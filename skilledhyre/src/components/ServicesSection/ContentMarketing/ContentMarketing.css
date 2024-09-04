@@ -201,7 +201,7 @@
   padding-left: 180px;
   padding-right: 180px;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   background-color: #ebf4f9;
   position: relative;
 }
@@ -310,7 +310,7 @@
 
 .content-marketing-four-circle-svg-container {
   position: relative;
-  width: 500px;
+  width: 100px;
   height: 500px;
   margin: 0 auto;
 }
@@ -386,6 +386,7 @@
 .number-3 {
   padding-left: 150px;
 }
+
 .content-marketing-four-circle-card-item-dot-1 {
   background-color: #00c3ff;
   box-shadow: 8px 8px 18px 0px rgba(0, 195, 255, 0.4);
@@ -430,12 +431,336 @@
   text-align: center;
 }
 
-/* Media Queries */
-
 /* For screens with a maximum width of 767px (Mobile) */
 @media only screen and (max-width: 767px) {
+  /* Second row */
+
+  .content-marketing-sec {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .big-number {
+    right: 20px;
+  }
+
+  .content-marketing-sec-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .small-number {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .content-marketing-sec-card-content {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  /* Third row */
+
+  .content-marketing-thi {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .content-marketing-thi-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .content-marketing-thi h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .content-marketing-thi h6 {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+
+  .content-marketing-thi p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .content-marketing-thi-image {
+    max-width: 100%;
+    padding-top: 20px;
+  }
 }
 
 /* For screens with a width between 768px and 1024px (Tablet) */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Second row */
+
+  .content-marketing-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .content-marketing-sec-card {
+    padding: 20px;
+    padding-top: 40px;
+  }
+
+  .small-number {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  .big-number {
+    right: 20px;
+  }
+
+  .content-marketing-sec .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Third row */
+  .content-marketing-thi .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-marketing-thi {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .content-marketing-thi-image {
+    max-height: 500px;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .content-marketing-thi-content {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+/* Media Queries For Fourth row according to Screen size */
+
+/* Phone Devices with a Max-Width of 767px */
+
+@media only screen and (max-width: 767px) {
+  /* Fourth row */
+
+  .content-marketing-four-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+
+  .content-marketing-four {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Red Hat Display", sans-serif;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    margin-left: -35px;
+    margin-bottom: 45px;
+    background-color: #0039e4;
+    background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px 0px rgba(2, 156, 236, 0.3);
+  }
+
+  .content-marketing-four-card-title {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #1a1b1e;
+  }
+
+  .content-marketing-four-card {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .content-marketing-four-content h2 {
+    font-size: 30px;
+  }
+
+  .content-marketing-four-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #1a1b1e;
+  }
+
+  .content-marketing-four-card-text {
+    color: #606060;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+  }
+
+  .content-marketing-card-body {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+  }
+}
+
+/* Tablet Devices with a width between 768px and 1024px  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Fourth row */
+  .content-marketing-four-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+
+  .content-marketing-four {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Red Hat Display", sans-serif;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    margin-left: -35px;
+    margin-bottom: 45px;
+    background-color: #0039e4;
+    background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px 0px rgba(2, 156, 236, 0.3);
+  }
+
+  .content-marketing-four-card-title {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #1a1b1e;
+  }
+
+  .content-marketing-four-card {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .content-marketing-four-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #1a1b1e;
+  }
+
+  .content-marketing-four-card-text {
+    color: #606060;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+  }
+
+  .content-marketing-card-body {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+  }
+}
+
+.content-marketing-four-circle {
+  display: block;
+}
+
+.content-marketing-four {
+  display: none;
+}
+
+/* Fourth row content shown according to screen size */
+
+@media only screen and (max-width: 767px) {
+  .content-marketing-four-circle {
+    display: none;
+  }
+
+  .content-marketing-four {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content-marketing-four-circle {
+    display: none;
+  }
+
+  .content-marketing-four {
+    display: block;
+  }
 }

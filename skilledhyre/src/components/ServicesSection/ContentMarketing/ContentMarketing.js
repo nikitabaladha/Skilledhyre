@@ -11,6 +11,8 @@ import contentMarketing1 from "../../../images/ServicesSubPageImages/content-mar
 import contentMarketing2 from "../../../images/ServicesSubPageImages/content-marketing-2.png";
 import ContentMarketingProgressCardProps from "./ProgressCard/ContentMarketingProgressCardProps";
 
+// import "../CommonStaffingSubPages.css";
+
 const ContentMarketing = () => {
   const features = [
     {
@@ -89,14 +91,14 @@ const ContentMarketing = () => {
         {/* Third-row */}
         <div className="container-fluid content-marketing-thi">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
+            <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
               <img
                 src={contentMarketing1}
                 alt="Website Design"
                 className="content-marketing-thi-image"
               />
             </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center content-marketing-thi-content">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center content-marketing-thi-content">
               <h6>
                 <span className="content-marketing-dot">•</span>content
                 marketing
@@ -128,6 +130,7 @@ const ContentMarketing = () => {
             </h2>
           </div>
 
+          {/* If laptop size and screen size greater than 1024px i want to show this  */}
           <div className="container content-marketing-four-circle">
             <div className="row">
               <div className="col-md-4">
@@ -203,6 +206,56 @@ const ContentMarketing = () => {
                   We select themed keywords based on user-intent to solidify
                   rankings based on what users searches.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* If screen size less than 1024px i want to show this  */}
+          <div className="container-fluid content-marketing-four">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="content-marketing-four-card">
+                  <div className="circle">01</div>
+                  <div className="content-marketing-card-body">
+                    <h5 className="content-marketing-four-card-title">
+                      Onsite Optimization
+                    </h5>
+                    <p className="content-marketing-four-card-text">
+                      We help improve website content so visitors clearly
+                      understand how it relates to their search
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-sm-12">
+                <div className="content-marketing-four-card">
+                  <div className="circle">02</div>
+                  <div className="content-marketing-card-body">
+                    <h5 className="content-marketing-four-card-title">
+                      Keyword Research
+                    </h5>
+                    <p className="content-marketing-four-card-text">
+                      We select themed keywords based on user-intent to solidify
+                      rankings based on what users searches
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-sm-12">
+                <div className="content-marketing-four-card">
+                  <div className="circle">03</div>
+                  <div className="content-marketing-card-body">
+                    <h5 className="content-marketing-four-card-title">
+                      Link Building
+                    </h5>
+                    <p className="content-marketing-four-card-text">
+                      We help improve website content so visitors clearly
+                      understand how it relates to their search
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

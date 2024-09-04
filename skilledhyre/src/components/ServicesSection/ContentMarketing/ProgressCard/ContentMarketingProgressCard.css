@@ -58,3 +58,32 @@
 .content-marketing-percentage-text {
   font-weight: bold;
 }
+
+/* Fourth row content shown according to screen size */
+
+@media only screen and (max-width: 767px) {
+  .top-card {
+    margin-top: 0px;
+  }
+  .content-marketing-progress-props .row {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-card {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content-marketing-progress-props .row {
+    flex-wrap: wrap;
+    padding-left: 40px;
+  }
+
+  .content-marketing-progress-props .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
