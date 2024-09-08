@@ -1,0 +1,100 @@
+.get-a-quote-sec {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.get-a-quote-sec-header {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  padding-bottom: 50px;
+}
+
+.get-a-quote-sec-dot {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.get-a-quote-sec-header h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a5b7d2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.get-a-quote-sec-header h2 {
+  margin-bottom: 25px;
+  font-weight: 900;
+  line-height: 1.2;
+
+  color: #1a1b1e;
+}
+
+.get-a-quote-sec-header p {
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.875;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.get-in-touch-sec .text-field::placeholder {
+  /* color: #888888; */
+  color: #7e7e7e;
+  opacity: 1;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.get-a-quote-sec-form-container p,
+.get-a-quote-sec-form-container .checkbox-text {
+  color: #7e7e7e;
+
+  font-family: "Red Hat Text", sans-serif;
+}
+.text-field {
+  border-radius: 25px;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+.get-a-quote-sec-form-container Button {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+@media only screen and (max-width: 767px) {
+  .get-a-quote-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .get-a-quote-sec-header p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Tablet devices with a screen width between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .get-a-quote-sec {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .get-a-quote-sec-header p {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .get-a-quote-sec-form-container .col-md-6 {
+    width: 100%;
+  }
+}

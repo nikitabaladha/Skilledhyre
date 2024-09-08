@@ -282,6 +282,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import brandLogoImage from "../../../images/brand-logo.png";
 import { FaSearch } from "react-icons/fa";
+import { Button } from "bootstrap/dist/js/bootstrap.bundle.min";
+// import { Button } from "bootstrap";
 
 const Navbar = () => {
   const handleClose = () => {
@@ -607,8 +609,10 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <button className="navbar-btn me-2 get-a-quote" type="submit">
-            Get a Quote
+          <button className="navbar-btn me-2 get-a-quote">
+            <Link className="nav-link " to="/get-a-quote">
+              Get A Quote
+            </Link>
           </button>
         </div>
         <div className="search-icon">

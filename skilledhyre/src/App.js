@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/HomeSection/Home/Home";
 import AboutCompany from "./components/AboutCompany/AboutCompany";
 import GetInTouch from "./components/GetInTouch/GetInTouch";
+import GetAQuote from "./components/GetAQuote/GetAQuote";
 
 import Service from "./components/ServicesSection/Service/Service";
 import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WebsiteDesign";
@@ -52,6 +53,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-company" element={<AboutCompany />} />
           <Route path="/get-in-touch" element={<GetInTouch />} />
+          <Route path="/get-a-quote" element={<GetAQuote />} />
 
           <Route path="/service" element={<Service />} />
           <Route path="/website-design" element={<WebsiteDesign />} />
