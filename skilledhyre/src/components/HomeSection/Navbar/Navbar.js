@@ -601,7 +601,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about-company">
+              <Link className="nav-link" to="/get-in-touch">
                 Get in touch
               </Link>
             </li>

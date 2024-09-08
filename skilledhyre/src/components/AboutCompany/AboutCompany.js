@@ -10,9 +10,6 @@ import "./AboutCompany.css";
 
 import AboutCompanyImage1 from "../../images/AboutCompanyImages/AboutCompany-1.png";
 import AboutCompanyImage2 from "../../images/AboutCompanyImages/AboutCompany-2.png";
-import AboutCompanyImage3 from "../../images/AboutCompanyImages/AboutCompany-3.png";
-import AboutCompanyImage4 from "../../images/AboutCompanyImages/AboutCompany-4.png";
-import AboutCompanyImage5 from "../../images/AboutCompanyImages/AboutCompany-5.png";
 
 import { TbMailFilled } from "react-icons/tb";
 import { FaPhone } from "react-icons/fa6";
@@ -42,20 +39,22 @@ const AboutCompany = () => {
     <>
       <Navbar />
 
-      <div className="ser-sub">
+      <div>
         {/* First Row*/}
-        <div className="container-fluid ser-sub-first">
-          <div>
-            <h1>About Company</h1>
-            <p>
-              <Link to="/" className="homepage-link">
-                Home
-              </Link>
-              <span class="material-symbols-outlined greater-than-icon">
-                chevron_right
-              </span>
-              <span className="current-page">About Company</span>
-            </p>
+        <div className="ser-sub">
+          <div className="container-fluid ser-sub-first">
+            <div>
+              <h1>About Company</h1>
+              <p>
+                <Link to="/" className="homepage-link">
+                  Home
+                </Link>
+                <span class="material-symbols-outlined greater-than-icon">
+                  chevron_right
+                </span>
+                <span className="current-page">About Company</span>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -238,8 +237,9 @@ const AboutCompany = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+
+      <Footer />
     </>
   );
 };

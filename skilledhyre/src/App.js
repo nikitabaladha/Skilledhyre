@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/HomeSection/Home/Home";
 import AboutCompany from "./components/AboutCompany/AboutCompany";
+import GetInTouch from "./components/GetInTouch/GetInTouch";
 
 import Service from "./components/ServicesSection/Service/Service";
 import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WebsiteDesign";
@@ -50,6 +51,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-company" element={<AboutCompany />} />
+          <Route path="/get-in-touch" element={<GetInTouch />} />
 
           <Route path="/service" element={<Service />} />
           <Route path="/website-design" element={<WebsiteDesign />} />
