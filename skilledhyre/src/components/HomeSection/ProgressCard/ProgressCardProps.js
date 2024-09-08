@@ -13,14 +13,14 @@ const ProgressCardProps = () => {
         <div className="col-md-3">
           <ProgressCard title="Happy Clients" percentage={75} />
         </div>
-        <div className="col-md-3 ">
+        <div className="col-md-3">
           <ProgressCard title="Projects" percentage={71} />
         </div>
         <div className="col-md-3">
           <ProgressCard title="Support" percentage={88} />
         </div>
         <div className="col-md-3">
-          <ProgressCard className="mt-4" title="Hard Workers" percentage={85} />
+          <ProgressCard title="Hard Workers" percentage={85} />
         </div>
       </div>
     </Container>

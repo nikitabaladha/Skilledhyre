@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 
 import Navbar from "../../HomeSection/Navbar/Navbar";
@@ -38,6 +38,13 @@ const PermanentStaffing = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/permanent-staffing");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -108,7 +115,7 @@ const PermanentStaffing = () => {
 
           <div className="container-fluid">
             <div className="row staffing-card-row">
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-4 col-sm-6" onClick={handleClick}>
                 <div className="staffing-card staffing-card-1">
                   <div className="staffing-card-body">
                     <div>
@@ -122,7 +129,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-4 col-sm-6" onClick={handleClick}>
                 <div className="staffing-card staffing-card-2">
                   <div className="staffing-card-body">
                     <div>
@@ -136,7 +143,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-4 col-sm-6" onClick={handleClick}>
                 <div className="staffing-card staffing-card-3">
                   <div className="staffing-card-body">
                     <div>
@@ -150,7 +157,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-4 col-sm-6" onClick={handleClick}>
                 <div className="staffing-card staffing-card-4">
                   <div className="staffing-card-body">
                     <div>
@@ -164,7 +171,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-4 col-sm-6" onClick={handleClick}>
                 <div className="staffing-card staffing-card-5">
                   <div className="staffing-card-body">
                     <div>
@@ -178,7 +185,7 @@ const PermanentStaffing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-4 col-sm-6" onClick={handleClick}>
                 <div className="staffing-card staffing-card-6">
                   <div className="staffing-card-body">
                     <div>
@@ -287,7 +294,9 @@ const PermanentStaffing = () => {
                   Do You Have An Interesting Projects?
                 </Card.Text>
                 <div className="staffing-fif-card-button">
-                  <Button className="contact-us">Contact Us</Button>
+                  <Button className="contact-us" onClick={handleClick}>
+                    Contact Us
+                  </Button>
                 </div>
               </div>
             </Card.Body>

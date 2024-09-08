@@ -97,20 +97,20 @@ const GetInTouch = () => {
               <form className="get-in-touch-contact-form">
                 <input
                   type="text"
-                  className="form-control text-field"
+                  className="form-control text-field mb-3"
                   placeholder="Your Name *"
                 />
                 <input
                   type="email"
-                  className="form-control text-field"
+                  className="form-control text-field mb-3"
                   placeholder="Your Email *"
                 />
                 <textarea
-                  className="form-control text-field"
+                  className="form-control text-field mb-3"
                   placeholder="Message..."
                   rows="4"
                 ></textarea>
-                <Button href="/start-now" className="ml-2 get-in-touch-button">
+                <Button className="ml-2 get-in-touch-button">
                   Get In Touch <IoIosArrowRoundForward className="arrow-icon" />
                 </Button>
               </form>

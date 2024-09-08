@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
+import { Link, useNavigate } from "react-router-dom";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -35,6 +36,13 @@ import Navbar from "../../HomeSection/Navbar/Navbar";
 import "./SearchEngineOptimization.css";
 
 const SearchEngineOptimization = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/get-a-quote");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const services = [
     {
       title: "SEO Optimization",
@@ -294,7 +302,8 @@ const SearchEngineOptimization = () => {
                   {/* This div will be hidden on small screens */}
                   <div className="search-engine-optimization-thi-button-div">
                     <Button
-                      href="/start-now"
+                      as={Link}
+                      to="/search-engine-optimization"
                       className="ml-2 search-engine-optimization-button-thi"
                     >
                       Start Now{" "}
@@ -304,7 +313,8 @@ const SearchEngineOptimization = () => {
 
                   {/* Button directly for small screens */}
                   <Button
-                    href="/start-now"
+                    as={Link}
+                    to="/search-engine-optimization"
                     className="ml-2 search-engine-optimization-button-thi d-block d-md-none"
                   >
                     Start Now{" "}
@@ -457,7 +467,8 @@ const SearchEngineOptimization = () => {
             </div>
             <div className="col-md-4 col-sm-12">
               <Button
-                href="/start-now"
+                as={Link}
+                to="/search-engine-optimization"
                 className="seo-button seo-view-more-button"
                 style={{
                   marginTop: "10px",
@@ -506,7 +517,7 @@ const SearchEngineOptimization = () => {
               </div>
               <div className="search-engine-optimization-six-button-div">
                 <Button
-                  href="/start-now"
+                  onClick={handleClick}
                   className="ml-2 search-engine-optimization-button-six"
                 >
                   Start Now

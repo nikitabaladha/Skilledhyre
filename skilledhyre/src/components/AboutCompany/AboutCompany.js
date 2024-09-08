@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 import { Button } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -35,6 +36,13 @@ const AboutCompany = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about-company");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <Navbar />
@@ -83,7 +91,7 @@ const AboutCompany = () => {
               </p>
               <Button
                 variant="secondary"
-                href="/start-now"
+                onClick={handleClick}
                 className="ml-2 contact-us-button"
               >
                 Contact Us

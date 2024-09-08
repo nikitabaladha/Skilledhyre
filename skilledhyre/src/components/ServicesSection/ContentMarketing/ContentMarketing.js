@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./ContentMarketing.css";
 
 import Navbar from "../../HomeSection/Navbar/Navbar";
@@ -10,8 +9,6 @@ import Animation from "../../HomeSection/ProcessDrivenSEO/Animation";
 import contentMarketing1 from "../../../images/ServicesSubPageImages/content-marketing-1.png";
 import contentMarketing2 from "../../../images/ServicesSubPageImages/content-marketing-2.png";
 import ContentMarketingProgressCardProps from "./ProgressCard/ContentMarketingProgressCardProps";
-
-// import "../CommonStaffingSubPages.css";
 
 const ContentMarketing = () => {
   const features = [

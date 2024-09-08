@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -32,7 +33,8 @@ const AboutUs = () => {
           </div>
           <Button
             variant="secondary"
-            href="/start-now"
+            as={Link}
+            to="/"
             className="ml-2 start-now-button"
           >
             Start Now <IoIosArrowRoundForward className="arrow-icon" />

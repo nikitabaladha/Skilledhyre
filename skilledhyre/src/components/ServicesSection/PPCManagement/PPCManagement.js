@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
@@ -26,6 +26,12 @@ import slickSlider2 from "../../../images/ServicesSubPageImages/social-media-mar
 import slickSlider3 from "../../../images/ServicesSubPageImages/social-media-marketing-slide-3.jpg";
 
 const PPCManagement = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/ppc-management");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const features = [
     {
       id: 1,
@@ -133,19 +139,6 @@ const PPCManagement = () => {
     },
   ];
 
-  //   const [currentIndex, setCurrentIndex] = useState(0);
-
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       setCurrentIndex((prevIndex) =>
-  //         prevIndex === realTestimonials.length - 1 ? 0 : prevIndex + 1
-  //       );
-  //     }, 5000);
-
-  //     return () => clearInterval(interval);
-  //   }, [realTestimonials.length]);
-
-  //   const currentTestimonial = realTestimonials[currentIndex];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -305,7 +298,7 @@ const PPCManagement = () => {
                       <div className="social-media-ppc-four-card-button-container">
                         <Button
                           variant="secondary"
-                          href="/"
+                          onClick={handleClick}
                           className={`ml-2 choose-Plane-button-${index + 1}`}
                         >
                           Choose Plane

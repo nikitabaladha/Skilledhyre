@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ContactCards.css";
 import { TbMailFilled } from "react-icons/tb";
 import { FaPhone } from "react-icons/fa6";
@@ -72,7 +73,7 @@ function ContactCards() {
                 rows="4"
               ></textarea>
 
-              <Button href="/start-now" className="ml-2 get-in-touch-button">
+              <Button as={Link} to="/" className="ml-2 get-in-touch-button">
                 Get In Touch <IoIosArrowRoundForward className="arrow-icon" />
               </Button>
             </form>

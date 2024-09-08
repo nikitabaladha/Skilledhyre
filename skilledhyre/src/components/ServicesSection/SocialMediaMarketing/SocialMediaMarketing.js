@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
@@ -26,6 +26,12 @@ import slickSlider2 from "../../../images/ServicesSubPageImages/social-media-mar
 import slickSlider3 from "../../../images/ServicesSubPageImages/social-media-marketing-slide-3.jpg";
 
 const SocialMediaMarketing = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/social-media-marketing");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const features = [
     {
       id: 1,
@@ -293,7 +299,7 @@ const SocialMediaMarketing = () => {
                       <div className="social-media-ppc-four-card-button-container">
                         <Button
                           variant="secondary"
-                          href="/"
+                          onClick={handleClick}
                           className={`ml-2 choose-Plane-button-${index + 1}`}
                         >
                           Choose Plane

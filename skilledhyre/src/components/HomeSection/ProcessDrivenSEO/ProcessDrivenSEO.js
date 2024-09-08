@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
+
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Slider from "react-slick";
 import "./ProcessDrivenSEO.css";
@@ -26,6 +28,18 @@ const ProcessDrivenSEO = () => {
     window.innerWidth >= 768 && window.innerWidth <= 1024
   );
   const [key, setKey] = useState(0);
+
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const goToWebsiteDesign = () => {
+    navigate("/website-design");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const cardsData = [
     {
@@ -136,7 +150,10 @@ const ProcessDrivenSEO = () => {
           </h2>
         </div>
         <div className="col-md-4 col-sm-12">
-          <Button href="/start-now" className="seo-button seo-view-more-button">
+          <Button
+            onClick={goToHome}
+            className="seo-button seo-view-more-button"
+          >
             View More
             <IoIosArrowRoundForward className="seo-arrow-icon seo-view-more-arrow-icon" />
           </Button>
@@ -190,7 +207,7 @@ const ProcessDrivenSEO = () => {
               </p>
             </div>
             <Button
-              href="/start-now"
+              onClick={goToWebsiteDesign}
               className="seo-button seo-learn-more-button"
             >
               Learn more
