@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../../HomeSection/Navbar/Navbar";
-import Footer from "../../HomeSection/Footer/Footer";
-import "../../ServicesSection/CommonServiceSubPages.css";
+import Navbar from "../HomeSection/Navbar/Navbar";
+import Footer from "../HomeSection/Footer/Footer";
+import "../ServicesSection/CommonServiceSubPages.css";
 
-import DedicatedMarketingTeamsImage1 from "../../../images/ForAgenciesImages/DedicatedMarketingTeams-1.png";
-import DedicatedMarketingTeamsImage2 from "../../../images/ForAgenciesImages/DedicatedMarketingTeams-2.png";
-import DedicatedMarketingTeamsImage3 from "../../../images/ForAgenciesImages/DedicatedMarketingTeams-3.png";
-import DedicatedMarketingTeamsImage4 from "../../../images/ForAgenciesImages/DedicatedMarketingTeams-4.png";
+import DedicatedMarketingTeamsImage1 from "../../images/ForAgenciesImages/DedicatedMarketingTeams-1.png";
+import DedicatedMarketingTeamsImage2 from "../../images/ForAgenciesImages/DedicatedMarketingTeams-2.png";
+import DedicatedMarketingTeamsImage3 from "../../images/ForAgenciesImages/DedicatedMarketingTeams-3.png";
+import DedicatedMarketingTeamsImage4 from "../../images/ForAgenciesImages/DedicatedMarketingTeams-4.png";
 
 const DedicatedMarketingTeams = () => {
   useEffect(() => {

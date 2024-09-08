@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../../HomeSection/Navbar/Navbar";
-import Footer from "../../HomeSection/Footer/Footer";
-import "../../ServicesSection/CommonServiceSubPages.css";
+import Navbar from "../HomeSection/Navbar/Navbar";
+import Footer from "../HomeSection/Footer/Footer";
+import "../ServicesSection/CommonServiceSubPages.css";
 
-import OutsourcedSoftwareDevelopmentImage1 from "../../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-1.png";
-import OutsourcedSoftwareDevelopmentImage2 from "../../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-2.png";
-import OutsourcedSoftwareDevelopmentImage3 from "../../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-3.png";
-import OutsourcedSoftwareDevelopmentImage4 from "../../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-4.png";
+import OutsourcedSoftwareDevelopmentImage1 from "../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-1.png";
+import OutsourcedSoftwareDevelopmentImage2 from "../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-2.png";
+import OutsourcedSoftwareDevelopmentImage3 from "../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-3.png";
+import OutsourcedSoftwareDevelopmentImage4 from "../../images/ForAgenciesImages/OutsourcedSoftwareDevelopment-4.png";
 
 const OutsourcedSoftwareDevelopment = () => {
   useEffect(() => {

@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../../HomeSection/Navbar/Navbar";
-import Footer from "../../HomeSection/Footer/Footer";
-import "../../ServicesSection/CommonServiceSubPages.css";
+import Navbar from "../HomeSection/Navbar/Navbar";
+import Footer from "../HomeSection/Footer/Footer";
+import "../ServicesSection/CommonServiceSubPages.css";
 
-import WhiteLabelDigitalMarketingImage1 from "../../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-1.jpg";
-import WhiteLabelDigitalMarketingImage2 from "../../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-2.jpg";
-import WhiteLabelDigitalMarketingImage3 from "../../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-3.jpg";
-import WhiteLabelDigitalMarketingImage4 from "../../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-4.jpg";
+import WhiteLabelDigitalMarketingImage1 from "../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-1.jpg";
+import WhiteLabelDigitalMarketingImage2 from "../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-2.jpg";
+import WhiteLabelDigitalMarketingImage3 from "../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-3.jpg";
+import WhiteLabelDigitalMarketingImage4 from "../../images/ForAgenciesImages/WhiteLabelDigitalMarketing-4.jpg";
 
 const WhiteLabelDigitalMarketing = () => {
   useEffect(() => {

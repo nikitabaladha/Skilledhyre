@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../../HomeSection/Navbar/Navbar";
-import Footer from "../../HomeSection/Footer/Footer";
-import "../../ServicesSection/CommonServiceSubPages.css";
+import Navbar from "../HomeSection/Navbar/Navbar";
+import Footer from "../HomeSection/Footer/Footer";
+import "../ServicesSection/CommonServiceSubPages.css";
 
-import WhiteLabeAppDevelopmentImage1 from "../../../images/ForAgenciesImages/WhiteLabeAppDevelopment-1.png";
-import WhiteLabeAppDevelopmentImage2 from "../../../images/ForAgenciesImages/WhiteLabeAppDevelopment-2.png";
-import WhiteLabeAppDevelopmentImage3 from "../../../images/ForAgenciesImages/WhiteLabeAppDevelopment-3.png";
-import WhiteLabeAppDevelopmentImage4 from "../../../images/ForAgenciesImages/WhiteLabeAppDevelopment-4.png";
+import WhiteLabeAppDevelopmentImage1 from "../../images/ForAgenciesImages/WhiteLabeAppDevelopment-1.png";
+import WhiteLabeAppDevelopmentImage2 from "../../images/ForAgenciesImages/WhiteLabeAppDevelopment-2.png";
+import WhiteLabeAppDevelopmentImage3 from "../../images/ForAgenciesImages/WhiteLabeAppDevelopment-3.png";
+import WhiteLabeAppDevelopmentImage4 from "../../images/ForAgenciesImages/WhiteLabeAppDevelopment-4.png";
 
 const WhiteLabeAppDevelopment = () => {
   useEffect(() => {

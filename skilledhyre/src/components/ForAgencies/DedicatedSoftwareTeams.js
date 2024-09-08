@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../../HomeSection/Navbar/Navbar";
-import Footer from "../../HomeSection/Footer/Footer";
-import "../../ServicesSection/CommonServiceSubPages.css";
+import Navbar from "../HomeSection/Navbar/Navbar";
+import Footer from "../HomeSection/Footer/Footer";
+import "../ServicesSection/CommonServiceSubPages.css";
 
-import DedicatedSoftwareTeamsImage1 from "../../../images/ForAgenciesImages/DedicatedSoftwareTeams-1.png";
-import DedicatedSoftwareTeamsImage2 from "../../../images/ForAgenciesImages/DedicatedSoftwareTeams-2.png";
-import DedicatedSoftwareTeamsImage3 from "../../../images/ForAgenciesImages/DedicatedSoftwareTeams-3.png";
-import DedicatedSoftwareTeamsImage4 from "../../../images/ForAgenciesImages/DedicatedSoftwareTeams-4.png";
+import DedicatedSoftwareTeamsImage1 from "../../images/ForAgenciesImages/DedicatedSoftwareTeams-1.png";
+import DedicatedSoftwareTeamsImage2 from "../../images/ForAgenciesImages/DedicatedSoftwareTeams-2.png";
+import DedicatedSoftwareTeamsImage3 from "../../images/ForAgenciesImages/DedicatedSoftwareTeams-3.png";
+import DedicatedSoftwareTeamsImage4 from "../../images/ForAgenciesImages/DedicatedSoftwareTeams-4.png";
 
 const DedicatedSoftwareTeams = () => {
   useEffect(() => {

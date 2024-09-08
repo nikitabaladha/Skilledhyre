@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../../HomeSection/Navbar/Navbar";
-import Footer from "../../HomeSection/Footer/Footer";
-import "../../ServicesSection/CommonServiceSubPages.css";
+import Navbar from "../HomeSection/Navbar/Navbar";
+import Footer from "../HomeSection/Footer/Footer";
+import "../ServicesSection/CommonServiceSubPages.css";
 
-import WhiteLabelWebDevelopmentImage1 from "../../../images/ForAgenciesImages/WhiteLabelWebDevelopment-1.png";
-import WhiteLabelWebDevelopmentImage2 from "../../../images/ForAgenciesImages/WhiteLabelWebDevelopment-2.png";
-import WhiteLabelWebDevelopmentImage3 from "../../../images/ForAgenciesImages/WhiteLabelWebDevelopment-3.png";
-import WhiteLabelWebDevelopmentImage4 from "../../../images/ForAgenciesImages/WhiteLabelWebDevelopment-4.png";
+import WhiteLabelWebDevelopmentImage1 from "../../images/ForAgenciesImages/WhiteLabelWebDevelopment-1.png";
+import WhiteLabelWebDevelopmentImage2 from "../../images/ForAgenciesImages/WhiteLabelWebDevelopment-2.png";
+import WhiteLabelWebDevelopmentImage3 from "../../images/ForAgenciesImages/WhiteLabelWebDevelopment-3.png";
+import WhiteLabelWebDevelopmentImage4 from "../../images/ForAgenciesImages/WhiteLabelWebDevelopment-4.png";
 
 const WhiteLabelWebDevelopment = () => {
   useEffect(() => {

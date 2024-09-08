@@ -6,6 +6,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/HomeSection/Home/Home";
+import AboutCompany from "./components/AboutCompany/AboutCompany";
+
 import Service from "./components/ServicesSection/Service/Service";
 import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WebsiteDesign";
 import WebsiteDevelopment from "./components/ServicesSection/WebDevelopment/WebDevelopment";
@@ -34,12 +36,12 @@ import AndroidAppDevelopment from "./components/ServicesSection/AndroidAppDevelo
 import HybridAppDevelopment from "./components/ServicesSection/HybridAppDevelopment/HybridAppDevelopment";
 import ReactAppDevelopment from "./components/ServicesSection/ReactNativeAppDevelopment/ReactNativeAppDevelopment";
 
-import WhiteLabelDigitalMarketing from "./components/ForAgencies/WebsiteDesign/WhiteLabelDigitalMarketing";
-import WhiteLabelWebDevelopment from "./components/ForAgencies/WebsiteDesign/WhiteLabelWebDevelopment";
-import WhiteLabeAppDevelopment from "./components/ForAgencies/WebsiteDesign/WhiteLabeAppDevelopment";
-import OutsourcedSoftwareDevelopment from "./components/ForAgencies/WebsiteDesign/OutsourcedSoftwareDevelopment";
-import DedicatedSoftwareTeams from "./components/ForAgencies/WebsiteDesign/DedicatedSoftwareTeams";
-import DedicatedMarketingTeams from "./components/ForAgencies/WebsiteDesign/DedicatedMarketingTeams";
+import WhiteLabelDigitalMarketing from "./components/ForAgencies/WhiteLabelDigitalMarketing";
+import WhiteLabelWebDevelopment from "./components/ForAgencies/WhiteLabelWebDevelopment";
+import WhiteLabeAppDevelopment from "./components/ForAgencies/WhiteLabeAppDevelopment";
+import OutsourcedSoftwareDevelopment from "./components/ForAgencies/OutsourcedSoftwareDevelopment";
+import DedicatedSoftwareTeams from "./components/ForAgencies/DedicatedSoftwareTeams";
+import DedicatedMarketingTeams from "./components/ForAgencies/DedicatedMarketingTeams";
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about-company" element={<AboutCompany />} />
+
           <Route path="/service" element={<Service />} />
           <Route path="/website-design" element={<WebsiteDesign />} />
           <Route path="/web-development" element={<WebsiteDevelopment />} />
