@@ -125,6 +125,8 @@
 .hire-developers-four {
   padding-left: 180px;
   padding-right: 180px;
+  background-color: #f7f9fb;
+  padding-top: 50px;
 }
 
 .hire-developers-four-card {
@@ -170,4 +172,118 @@
 
 .hire-developers-four-card:hover {
   border: 1px solid #007bff;
+}
+
+/* Fifth row */
+.hire-developers-fif {
+  padding-top: 50px;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 50px;
+}
+
+.hire-developers-fif-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hire-developers-fif-card-body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-developers-fif-card-content h3 {
+  margin: 3px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.hire-developers-fif-card .icon {
+  height: 80px;
+  padding: 15px 15px 15px 15px;
+  transform: rotate(0deg);
+  width: 80px;
+  line-height: 53px;
+  border-radius: 100px 100px 100px 100px;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.hire-developers-fif-card-icon {
+  font-size: 45px;
+  color: #fff;
+}
+
+.hire-developers-fif-card .icon-1 {
+  background-color: #2575fc;
+}
+
+.hire-developers-fif-card .icon-2 {
+  background-color: #6a11cb;
+}
+.hire-developers-fif-card .icon-3 {
+  background-color: #06b37c;
+}
+
+.hire-developers-fif-card .icon-4 {
+  background-color: #0706b3;
+}
+.hire-developers-fif-card .title-1 {
+  color: #2575fc;
+}
+
+.hire-developers-fif-card .title-2 {
+  color: #6a11cb;
+}
+.hire-developers-fif-card .title-3 {
+  color: #06b37c;
+}
+.hire-developers-fif-card .title-4 {
+  color: #0706b3;
+}
+
+.hire-developers-fif-card:hover .icon-1 .hire-developers-fif-card-icon {
+  color: #2575fc;
+}
+
+.hire-developers-fif-card:hover .icon-2 .hire-developers-fif-card-icon {
+  color: #6a11cb;
+}
+
+.hire-developers-fif-card:hover .icon-3 .hire-developers-fif-card-icon {
+  color: #06b37c;
+}
+
+.hire-developers-fif-card:hover .icon-4 .hire-developers-fif-card-icon {
+  color: #0706b3;
+}
+
+.hire-developers-fif-card:hover .icon {
+  background-color: white;
+}
+
+.hire-developers-fif-card:hover .icon-1 {
+  border: 1px solid #2575fc;
+}
+.hire-developers-fif-card:hover .icon-2 {
+  border: 1px solid #6a11cb;
+}
+.hire-developers-fif-card:hover .icon-3 {
+  border: 1px solid #06b37c;
+}
+.hire-developers-fif-card:hover .icon-4 {
+  border: 1px solid #0706b3;
 }

@@ -7,6 +7,7 @@ import { FaRegHandshake } from "react-icons/fa";
 import { LuPencilRuler } from "react-icons/lu";
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2";
 import { MdOutlineStars } from "react-icons/md";
+import { FaBezierCurve } from "react-icons/fa";
 
 import { FaAppStoreIos } from "react-icons/fa";
 import { FaAndroid } from "react-icons/fa";
@@ -14,6 +15,9 @@ import { FaVrCardboard } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { FaRegFileVideo } from "react-icons/fa";
+import { FaDharmachakra } from "react-icons/fa";
+
+import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
 
 import Navbar from "../HomeSection/Navbar/Navbar";
 import Footer from "../HomeSection/Footer/Footer";
@@ -30,7 +34,48 @@ const HireDevelopers = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const cardsData = [
+  const ThirdRowCardData = [
+    {
+      icon: <FiShoppingBag className="hire-developers-thi-card-icon" />,
+      title: "Cost-Effective Models",
+      description:
+        "Hire dedicated developer and save 60% capital on designing and developing a professional application. Hiring dedicated web developers for projects can reflect significant savings on operating costs without cutting corners.",
+    },
+    {
+      icon: <BsStopwatch className="hire-developers-thi-card-icon" />,
+      title: "Extensive Expertise",
+      description:
+        "More than 95% of the developers are aged 18-35, and every year more than 200,000 software developers are hired by the IT industry. Because of this number, any development challenges thrown across becomes easy.",
+    },
+    {
+      icon: <FaRegHandshake className="hire-developers-thi-card-icon" />,
+      title: "Quality Work",
+      description:
+        "The top software outsourcing companies consistently provide top quality software solutions. This is because of the talented software programmers that have an ever-increasing thirst for learning and experimenting.",
+    },
+    {
+      icon: <LuPencilRuler className="hire-developers-thi-card-icon" />,
+      title: "High-End Infrastructure",
+      description:
+        "Skilledhyre keeps itself abreast with the latest technology and tools needed to outperform in software development.",
+    },
+    {
+      icon: (
+        <HiOutlineDocumentMagnifyingGlass className="hire-developers-thi-card-icon" />
+      ),
+      title: "Timely Delivery",
+      description:
+        "Skilledhyre is having skilled and experienced team in India that can develop a mobile app or a website for you within the required timeframe.",
+    },
+    {
+      icon: <MdOutlineStars className="hire-developers-thi-card-icon" />,
+      title: "End-to-End Services",
+      description:
+        "To keep you updated with each and every phase of the development, you are provided access to all your work documents, to-do lists, and project delivery dates. Helping you keep track of your application development phase so that nothing goes wrong during the development and deployment.",
+    },
+  ];
+
+  const FourthRowCardData = [
     {
       icon: FaAppStoreIos,
       title: "IOS",
@@ -62,9 +107,39 @@ const HireDevelopers = () => {
     },
     {
       icon: FaRegFileVideo,
-      title: "FaRegFileVideo",
+      title: "App Developers",
     },
   ];
+
+  const FifthRowCardData = [
+    {
+      icon: <FaRegFileVideo className="hire-developers-fif-card-icon" />,
+      title: "Blockchain",
+      iconClass: "icon-1", // Custom class for the icon
+      titleClass: "title-1", // Custom class for the title
+    },
+    {
+      icon: (
+        <HiOutlineChatBubbleLeftRight className="hire-developers-fif-card-icon" />
+      ),
+      title: "Chatbot",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaDharmachakra className="hire-developers-fif-card-icon" />,
+      title: "Machine Learning",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <FaBezierCurve className="hire-developers-fif-card-icon" />,
+      title: "Crypto Currency",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -97,9 +172,7 @@ const HireDevelopers = () => {
             </h2>
 
             <div className="hire-developers-dot-dash-line">
-              <span className="hire-developers-decorative-dot">
-                {/* <RxDotsHorizontal /> */}
-              </span>
+              <span className="hire-developers-decorative-dot"></span>
               <span className="hire-developers-decorative-line"></span>
             </div>
 
@@ -123,6 +196,7 @@ const HireDevelopers = () => {
         </div>
 
         {/* Third row */}
+
         <div className="container-fluid hire-developers-thi ">
           <div className="hire-developers-thi-header">
             <h2>Here are a few more benefits</h2>
@@ -133,118 +207,22 @@ const HireDevelopers = () => {
               <span className="hire-developers-decorative-line"></span>
             </div>
           </div>
-
+          {/*Cards */}
           <div className="container-fluid hire-developers-thi-card-container">
             <div className="row hire-developers-thi-card-row">
-              <div className="col-md-6" onClick={handleClick}>
-                <div className="hire-developers-thi-card">
-                  <div className="hire-developers-thi-card-body">
-                    <div>
-                      <FiShoppingBag className="hire-developers-thi-card-icon" />
-                    </div>
-                    <div className="hire-developers-thi-card-content">
-                      <h3>Cost-Effective Models</h3>
-                      <p>
-                        Hire dedicated developer and save 60% capital on
-                        designing and developing a professional application.
-                        Hiring dedicated web developers for projects can reflect
-                        significant savings on operating costs without cutting
-                        corners.
-                      </p>
+              {ThirdRowCardData.map((card, index) => (
+                <div className="col-md-6" onClick={handleClick} key={index}>
+                  <div className="hire-developers-thi-card">
+                    <div className="hire-developers-thi-card-body">
+                      <div>{card.icon}</div>
+                      <div className="hire-developers-thi-card-content">
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-6" onClick={handleClick}>
-                <div className="hire-developers-thi-card">
-                  <div className="hire-developers-thi-card-body">
-                    <div>
-                      <BsStopwatch className="hire-developers-thi-card-icon" />
-                    </div>
-                    <div className="hire-developers-thi-card-content">
-                      <h3>Extensive Expertise</h3>
-                      <p>
-                        More than 95% of the developers are aged 18-35, and
-                        every year more than 200,000 software developers are
-                        hired by the IT industry. Because of this number, any
-                        development challenges thrown across becomes easy.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6" onClick={handleClick}>
-                <div className="hire-developers-thi-card">
-                  <div className="hire-developers-thi-card-body">
-                    <div>
-                      <FaRegHandshake className="hire-developers-thi-card-icon" />
-                    </div>
-                    <div className="hire-developers-thi-card-content">
-                      <h3>Quality Work</h3>
-                      <p>
-                        The top software outsourcing companies consistently
-                        provide top quality software solutions. This is because
-                        of the talented software programmers that have an
-                        ever-increasing thirst for learning and experimenting.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6" onClick={handleClick}>
-                <div className="hire-developers-thi-card">
-                  <div className="hire-developers-thi-card-body">
-                    <div>
-                      <LuPencilRuler className="hire-developers-thi-card-icon" />
-                    </div>
-                    <div className="hire-developers-thi-card-content">
-                      <h3>High-End Infrastructure</h3>
-                      <p>
-                        Skilledhyre keeps itself abreast with the latest
-                        technology and tools needed to outperform in software
-                        development.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6" onClick={handleClick}>
-                <div className="hire-developers-thi-card">
-                  <div className="hire-developers-thi-card-body">
-                    <div>
-                      <HiOutlineDocumentMagnifyingGlass className="hire-developers-thi-card-icon" />
-                    </div>
-                    <div className="hire-developers-thi-card-content">
-                      <h3>Timely Delivery</h3>
-                      <p>
-                        Skilledhyre is having skilled and experinced team in
-                        India that can develop a mobile app or a website for you
-                        within the required timeframe.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6" onClick={handleClick}>
-                <div className="hire-developers-thi-card">
-                  <div className="hire-developers-thi-card-body">
-                    <div>
-                      <MdOutlineStars className="hire-developers-thi-card-icon" />
-                    </div>
-                    <div className="hire-developers-thi-card-content">
-                      <h3>End-to-End Services</h3>
-                      <p>
-                        To keep you updated with each and every phase of the
-                        development, you are provided access to all your work
-                        documents, to-do lists, and project delivery dates.
-                        Helping you keep track of your application development
-                        phase so that nothing goes wrong during the development
-                        and deployment.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -260,9 +238,11 @@ const HireDevelopers = () => {
               <span className="hire-developers-decorative-line"></span>
             </div>
           </div>
+
+          {/* fourth row Cards  */}
           <div className="container-fluid hire-developers-four-card-container">
             <div className="row hire-developers-four-card-row">
-              {cardsData.map((card, index) => (
+              {FourthRowCardData.map((card, index) => (
                 <div key={index} className="col-md-4" onClick={handleClick}>
                   <div className="hire-developers-four-card">
                     <div className="hire-developers-four-card-body">
@@ -281,6 +261,41 @@ const HireDevelopers = () => {
                       </div>
                       <div className="hire-developers-four-card-content">
                         <h3>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Fifth row */}
+        <div className="container-fluid hire-developers-fif">
+          <div className="hire-developers-thi-header">
+            <h2>Blockchain & ML</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid hire-developers-fif-card-container">
+            <div className="row hire-developers-fif-card-row">
+              {FifthRowCardData.map((card, index) => (
+                <div className="col-md-3" onClick={handleClick} key={index}>
+                  <div className="hire-developers-fif-card">
+                    <div className="hire-developers-fif-card-body">
+                      <div
+                        className={`hire-developers-fif-card-icon icon ${card.iconClass}`}
+                      >
+                        {card.icon}
+                      </div>
+                      <div className="hire-developers-fif-card-content">
+                        <h3 className={card.titleClass}>{card.title}</h3>
                       </div>
                     </div>
                   </div>
