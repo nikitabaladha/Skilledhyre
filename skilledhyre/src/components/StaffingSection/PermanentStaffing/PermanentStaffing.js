@@ -302,9 +302,9 @@ const PermanentStaffing = () => {
             </Card.Body>
           </Card>
         </div>
-
-        <Footer />
       </div>
+
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+
+import { FaArrowRight } from "react-icons/fa6";
+import { Card, Button } from "react-bootstrap";
 import { RxDotsHorizontal } from "react-icons/rx";
 import { BsStopwatch } from "react-icons/bs";
 import { FiShoppingBag } from "react-icons/fi";
@@ -263,6 +266,76 @@ const HireDevelopers = () => {
       title: "3d Product Animation",
       iconClass: "icon-5",
       titleClass: "title-5",
+    },
+  ];
+
+  const NinthRowCardData = [
+    {
+      icon: <FaPhotoVideo className="hire-developers-nine-card-icon" />,
+      title: "Visiting Cards & Letterhead",
+      iconClass: "icon-1",
+      titleClass: "title-1",
+    },
+    {
+      icon: (
+        <MdOutlineVideoSettings className="hire-developers-nine-card-icon" />
+      ),
+      title: "Banner Ads",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaPhotoVideo className="hire-developers-nine-card-icon" />,
+      title: "Social Media Design",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <CiGift className="hire-developers-nine-card-icon" />,
+      title: "Poster Design",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+    {
+      icon: <CiGift className="hire-developers-nine-card-icon" />,
+      title: "3D Models & Product Design",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+  ];
+
+  const TenthRowCardData = [
+    {
+      icon: <FaPhotoVideo className="hire-developers-nine-card-icon" />,
+      title: "Content Writing",
+      iconClass: "icon-1",
+      titleClass: "title-1",
+    },
+    {
+      icon: (
+        <MdOutlineVideoSettings className="hire-developers-nine-card-icon" />
+      ),
+      title: "Resume & Letter",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaPhotoVideo className="hire-developers-nine-card-icon" />,
+      title: "Script Writing",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <CiGift className="hire-developers-nine-card-icon" />,
+      title: "Script Writing",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+    {
+      icon: <CiGift className="hire-developers-nine-card-icon" />,
+      title: "Legal Writing",
+      iconClass: "icon-4",
+      titleClass: "title-4",
     },
   ];
 
@@ -534,6 +607,105 @@ const HireDevelopers = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Ninth row */}
+        <div className="container-fluid hire-developers-nine">
+          <div className="hire-developers-thi-header">
+            <h2>Graphic & Design</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid hire-developers-nine-card-container">
+            <div className="row hire-developers-nine-card-row">
+              {NinthRowCardData.map((card, index) => (
+                <div className="col-md-4" onClick={handleClick} key={index}>
+                  <div className="hire-developers-nine-card">
+                    <div className="hire-developers-nine-card-body">
+                      <div
+                        className={`hire-developers-nine-card-icon icon ${card.iconClass}`}
+                      >
+                        {card.icon}
+                      </div>
+                      <div className="hire-developers-nine-card-content">
+                        <h3 className={card.titleClass}>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Tenth row */}
+        <div className="container-fluid hire-developers-ten">
+          <div className="hire-developers-thi-header">
+            <h2>Writing & Translation</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid hire-developers-ten-card-container">
+            <div className="row hire-developers-ten-card-row">
+              {TenthRowCardData.map((card, index) => (
+                <div className="col-md-4" onClick={handleClick} key={index}>
+                  <div className="hire-developers-ten-card">
+                    <div className="hire-developers-ten-card-body">
+                      <div
+                        className={`hire-developers-ten-card-icon icon ${card.iconClass}`}
+                      >
+                        {card.icon}
+                      </div>
+                      <div className="hire-developers-ten-card-content">
+                        <h3 className={card.titleClass}>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Eleventh row */}
+
+        <div className="container-fluid staffing-fif">
+          <div className="staffing-fif-content">
+            <h2>Call to Action</h2>
+            <div className="staffing-dot-dash-line">
+              <span className="staffing-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="staffing-decorative-line"></span>
+            </div>
+          </div>
+
+          <Card className="staffing-fif-card">
+            <Card.Body>
+              <div className="d-flex justify-content-between align-items-center">
+                <Card.Text className="staffing-fif-card-text">
+                  Do You Have An Interesting Projects?
+                </Card.Text>
+                <div className="staffing-fif-card-button">
+                  <Button className="contact-us" onClick={handleClick}>
+                    Contact Us <FaArrowRight />
+                  </Button>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
         </div>
       </div>
 
