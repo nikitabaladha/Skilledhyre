@@ -1,4 +1,5 @@
 /* Second row */
+
 .hire-developers-sec {
   padding-left: 220px;
   padding-right: 220px;
@@ -6,6 +7,7 @@
 }
 
 /* Third row */
+
 .hire-developers-thi {
   padding-top: 100px;
   padding-left: 180px;
@@ -17,11 +19,12 @@
 }
 
 .hire-developers-thi-header h2 {
-  font-size: 28px;
   font-weight: 500;
   line-height: 1.2;
-  color: #1a1b1e;
   text-align: center;
+  color: #000000;
+  font-family: "Lato", Sans-serif;
+  font-size: 28px;
 }
 
 .hire-developers-dot-dash-line {
@@ -56,6 +59,33 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.hire-developers-thi-card:hover {
+  background-image: url("../../images/HireDeveloperImages/HireDeveloper-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hire-developers-thi-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 75, 182, 0.8); /* Overlay */
+  z-index: -1;
+}
+
+.hire-developers-thi-card:hover h3,
+.hire-developers-thi-card:hover p,
+.hire-developers-thi-card:hover .hire-developers-thi-card-icon {
+  color: #fff;
 }
 
 .hire-developers-thi-card-body {
@@ -80,6 +110,7 @@
   margin: 0 0 20px;
   font-family: "Red Hat Display", sans-serif;
 }
+
 .hire-developers-thi-card p {
   color: #565656;
   margin: 0px 0px 0px 0px;
@@ -87,4 +118,56 @@
   font-size: 16px;
   line-height: 1.875;
   font-weight: 400;
+}
+
+/* Fourth row  */
+
+.hire-developers-four {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.hire-developers-four-card {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  position: relative;
+  background-color: #fff;
+  height: 120px;
+}
+
+.hire-developers-four-card-body {
+  display: flex;
+}
+
+.hire-developers-four-card-icon {
+  font-size: 45px;
+  margin-right: 20px;
+}
+
+.hire-developers-four-card-content {
+  flex: 1;
+}
+
+.hire-developers-four-card h3 {
+  padding-top: 20px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.hire-developers-four-card:hover .hire-developers-four-card-icon {
+  color: #007bff;
+}
+
+.hire-developers-four-card:hover .hire-developers-four-card-content h3 {
+  color: #007bff;
+}
+
+.hire-developers-four-card:hover {
+  border: 1px solid #007bff;
 }

@@ -8,9 +8,18 @@ import { LuPencilRuler } from "react-icons/lu";
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2";
 import { MdOutlineStars } from "react-icons/md";
 
+import { FaAppStoreIos } from "react-icons/fa";
+import { FaAndroid } from "react-icons/fa";
+import { FaVrCardboard } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaSwift } from "react-icons/fa";
+import { FaRegFileVideo } from "react-icons/fa";
+
 import Navbar from "../HomeSection/Navbar/Navbar";
 import Footer from "../HomeSection/Footer/Footer";
 import "../../components/ServicesSection/CommonServiceSubPages.css";
+import hireDeveloperImage2 from "../../images/HireDeveloperImages/HireDeveloper-2.png";
+import hireDeveloperImage3 from "../../images/HireDeveloperImages/HireDeveloper-3.png";
 import "./HireDevelopers.css";
 
 const HireDevelopers = () => {
@@ -20,6 +29,42 @@ const HireDevelopers = () => {
     navigate("/hire-developers");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const cardsData = [
+    {
+      icon: FaAppStoreIos,
+      title: "IOS",
+    },
+    {
+      icon: FaAndroid,
+      title: "Android",
+    },
+    {
+      icon: FaVrCardboard,
+      title: "AR",
+    },
+    { icon: hireDeveloperImage2, title: "Xamarin" },
+    {
+      icon: hireDeveloperImage3,
+      title: "Flutter",
+    },
+    {
+      icon: () => <span className="material-symbols-outlined">lan</span>,
+      title: "IOT",
+    },
+    {
+      icon: FaReact,
+      title: "React",
+    },
+    {
+      icon: FaSwift,
+      title: "Swift",
+    },
+    {
+      icon: FaRegFileVideo,
+      title: "FaRegFileVideo",
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -200,6 +245,47 @@ const HireDevelopers = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fourth row */}
+        <div className="container-fluid hire-developers-four">
+          <div className="hire-developers-thi-header">
+            <h2>Mobility</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+          <div className="container-fluid hire-developers-four-card-container">
+            <div className="row hire-developers-four-card-row">
+              {cardsData.map((card, index) => (
+                <div key={index} className="col-md-4" onClick={handleClick}>
+                  <div className="hire-developers-four-card">
+                    <div className="hire-developers-four-card-body">
+                      <div>
+                        {typeof card.icon === "function" ? (
+                          <span className="hire-developers-four-card-icon">
+                            {card.icon()}
+                          </span>
+                        ) : (
+                          <img
+                            src={card.icon}
+                            alt={card.title}
+                            className="hire-developers-four-card-icon"
+                          />
+                        )}
+                      </div>
+                      <div className="hire-developers-four-card-content">
+                        <h3>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
