@@ -1,0 +1,90 @@
+/* Second row */
+.hire-developers-sec {
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-top: 50px;
+}
+
+/* Third row */
+.hire-developers-thi {
+  padding-top: 100px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.hire-developers-thi-header {
+  text-align: center;
+}
+
+.hire-developers-thi-header h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1a1b1e;
+  text-align: center;
+}
+
+.hire-developers-dot-dash-line {
+  color: #074bb6;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.hire-developers-decorative-dot {
+  font-size: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+  line-height: 1;
+}
+
+.hire-developers-decorative-line {
+  display: inline-block;
+  padding-top: 0px;
+  width: 80px;
+  height: 4px;
+  background-color: #074bb6;
+  margin-left: 5px;
+}
+
+.hire-developers-thi-card {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ddd;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.hire-developers-thi-card-body {
+  display: flex;
+}
+
+.hire-developers-thi-card-icon {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.hire-developers-thi-card-content {
+  flex: 1;
+}
+
+.hire-developers-thi-card h3 {
+  padding: 0px 0px 0px 0px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  font-family: "Red Hat Display", sans-serif;
+}
+.hire-developers-thi-card p {
+  color: #565656;
+  margin: 0px 0px 0px 0px;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
