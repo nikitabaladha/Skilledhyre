@@ -23,6 +23,15 @@ import { FaJava } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 
+import { FaPhotoVideo } from "react-icons/fa";
+
+import { FaDrupal } from "react-icons/fa";
+import { FaMagento } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { MdOutlineVideoSettings } from "react-icons/md";
+import { CiGift } from "react-icons/ci";
+import { TbFileTextAi } from "react-icons/tb";
+
 import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
 
 import Navbar from "../HomeSection/Navbar/Navbar";
@@ -31,6 +40,9 @@ import "../../components/ServicesSection/CommonServiceSubPages.css";
 import hireDeveloperImage2 from "../../images/HireDeveloperImages/HireDeveloper-2.png";
 import hireDeveloperImage3 from "../../images/HireDeveloperImages/HireDeveloper-3.png";
 import hireDeveloperImage4 from "../../images/HireDeveloperImages/HireDeveloper-4.png";
+
+import hireDeveloperImage5 from "../../images/HireDeveloperImages/HireDeveloper-5.png";
+import hireDeveloperImage6 from "../../images/HireDeveloperImages/HireDeveloper-6.png";
 import "./HireDevelopers.css";
 
 const HireDevelopers = () => {
@@ -183,6 +195,74 @@ const HireDevelopers = () => {
       title: "QA Tester",
       iconClass: "icon-6",
       titleClass: "title-6",
+    },
+  ];
+
+  const SeventhRowCardData = [
+    {
+      icon: <FaDrupal className="hire-developers-seven-card-icon" />,
+      title: "Drupal",
+      iconClass: "icon-1",
+      titleClass: "title-1",
+    },
+    {
+      icon: <FaMagento className="hire-developers-seven-card-icon" />,
+      title: "Magento",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaWordpress className="hire-developers-seven-card-icon" />,
+      title: "Wordpress",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <hireDeveloperImage5 className="hire-developers-seven-card-icon" />,
+      title: "Sitecore",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+    {
+      icon: <hireDeveloperImage6 className="hire-developers-seven-card-icon" />,
+      title: "Shopify",
+      iconClass: "icon-5",
+      titleClass: "title-5",
+    },
+  ];
+
+  const EighthRowCardData = [
+    {
+      icon: <FaPhotoVideo className="hire-developers-eight-card-icon" />,
+      title: "Video Editing",
+      iconClass: "icon-1",
+      titleClass: "title-1",
+    },
+    {
+      icon: (
+        <MdOutlineVideoSettings className="hire-developers-eight-card-icon" />
+      ),
+      title: "Short Video Ads",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaPhotoVideo className="hire-developers-eight-card-icon" />,
+      title: "Product Photography",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <CiGift className="hire-developers-eight-card-icon" />,
+      title: "Animated GIFs",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+    {
+      icon: <TbFileTextAi className="hire-developers-eight-card-icon" />,
+      title: "3d Product Animation",
+      iconClass: "icon-5",
+      titleClass: "title-5",
     },
   ];
 
@@ -376,6 +456,76 @@ const HireDevelopers = () => {
                         {card.icon}
                       </div>
                       <div className="hire-developers-six-card-content">
+                        <h3 className={card.titleClass}>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Seventh row */}
+        <div className="container-fluid hire-developers-seven">
+          <div className="hire-developers-thi-header">
+            <h2>Ecommerce & CMS</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid hire-developers-seven-card-container">
+            <div className="row hire-developers-seven-card-row">
+              {SeventhRowCardData.map((card, index) => (
+                <div className="col-md-4" onClick={handleClick} key={index}>
+                  <div className="hire-developers-seven-card">
+                    <div className="hire-developers-seven-card-body">
+                      <div
+                        className={`hire-developers-seven-card-icon icon ${card.iconClass}`}
+                      >
+                        {card.icon}
+                      </div>
+                      <div className="hire-developers-seven-card-content">
+                        <h3 className={card.titleClass}>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Eighth row */}
+        <div className="container-fluid hire-developers-eight">
+          <div className="hire-developers-thi-header">
+            <h2>Video & Animation</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid hire-developers-eight-card-container">
+            <div className="row hire-developers-eight-card-row">
+              {EighthRowCardData.map((card, index) => (
+                <div className="col-md-4" onClick={handleClick} key={index}>
+                  <div className="hire-developers-eight-card">
+                    <div className="hire-developers-eight-card-body">
+                      <div
+                        className={`hire-developers-eight-card-icon icon ${card.iconClass}`}
+                      >
+                        {card.icon}
+                      </div>
+                      <div className="hire-developers-eight-card-content">
                         <h3 className={card.titleClass}>{card.title}</h3>
                       </div>
                     </div>

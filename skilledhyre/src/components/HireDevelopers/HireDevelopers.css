@@ -438,3 +438,275 @@
 .hire-developers-six-card:hover .icon-6 {
   border: 1px solid #06b37c;
 }
+
+/* Seventh row */
+
+.hire-developers-seven {
+  padding-top: 50px;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 50px;
+}
+
+.hire-developers-seven-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hire-developers-seven-card-body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-developers-seven-card-content h3 {
+  margin: 3px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.hire-developers-seven-card .icon {
+  height: 80px;
+  padding: 15px 15px 15px 15px;
+  transform: rotate(0deg);
+  width: 80px;
+  line-height: 53px;
+  border-radius: 100px 100px 100px 100px;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.hire-developers-seven-card-icon {
+  font-size: 45px;
+  color: #fff;
+}
+
+.hire-developers-seven-card .icon-1 {
+  background-color: #2575fc;
+}
+
+.hire-developers-seven-card .icon-2 {
+  background-color: #6a11cb;
+}
+
+.hire-developers-seven-card .icon-3 {
+  background-color: #06b37c;
+}
+
+.hire-developers-seven-card .icon-4 {
+  background-color: #ce25fc;
+}
+
+.hire-developers-seven-card .icon-5 {
+  background-color: #6a11cb;
+}
+
+.hire-developers-seven-card .title-1 {
+  color: #2575fc;
+}
+
+.hire-developers-seven-card .title-2 {
+  color: #6a11cb;
+}
+.hire-developers-seven-card .title-3 {
+  color: #06b37c;
+}
+.hire-developers-seven-card .title-4 {
+  color: #0706b3;
+}
+
+.hire-developers-seven-card .title-5 {
+  color: #6a11cb;
+}
+
+.hire-developers-seven-card:hover .icon-1 .hire-developers-seven-card-icon {
+  color: #2575fc;
+}
+
+.hire-developers-seven-card:hover .icon-2 .hire-developers-seven-card-icon {
+  color: #6a11cb;
+}
+
+.hire-developers-seven-card:hover .icon-3 .hire-developers-seven-card-icon {
+  color: #06b37c;
+}
+
+.hire-developers-seven-card:hover .icon-4 .hire-developers-seven-card-icon {
+  color: #0706b3;
+}
+
+.hire-developers-seven-card:hover .icon-5 .hire-developers-seven-card-icon {
+  color: #6a11cb;
+}
+
+.hire-developers-seven-card:hover .icon {
+  background-color: white;
+}
+
+.hire-developers-seven-card:hover .icon-1 {
+  border: 1px solid #2575fc;
+}
+
+.hire-developers-seven-card:hover .icon-2 {
+  border: 1px solid #6a11cb;
+}
+
+.hire-developers-seven-card:hover .icon-3 {
+  border: 1px solid #06b37c;
+}
+
+.hire-developers-seven-card:hover .icon-4 {
+  border: 1px solid #0706b3;
+}
+
+.hire-developers-seven-card:hover .icon-5 {
+  border: 1px solid #6a11cb;
+}
+
+/* Eighth row */
+
+.hire-developers-eight {
+  padding-top: 50px;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 50px;
+}
+
+.hire-developers-eight-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hire-developers-eight-card-body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-developers-eight-card-content h3 {
+  margin: 3px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.hire-developers-eight-card .icon {
+  height: 80px;
+  padding: 15px 15px 15px 15px;
+  transform: rotate(0deg);
+  width: 80px;
+  line-height: 53px;
+  border-radius: 100px 100px 100px 100px;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.hire-developers-eight-card-icon {
+  font-size: 45px;
+  color: #fff;
+}
+
+.hire-developers-eight-card .icon-1 {
+  background-color: #2575fc;
+}
+
+.hire-developers-eight-card .icon-2 {
+  background-color: #6a11cb;
+}
+
+.hire-developers-eight-card .icon-3 {
+  background-color: #06b37c;
+}
+
+.hire-developers-eight-card .icon-4 {
+  background-color: #ce25fc;
+}
+
+.hire-developers-eight-card .icon-5 {
+  background-color: #6a11cb;
+}
+
+.hire-developers-eight-card .title-1 {
+  color: #2575fc;
+}
+
+.hire-developers-eight-card .title-2 {
+  color: #6a11cb;
+}
+.hire-developers-eight-card .title-3 {
+  color: #06b37c;
+}
+.hire-developers-eight-card .title-4 {
+  color: #0706b3;
+}
+
+.hire-developers-eight-card .title-5 {
+  color: #6a11cb;
+}
+
+.hire-developers-eight-card:hover .icon-1 .hire-developers-eight-card-icon {
+  color: #2575fc;
+}
+
+.hire-developers-eight-card:hover .icon-2 .hire-developers-eight-card-icon {
+  color: #6a11cb;
+}
+
+.hire-developers-eight-card:hover .icon-3 .hire-developers-eight-card-icon {
+  color: #06b37c;
+}
+
+.hire-developers-eight-card:hover .icon-4 .hire-developers-eight-card-icon {
+  color: #0706b3;
+}
+
+.hire-developers-eight-card:hover .icon-5 .hire-developers-eight-card-icon {
+  color: #6a11cb;
+}
+
+.hire-developers-eight-card:hover .icon {
+  background-color: white;
+}
+
+.hire-developers-eight-card:hover .icon-1 {
+  border: 1px solid #2575fc;
+}
+
+.hire-developers-eight-card:hover .icon-2 {
+  border: 1px solid #6a11cb;
+}
+
+.hire-developers-eight-card:hover .icon-3 {
+  border: 1px solid #06b37c;
+}
+
+.hire-developers-eight-card:hover .icon-4 {
+  border: 1px solid #0706b3;
+}
+
+.hire-developers-eight-card:hover .icon-5 {
+  border: 1px solid #6a11cb;
+}
