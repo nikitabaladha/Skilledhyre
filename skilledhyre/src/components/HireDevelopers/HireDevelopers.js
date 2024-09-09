@@ -17,6 +17,12 @@ import { FaSwift } from "react-icons/fa";
 import { FaRegFileVideo } from "react-icons/fa";
 import { FaDharmachakra } from "react-icons/fa";
 
+import { FaComputer } from "react-icons/fa6";
+import { FaPhp } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+
 import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
 
 import Navbar from "../HomeSection/Navbar/Navbar";
@@ -24,6 +30,7 @@ import Footer from "../HomeSection/Footer/Footer";
 import "../../components/ServicesSection/CommonServiceSubPages.css";
 import hireDeveloperImage2 from "../../images/HireDeveloperImages/HireDeveloper-2.png";
 import hireDeveloperImage3 from "../../images/HireDeveloperImages/HireDeveloper-3.png";
+import hireDeveloperImage4 from "../../images/HireDeveloperImages/HireDeveloper-4.png";
 import "./HireDevelopers.css";
 
 const HireDevelopers = () => {
@@ -137,6 +144,45 @@ const HireDevelopers = () => {
       title: "Crypto Currency",
       iconClass: "icon-4",
       titleClass: "title-4",
+    },
+  ];
+
+  const SixthRowCardData = [
+    {
+      icon: <FaComputer className="hire-developers-six-card-icon" />,
+      title: ".NET",
+      iconClass: "icon-1",
+      titleClass: "title-1",
+    },
+    {
+      icon: <FaPhp className="hire-developers-six-card-icon" />,
+      title: "PHP",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaJava className="hire-developers-six-card-icon" />,
+      title: "Java",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <FaAngular className="hire-developers-six-card-icon" />,
+      title: "Angular",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+    {
+      icon: <FaHtml5 className="hire-developers-six-card-icon" />,
+      title: "HTML 5",
+      iconClass: "icon-5",
+      titleClass: "title-5",
+    },
+    {
+      icon: <hireDeveloperImage4 className="hire-developers-six-card-icon" />,
+      title: "QA Tester",
+      iconClass: "icon-6",
+      titleClass: "title-6",
     },
   ];
 
@@ -295,6 +341,41 @@ const HireDevelopers = () => {
                         {card.icon}
                       </div>
                       <div className="hire-developers-fif-card-content">
+                        <h3 className={card.titleClass}>{card.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Sixth row */}
+        <div className="container-fluid hire-developers-six">
+          <div className="hire-developers-thi-header">
+            <h2>Web & Full Stack</h2>
+            <div className="hire-developers-dot-dash-line">
+              <span className="hire-developers-decorative-dot">
+                <RxDotsHorizontal />
+              </span>
+              <span className="hire-developers-decorative-line"></span>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="container-fluid hire-developers-six-card-container">
+            <div className="row hire-developers-six-card-row">
+              {SixthRowCardData.map((card, index) => (
+                <div className="col-md-4" onClick={handleClick} key={index}>
+                  <div className="hire-developers-six-card">
+                    <div className="hire-developers-six-card-body">
+                      <div
+                        className={`hire-developers-six-card-icon icon ${card.iconClass}`}
+                      >
+                        {card.icon}
+                      </div>
+                      <div className="hire-developers-six-card-content">
                         <h3 className={card.titleClass}>{card.title}</h3>
                       </div>
                     </div>
