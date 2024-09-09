@@ -131,7 +131,6 @@
 
 .hire-developers-four-card {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
@@ -351,7 +350,7 @@
 }
 
 .hire-developers-six-card .icon-3 {
-  background-color: #06b37c;
+  background-color: #2bb306;
 }
 
 .hire-developers-six-card .icon-4 {
@@ -366,6 +365,17 @@
   background-color: #06b37c;
 }
 
+.hire-developers-six-card .icon-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-developers-six-card .icon-6 {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hire-developers-six-card .title-1 {
   color: #2575fc;
 }
@@ -374,7 +384,7 @@
   color: #6a11cb;
 }
 .hire-developers-six-card .title-3 {
-  color: #06b37c;
+  color: #2bb306;
 }
 .hire-developers-six-card .title-4 {
   color: #0706b3;
@@ -396,7 +406,7 @@
 }
 
 .hire-developers-six-card:hover .icon-3 .hire-developers-six-card-icon {
-  color: #06b37c;
+  color: #2bb306;
 }
 
 .hire-developers-six-card:hover .icon-4 .hire-developers-six-card-icon {
@@ -424,7 +434,7 @@
 }
 
 .hire-developers-six-card:hover .icon-3 {
-  border: 1px solid #06b37c;
+  border: 1px solid #2bb306;
 }
 
 .hire-developers-six-card:hover .icon-4 {
@@ -505,12 +515,17 @@
   background-color: #06b37c;
 }
 
-.hire-developers-seven-card .icon-4 {
-  background-color: #ce25fc;
+.hire-developers-six-card .icon-4,
+.hire-developers-six-card .icon-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hire-developers-seven-card .icon-5 {
-  background-color: #6a11cb;
+.hire-developers-six-card .icon-4,
+.hire-developers-six-card .icon-5 {
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hire-developers-seven-card .title-1 {
@@ -524,7 +539,7 @@
   color: #06b37c;
 }
 .hire-developers-seven-card .title-4 {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-seven-card .title-5 {
@@ -568,7 +583,7 @@
 }
 
 .hire-developers-seven-card:hover .icon-4 {
-  border: 1px solid #0706b3;
+  border: 1px solid #2575fc;
 }
 
 .hire-developers-seven-card:hover .icon-5 {
@@ -642,7 +657,7 @@
 }
 
 .hire-developers-eight-card .icon-4 {
-  background-color: #ce25fc;
+  background-color: #2575fc;
 }
 
 .hire-developers-eight-card .icon-5 {
@@ -660,7 +675,7 @@
   color: #06b37c;
 }
 .hire-developers-eight-card .title-4 {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-eight-card .title-5 {
@@ -680,7 +695,7 @@
 }
 
 .hire-developers-eight-card:hover .icon-4 .hire-developers-eight-card-icon {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-eight-card:hover .icon-5 .hire-developers-eight-card-icon {
@@ -704,7 +719,7 @@
 }
 
 .hire-developers-eight-card:hover .icon-4 {
-  border: 1px solid #0706b3;
+  border: 1px solid #2575fc;
 }
 
 .hire-developers-eight-card:hover .icon-5 {
@@ -778,11 +793,11 @@
 }
 
 .hire-developers-nine-card .icon-4 {
-  background-color: #ce25fc;
+  background-color: #2575fc;
 }
 
 .hire-developers-nine-card .icon-5 {
-  background-color: #6a11cb;
+  background-color: #2575fc;
 }
 
 .hire-developers-nine-card .title-1 {
@@ -796,11 +811,11 @@
   color: #06b37c;
 }
 .hire-developers-nine-card .title-4 {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-nine-card .title-5 {
-  color: #6a11cb;
+  color: #2575fc;
 }
 
 .hire-developers-nine-card:hover .icon-1 .hire-developers-nine-card-icon {
@@ -816,11 +831,10 @@
 }
 
 .hire-developers-nine-card:hover .icon-4 .hire-developers-nine-card-icon {
-  color: #0706b3;
+  color: #2575fc;
 }
-
 .hire-developers-nine-card:hover .icon-5 .hire-developers-nine-card-icon {
-  color: #6a11cb;
+  color: #2575fc;
 }
 
 .hire-developers-nine-card:hover .icon {
@@ -840,11 +854,11 @@
 }
 
 .hire-developers-nine-card:hover .icon-4 {
-  border: 1px solid #0706b3;
+  border: 1px solid #2575fc;
 }
 
 .hire-developers-nine-card:hover .icon-5 {
-  border: 1px solid #6a11cb;
+  border: 1px solid #2575fc;
 }
 
 /* Tenth row */
@@ -914,11 +928,11 @@
 }
 
 .hire-developers-ten-card .icon-4 {
-  background-color: #ce25fc;
+  background-color: #2575fc;
 }
 
 .hire-developers-ten-card .icon-5 {
-  background-color: #6a11cb;
+  background-color: #2575fc;
 }
 
 .hire-developers-ten-card .title-1 {
@@ -932,11 +946,11 @@
   color: #06b37c;
 }
 .hire-developers-ten-card .title-4 {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-ten-card .title-5 {
-  color: #6a11cb;
+  color: #2575fc;
 }
 
 .hire-developers-ten-card:hover .icon-1 .hire-developers-ten-card-icon {
@@ -952,11 +966,11 @@
 }
 
 .hire-developers-ten-card:hover .icon-4 .hire-developers-ten-card-icon {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-ten-card:hover .icon-5 .hire-developers-ten-card-icon {
-  color: #6a11cb;
+  color: #2575fc;
 }
 
 .hire-developers-ten-card:hover .icon {
@@ -976,9 +990,9 @@
 }
 
 .hire-developers-ten-card:hover .icon-4 {
-  border: 1px solid #0706b3;
+  border: 1px solid #2575fc;
 }
 
 .hire-developers-ten-card:hover .icon-5 {
-  border: 1px solid #6a11cb;
+  border: 1px solid #2575fc;
 }

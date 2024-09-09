@@ -11,7 +11,6 @@ import { LuPencilRuler } from "react-icons/lu";
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2";
 import { MdOutlineStars } from "react-icons/md";
 import { FaBezierCurve } from "react-icons/fa";
-
 import { FaAppStoreIos } from "react-icons/fa";
 import { FaAndroid } from "react-icons/fa";
 import { FaVrCardboard } from "react-icons/fa";
@@ -19,34 +18,31 @@ import { FaReact } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { FaRegFileVideo } from "react-icons/fa";
 import { FaDharmachakra } from "react-icons/fa";
-
 import { FaComputer } from "react-icons/fa6";
 import { FaPhp } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
-
 import { FaPhotoVideo } from "react-icons/fa";
-
 import { FaDrupal } from "react-icons/fa";
 import { FaMagento } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 import { MdOutlineVideoSettings } from "react-icons/md";
 import { CiGift } from "react-icons/ci";
 import { TbFileTextAi } from "react-icons/tb";
-
 import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
+import { CiStickyNote } from "react-icons/ci";
+import { MdOutlineStickyNote2 } from "react-icons/md";
 
 import Navbar from "../HomeSection/Navbar/Navbar";
 import Footer from "../HomeSection/Footer/Footer";
-import "../../components/ServicesSection/CommonServiceSubPages.css";
+import "./HireDevelopers.css";
+
 import hireDeveloperImage2 from "../../images/HireDeveloperImages/HireDeveloper-2.png";
 import hireDeveloperImage3 from "../../images/HireDeveloperImages/HireDeveloper-3.png";
 import hireDeveloperImage4 from "../../images/HireDeveloperImages/HireDeveloper-4.png";
-
 import hireDeveloperImage5 from "../../images/HireDeveloperImages/HireDeveloper-5.png";
 import hireDeveloperImage6 from "../../images/HireDeveloperImages/HireDeveloper-6.png";
-import "./HireDevelopers.css";
 
 const HireDevelopers = () => {
   const navigate = useNavigate();
@@ -194,7 +190,15 @@ const HireDevelopers = () => {
       titleClass: "title-5",
     },
     {
-      icon: <hireDeveloperImage4 className="hire-developers-six-card-icon" />,
+      icon: (
+        <div className="hire-developers-six-card-icon icon-6">
+          <img
+            src={hireDeveloperImage4}
+            alt="QA Tester"
+            style={{ width: 40, height: 40 }}
+          />
+        </div>
+      ),
       title: "QA Tester",
       iconClass: "icon-6",
       titleClass: "title-6",
@@ -221,13 +225,30 @@ const HireDevelopers = () => {
       titleClass: "title-3",
     },
     {
-      icon: <hireDeveloperImage5 className="hire-developers-seven-card-icon" />,
+      icon: (
+        <div className="hire-developers-six-card-icon icon-6">
+          <img
+            src={hireDeveloperImage5}
+            alt="QA Tester"
+            style={{ width: 40, height: 40 }}
+          />
+        </div>
+      ),
       title: "Sitecore",
       iconClass: "icon-4",
       titleClass: "title-4",
     },
+
     {
-      icon: <hireDeveloperImage6 className="hire-developers-seven-card-icon" />,
+      icon: (
+        <div className="hire-developers-six-card-icon icon-6">
+          <img
+            src={hireDeveloperImage6}
+            alt="QA Tester"
+            style={{ width: 40, height: 40 }}
+          />
+        </div>
+      ),
       title: "Shopify",
       iconClass: "icon-5",
       titleClass: "title-5",
@@ -292,41 +313,6 @@ const HireDevelopers = () => {
     },
     {
       icon: <CiGift className="hire-developers-nine-card-icon" />,
-      title: "Poster Design",
-      iconClass: "icon-4",
-      titleClass: "title-4",
-    },
-    {
-      icon: <CiGift className="hire-developers-nine-card-icon" />,
-      title: "3D Models & Product Design",
-      iconClass: "icon-4",
-      titleClass: "title-4",
-    },
-  ];
-
-  const TenthRowCardData = [
-    {
-      icon: <FaPhotoVideo className="hire-developers-nine-card-icon" />,
-      title: "Content Writing",
-      iconClass: "icon-1",
-      titleClass: "title-1",
-    },
-    {
-      icon: (
-        <MdOutlineVideoSettings className="hire-developers-nine-card-icon" />
-      ),
-      title: "Resume & Letter",
-      iconClass: "icon-2",
-      titleClass: "title-2",
-    },
-    {
-      icon: <FaPhotoVideo className="hire-developers-nine-card-icon" />,
-      title: "Script Writing",
-      iconClass: "icon-3",
-      titleClass: "title-3",
-    },
-    {
-      icon: <CiGift className="hire-developers-nine-card-icon" />,
       title: "Script Writing",
       iconClass: "icon-4",
       titleClass: "title-4",
@@ -336,6 +322,41 @@ const HireDevelopers = () => {
       title: "Legal Writing",
       iconClass: "icon-4",
       titleClass: "title-4",
+    },
+  ];
+
+  const TenthRowCardData = [
+    {
+      icon: <FaPhotoVideo className="hire-developers-ten-card-icon" />,
+      title: "Content Writing",
+      iconClass: "icon-1",
+      titleClass: "title-1",
+    },
+    {
+      icon: (
+        <MdOutlineVideoSettings className="hire-developers-ten-card-icon" />
+      ),
+      title: "Resume & Letter",
+      iconClass: "icon-2",
+      titleClass: "title-2",
+    },
+    {
+      icon: <FaPhotoVideo className="hire-developers-ten-card-icon" />,
+      title: "Script Writing",
+      iconClass: "icon-3",
+      titleClass: "title-3",
+    },
+    {
+      icon: <CiStickyNote className="hire-developers-ten-card-icon" />,
+      title: "Poster Design",
+      iconClass: "icon-4",
+      titleClass: "title-4",
+    },
+    {
+      icon: <MdOutlineStickyNote2 className="hire-developers-ten-card-icon" />,
+      title: "3D Models & Product Design",
+      iconClass: "icon-5",
+      titleClass: "title-5",
     },
   ];
 
@@ -555,7 +576,11 @@ const HireDevelopers = () => {
           <div className="container-fluid hire-developers-seven-card-container">
             <div className="row hire-developers-seven-card-row">
               {SeventhRowCardData.map((card, index) => (
-                <div className="col-md-4" onClick={handleClick} key={index}>
+                <div
+                  className={`col-md-${index < 3 ? 4 : 6}`}
+                  onClick={handleClick}
+                  key={index}
+                >
                   <div className="hire-developers-seven-card">
                     <div className="hire-developers-seven-card-body">
                       <div
@@ -590,7 +615,11 @@ const HireDevelopers = () => {
           <div className="container-fluid hire-developers-eight-card-container">
             <div className="row hire-developers-eight-card-row">
               {EighthRowCardData.map((card, index) => (
-                <div className="col-md-4" onClick={handleClick} key={index}>
+                <div
+                  className={`col-md-${index < 3 ? 4 : 6}`}
+                  onClick={handleClick}
+                  key={index}
+                >
                   <div className="hire-developers-eight-card">
                     <div className="hire-developers-eight-card-body">
                       <div
@@ -625,7 +654,11 @@ const HireDevelopers = () => {
           <div className="container-fluid hire-developers-nine-card-container">
             <div className="row hire-developers-nine-card-row">
               {NinthRowCardData.map((card, index) => (
-                <div className="col-md-4" onClick={handleClick} key={index}>
+                <div
+                  className={`col-md-${index < 3 ? 4 : 6}`}
+                  onClick={handleClick}
+                  key={index}
+                >
                   <div className="hire-developers-nine-card">
                     <div className="hire-developers-nine-card-body">
                       <div
@@ -660,7 +693,11 @@ const HireDevelopers = () => {
           <div className="container-fluid hire-developers-ten-card-container">
             <div className="row hire-developers-ten-card-row">
               {TenthRowCardData.map((card, index) => (
-                <div className="col-md-4" onClick={handleClick} key={index}>
+                <div
+                  className={`col-md-${index < 3 ? 4 : 6}`}
+                  onClick={handleClick}
+                  key={index}
+                >
                   <div className="hire-developers-ten-card">
                     <div className="hire-developers-ten-card-body">
                       <div
