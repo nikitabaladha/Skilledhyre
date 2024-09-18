@@ -1,0 +1,62 @@
+/* Second-row */
+
+.portfolio-sec {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio-sec .title-top {
+  color: #636363;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.portfolio-sec .title-bottom {
+  font-family: "Red Hat Display", Sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  color: #1a1b1e;
+  font-size: 16px;
+}
+
+.portfolio-social-icons {
+  font-size: 38px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.portfolio-social-icons .facebook-icon,
+.portfolio-social-icons .twitter-icon,
+.portfolio-social-icons .pinterest-icon,
+.portfolio-social-icons .mail-icon {
+  margin-right: 10px;
+}
+
+.portfolio-social-icons .mail-icon {
+  margin-right: 0;
+}
+
+.portfolio-social-icons .facebook-icon {
+  color: #4661c5;
+}
+
+.portfolio-social-icons .twitter-icon {
+  color: #44b1e4;
+}
+
+.portfolio-social-icons .pinterest-icon {
+  color: #ff2e2e;
+}
+
+.portfolio-social-icons .mail-icon {
+  color: #e84231;
+}

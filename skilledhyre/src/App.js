@@ -46,6 +46,11 @@ import OutsourcedSoftwareDevelopment from "./components/ForAgencies/OutsourcedSo
 import DedicatedSoftwareTeams from "./components/ForAgencies/DedicatedSoftwareTeams";
 import DedicatedMarketingTeams from "./components/ForAgencies/DedicatedMarketingTeams";
 
+// Search engine optimization pages
+import UxDesignForTubus from "./components/ServicesSection/SearchEngineOptimization/PortFolio/UxDesignForTubus";
+import AnalysisOfSecurity from "./components/ServicesSection/SearchEngineOptimization/PortFolio/AnalysisOfSecurity";
+import SMMProject from "./components/ServicesSection/SearchEngineOptimization/PortFolio/SMMProject";
+
 function App() {
   return (
     <div className="App">
@@ -136,6 +141,17 @@ function App() {
             path="/dedicated-marketing-teams"
             element={<DedicatedMarketingTeams />}
           />
+
+          {/* For Search Engine Optimization pages */}
+          <Route
+            path="/portfolio/ux-design-for-tubus"
+            element={<UxDesignForTubus />}
+          />
+          <Route
+            path="/portfolio/analysis-of-security"
+            element={<AnalysisOfSecurity />}
+          />
+          <Route path="/portfolio/smm-project" element={<SMMProject />} />
         </Routes>
       </Router>
     </div>
