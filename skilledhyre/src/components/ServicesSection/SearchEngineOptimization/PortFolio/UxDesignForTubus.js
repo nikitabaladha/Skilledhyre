@@ -258,14 +258,16 @@ const UxDesignForTubus = () => {
               are a new online entrepreneur but are not convinced of the
               benefits of SEO, then this article is for you! Here are some of
               the reasons why SEO is important and why you should consider it as
-              a marketing technique. SEO is less expensive than other online
-              marketing approaches. It also offers higher reward rates when
-              compared to other techniques such as social media marketing, pay
-              per click advertising, and email marketing. While you may need to
-              defray a substantial amount to cover initial SEO planning and
-              processes that include website design, programming, and
-              strategizing, you can be sure to get faster and more long-term
-              results.
+              a marketing technique.{" "}
+              <strong>
+                SEO is less expensive than other online marketing approaches.
+              </strong>{" "}
+              It also offers higher reward rates when compared to other
+              techniques such as social media marketing, pay per click
+              advertising, and email marketing. While you may need to defray a
+              substantial amount to cover initial SEO planning and processes
+              that include website design, programming, and strategizing, you
+              can be sure to get faster and more long-term results.
             </span>
           </p>
         </div>
@@ -316,10 +318,14 @@ const UxDesignForTubus = () => {
             content and links to your page on Facebook or Twitter, you are able
             to promote your website and attract more customers. One of the main
             goals of SEO is to attract the targeted audience through organic
-            searches. The number of visitors to your site influences your sales
-            and subscriptions. It also promotes the marketing of your products
-            and services. Increased inbound traffic is always good for business
-            because it equates to more conversion opportunities.
+            searches. The number of visitors to your site influences
+            <span style={{ color: "#00c3ff" }}>
+              {" "}
+              your sales and subscriptions.{" "}
+            </span>{" "}
+            It also promotes the marketing of your products and services.
+            Increased inbound traffic is always good for business because it
+            equates to more conversion opportunities.
           </p>
           <p className="text pt-0">
             Some SEO-related tools such as the Google Keyword Planner and Google
@@ -331,7 +337,6 @@ const UxDesignForTubus = () => {
         </div>
 
         {/* Eighth-row */}
-
         <div className="container-fluid portfolio-eighth">
           <img
             src={UxDesignForTubus4}
@@ -341,7 +346,6 @@ const UxDesignForTubus = () => {
         </div>
 
         {/* Ninth row */}
-
         <div className="container-fluid portfolio-fourth">
           <h3 className="number">
             <span>03.</span>
@@ -351,13 +355,19 @@ const UxDesignForTubus = () => {
             Implementing SEO strategies help you to rank higher on the search
             engine’s results page (SERP). This means that when your target
             customers search for products and services that your industry
-            offers, they are likely to find your website. When you repeatedly
-            appear on the SERP, users become aware of your site and your
-            business. This increases the chances of landing potential customers
-            on your webpages. SEO is less expensive than other online marketing
-            approaches. It also offers higher reward rates when compared to
-            other techniques such as social media marketing, pay per click
-            advertising, and email marketing.
+            offers, they are{" "}
+            <span style={{ color: "#fe4c1c" }}>
+              likely to find your website.
+            </span>
+            When you repeatedly appear on the SERP, users become aware of your
+            site and your business. This increases the chances of landing
+            potential customers on your webpages.{" "}
+            <strong>
+              SEO is less expensive than other online marketing approaches.
+            </strong>{" "}
+            It also offers higher reward rates when compared to other techniques
+            such as social media marketing, pay per click advertising, and email
+            marketing.
           </p>
         </div>
 

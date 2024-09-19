@@ -698,9 +698,6 @@ input:checked + .slider:before {
   box-shadow: 16px 16px 48px 8px rgba(50, 197, 242, 0.2);
 }
 
-@media only screen and (max-width: 767px) {
-}
-
 /* For screens with a maximum width of 767px (Mobile) */
 
 @media only screen and (max-width: 767px) {
