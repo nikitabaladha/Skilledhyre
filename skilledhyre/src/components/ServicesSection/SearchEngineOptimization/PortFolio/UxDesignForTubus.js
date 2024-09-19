@@ -368,11 +368,12 @@ const UxDesignForTubus = () => {
               <div className="left-icon-container">
                 <FaArrowLeftLong className="left-icon" />
               </div>
-              PREVIOUS
+              <span className="previous"> PREVIOUS</span>
             </span>
 
             <span className="right-icon-text">
-              NEXT
+              <span className="next"> NEXT</span>
+
               <div className="right-icon-container">
                 <FaArrowRightLong className="right-icon" />
               </div>
