@@ -85,6 +85,26 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Second row */
+
+  .portfolio-sec {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+
+  .portfolio-sec .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-social-icons {
+    text-align: left;
+    padding: 5px;
+  }
+}
+
 /* Third row */
 
 .portfolio-thi {
@@ -109,6 +129,17 @@
 
   .portfolio-thi-image {
     height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Third row */
+  .portfolio-thi {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .portfolio-thi-image {
+    height: 400px;
   }
 }
 
@@ -180,6 +211,14 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Fourth row */
+  .portfolio-fourth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 /* Fifth row */
 
 .portfolio-fifth {
@@ -245,6 +284,32 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Fifth row */
+
+  .portfolio-fifth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .portfolio-fifth .blockquote {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 20px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .portfolio-fifth .blockquote:before {
+    height: 100%;
+    top: 5%;
+  }
+
+  .portfolio-fifth .name {
+    line-height: 1px;
+  }
+}
+
 /* Sixth row */
 
 .portfolio-six {
@@ -285,6 +350,26 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Sixth row */
+
+  .portfolio-six {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .portfolio-six-image {
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  .portfolio-six .col-md-6 {
+    margin-bottom: 30px;
+  }
+}
+
 /* Eighth row */
 
 .portfolio-eighth {
@@ -310,6 +395,18 @@
 
   .portfolio-eighth-image {
     height: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Eighth row */
+  .portfolio-eighth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .portfolio-eighth-image {
+    height: 350px;
   }
 }
 
@@ -400,6 +497,28 @@
 }
 
 @media only screen and (max-width: 767px) {
+  /* Tenth row*/
+
+  .portfolio-tenth {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+  }
+
+  .portfolio-navigation {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .portfolio-tenth .left-icon-text,
+  .portfolio-tenth .right-icon-text {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Tenth row*/
 
   .portfolio-tenth {
