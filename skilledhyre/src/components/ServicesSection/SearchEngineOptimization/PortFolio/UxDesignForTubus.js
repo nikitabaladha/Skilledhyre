@@ -220,20 +220,26 @@ const UxDesignForTubus = () => {
         {/* Tenth row */}
         <div className="container-fluid portfolio-tenth">
           <div className="portfolio-navigation">
-            <span className="left-icon-text">
+            <Link
+              to="/portfolio/analysis-of-security"
+              className="left-icon-text"
+            >
               <div className="left-icon-container">
                 <FaArrowLeftLong className="left-icon" />
               </div>
               <span className="previous"> PREVIOUS</span>
-            </span>
+            </Link>
 
-            <span className="right-icon-text">
+            <Link
+              to="/portfolio/new-soft-for-watch"
+              className="right-icon-text"
+            >
               <span className="next"> NEXT</span>
 
               <div className="right-icon-container">
                 <FaArrowRightLong className="right-icon" />
               </div>
-            </span>
+            </Link>
           </div>
         </div>
 

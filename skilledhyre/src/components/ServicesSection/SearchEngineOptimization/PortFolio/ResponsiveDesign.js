@@ -11,12 +11,12 @@ import Navbar from "../../../HomeSection/Navbar/Navbar";
 import Footer from "../../../HomeSection/Footer/Footer";
 import "./PortFolio.css";
 
-import SMMProject1 from "../../../../images/ServicesSubPageImages/SMMProject-1.jpg";
+import UxDesignForTubus1 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-1.jpg";
 import UxDesignForTubus2 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-2.jpg";
 import UxDesignForTubus3 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-3.jpg";
 import UxDesignForTubus4 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-4.jpg";
 
-const SMMProject = () => {
+const ResponsiveDesign = () => {
   return (
     <>
       <Navbar />
@@ -25,7 +25,7 @@ const SMMProject = () => {
         {/* First Row*/}
         <div className="container-fluid ser-sub-first">
           <div>
-            <h1>SMM Project</h1>
+            <h1>Responsive Design</h1>
             <p>
               <Link to="/" className="homepage-link">
                 Home
@@ -45,7 +45,7 @@ const SMMProject = () => {
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <span className="current-page">SMM Project</span>
+              <span className="current-page">Responsive Design</span>
             </p>
           </div>
         </div>
@@ -55,11 +55,11 @@ const SMMProject = () => {
           <div className="row">
             <div className="col-md-3">
               <h6 className="title-top">Published</h6>
-              <h6 className="title-bottom">June 07, 2019</h6>
+              <h6 className="title-bottom">September 30, 2019</h6>
             </div>
             <div className="col-md-3">
               <h6 className="title-top">Category</h6>
-              <h6 className="title-bottom">Optimization / Media</h6>
+              <h6 className="title-bottom">Optimization</h6>
             </div>
             <div className="col-md-3">
               <h6 className="title-top">Client</h6>
@@ -79,7 +79,7 @@ const SMMProject = () => {
         {/* Third row */}
         <div className="container-fluid portfolio-thi">
           <img
-            src={SMMProject1}
+            src={UxDesignForTubus1}
             alt="UX Design for Tubus - 1"
             className="portfolio-thi-image"
           />
@@ -218,38 +218,9 @@ const SMMProject = () => {
         </div>
 
         {/* Tenth row */}
-        {/* <div className="container-fluid portfolio-tenth">
-          <div className="portfolio-navigation">
-            <span className="left-icon-text">
-              <div className="left-icon-container">
-                <FaArrowLeftLong className="left-icon" />
-              </div>
-              <span className="previous"> PREVIOUS</span>
-            </span>
-
-            <span className="right-icon-text">
-              <span className="next"> NEXT</span>
-
-              <div className="right-icon-container">
-                <FaArrowRightLong className="right-icon" />
-              </div>
-            </span>
-          </div>
-        </div> */}
-
         <div className="container-fluid portfolio-tenth">
           <div className="portfolio-navigation">
-            <Link to="/portfolio/responsive-design" className="left-icon-text">
-              <div className="left-icon-container">
-                <FaArrowLeftLong className="left-icon" />
-              </div>
-              <span className="previous"> PREVIOUS</span>
-            </Link>
-
-            <Link
-              to="/portfolio/analysis-of-security"
-              className="right-icon-text"
-            >
+            <Link to="/portfolio/smm-project" className="right-icon-text">
               <span className="next"> NEXT</span>
 
               <div className="right-icon-container">
@@ -265,4 +236,4 @@ const SMMProject = () => {
   );
 };
 
-export default SMMProject;
+export default ResponsiveDesign;

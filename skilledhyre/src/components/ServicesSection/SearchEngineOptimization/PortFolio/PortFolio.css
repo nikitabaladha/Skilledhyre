@@ -436,6 +436,7 @@
   letter-spacing: 1px;
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.875;
+  text-decoration: none;
 }
 
 .left-icon-text {
@@ -489,11 +490,13 @@
 .portfolio-tenth .left-icon-text:hover {
   transform: translateX(5px);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .portfolio-tenth .right-icon-text:hover {
   transform: translateX(-5px);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {

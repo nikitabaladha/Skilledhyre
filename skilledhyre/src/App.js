@@ -50,6 +50,8 @@ import DedicatedMarketingTeams from "./components/ForAgencies/DedicatedMarketing
 import UxDesignForTubus from "./components/ServicesSection/SearchEngineOptimization/PortFolio/UxDesignForTubus";
 import AnalysisOfSecurity from "./components/ServicesSection/SearchEngineOptimization/PortFolio/AnalysisOfSecurity";
 import SMMProject from "./components/ServicesSection/SearchEngineOptimization/PortFolio/SMMProject";
+import ResponsiveDesign from "./components/ServicesSection/SearchEngineOptimization/PortFolio/ResponsiveDesign";
+import NewSoftForWatch from "./components/ServicesSection/SearchEngineOptimization/PortFolio/NewSoftForWatch";
 
 function App() {
   return (
@@ -152,6 +154,14 @@ function App() {
             element={<AnalysisOfSecurity />}
           />
           <Route path="/portfolio/smm-project" element={<SMMProject />} />
+          <Route
+            path="/portfolio/responsive-design"
+            element={<ResponsiveDesign />}
+          />
+          <Route
+            path="/portfolio/new-soft-for-watch"
+            element={<NewSoftForWatch />}
+          />
         </Routes>
       </Router>
     </div>

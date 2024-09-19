@@ -11,12 +11,12 @@ import Navbar from "../../../HomeSection/Navbar/Navbar";
 import Footer from "../../../HomeSection/Footer/Footer";
 import "./PortFolio.css";
 
-import SMMProject1 from "../../../../images/ServicesSubPageImages/SMMProject-1.jpg";
+import NewSoftForWatch1 from "../../../../images/ServicesSubPageImages/NewSoftForWatch-1.jpg";
 import UxDesignForTubus2 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-2.jpg";
 import UxDesignForTubus3 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-3.jpg";
 import UxDesignForTubus4 from "../../../../images/ServicesSubPageImages/UxDesignForTubus-4.jpg";
 
-const SMMProject = () => {
+const NewSoftForWatch = () => {
   return (
     <>
       <Navbar />
@@ -25,7 +25,7 @@ const SMMProject = () => {
         {/* First Row*/}
         <div className="container-fluid ser-sub-first">
           <div>
-            <h1>SMM Project</h1>
+            <h1>New Soft for Watch</h1>
             <p>
               <Link to="/" className="homepage-link">
                 Home
@@ -45,7 +45,7 @@ const SMMProject = () => {
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <span className="current-page">SMM Project</span>
+              <span className="current-page">New Soft for Watch</span>
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const SMMProject = () => {
           <div className="row">
             <div className="col-md-3">
               <h6 className="title-top">Published</h6>
-              <h6 className="title-bottom">June 07, 2019</h6>
+              <h6 className="title-bottom">October 12, 2019</h6>
             </div>
             <div className="col-md-3">
               <h6 className="title-top">Category</h6>
@@ -66,6 +66,17 @@ const SMMProject = () => {
               <h6 className="title-bottom">Oceanthemes</h6>
             </div>
             <div className="col-md-3">
+              <div className="portfolio-sec-warning">
+                <h6>
+                  <strong> Warning:</strong> Trying to access array offset on
+                  value of type bool in
+                  <strong>
+                    {" "}
+                    /home/codzskil/skilledhyre.com/wp-content/themes/onum/inc/backend/elementor-widgets/social-share.php
+                  </strong>{" "}
+                  on line <strong> 260</strong>
+                </h6>
+              </div>
               <div className="portfolio-social-icons">
                 <FaFacebook className="facebook-icon" />
                 <AiFillTwitterCircle className="twitter-icon" />
@@ -79,7 +90,7 @@ const SMMProject = () => {
         {/* Third row */}
         <div className="container-fluid portfolio-thi">
           <img
-            src={SMMProject1}
+            src={NewSoftForWatch1}
             alt="UX Design for Tubus - 1"
             className="portfolio-thi-image"
           />
@@ -218,43 +229,16 @@ const SMMProject = () => {
         </div>
 
         {/* Tenth row */}
-        {/* <div className="container-fluid portfolio-tenth">
-          <div className="portfolio-navigation">
-            <span className="left-icon-text">
-              <div className="left-icon-container">
-                <FaArrowLeftLong className="left-icon" />
-              </div>
-              <span className="previous"> PREVIOUS</span>
-            </span>
-
-            <span className="right-icon-text">
-              <span className="next"> NEXT</span>
-
-              <div className="right-icon-container">
-                <FaArrowRightLong className="right-icon" />
-              </div>
-            </span>
-          </div>
-        </div> */}
-
         <div className="container-fluid portfolio-tenth">
           <div className="portfolio-navigation">
-            <Link to="/portfolio/responsive-design" className="left-icon-text">
+            <Link
+              to="/portfolio/ux-design-for-tubus"
+              className="left-icon-text"
+            >
               <div className="left-icon-container">
                 <FaArrowLeftLong className="left-icon" />
               </div>
               <span className="previous"> PREVIOUS</span>
-            </Link>
-
-            <Link
-              to="/portfolio/analysis-of-security"
-              className="right-icon-text"
-            >
-              <span className="next"> NEXT</span>
-
-              <div className="right-icon-container">
-                <FaArrowRightLong className="right-icon" />
-              </div>
             </Link>
           </div>
         </div>
@@ -265,4 +249,4 @@ const SMMProject = () => {
   );
 };
 
-export default SMMProject;
+export default NewSoftForWatch;
