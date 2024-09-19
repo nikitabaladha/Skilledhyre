@@ -582,7 +582,8 @@ const SearchEngineOptimization = () => {
 
   // This function will handle the redirection when a slide is clicked
   const handleRedirect = (link) => {
-    navigate(link); // Redirects to the specified page
+    navigate(link);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const images = [
@@ -590,13 +591,13 @@ const SearchEngineOptimization = () => {
       image: SearchEngineOptimization8,
       title: "Analysis of Security",
       description: "Marketing/Optimization",
-      link: "/portfolio/analysis-of-security", // Add specific page link here
+      link: "/portfolio/analysis-of-security",
     },
     {
       image: SearchEngineOptimization9,
       title: "SMM Project",
       description: "Media/Optimization",
-      link: "/portfolio/smm-project", // Another page link
+      link: "/portfolio/smm-project",
     },
     {
       image: SearchEngineOptimization10,
