@@ -138,6 +138,7 @@ nav ul li a:hover::before {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   font-family: "Red Hat Display", sans-serif;
+  color: #78869b;
 }
 
 .dropdown-menu.show {
@@ -148,7 +149,7 @@ nav ul li a:hover::before {
 .dropdown-item {
   position: relative;
   text-decoration: none;
-  color: rgba(17, 17, 17, 0.656) !important;
+  color: black;
   font-weight: 700;
   font-size: 15px;
   padding-left: 30px;
@@ -283,20 +284,35 @@ nav ul li a:hover::before {
     margin-bottom: 5px;
   }
 
-  .navbar-collapse {
+  /* .navbar-collapse {
     position: fixed;
-    z-index: 1050;
+    z-index: 1;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 310px;
+    width: 300px;
     background-color: white;
     border-left: 1px solid #ddd;
     padding: 15px;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     flex-direction: column;
-    overflow-y: scroll;
+  } */
+
+  .navbar-collapse {
+    position: fixed;
+    z-index: 1050; /* Increased z-index to ensure it's above other elements */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    border-left: 1px solid #ddd;
+    padding: 15px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -315,7 +331,6 @@ nav ul li a:hover::before {
     border-bottom: 1px solid #e5e5e5;
     font-weight: 700;
     padding-bottom: 10px;
-    width: 250px !important;
   }
 
   .navbar-collapse.show .nav-link:hover {
@@ -335,6 +350,7 @@ nav ul li a:hover::before {
   }
 
   .search-icon {
+    /* background-color: #f0f6ff; */
     color: #333;
     display: flex;
     align-items: center;
@@ -354,14 +370,17 @@ nav ul li a:hover::before {
     justify-content: center;
   }
 
+  /* Show small-screen icons */
   .small-screen {
     display: inline-block;
   }
 
+  /* Hide large-screen icons */
   .large-screen {
     display: none;
   }
 
+  /* Optional: Adjust icon color for better visibility */
   .dropdown-toggle-icon.small-screen {
     color: rgba(17, 17, 17, 0.656) !important;
     font-size: 20px;
@@ -369,61 +388,6 @@ nav ul li a:hover::before {
     line-height: 1;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-  }
-
-  .dropdown-menu li {
-    color: rgba(17, 17, 17, 0.656) !important;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 700;
-    padding-bottom: 10px;
-  }
-
-  .dropdown-menu .border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .dropdown-menu {
-    width: 250px;
-    border: none;
-    box-shadow: none;
-  }
-
-  .dropdown-menu .dropdown-submenu {
-    position: relative;
-    left: 0;
-    top: 0;
-    transform: none;
-    opacity: 1;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-  }
-
-  .dropdown-menu .dropdown-submenu .dropdown-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    opacity: 1;
-    display: none;
-    border: none;
-    box-shadow: none;
-  }
-
-  .dropdown-menu .dropdown-submenu.show .dropdown-menu {
-    display: block; /* Display the nested menu */
-  }
-
-  .dropdown-toggle-icon.large-screen {
-    display: none;
-  }
-
-  .dropdown-toggle-icon.small-screen {
-    display: inline-block;
-  }
-
-  .dropdown-submenu .dropdown-item {
-    padding-left: 40px;
   }
 }
 
@@ -501,6 +465,7 @@ nav ul li a:hover::before {
   }
 
   .search-icon {
+    /* background-color: #f0f6ff; */
     color: #333;
     display: flex;
     align-items: center;

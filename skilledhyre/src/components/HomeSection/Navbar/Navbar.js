@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import brandLogoImage from "../../../images/brand-logo.png";
 import { FaSearch } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Navbar = () => {
   const handleClose = () => {
@@ -51,35 +53,37 @@ const Navbar = () => {
 
             <li className="nav-item dropdown">
               <Link
-                className="nav-link dropdown-toggle"
+                className="nav-link"
                 to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Services
+                Services {/* Icons for large and small screens */}
+                <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
               </Link>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/website-design">
                     <span className="dropdown-dot">•</span> WEBSITE DESIGN
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/web-development">
                     <span className="dropdown-dot">•</span> WEB DEVELOPMENT
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/software-development">
                     <span className="dropdown-dot">•</span> Software Development
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/e-com-development">
                     <span className="dropdown-dot">•</span> E-Commerce
                     Development
@@ -87,17 +91,25 @@ const Navbar = () => {
                 </li>
 
                 {/* Nested links */}
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item">
-                    <span className="dropdown-dot">•</span> Digital Marketing
+                    <span className="dropdown-dot">•</span>
+                    <span>Digital Marketing </span>
+                    {/* Icons for large and small screens */}
+                    <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                    <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
                   </Link>
                   <ul className="dropdown-menu dropdown-submenu">
-                    <li>
-                      <Link className="dropdown-item" to="/branding">
+                    <li className="border-bottom">
+                      <Link
+                        className="dropdown-item"
+                        to="/branding"
+                        style={{ borderTop: "1px solid #e5e5e5" }}
+                      >
                         <span className="dropdown-dot">•</span> Branding
                       </Link>
                     </li>
-                    <li>
+                    <li className="border-bottom">
                       <Link
                         className="dropdown-item"
                         to="/search-engine-optimization"
@@ -106,7 +118,7 @@ const Navbar = () => {
                         Optimization
                       </Link>
                     </li>
-                    <li>
+                    <li className="border-bottom">
                       <Link
                         className="dropdown-item"
                         to="/social-media-marketing"
@@ -115,12 +127,12 @@ const Navbar = () => {
                         Marketing
                       </Link>
                     </li>
-                    <li>
+                    <li className="border-bottom">
                       <Link className="dropdown-item" to="/ppc-management">
                         <span className="dropdown-dot">•</span>PPC Management
                       </Link>
                     </li>
-                    <li>
+                    <li className="border-bottom">
                       <Link className="dropdown-item" to="/content-marketing">
                         <span className="dropdown-dot">•</span>Content Marketing
                       </Link>
@@ -138,22 +150,25 @@ const Navbar = () => {
                 </li>
 
                 {/* Nested links */}
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item">
                     <span className="dropdown-dot">•</span> Mobile Application
-                    Development
+                    Development {/* Icons for large and small screens */}
+                    <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                    <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
                   </Link>
                   <ul className="dropdown-menu dropdown-submenu">
-                    <li>
+                    <li className="border-bottom">
                       <Link
                         className="dropdown-item"
                         to="/iphone-app-development"
+                        style={{ borderTop: "1px solid #e5e5e5" }}
                       >
                         <span className="dropdown-dot">•</span> IPhone App
                         Development
                       </Link>
                     </li>
-                    <li>
+                    <li className="border-bottom">
                       <Link
                         className="dropdown-item"
                         to="/android-app-development"
@@ -162,7 +177,7 @@ const Navbar = () => {
                         Development
                       </Link>
                     </li>
-                    <li>
+                    <li className="border-bottom">
                       <Link
                         className="dropdown-item"
                         to="/hybrid-app-development"
@@ -182,17 +197,17 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/e-learning-solution">
                     <span className="dropdown-dot">•</span> E-Learning Solution
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/erp-solution">
                     <span className="dropdown-dot">•</span> ERP SOLUTION
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/api-integration">
                     <span className="dropdown-dot">•</span> API Integration
                   </Link>
@@ -202,45 +217,47 @@ const Navbar = () => {
 
             <li className="nav-item dropdown">
               <Link
-                className="nav-link dropdown-toggle"
-                to="#"
+                className="nav-link"
+                onClick={(e) => e.preventDefault()}
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
                 data-bs-toggle="dropdown"
               >
-                Staffing
+                Staffing {/* Icons for large and small screens */}
+                <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
               </Link>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/permanent-staffing">
                     <span className="dropdown-dot">•</span> Permanent Staffing
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/contract-staffing">
                     <span className="dropdown-dot">•</span> Contract Staffing
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/hr-consulting">
                     <span className="dropdown-dot">•</span> HR Consulting
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/contract-to-hire">
                     <span className="dropdown-dot">•</span> Contract to Hire
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/rpo">
                     <span className="dropdown-dot">•</span> RPO
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link className="dropdown-item" to="/head-hunting">
                     <span className="dropdown-dot">•</span> Head Hunting
                   </Link>
@@ -256,20 +273,22 @@ const Navbar = () => {
 
             <li className="nav-item dropdown">
               <Link
-                className="nav-link dropdown-toggle"
+                className="nav-link"
                 to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
                 data-bs-toggle="dropdown"
               >
-                For Agencies
+                For Agencies {/* Icons for large and small screens */}
+                <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
               </Link>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li>
+                <li className="border-bottom">
                   <Link
                     className="dropdown-item"
                     to="/white-label-digital-marketing"
@@ -278,7 +297,7 @@ const Navbar = () => {
                     Marketing
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link
                     className="dropdown-item"
                     to="/white-label-web-development"
@@ -287,7 +306,7 @@ const Navbar = () => {
                     Development
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link
                     className="dropdown-item"
                     to="/white-label-app-development"
@@ -296,7 +315,7 @@ const Navbar = () => {
                     Development
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link
                     className="dropdown-item"
                     to="/outsourced-software-development"
@@ -305,7 +324,7 @@ const Navbar = () => {
                     Development
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link
                     className="dropdown-item"
                     to="/dedicated-software-teams"
@@ -314,7 +333,7 @@ const Navbar = () => {
                     Teams
                   </Link>
                 </li>
-                <li>
+                <li className="border-bottom">
                   <Link
                     className="dropdown-item"
                     to="/dedicated-marketing-teams"
@@ -339,7 +358,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="search-icon">
-          <FaSearch />
+          <FaSearch className="dropdown-toggle-icon" />
         </div>
         <button
           className="navbar-toggler"
