@@ -101,11 +101,7 @@ const Navbar = () => {
                   </Link>
                   <ul className="dropdown-menu dropdown-submenu">
                     <li className="border-bottom">
-                      <Link
-                        className="dropdown-item"
-                        to="/branding"
-                        style={{ borderTop: "1px solid #e5e5e5" }}
-                      >
+                      <Link className="dropdown-item border-top" to="/branding">
                         <span className="dropdown-dot">•</span> Branding
                       </Link>
                     </li>
@@ -160,9 +156,8 @@ const Navbar = () => {
                   <ul className="dropdown-menu dropdown-submenu">
                     <li className="border-bottom">
                       <Link
-                        className="dropdown-item"
+                        className="dropdown-item border-top"
                         to="/iphone-app-development"
-                        style={{ borderTop: "1px solid #e5e5e5" }}
                       >
                         <span className="dropdown-dot">•</span> IPhone App
                         Development

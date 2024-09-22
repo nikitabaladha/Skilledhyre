@@ -313,13 +313,13 @@ const HireDevelopers = () => {
     },
     {
       icon: <CiGift className="hire-developers-nine-card-icon" />,
-      title: "Script Writing",
+      title: "Poster Design",
       iconClass: "icon-4",
       titleClass: "title-4",
     },
     {
       icon: <CiGift className="hire-developers-nine-card-icon" />,
-      title: "Legal Writing",
+      title: "3D Models & Product Design",
       iconClass: "icon-4",
       titleClass: "title-4",
     },
@@ -348,13 +348,13 @@ const HireDevelopers = () => {
     },
     {
       icon: <CiStickyNote className="hire-developers-ten-card-icon" />,
-      title: "Poster Design",
+      title: "Script Writing",
       iconClass: "icon-4",
       titleClass: "title-4",
     },
     {
       icon: <MdOutlineStickyNote2 className="hire-developers-ten-card-icon" />,
-      title: "3D Models & Product Design",
+      title: "Legal Writing",
       iconClass: "icon-5",
       titleClass: "title-5",
     },

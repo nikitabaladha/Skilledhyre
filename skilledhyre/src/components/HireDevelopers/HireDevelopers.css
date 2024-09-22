@@ -55,7 +55,6 @@
 .hire-developers-thi-card {
   padding: 10px 10px 10px 10px;
   border: 1px solid #ddd;
-  height: 200px;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
@@ -63,6 +62,7 @@
   background-color: #fff;
   z-index: 1;
   transition: all 0.3s ease;
+  height: 200px;
 }
 
 .hire-developers-thi-card:hover {
@@ -95,10 +95,12 @@
 .hire-developers-thi-card-icon {
   font-size: 40px;
   margin-right: 20px;
+  color: #565656;
 }
 
 .hire-developers-thi-card-content {
   flex: 1;
+  padding: 0 10px;
 }
 
 .hire-developers-thi-card h3 {
@@ -299,25 +301,21 @@
 .hire-developers-six-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 10px 10px 10px;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .hire-developers-six-card-body {
-  align-items: center;
-  justify-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 .hire-developers-six-card-content h3 {
   margin: 3px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
@@ -461,25 +459,21 @@
 .hire-developers-seven-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 10px 10px 10px;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .hire-developers-seven-card-body {
-  align-items: center;
-  justify-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 .hire-developers-seven-card-content h3 {
   margin: 3px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
@@ -602,25 +596,21 @@
 .hire-developers-eight-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 10px 10px 10px;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .hire-developers-eight-card-body {
-  align-items: center;
-  justify-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 .hire-developers-eight-card-content h3 {
   margin: 3px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
@@ -738,25 +728,21 @@
 .hire-developers-nine-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 10px 10px 10px;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .hire-developers-nine-card-body {
-  align-items: center;
-  justify-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 .hire-developers-nine-card-content h3 {
   margin: 3px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
@@ -873,25 +859,21 @@
 .hire-developers-ten-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 10px 10px 10px;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .hire-developers-ten-card-body {
-  align-items: center;
-  justify-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 .hire-developers-ten-card-content h3 {
   margin: 3px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
@@ -995,4 +977,315 @@
 
 .hire-developers-ten-card:hover .icon-5 {
   border: 1px solid #2575fc;
+}
+
+/* Mobile devices with a screen width 767px*/
+@media only screen and (max-width: 767px) {
+  /* Second row */
+  .hire-developers-sec {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
+
+  .staffing-thi-content h2 {
+    font-size: 34px;
+  }
+  .staffing-thi-content p {
+    line-height: 1.8;
+  }
+
+  /* Third row */
+  .hire-developers-thi {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hire-developers-thi-card-body {
+    display: flex;
+  }
+
+  .hire-developers-dot-dash-line {
+    padding-bottom: 10px;
+  }
+
+  .hire-developers-thi-card {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  /* Fourth row */
+  .hire-developers-four {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+
+  .hire-developers-four-card {
+    height: auto;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  .hire-developers-decorative-line {
+    width: 40px;
+  }
+  /* Fifth row */
+  .hire-developers-fif {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-fif-card {
+    padding: 25px;
+  }
+
+  .hire-developers-fif-card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Sixth row */
+
+  .hire-developers-six {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-six-card {
+    padding: 25px;
+  }
+
+  .hire-developers-six-card-body {
+    align-items: center;
+  }
+
+  /* Seventh row */
+  .hire-developers-seven {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-seven-card {
+    padding: 25px;
+  }
+
+  .hire-developers-seven-card-body {
+    align-items: center;
+  }
+  /* Eighth row */
+  .hire-developers-eight {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-eight-card {
+    padding: 25px;
+  }
+
+  .hire-developers-eight-card-body {
+    align-items: center;
+  }
+
+  /* Ninth row */
+  .hire-developers-nine {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-nine-card {
+    padding: 25px;
+  }
+
+  .hire-developers-nine-card-body {
+    align-items: center;
+  }
+  /* Tenth row */
+  .hire-developers-ten {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-ten-card {
+    padding: 25px;
+  }
+
+  .hire-developers-ten-card-body {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Second row */
+  .hire-developers-sec {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
+
+  .staffing-thi-content h2 {
+    font-size: 34px;
+  }
+
+  .staffing-thi-content p {
+    line-height: 1.8;
+  }
+  /* Third row */
+  .hire-developers-thi {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hire-developers-thi-card-body {
+    display: flex;
+  }
+
+  .hire-developers-dot-dash-line {
+    padding-bottom: 10px;
+  }
+
+  .hire-developers-thi-card {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  /* Fourth row */
+  .hire-developers-four {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+
+  .hire-developers-four-card {
+    height: auto;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  .hire-developers-decorative-line {
+    width: 40px;
+  }
+
+  /* Fifth row */
+  .hire-developers-fif {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-fif-card {
+    padding: 25px;
+  }
+
+  .hire-developers-fif-card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Sixth row */
+  .hire-developers-six {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-six-card {
+    padding: 25px;
+  }
+
+  .hire-developers-six-card-body {
+    align-items: center;
+  }
+  /* Seventh row */
+  .hire-developers-seven {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-seven-card {
+    padding: 25px;
+  }
+
+  .hire-developers-seven-card-body {
+    align-items: center;
+  }
+  .hire-developers-seven-card-content h3 {
+    padding-left: 5px;
+  }
+
+  /* Eighth row */
+  .hire-developers-eight {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-eight-card {
+    padding: 25px 25px 25px 5px;
+  }
+
+  .hire-developers-eight-card-body {
+    align-items: center;
+  }
+  .hire-developers-eight-card-content h3 {
+    padding-left: 5px;
+  }
+
+  /* Ninth row*/
+  .hire-developers-nine-card-content h3 {
+    padding-left: 5px;
+  }
+
+  .hire-developers-nine {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-nine-card {
+    padding: 25px 25px 25px 5px;
+  }
+
+  .hire-developers-nine-card-body {
+    align-items: center;
+  }
+  /* Tenth row */
+  .hire-developers-ten-card-content h3 {
+    padding-left: 5px;
+  }
+
+  .hire-developers-ten {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hire-developers-ten-card {
+    padding: 25px 25px 25px 5px;
+  }
+
+  .hire-developers-ten-card-body {
+    align-items: center;
+  }
 }
