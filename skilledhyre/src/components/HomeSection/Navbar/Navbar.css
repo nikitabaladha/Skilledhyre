@@ -206,10 +206,9 @@ nav ul li a:hover::before {
 .dropdown-toggle-icon {
   font-size: 20px;
   font-weight: 500;
-  color: #ffffff80;
+  color: #ffffff;
   line-height: 1;
   text-align: center;
-
   transition: transform 0.2s ease-in-out;
 }
 

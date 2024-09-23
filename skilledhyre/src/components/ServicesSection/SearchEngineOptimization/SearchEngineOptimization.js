@@ -43,6 +43,48 @@
 //     window.scrollTo({ top: 0, behavior: "smooth" });
 //   };
 
+//   // This function will handle the redirection when a slide is clicked
+//   const handleRedirect = (link) => {
+//     navigate(link);
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   };
+
+//   const images = [
+//     {
+//       image: SearchEngineOptimization8,
+//       title: "Analysis of Security",
+//       description: "Marketing/Optimization",
+//       link: "/portfolio/analysis-of-security",
+//     },
+//     {
+//       image: SearchEngineOptimization9,
+//       title: "SMM Project",
+//       description: "Media/Optimization",
+//       link: "/portfolio/smm-project",
+//     },
+//     {
+//       image: SearchEngineOptimization10,
+//       title: "UX Design for Tubus",
+//       description: "Development",
+//       link: "/portfolio/ux-design-for-tubus",
+//     },
+//     {
+//       image: SearchEngineOptimizationA,
+//     },
+//     {
+//       image: SearchEngineOptimization10,
+//       title: "UX Design for Tubus",
+//       description: "Development",
+//       link: "/portfolio/ux-design-for-tubus",
+//     },
+//     {
+//       image: SearchEngineOptimization8,
+//       title: "Analysis of Security",
+//       description: "Marketing/Optimization",
+//       link: "/portfolio/analysis-of-security",
+//     },
+//   ];
+
 //   const services = [
 //     {
 //       title: "SEO Optimization",
@@ -179,37 +221,6 @@
 //     ],
 //   };
 
-//   const images = [
-//     {
-//       image: SearchEngineOptimization8,
-//       title: "Analysis of Security",
-//       description: "Marketing/Optimization",
-//     },
-//     {
-//       image: SearchEngineOptimization9,
-//       title: "SMM Project",
-//       description: "Media/Optimization",
-//     },
-//     {
-//       image: SearchEngineOptimization10,
-//       title: "UX Design for Tubus",
-//       description: "Development",
-//     },
-//     {
-//       image: SearchEngineOptimizationA,
-//     },
-//     {
-//       image: SearchEngineOptimization10,
-//       title: "UX Design for Tubus",
-//       description: "Development",
-//     },
-//     {
-//       image: SearchEngineOptimization8,
-//       title: "Analysis of Security",
-//       description: "Marketing/Optimization",
-//     },
-//   ];
-
 //   return (
 //     <>
 //       <Navbar />
@@ -319,6 +330,7 @@
 //                   >
 //                     Start Now{" "}
 //                     <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon" />
+//                     {/* If someone click on start now button without filling any field like url email etc then  want to show error message in div */}
 //                   </Button>
 //                 </form>
 //               </div>
@@ -486,7 +498,12 @@
 //           <div className="container search-engine-optimization-fif-slider-container mt-5">
 //             <Slider {...settings}>
 //               {images.map((imgObj, index) => (
-//                 <div key={index} className="slider-item-container">
+//                 <div
+//                   key={index}
+//                   className="slider-item-container"
+//                   onClick={() => handleRedirect(imgObj.link)} // Handle click event
+//                   style={{ cursor: "pointer" }}
+//                 >
 //                   <img
 //                     src={imgObj.image}
 //                     alt={`Slide ${index + 1}`}
@@ -574,6 +591,22 @@ import "./SearchEngineOptimization.css";
 
 const SearchEngineOptimization = () => {
   const navigate = useNavigate();
+
+  const [url, setUrl] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (!url || !email) {
+      setError("Please fill in all fields.");
+    } else {
+      // Handle form submission logic here
+      console.log("Form submitted:", url, email);
+      setError(null);
+    }
+  };
 
   const handleClick = () => {
     navigate("/get-a-quote");
@@ -835,23 +868,29 @@ const SearchEngineOptimization = () => {
               </div>
 
               <div className="search-engine-optimization-thi-form-container">
-                <form className="search-engine-optimization-thi-form">
+                <form
+                  className="search-engine-optimization-thi-form"
+                  onSubmit={handleSubmit}
+                >
                   <input
                     type="text"
                     className="form-control text-field-1"
                     placeholder="Your Website URL"
+                    name="url"
+                    onChange={(e) => setUrl(e.target.value)}
                   />
                   <input
                     type="email"
                     className="form-control text-field-2"
                     placeholder="Email"
+                    name="email"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
 
                   {/* This div will be hidden on small screens */}
                   <div className="search-engine-optimization-thi-button-div">
                     <Button
-                      as={Link}
-                      to="/search-engine-optimization"
+                      type="submit"
                       className="ml-2 search-engine-optimization-button-thi"
                     >
                       Start Now{" "}
@@ -861,14 +900,19 @@ const SearchEngineOptimization = () => {
 
                   {/* Button directly for small screens */}
                   <Button
-                    as={Link}
-                    to="/search-engine-optimization"
+                    type="submit"
                     className="ml-2 search-engine-optimization-button-thi d-block d-md-none"
                   >
                     Start Now{" "}
                     <IoIosArrowRoundForward className="search-engine-optimization-button-thi-arrow-icon" />
                   </Button>
                 </form>
+                {error && (
+                  <div className="response">
+                    One or more fields have an error. Please check and try
+                    again.
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -1037,7 +1081,7 @@ const SearchEngineOptimization = () => {
                 <div
                   key={index}
                   className="slider-item-container"
-                  onClick={() => handleRedirect(imgObj.link)} // Handle click event
+                  onClick={() => handleRedirect(imgObj.link)}
                   style={{ cursor: "pointer" }}
                 >
                   <img

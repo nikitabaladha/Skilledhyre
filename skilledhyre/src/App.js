@@ -53,6 +53,8 @@ import SMMProject from "./components/ServicesSection/SearchEngineOptimization/Po
 import ResponsiveDesign from "./components/ServicesSection/SearchEngineOptimization/PortFolio/ResponsiveDesign";
 import NewSoftForWatch from "./components/ServicesSection/SearchEngineOptimization/PortFolio/NewSoftForWatch";
 
+import PortfolioGrid from "./components/ServicesSection/SearchEngineOptimization/PortFolio/PortfolioGrid";
+
 function App() {
   return (
     <div className="App">
@@ -162,6 +164,8 @@ function App() {
             path="/portfolio/new-soft-for-watch"
             element={<NewSoftForWatch />}
           />
+
+          <Route path="/portfolio-grid" element={<PortfolioGrid />} />
         </Routes>
       </Router>
     </div>

@@ -542,3 +542,55 @@
     align-items: center;
   }
 }
+
+/* Portfolio-grid css */
+
+.portfolio-grid-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-grid-navbar li {
+  margin-right: 20px;
+}
+
+.portfolio-grid-navbar li a {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  outline: none;
+  color: #636363;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.portfolio-grid-navbar li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #00c3ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.portfolio-grid-navbar li a:hover:after {
+  width: 100%;
+}
+
+.portfolio-grid-navbar li a:hover {
+  color: #00c3ff;
+}

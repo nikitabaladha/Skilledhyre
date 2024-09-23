@@ -13,6 +13,7 @@
   text-align: center;
   position: relative;
   font-family: "Red Hat Display", sans-serif;
+  padding-top: 10px;
 }
 
 /* Container for the circular progress bar */

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
-
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Slider from "react-slick";
 import "./ProcessDrivenSEO.css";
@@ -36,8 +35,8 @@ const ProcessDrivenSEO = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const goToWebsiteDesign = () => {
-    navigate("/website-design");
+  const goToLearnMore = () => {
+    navigate(cardsData[activeCard].route);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -48,6 +47,7 @@ const ProcessDrivenSEO = () => {
         "With the growing use of the internet, it has become essential for businesses to mark their web presence. However, a mere website is not enough.",
       image: seoImage1,
       icon: <GrPieChart className="seo-card-icon" />,
+      route: "/website-design",
     },
     {
       title: "Software Development",
@@ -55,6 +55,7 @@ const ProcessDrivenSEO = () => {
         "Our software development experienced professionals at Skilledhyre offer high-quality and effective software applications that suit the requirements of our clients.",
       image: seoImage2,
       icon: <AiOutlineFundProjectionScreen className="seo-card-icon" />,
+      route: "/software-development",
     },
     {
       title: "E-Commerce Development",
@@ -62,6 +63,7 @@ const ProcessDrivenSEO = () => {
         "E-commerce is a perfect way to buy and sell the products online. Therefore, E-commerce is a quick and convenient way to exchange goods and services with Skilledhyre.",
       image: seoImage3,
       icon: <HiOutlineClipboardDocumentList className="seo-card-icon" />,
+      route: "/e-com-development",
     },
     {
       title: "What is SEO Optimization?",
@@ -69,6 +71,7 @@ const ProcessDrivenSEO = () => {
         "At their core, keywords are one of — if not the most — single important component of a successful SEO campaign. Keywords refer to the words typed into a search box - be it on Google, Bing, or Yahoo. However, there is much more to keywords than just that. The keywords typed into a search box reveal certain details about customers and how they go about searching for things. Knowing this, it's important to target keywords that mimic your customer's minds and search tendencies.",
       image: seoImage4,
       icon: <ImSearch className="seo-card-icon" />,
+      route: "/search-engine-optimization",
     },
     {
       title: "What is Web Development?",
@@ -76,6 +79,7 @@ const ProcessDrivenSEO = () => {
         "The Internet is the power that has been making the businesses prosper and grow in current times. Therefore, to make businesses make the most of this power",
       image: seoImage5,
       icon: <BiCodeBlock className="seo-card-icon" />,
+      route: "/web-development",
     },
     {
       title: "What is PCC Advertising?",
@@ -83,6 +87,7 @@ const ProcessDrivenSEO = () => {
         "At their core, keywords are one of — if not the most — single important component of a successful SEO campaign. Keywords refer to the words typed into a search box - be it on Google, Bing, or Yahoo. However, there is much more to keywords than just that. The keywords typed into a search box reveal certain details about customers and how they go about searching for things. Knowing this, it's important to target keywords that mimic your customer's minds and search tendencies.",
       image: seoImage6,
       icon: <TbCloudComputing className="seo-card-icon" />,
+      route: "/ppc-management",
     },
   ];
 
@@ -207,7 +212,7 @@ const ProcessDrivenSEO = () => {
               </p>
             </div>
             <Button
-              onClick={goToWebsiteDesign}
+              onClick={goToLearnMore}
               className="seo-button seo-learn-more-button"
             >
               Learn more

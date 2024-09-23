@@ -33,13 +33,13 @@ const UxDesignForTubus = () => {
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <Link to="/" className="homepage-link">
+              <Link to="/portfolio-grid" className="homepage-link">
                 Portfolio
               </Link>
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <Link to="/" className="homepage-link">
+              <Link to="/development" className="homepage-link">
                 Development
               </Link>
               <span className="material-symbols-outlined greater-than-icon">

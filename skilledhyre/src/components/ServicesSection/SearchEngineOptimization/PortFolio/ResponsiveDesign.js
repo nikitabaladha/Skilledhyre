@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaPinterest } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { ImMail4 } from "react-icons/im";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import Navbar from "../../../HomeSection/Navbar/Navbar";

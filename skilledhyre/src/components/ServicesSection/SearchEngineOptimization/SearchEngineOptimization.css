@@ -216,6 +216,17 @@
   margin-left: 14px;
 }
 
+.response {
+  display: block;
+  max-width: 650px;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 0.2em 1em;
+  border: 2px solid #ffb900;
+  align-items: center;
+  color: #656565;
+}
+
 /* Fourth row */
 
 .search-engine-optimization-four {
