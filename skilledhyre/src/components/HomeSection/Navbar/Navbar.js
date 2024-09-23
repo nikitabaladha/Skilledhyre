@@ -5,6 +5,7 @@ import brandLogoImage from "../../../images/brand-logo.png";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const handleClose = () => {
@@ -15,7 +16,12 @@ const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearchClick = () => {
-    setShowSearch(!showSearch);
+    setShowSearch(true);
+  };
+
+  const handleCloseSearch = () => {
+    setShowSearch(false);
+    setSearchTerm("");
   };
 
   const handleChange = (e) => {
@@ -24,8 +30,10 @@ const Navbar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle search submission here
+
     console.log("Search submitted:", searchTerm);
+
+    setShowSearch(false);
   };
 
   return (
@@ -370,10 +378,18 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* Search Icon or Close Button */}
+        {!showSearch ? (
+          <div className="search-icon" onClick={handleSearchClick}>
+            <FaSearch className="dropdown-toggle-icon" />
+          </div>
+        ) : (
+          <div className="close-search-icon" onClick={handleCloseSearch}>
+            <IoMdClose className="close-search-form" />
+          </div>
+        )}
+
         {/* Search Input Area */}
-        <div className="search-icon" onClick={handleSearchClick}>
-          <FaSearch className="dropdown-toggle-icon" />
-        </div>
         {showSearch && (
           <form className="search-form" onSubmit={handleSubmit}>
             <div className="search-input-wrapper">
@@ -390,6 +406,7 @@ const Navbar = () => {
             </div>
           </form>
         )}
+
         <button
           className="navbar-toggler"
           type="button"
