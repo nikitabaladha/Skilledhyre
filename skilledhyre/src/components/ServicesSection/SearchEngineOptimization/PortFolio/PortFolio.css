@@ -594,3 +594,89 @@
 .portfolio-grid-navbar li a:hover {
   color: #00c3ff;
 }
+
+.portfolio-grid-image-item-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.portfolio-grid-image-container {
+  border-radius: 50px;
+}
+
+.portfolio-grid-image-container .col-md-4 {
+  border-radius: 15px;
+}
+.portfolio-grid-image-item-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.portfolio-grid-image-item-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay h3 {
+  color: #fff;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1;
+  text-align: left;
+}
+
+.overlay p {
+  color: #95e1fa;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.portfolio-grid-image-item-container .overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 10;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  box-sizing: border-box;
+  background-color: #0039e4;
+  background-image: linear-gradient(90deg, #0039e4, #04dbf1);
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(100%);
+  color: #fff;
+  width: 280px;
+  height: 110px;
+}
+
+.portfolio-grid-image-item-container:hover .overlay {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.portfolio-grid-image-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+}
+
+.portfolio--grid-second {
+  padding-left: 0px;
+  padding-right: 0px;
+}
