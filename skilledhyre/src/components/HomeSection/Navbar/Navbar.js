@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import brandLogoImage from "../../../images/brand-logo.png";
@@ -9,6 +9,23 @@ import { IoIosArrowForward } from "react-icons/io";
 const Navbar = () => {
   const handleClose = () => {
     document.getElementById("navbarNavDropdown").classList.remove("show");
+  };
+
+  const [showSearch, setShowSearch] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchClick = () => {
+    setShowSearch(!showSearch);
+  };
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle search submission here
+    console.log("Search submitted:", searchTerm);
   };
 
   return (
@@ -352,9 +369,27 @@ const Navbar = () => {
             </Link>
           </button>
         </div>
-        <div className="search-icon">
+
+        {/* Search Input Area */}
+        <div className="search-icon" onClick={handleSearchClick}>
           <FaSearch className="dropdown-toggle-icon" />
         </div>
+        {showSearch && (
+          <form className="search-form" onSubmit={handleSubmit}>
+            <div className="search-input-wrapper">
+              <input
+                type="text"
+                placeholder="Search"
+                value={searchTerm}
+                onChange={handleChange}
+                className="search-input"
+              />
+              <button type="submit" className="search-button">
+                <FaSearch />
+              </button>
+            </div>
+          </form>
+        )}
         <button
           className="navbar-toggler"
           type="button"
