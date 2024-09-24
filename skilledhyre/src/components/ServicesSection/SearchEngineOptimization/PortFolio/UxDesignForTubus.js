@@ -39,7 +39,10 @@ const UxDesignForTubus = () => {
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <Link to="/development" className="homepage-link">
+              <Link
+                to="/portfolio-category/development"
+                className="homepage-link"
+              >
                 Development
               </Link>
               <span className="material-symbols-outlined greater-than-icon">

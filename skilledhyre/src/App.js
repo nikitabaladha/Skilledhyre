@@ -54,6 +54,7 @@ import ResponsiveDesign from "./components/ServicesSection/SearchEngineOptimizat
 import NewSoftForWatch from "./components/ServicesSection/SearchEngineOptimization/PortFolio/NewSoftForWatch";
 
 import PortfolioGrid from "./components/ServicesSection/SearchEngineOptimization/PortFolio/PortfolioGrid";
+import Development from "./components/ServicesSection/SearchEngineOptimization/PortFolio/Development";
 
 function App() {
   return (
@@ -166,6 +167,11 @@ function App() {
           />
 
           <Route path="/portfolio-grid" element={<PortfolioGrid />} />
+
+          <Route
+            path="/portfolio-category/development"
+            element={<Development />}
+          />
         </Routes>
       </Router>
     </div>

@@ -1,0 +1,121 @@
+.development-first {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.development-first .col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.development-image-container {
+  position: relative;
+  overflow: visible;
+  border-radius: 15px;
+}
+
+.development-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.development-redirect-box {
+  position: absolute;
+  bottom: -50px;
+  left: 30px;
+  width: 90%;
+  background: #fff;
+  box-shadow: 10px 10px 10px 10px rgba(184, 185, 185, 0.4);
+  padding: 36px 10px 10px 10px;
+  border-radius: 15px 15px 15px 15px;
+  opacity: 1;
+  text-align: center;
+}
+
+.development-redirect-box h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  color: #1a1b1e;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.development-redirect-box p {
+  color: #00c3ff;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.development-second {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.development-second p {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #606060;
+}
+
+.development-image-container:hover img {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .development-first {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .development-first .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .development-redirect-box {
+    bottom: -30px;
+    left: 20px;
+  }
+
+  .development-second {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .development-first {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .development-first .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .development-redirect-box {
+    bottom: -30px;
+    left: 20px;
+  }
+
+  .development-second {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

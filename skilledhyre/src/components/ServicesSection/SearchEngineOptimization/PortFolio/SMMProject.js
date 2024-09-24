@@ -33,14 +33,20 @@ const SMMProject = () => {
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <Link to="/" className="homepage-link">
+              <Link to="/portfolio-grid" className="homepage-link">
                 Portfolio
               </Link>
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
               <Link to="/" className="homepage-link">
-                Development
+                Media
+              </Link>
+              <span className="material-symbols-outlined greater-than-icon">
+                chevron_right
+              </span>
+              <Link to="/" className="homepage-link">
+                Optimization
               </Link>
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
@@ -216,26 +222,6 @@ const SMMProject = () => {
             marketing.
           </p>
         </div>
-
-        {/* Tenth row */}
-        {/* <div className="container-fluid portfolio-tenth">
-          <div className="portfolio-navigation">
-            <span className="left-icon-text">
-              <div className="left-icon-container">
-                <FaArrowLeftLong className="left-icon" />
-              </div>
-              <span className="previous"> PREVIOUS</span>
-            </span>
-
-            <span className="right-icon-text">
-              <span className="next"> NEXT</span>
-
-              <div className="right-icon-container">
-                <FaArrowRightLong className="right-icon" />
-              </div>
-            </span>
-          </div>
-        </div> */}
 
         <div className="container-fluid portfolio-tenth">
           <div className="portfolio-navigation">
