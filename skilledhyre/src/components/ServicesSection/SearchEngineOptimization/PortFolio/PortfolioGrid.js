@@ -110,7 +110,7 @@ const PortfolioGrid = () => {
         </div>
 
         {/* Second row */}
-        <div className="container-fluid portfolio--grid-second">
+        <div className="container-fluid portfolio-grid-second">
           <div className="search-engine-optimization-fif-header">
             <h6 className="mb-4 search-engine-optimization-fif-sub-heading">
               <span className="search-engine-optimization-dot">•</span>
