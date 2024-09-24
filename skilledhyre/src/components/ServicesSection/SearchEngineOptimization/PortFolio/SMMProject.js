@@ -39,7 +39,7 @@ const SMMProject = () => {
               <span className="material-symbols-outlined greater-than-icon">
                 chevron_right
               </span>
-              <Link to="/" className="homepage-link">
+              <Link to="/portfolio-category/media" className="homepage-link">
                 Media
               </Link>
               <span className="material-symbols-outlined greater-than-icon">

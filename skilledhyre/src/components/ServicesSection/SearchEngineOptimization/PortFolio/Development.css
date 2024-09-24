@@ -39,23 +39,6 @@
   text-align: center;
 }
 
-.development-redirect-box h3 {
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 700;
-  color: #1a1b1e;
-  font-size: 20px;
-  line-height: 1;
-}
-
-.development-redirect-box p {
-  color: #00c3ff;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
 .development-second {
   padding-left: 180px;
   padding-right: 180px;
@@ -70,6 +53,40 @@
 
 .development-image-container:hover img {
   transform: scale(1.1);
+}
+
+/* Media page css */
+
+.new-soft-for-watch-redirect-box {
+  position: absolute;
+  bottom: 420px;
+  left: 250px;
+  width: 30%;
+  background: #fff;
+  box-shadow: 10px 10px 10px 10px rgba(184, 185, 185, 0.4);
+  padding: 36px 10px 10px 10px;
+  border-radius: 15px 15px 15px 15px;
+  opacity: 1;
+  text-align: center;
+}
+
+.development-redirect-box h3,
+.new-soft-for-watch-redirect-box h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  color: #1a1b1e;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.development-redirect-box p,
+.new-soft-for-watch-redirect-box p {
+  color: #00c3ff;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -94,6 +111,19 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .redirect-container .col-md-6 {
+    padding-bottom: 50px;
+  }
+
+  /* Media page css */
+
+  .new-soft-for-watch-redirect-box {
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -117,5 +147,14 @@
   .development-second {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  /* Media page css */
+
+  .new-soft-for-watch-redirect-box {
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    width: 90%;
   }
 }

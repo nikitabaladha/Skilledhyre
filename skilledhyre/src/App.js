@@ -55,6 +55,7 @@ import NewSoftForWatch from "./components/ServicesSection/SearchEngineOptimizati
 
 import PortfolioGrid from "./components/ServicesSection/SearchEngineOptimization/PortFolio/PortfolioGrid";
 import Development from "./components/ServicesSection/SearchEngineOptimization/PortFolio/Development";
+import Media from "./components/ServicesSection/SearchEngineOptimization/PortFolio/Media";
 
 function App() {
   return (
@@ -172,6 +173,8 @@ function App() {
             path="/portfolio-category/development"
             element={<Development />}
           />
+
+          <Route path="/portfolio-category/media" element={<Media />} />
         </Routes>
       </Router>
     </div>

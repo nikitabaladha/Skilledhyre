@@ -9,8 +9,12 @@ import Development1 from "../../../../images/ServicesSubPageImages/Development-1
 const Development = () => {
   const navigate = useNavigate();
 
-  const handleRedirect = () => {
-    navigate("/portfolio/ux-design-for-tubus");
+  const handleDevelopmentRedirect = () => {
+    navigate("/portfolio/new-soft-for-watch");
+  };
+
+  const handleMediaRedirect = () => {
+    navigate("/portfolio/smm-project");
   };
 
   return (
@@ -19,16 +23,26 @@ const Development = () => {
 
       <div className="container-fluid development-first">
         <div className="row">
+          <div className="col-md-6 redirect-container">
+            <div
+              className="new-soft-for-watch-redirect-box"
+              style={{ cursor: "pointer" }}
+              onClick={handleDevelopmentRedirect}
+            >
+              <h3>New Soft for Watch</h3>
+              <p>Media/Optimization</p>
+            </div>
+          </div>
           <div className="col-md-6">
             <div
               className="development-image-container"
               style={{ cursor: "pointer" }}
-              onClick={handleRedirect}
+              onClick={handleMediaRedirect}
             >
               <img src={Development1} alt="Development" />
               <div className="development-redirect-box">
-                <h3>UX Design for Tubus</h3>
-                <p>Development</p>
+                <h3>SMM Project</h3>
+                <p>Media/Optimization</p>
               </div>
             </div>
           </div>
