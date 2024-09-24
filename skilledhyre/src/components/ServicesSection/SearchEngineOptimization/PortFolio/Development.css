@@ -126,6 +126,50 @@
   }
 }
 
+/* Optimization page css */
+.optimization-second {
+  /* padding-left: 180px;
+  padding-right: 180px; */
+}
+
+.optimization-second .button-group {
+  display: flex;
+  align-items: center;
+}
+
+.optimization-second .button-style {
+  background: #00c3ff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-family: "Red Hat Display", sans-serif;
+  box-shadow: 6px 6px 13px 0px rgba(0, 195, 255, 0.3);
+}
+
+.optimization-second .button-style:hover {
+  background: #00c3ff;
+  color: #fff;
+}
+
+.optimization-second .button-style-not-active-button {
+  color: #1a1b1e;
+  background: #fff;
+  box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.15);
+}
+
+.optimization-second .arrow {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .development-first {
     padding-left: 30px;
