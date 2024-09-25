@@ -500,10 +500,6 @@ nav ul li a:hover::before {
     display: inline-block;
   }
 
-  .dropdown-submenu .dropdown-item {
-    padding-left: 40px;
-  }
-
   .dropdown-menu .border-top {
     border-top: 1px solid #e5e5e5 !important;
   }
@@ -513,6 +509,30 @@ nav ul li a:hover::before {
 
   .search-form {
     right: 25px;
+  }
+
+  .dropdown-toggle-icon {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .rotate-90 {
+    transform: rotate(90deg);
+  }
+
+  nav ul li a::before {
+    display: none;
+  }
+
+  .dropdown-item {
+    padding-left: 15px;
+  }
+  .active-link {
+    color: #00c3ff !important;
   }
 }
 
