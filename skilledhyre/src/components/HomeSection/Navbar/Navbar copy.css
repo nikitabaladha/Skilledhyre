@@ -514,19 +514,6 @@ nav ul li a:hover::before {
   .search-form {
     right: 25px;
   }
-
-  .dropdown-toggle-icon {
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 1;
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .rotate-90 {
-    transform: rotate(90deg);
-  }
 }
 
 /* Optional: Rotate the arrow when dropdown is open */

@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import brandLogoImage from "../../../images/brand-logo.png";
 import { FaSearch } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
@@ -33,7 +32,34 @@ const Navbar = () => {
 
     console.log("Search submitted:", searchTerm);
 
-    setShowSearch(false);
+    handleCloseSearch();
+  };
+
+  const [servicesExpanded, setServicesExpanded] = useState(false);
+  const [staffingExpanded, setStaffingExpanded] = useState(false);
+  const [agenciesExpanded, setAgenciesExpanded] = useState(false);
+  const [digitalMarketingExpanded, setDigitalMarketingExpanded] =
+    useState(false);
+  const [mobileAppDevExpanded, setMobileAppDevExpanded] = useState(false);
+
+  const toggleServices = () => {
+    setServicesExpanded(!servicesExpanded);
+  };
+
+  const toggleStaffing = () => {
+    setStaffingExpanded(!staffingExpanded);
+  };
+
+  const toggleAgencies = () => {
+    setAgenciesExpanded(!agenciesExpanded);
+  };
+
+  const toggleDigitalMarketing = () => {
+    setDigitalMarketingExpanded(!digitalMarketingExpanded);
+  };
+
+  const toggleMobileAppDev = () => {
+    setMobileAppDevExpanded(!mobileAppDevExpanded);
   };
 
   return (
@@ -82,207 +108,246 @@ const Navbar = () => {
                 to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
-                data-bs-toggle="dropdown"
                 aria-expanded="false"
+                onClick={toggleServices}
               >
-                Services {/* Icons for large and small screens */}
+                Services
                 <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
-                <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
+                <IoIosArrowForward
+                  className={`dropdown-toggle-icon small-screen ${
+                    servicesExpanded ? "rotate-90" : ""
+                  }`}
+                />
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/website-design">
-                    <span className="dropdown-dot">•</span> WEBSITE DESIGN
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/web-development">
-                    <span className="dropdown-dot">•</span> WEB DEVELOPMENT
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/software-development">
-                    <span className="dropdown-dot">•</span> Software Development
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/e-com-development">
-                    <span className="dropdown-dot">•</span> E-Commerce
-                    Development
-                  </Link>
-                </li>
+              {servicesExpanded && (
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/website-design">
+                      <span className="dropdown-dot">•</span> WEBSITE DESIGN
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/web-development">
+                      <span className="dropdown-dot">•</span> WEB DEVELOPMENT
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/software-development">
+                      <span className="dropdown-dot">•</span> Software
+                      Development
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/e-com-development">
+                      <span className="dropdown-dot">•</span> E-Commerce
+                      Development
+                    </Link>
+                  </li>
 
-                {/* Nested links */}
-                <li className="border-bottom">
-                  <Link className="dropdown-item">
-                    <span className="dropdown-dot">•</span>
-                    <span>Digital Marketing </span>
-                    {/* Icons for large and small screens */}
-                    <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
-                    <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
-                  </Link>
-                  <ul className="dropdown-menu dropdown-submenu">
-                    <li className="border-bottom">
-                      <Link className="dropdown-item border-top" to="/branding">
-                        <span className="dropdown-dot">•</span> Branding
-                      </Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link
-                        className="dropdown-item"
-                        to="/search-engine-optimization"
-                      >
-                        <span className="dropdown-dot">•</span>Search Engine
-                        Optimization
-                      </Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link
-                        className="dropdown-item"
-                        to="/social-media-marketing"
-                      >
-                        <span className="dropdown-dot">•</span>Social Media
-                        Marketing
-                      </Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link className="dropdown-item" to="/ppc-management">
-                        <span className="dropdown-dot">•</span>PPC Management
-                      </Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link className="dropdown-item" to="/content-marketing">
-                        <span className="dropdown-dot">•</span>Content Marketing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item"
-                        to="/influencer-marketing"
-                      >
-                        <span className="dropdown-dot">•</span>Influencer
-                        Marketing
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+                  {/* Nested links */}
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      onClick={toggleDigitalMarketing}
+                    >
+                      <span className="dropdown-dot">•</span>
+                      <span>Digital Marketing </span>
+                      <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                      <IoIosArrowForward
+                        className={`dropdown-toggle-icon small-screen ${
+                          digitalMarketingExpanded ? "rotate-90" : ""
+                        }`}
+                      />
+                    </Link>
+                    {digitalMarketingExpanded && (
+                      <ul className="dropdown-menu dropdown-submenu">
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item border-top"
+                            to="/branding"
+                          >
+                            <span className="dropdown-dot">•</span> Branding
+                          </Link>
+                        </li>
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item"
+                            to="/search-engine-optimization"
+                          >
+                            <span className="dropdown-dot">•</span> Search
+                            Engine Optimization
+                          </Link>
+                        </li>
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item"
+                            to="/social-media-marketing"
+                          >
+                            <span className="dropdown-dot">•</span> Social Media
+                            Marketing
+                          </Link>
+                        </li>
+                        <li className="border-bottom">
+                          <Link className="dropdown-item" to="/ppc-management">
+                            <span className="dropdown-dot">•</span> PPC
+                            Management
+                          </Link>
+                        </li>
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item"
+                            to="/content-marketing"
+                          >
+                            <span className="dropdown-dot">•</span> Content
+                            Marketing
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to="/influencer-marketing"
+                          >
+                            <span className="dropdown-dot">•</span> Influencer
+                            Marketing
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
 
-                {/* Nested links */}
-                <li className="border-bottom">
-                  <Link className="dropdown-item">
-                    <span className="dropdown-dot">•</span> Mobile Application
-                    Development {/* Icons for large and small screens */}
-                    <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
-                    <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
-                  </Link>
-                  <ul className="dropdown-menu dropdown-submenu">
-                    <li className="border-bottom">
-                      <Link
-                        className="dropdown-item border-top"
-                        to="/iphone-app-development"
-                      >
-                        <span className="dropdown-dot">•</span> IPhone App
-                        Development
-                      </Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link
-                        className="dropdown-item"
-                        to="/android-app-development"
-                      >
-                        <span className="dropdown-dot">•</span> Android App
-                        Development
-                      </Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link
-                        className="dropdown-item"
-                        to="/hybrid-app-development"
-                      >
-                        <span className="dropdown-dot">•</span> Hybrid App
-                        Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item"
-                        to="/react-app-development"
-                      >
-                        <span className="dropdown-dot">•</span> React App
-                        Development
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/e-learning-solution">
-                    <span className="dropdown-dot">•</span> E-Learning Solution
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/erp-solution">
-                    <span className="dropdown-dot">•</span> ERP SOLUTION
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/api-integration">
-                    <span className="dropdown-dot">•</span> API Integration
-                  </Link>
-                </li>
-              </ul>
+                  {/* Nested links */}
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      onClick={toggleMobileAppDev}
+                    >
+                      <span className="dropdown-dot">•</span> Mobile Application
+                      Development
+                      <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
+                      <IoIosArrowForward
+                        className={`dropdown-toggle-icon small-screen ${
+                          mobileAppDevExpanded ? "rotate-90" : ""
+                        }`}
+                      />
+                    </Link>
+                    {mobileAppDevExpanded && (
+                      <ul className="dropdown-menu dropdown-submenu">
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item border-top"
+                            to="/iphone-app-development"
+                          >
+                            <span className="dropdown-dot">•</span> IPhone App
+                            Development
+                          </Link>
+                        </li>
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item"
+                            to="/android-app-development"
+                          >
+                            <span className="dropdown-dot">•</span> Android App
+                            Development
+                          </Link>
+                        </li>
+                        <li className="border-bottom">
+                          <Link
+                            className="dropdown-item"
+                            to="/hybrid-app-development"
+                          >
+                            <span className="dropdown-dot">•</span> Hybrid App
+                            Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to="/react-app-development"
+                          >
+                            <span className="dropdown-dot">•</span> React App
+                            Development
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/e-learning-solution">
+                      <span className="dropdown-dot">•</span> E-Learning
+                      Solution
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/erp-solution">
+                      <span className="dropdown-dot">•</span> ERP SOLUTION
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/api-integration">
+                      <span className="dropdown-dot">•</span> API Integration
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
 
             <li className="nav-item dropdown">
               <Link
                 className="nav-link"
-                onClick={(e) => e.preventDefault()}
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
-                data-bs-toggle="dropdown"
+                onClick={toggleStaffing}
               >
-                Staffing {/* Icons for large and small screens */}
+                Staffing
                 <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
-                <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
+                <IoIosArrowForward
+                  className={`dropdown-toggle-icon small-screen ${
+                    staffingExpanded ? "rotate-90" : ""
+                  }`}
+                />
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/permanent-staffing">
-                    <span className="dropdown-dot">•</span> Permanent Staffing
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/contract-staffing">
-                    <span className="dropdown-dot">•</span> Contract Staffing
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/hr-consulting">
-                    <span className="dropdown-dot">•</span> HR Consulting
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/contract-to-hire">
-                    <span className="dropdown-dot">•</span> Contract to Hire
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/rpo">
-                    <span className="dropdown-dot">•</span> RPO
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link className="dropdown-item" to="/head-hunting">
-                    <span className="dropdown-dot">•</span> Head Hunting
-                  </Link>
-                </li>
-              </ul>
+              {staffingExpanded && (
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/permanent-staffing">
+                      <span className="dropdown-dot">•</span> Permanent Staffing
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/contract-staffing">
+                      <span className="dropdown-dot">•</span> Contract Staffing
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/hr-consulting">
+                      <span className="dropdown-dot">•</span> HR Consulting
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/contract-to-hire">
+                      <span className="dropdown-dot">•</span> Contract to Hire
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/rpo">
+                      <span className="dropdown-dot">•</span> RPO
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link className="dropdown-item" to="/head-hunting">
+                      <span className="dropdown-dot">•</span> Head Hunting
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
 
             <li className="nav-item">
@@ -298,71 +363,77 @@ const Navbar = () => {
                 id="navbarDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
-                data-bs-toggle="dropdown"
+                onClick={toggleAgencies}
               >
-                For Agencies {/* Icons for large and small screens */}
+                For Agencies
                 <IoIosArrowDown className="dropdown-toggle-icon large-screen" />
-                <IoIosArrowForward className="dropdown-toggle-icon small-screen" />
+                <IoIosArrowForward
+                  className={`dropdown-toggle-icon small-screen ${
+                    agenciesExpanded ? "rotate-90" : ""
+                  }`}
+                />
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li className="border-bottom">
-                  <Link
-                    className="dropdown-item"
-                    to="/white-label-digital-marketing"
-                  >
-                    <span className="dropdown-dot">•</span> White Label Digital
-                    Marketing
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link
-                    className="dropdown-item"
-                    to="/white-label-web-development"
-                  >
-                    <span className="dropdown-dot">•</span> White Label Web
-                    Development
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link
-                    className="dropdown-item"
-                    to="/white-label-app-development"
-                  >
-                    <span className="dropdown-dot">•</span> White Label App
-                    Development
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link
-                    className="dropdown-item"
-                    to="/outsourced-software-development"
-                  >
-                    <span className="dropdown-dot">•</span> Outsourced Software
-                    Development
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link
-                    className="dropdown-item"
-                    to="/dedicated-software-teams"
-                  >
-                    <span className="dropdown-dot">•</span> Dedicated Software
-                    Teams
-                  </Link>
-                </li>
-                <li className="border-bottom">
-                  <Link
-                    className="dropdown-item"
-                    to="/dedicated-marketing-teams"
-                  >
-                    <span className="dropdown-dot">•</span> Dedicated Marketing
-                    Teams
-                  </Link>
-                </li>
-              </ul>
+              {agenciesExpanded && (
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      to="/white-label-digital-marketing"
+                    >
+                      <span className="dropdown-dot">•</span> White Label
+                      Digital Marketing
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      to="/white-label-web-development"
+                    >
+                      <span className="dropdown-dot">•</span> White Label Web
+                      Development
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      to="/white-label-app-development"
+                    >
+                      <span className="dropdown-dot">•</span> White Label App
+                      Development
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      to="/outsourced-software-development"
+                    >
+                      <span className="dropdown-dot">•</span> Outsourced
+                      Software Development
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      to="/dedicated-software-teams"
+                    >
+                      <span className="dropdown-dot">•</span> Dedicated Software
+                      Teams
+                    </Link>
+                  </li>
+                  <li className="border-bottom">
+                    <Link
+                      className="dropdown-item"
+                      to="/dedicated-marketing-teams"
+                    >
+                      <span className="dropdown-dot">•</span> Dedicated
+                      Marketing Teams
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/get-in-touch">
