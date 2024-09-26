@@ -717,7 +717,6 @@ const HireDevelopers = () => {
         </div>
 
         {/* Eleventh row */}
-
         <div className="container-fluid staffing-fif">
           <div className="staffing-fif-content">
             <h2>Call to Action</h2>

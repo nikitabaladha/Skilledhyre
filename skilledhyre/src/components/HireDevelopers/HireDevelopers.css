@@ -291,14 +291,22 @@
 
 /* Sixth row */
 
-.hire-developers-six {
+.hire-developers-six,
+.hire-developers-seven,
+.hire-developers-eight,
+.hire-developers-nine,
+.hire-developers-ten {
   padding-top: 50px;
   padding-left: 180px;
   padding-right: 180px;
   padding-bottom: 50px;
 }
 
-.hire-developers-six-card {
+.hire-developers-six-card,
+.hire-developers-seven-card,
+.hire-developers-eight-card,
+.hire-developers-nine-card,
+.hire-developers-ten-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: 10px 10px 10px 10px;
   padding: 25px;
@@ -309,11 +317,19 @@
   text-align: center;
 }
 
-.hire-developers-six-card-body {
+.hire-developers-six-card-body,
+.hire-developers-seven-card-body,
+.hire-developers-eight-card-body,
+.hire-developers-nine-card-body,
+.hire-developers-ten-card-body {
   display: flex;
 }
 
-.hire-developers-six-card-content h3 {
+.hire-developers-six-card-content h3,
+.hire-developers-seven-card-content h3,
+.hire-developers-eight-card-content h3,
+.hire-developers-nine-card-content h3,
+.hire-developers-ten-card-content h3 {
   margin: 3px 0px 0px 0px;
   padding-left: 20px;
   font-size: 18px;
@@ -322,7 +338,11 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
-.hire-developers-six-card .icon {
+.hire-developers-six-card .icon,
+.hire-developers-seven-card .icon,
+.hire-developers-eight-card .icon,
+.hire-developers-nine-card .icon,
+.hire-developers-ten-card .icon {
   height: 80px;
   padding: 15px 15px 15px 15px;
   transform: rotate(0deg);
@@ -334,7 +354,11 @@
   justify-content: center;
 }
 
-.hire-developers-six-card-icon {
+.hire-developers-six-card-icon,
+.hire-developers-seven-card-icon,
+.hire-developers-eight-card-icon,
+.hire-developers-nine-card-icon,
+.hire-developers-ten-card-icon {
   font-size: 45px;
   color: #fff;
 }
@@ -385,7 +409,7 @@
   color: #2bb306;
 }
 .hire-developers-six-card .title-4 {
-  color: #0706b3;
+  color: #2575fc;
 }
 
 .hire-developers-six-card .title-5 {
@@ -448,54 +472,6 @@
 }
 
 /* Seventh row */
-
-.hire-developers-seven {
-  padding-top: 50px;
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-bottom: 50px;
-}
-
-.hire-developers-seven-card {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  margin: 10px 10px 10px 10px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.hire-developers-seven-card-body {
-  display: flex;
-}
-
-.hire-developers-seven-card-content h3 {
-  margin: 3px 0px 0px 0px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.2;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.hire-developers-seven-card .icon {
-  height: 80px;
-  padding: 15px 15px 15px 15px;
-  transform: rotate(0deg);
-  width: 80px;
-  line-height: 53px;
-  border-radius: 100px 100px 100px 100px;
-  text-align: center !important;
-  display: flex;
-  justify-content: center;
-}
-
-.hire-developers-seven-card-icon {
-  font-size: 45px;
-  color: #fff;
-}
 
 .hire-developers-seven-card .icon-1 {
   background-color: #2575fc;
@@ -586,54 +562,6 @@
 
 /* Eighth row */
 
-.hire-developers-eight {
-  padding-top: 50px;
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-bottom: 50px;
-}
-
-.hire-developers-eight-card {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  margin: 10px 10px 10px 10px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.hire-developers-eight-card-body {
-  display: flex;
-}
-
-.hire-developers-eight-card-content h3 {
-  margin: 3px 0px 0px 0px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.2;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.hire-developers-eight-card .icon {
-  height: 80px;
-  padding: 15px 15px 15px 15px;
-  transform: rotate(0deg);
-  width: 80px;
-  line-height: 53px;
-  border-radius: 100px 100px 100px 100px;
-  text-align: center !important;
-  display: flex;
-  justify-content: center;
-}
-
-.hire-developers-eight-card-icon {
-  font-size: 45px;
-  color: #fff;
-}
-
 .hire-developers-eight-card .icon-1 {
   background-color: #2575fc;
 }
@@ -718,54 +646,6 @@
 
 /* Ninth row */
 
-.hire-developers-nine {
-  padding-top: 50px;
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-bottom: 50px;
-}
-
-.hire-developers-nine-card {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  margin: 10px 10px 10px 10px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.hire-developers-nine-card-body {
-  display: flex;
-}
-
-.hire-developers-nine-card-content h3 {
-  margin: 3px 0px 0px 0px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.2;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.hire-developers-nine-card .icon {
-  height: 80px;
-  padding: 15px 15px 15px 15px;
-  transform: rotate(0deg);
-  width: 80px;
-  line-height: 53px;
-  border-radius: 100px 100px 100px 100px;
-  text-align: center !important;
-  display: flex;
-  justify-content: center;
-}
-
-.hire-developers-nine-card-icon {
-  font-size: 45px;
-  color: #fff;
-}
-
 .hire-developers-nine-card .icon-1 {
   background-color: #2575fc;
 }
@@ -848,54 +728,6 @@
 }
 
 /* Tenth row */
-
-.hire-developers-ten {
-  padding-top: 50px;
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-bottom: 50px;
-}
-
-.hire-developers-ten-card {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  margin: 10px 10px 10px 10px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.hire-developers-ten-card-body {
-  display: flex;
-}
-
-.hire-developers-ten-card-content h3 {
-  margin: 3px 0px 0px 0px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.2;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.hire-developers-ten-card .icon {
-  height: 80px;
-  padding: 15px 15px 15px 15px;
-  transform: rotate(0deg);
-  width: 80px;
-  line-height: 53px;
-  border-radius: 100px 100px 100px 100px;
-  text-align: center !important;
-  display: flex;
-  justify-content: center;
-}
-
-.hire-developers-ten-card-icon {
-  font-size: 45px;
-  color: #fff;
-}
 
 .hire-developers-ten-card .icon-1 {
   background-color: #2575fc;
@@ -982,7 +814,8 @@
 /* Mobile devices with a screen width 767px*/
 @media only screen and (max-width: 767px) {
   /* Second row */
-  .hire-developers-sec {
+  .hire-developers-sec,
+  .hire-developers-thi {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
@@ -996,11 +829,6 @@
   }
 
   /* Third row */
-  .hire-developers-thi {
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 
   .hire-developers-thi-card-body {
     display: flex;
@@ -1014,6 +842,7 @@
     margin-bottom: 20px;
     height: auto;
   }
+
   /* Fourth row */
   .hire-developers-four {
     padding-left: 30px;
@@ -1032,97 +861,36 @@
   .hire-developers-decorative-line {
     width: 40px;
   }
-  /* Fifth row */
-  .hire-developers-fif {
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
-  .hire-developers-fif-card {
-    padding: 25px;
+  /* Fifth row */
+  .hire-developers-fif,
+  .hire-developers-six,
+  .hire-developers-seven,
+  .hire-developers-eight,
+  .hire-developers-nine,
+  .hire-developers-ten {
+    padding: 30px 40px 30px 30px;
   }
 
   .hire-developers-fif-card-body {
     flex-direction: column;
     align-items: center;
   }
+
   /* Sixth row */
-
-  .hire-developers-six {
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .hire-developers-six-card {
-    padding: 25px;
-  }
-
-  .hire-developers-six-card-body {
-    align-items: center;
-  }
-
-  /* Seventh row */
-  .hire-developers-seven {
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .hire-developers-seven-card {
-    padding: 25px;
-  }
-
-  .hire-developers-seven-card-body {
-    align-items: center;
-  }
-  /* Eighth row */
-  .hire-developers-eight {
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .hire-developers-eight-card {
-    padding: 25px;
-  }
-
-  .hire-developers-eight-card-body {
-    align-items: center;
-  }
-
-  /* Ninth row */
-  .hire-developers-nine {
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .hire-developers-nine-card {
-    padding: 25px;
-  }
-
-  .hire-developers-nine-card-body {
-    align-items: center;
-  }
-  /* Tenth row */
-  .hire-developers-ten {
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
+  .hire-developers-fif-card,
+  .hire-developers-six-card,
+  .hire-developers-seven-card,
+  .hire-developers-eight-card,
+  .hire-developers-nine-card,
   .hire-developers-ten-card {
     padding: 25px;
   }
 
+  .hire-developers-six-card-body,
+  .hire-developers-seven-card-body,
+  .hire-developers-eight-card-body,
+  .hire-developers-nine-card-body,
   .hire-developers-ten-card-body {
     align-items: center;
   }
@@ -1131,9 +899,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Second row */
   .hire-developers-sec {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 50px 30px 0 30px;
   }
 
   .staffing-thi-content h2 {
@@ -1214,10 +980,7 @@
   }
   /* Seventh row */
   .hire-developers-seven {
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px 30px 10px;
   }
 
   .hire-developers-seven-card {
@@ -1233,10 +996,7 @@
 
   /* Eighth row */
   .hire-developers-eight {
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px 30px 10px;
   }
 
   .hire-developers-eight-card {
