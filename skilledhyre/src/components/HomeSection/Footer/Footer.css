@@ -78,8 +78,8 @@ li {
   text-align: center;
   background-color: #005fd7;
   overflow: hidden;
-  margin: 0; /* Ensure no margin is added around the SVG */
-  padding: 0; /* Ensure no padding is added around the SVG */
+  margin: 0;
+  padding: 0;
 }
 
 /* SVG Path Styling */

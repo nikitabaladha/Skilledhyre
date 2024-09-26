@@ -59,10 +59,13 @@ import Media from "./components/ServicesSection/SearchEngineOptimization/PortFol
 import Optimization from "./components/ServicesSection/SearchEngineOptimization/PortFolio/Optimization";
 import OptimizationPage2 from "./components/ServicesSection/SearchEngineOptimization/PortFolio/OptimizationPage2";
 
+import FixedButton from "./components/HomeSection/FixedButton/FixedButton";
+
 function App() {
   return (
     <div className="App">
       <Router>
+        <FixedButton />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-company" element={<AboutCompany />} />
@@ -86,7 +89,6 @@ function App() {
             path="/influencer-marketing"
             element={<InfluencerMarketing />}
           />
-
           <Route
             path="/social-media-marketing"
             element={<SocialMediaMarketing />}

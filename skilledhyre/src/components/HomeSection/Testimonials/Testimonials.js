@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import "./Testimonials.css";
 
 const Testimonials = () => {
-  let carouselRef = React.useRef(null);
+  const carouselRef = useRef(null);
+
+  // Array to store testimonial data
+  const testimonialsData = [
+    {
+      text: "Skilledhyre team is efficient & even worked overtime to deliver what they said. I strongly recommend this company because the team is highly accommodating & only does what is exactly needed to keep your projects on track. Their ongoing services are superb, and the team is quick & responsive to client needs. I appreciated their good customer service & support in establishing your business worldwide.",
+      name: "Emilia Clarke",
+      profession: "Developer",
+    },
+    {
+      text: "Skilledhyre Company always performs valuable jobs, so I recommend this company to all my clients. Their proficient SEO team uses advanced technology to rank client websites on top of Google pages. Their performance throughout the ongoing projects is amazing. The whole team is technically savvy and walks clients through until project completion.",
+      name: "Emilia Clarke",
+      profession: "Developer",
+    },
+  ];
 
   return (
     <div className="container-fluid testimonial">
@@ -16,52 +30,31 @@ const Testimonials = () => {
       <h2 className="testimonial-heading">Testimonials</h2>
       <div className="carousel-container">
         <Carousel
-          ref={(el) => (carouselRef = el)}
+          ref={carouselRef}
           interval={null}
           controls={false}
           indicators={false}
         >
-          <Carousel.Item>
-            <div>
-              <p className="carousel-text">
-                Skilledhyre team is efficient & even worked overtime to deliver
-                what they said. I strongly recommend this company because a team
-                of this company is highly accommodated & do only that what is
-                exactly needed to keep your projects on track. I approached this
-                company because their ongoing services are superb. The team is
-                quick & responded well as per the needs of clients. I
-                appreciated them for their good customer service & support in
-                establishing your business worldwide.
-              </p>
-              <h6 className="testimonial-name">Emilia Clarke</h6>
-              <p className="testimonial-profession">Developer</p>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div>
-              <p className="carousel-text">
-                Skilledhyre Company always performs valuable job so I recommend
-                this company to my all clients. Proficient SEO Team always uses
-                the advanced latest technology to rank clients' websites in top
-                pages of google by using advanced SEO techniques. Their
-                performance throughout the ongoing projects is amazing. The
-                whole team of this company is technically savvy & walked clients
-                through till they have completed their projects.
-              </p>
-              <h6 className="testimonial-name">Emilia Clarke</h6>
-              <p className="testimonial-profession">Developer</p>
-            </div>
-          </Carousel.Item>
+          {testimonialsData.map((testimonial, index) => (
+            <Carousel.Item key={index}>
+              <div>
+                <p className="carousel-text">{testimonial.text}</p>
+                <h6 className="testimonial-name">{testimonial.name}</h6>
+                <p className="testimonial-profession">
+                  {testimonial.profession}
+                </p>
+              </div>
+            </Carousel.Item>
+          ))}
         </Carousel>
         <div className="carousel-controls">
           <IoIosArrowRoundBack
-            onClick={() => carouselRef.prev()}
+            onClick={() => carouselRef.current.prev()}
             className="carousel-arrow-icon left-arrow"
           />
-
           <IoIosArrowRoundForward
-            onClick={() => carouselRef.next()}
-            className="carousel-arrow-icon  right-arrow"
+            onClick={() => carouselRef.current.next()}
+            className="carousel-arrow-icon right-arrow"
           />
         </div>
       </div>

@@ -8,37 +8,46 @@ import { Button } from "react-bootstrap";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 function ContactCards() {
+  const contactCards = [
+    {
+      icon: FaRegAddressCard,
+      text1: "Office no - 606 Tower A, I-thum Noida sector 62, 201309",
+      text2: "",
+    },
+    {
+      icon: TbMailFilled,
+      title: "Email Us",
+      text1: "",
+      text2: "team.skilledhyre@gmail.com",
+    },
+    {
+      icon: FaPhone,
+      title: "Call Us",
+      text1: "",
+      text2: "+91 7070633784",
+    },
+  ];
   return (
     <div className="container-fluid contact-card-container">
       <div className="row contact-card-row">
-        <div className="col-md-4">
-          <div className="contact-card">
-            <div className="contact-card-body">
-              <FaRegAddressCard className="contact-card-icon" />
-              <p className="contact-card-text1">
-                Office no - 606 Tower A, I-thum Noida sector 62, 201309
-              </p>
+        {contactCards.map((card, index) => (
+          <div className="col-md-4 mb-4" key={index}>
+            <div className="contact-card">
+              <div className="contact-card-body">
+                <card.icon className="contact-card-icon" />
+                {card.title && (
+                  <h3 className="contact-card-title">{card.title}</h3>
+                )}
+                {card.text1 && (
+                  <p className="contact-card-text1">{card.text1}</p>
+                )}
+                {card.text2 && (
+                  <p className="contact-card-text2">{card.text2}</p>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-md-4">
-          <div className="contact-card">
-            <div className="contact-card-body">
-              <TbMailFilled className="contact-card-icon" />
-              <h3 className="contact-card-title">Email Us</h3>
-              <p className="contact-card-text2">team.skilledhyre@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 mb-4">
-          <div className="contact-card">
-            <div className="contact-card-body">
-              <FaPhone className="contact-card-icon" />
-              <h3 className="contact-card-title">Call Us</h3>
-              <p className="contact-card-text2">+91 7070633784</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className="container-fluid contact-form">
