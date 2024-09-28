@@ -98,6 +98,7 @@
     height: auto;
     padding: 20px;
     margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 20px;
   }
 
@@ -136,7 +137,6 @@
 
   .progress-card {
     margin-bottom: 25px;
-
     width: 100%;
     max-width: 400px;
     height: auto;

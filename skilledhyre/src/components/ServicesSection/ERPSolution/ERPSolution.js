@@ -32,6 +32,37 @@ const ERPSolution = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const erpCardsFourthRow = [
+    {
+      image: erpImage3,
+      title: "INCREASES THE OVERALL PRODUCTIVITY",
+      description:
+        "An ERP software company in Noida helps in boosting the overall productivity of an organization. It cuts down the repetitive process and reduces the manual entries. Thus it decreases the chances of human error which can turn out to be big business mistakes. ERP software streamlines business processes and is an efficient way to collect data and resources.",
+    },
+    {
+      image: erpImage4,
+      title: "INTERNAL COLLABORATION",
+      description:
+        "Every business needs different departments to have collaborated in such a way that it should be like a unit. ERP solution helps us to attain this. All the data entered are centralized and consistent in the ERP system. It is equally accessible to all departments which results in wonderful internal collaboration within the organization.",
+    },
+  ];
+
+  const erpCardsFifthRow = [
+    {
+      image: erpImage5,
+      title: "ERP IS SCALABLE RESOURCE",
+      description:
+        "We can always add or delete the users in enterprise resource planning software by making it scalable. It doesn't depend on how big or small your business is, ERP can be modified accordingly. But you need to be sure about the maximum business limitation.",
+    },
+    {
+      image: erpImage6,
+      title: "COST SAVING SOFTWARE",
+      description:
+        "It may sound ironic that ERP which has itself a high cost can save cost. But it's true. ERP Software saves you from wasting your money on different organizational expenditures. It gives accurate results which help in gaining proper insights and thus saves cost.",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -110,90 +141,48 @@ const ERPSolution = () => {
         {/* Fourth row */}
         <div className="container-fluid ser-sub-fourth">
           <div className="row ser-sub-card-row">
-            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
-              <div className="col-md-12 ">
-                <img
-                  src={erpImage3}
-                  alt="Website Design"
-                  className="ser-sub-card-img"
-                />
+            {erpCardsFourthRow.map((card, index) => (
+              <div
+                key={index}
+                className="col-md-6 d-flex flex-column justify-content-center ser-sub-card"
+              >
+                <div className="col-md-12 ">
+                  <img
+                    src={card.image}
+                    alt="Website Design"
+                    className="ser-sub-card-img"
+                  />
+                </div>
+                <div className="ser-sub-fourth-content">
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
+                </div>
               </div>
-              <div className="ser-sub-fourth-content">
-                <h3>INCREASES THE OVERALL PRODUCTIVITY</h3>
-                <p>
-                  An ERP software company in Noida helps in boosting the overall
-                  productivity of an organization. It cuts down the repetitive
-                  process and reduces the manual entries. Thus it decreases the
-                  chances of human error which can turn out to be big business
-                  mistakes. ERP software streamlines business processes and is
-                  an efficient way to collect data and resources.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
-              <div>
-                <img
-                  src={erpImage4}
-                  alt="Website Design"
-                  className="ser-sub-card-img"
-                />
-              </div>
-              <div className="ser-sub-fourth-content">
-                <h3>INTERNAL COLLABORATION</h3>
-                <p>
-                  Every business needs different departments to have
-                  collaborated in such a way that it should be like a unit. ERP
-                  solution helps us to attain this. All the data entered are
-                  centralized and consistent in the ERP system. It is equally
-                  accessible to all departments which results in wonderful
-                  internal collaboration within the organization.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* Fifth row */}
         <div className="container-fluid ser-sub-fourth">
           <div className="row ser-sub-card-row">
-            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
-              <div className="col-md-12 ">
-                <img
-                  src={erpImage5}
-                  alt="Website Design"
-                  className="ser-sub-card-img"
-                />
+            {erpCardsFifthRow.map((card, index) => (
+              <div
+                key={index}
+                className="col-md-6 d-flex flex-column justify-content-center ser-sub-card"
+              >
+                <div className="col-md-12 ">
+                  <img
+                    src={card.image}
+                    alt="Website Design"
+                    className="ser-sub-card-img"
+                  />
+                </div>
+                <div className="ser-sub-fourth-content">
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
+                </div>
               </div>
-              <div className="ser-sub-fourth-content">
-                <h3>ERP IS SCALABLE RESOURCE</h3>
-                <p>
-                  We can always add or delete the users in enterprise resource
-                  planning software by making it scalable. It doesn't depend on
-                  how big or small your business is, ERP can be modified
-                  accordingly. But you need to be sure about the maximum
-                  business limitation.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center ser-sub-card">
-              <div>
-                <img
-                  src={erpImage6}
-                  alt="Website Design"
-                  className="ser-sub-card-img"
-                />
-              </div>
-              <div className="ser-sub-fourth-content">
-                <h3>COST SAVING SOFTWARE</h3>
-                <p>
-                  It may sound ironic that ERP which has itself a high cost can
-                  save cost. But it's true. ERP Software saves you from wasting
-                  your money on different organizational expenditures. It gives
-                  accurate results which help in gaining proper insights and
-                  thus saves cost.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <Footer />

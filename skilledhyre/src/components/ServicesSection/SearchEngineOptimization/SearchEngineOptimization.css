@@ -134,7 +134,7 @@
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 20px;
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .text-field-1 {
@@ -922,7 +922,6 @@ input:checked + .slider:before {
   }
 
   .seo-button.seo-view-more-button {
-    width: 120px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 20px;
@@ -1267,5 +1266,14 @@ input:checked + .slider:before {
 
   .search-engine-optimization-six-background-color {
     box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .search-engine-optimization-thi {
+    padding-left: 120px;
+  }
+  .search-engine-optimization-four-card-container .row {
+    padding-left: 250px;
   }
 }

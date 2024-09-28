@@ -11,7 +11,6 @@ import GetInTouch from "./components/GetInTouch/GetInTouch";
 import HireDevelopers from "./components/HireDevelopers/HireDevelopers";
 import GetAQuote from "./components/GetAQuote/GetAQuote";
 
-import Service from "./components/ServicesSection/Service/Service";
 import WebsiteDesign from "./components/ServicesSection/WebsiteDesign/WebsiteDesign";
 import WebsiteDevelopment from "./components/ServicesSection/WebDevelopment/WebDevelopment";
 import SoftwareDevelopment from "./components/ServicesSection/SoftwareDevelopment/SoftwareDevelopment";
@@ -73,7 +72,6 @@ function App() {
           <Route path="/get-a-quote" element={<GetAQuote />} />
           <Route path="/hire-developers" element={<HireDevelopers />} />
 
-          <Route path="/service" element={<Service />} />
           <Route path="/website-design" element={<WebsiteDesign />} />
           <Route path="/web-development" element={<WebsiteDevelopment />} />
           <Route

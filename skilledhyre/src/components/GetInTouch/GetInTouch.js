@@ -120,7 +120,7 @@ const GetInTouch = () => {
 
         {/* Third row */}
 
-        <div className="get-in-touch-third xyz">
+        <div className="container-fluid get-in-touch-third">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.086412379796!2d77.36987507495655!3d28.627172134325072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5f6bf0e729b%3A0x4c68e44d9e70a67f!2sI-Thum%20Tower%20-%20office%20space%20in%20IThum%20Noida%20Sector%2062!5e0!3m2!1sen!2sin!4v1723001883419!5m2!1sen!2sin"
             width="100%"
@@ -130,6 +130,7 @@ const GetInTouch = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="I-Thum Tower Office Location"
+            className="xyz"
           ></iframe>
         </div>
       </div>

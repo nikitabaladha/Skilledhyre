@@ -10,7 +10,6 @@ import Spacer from "../Spacer/Spacer.js";
 import Testimonials from "../Testimonials/Testimonials.js";
 import ContactCards from "../ContactCards/ContactCards.js";
 import Footer from "../Footer/Footer.js";
-import FixedButton from "../FixedButton/FixedButton.js";
 
 import "./Home.css";
 
@@ -31,7 +30,6 @@ const Home = () => {
       <Testimonials />
       <ContactCards />
       <Footer />
-      <FixedButton />
     </>
   );
 };

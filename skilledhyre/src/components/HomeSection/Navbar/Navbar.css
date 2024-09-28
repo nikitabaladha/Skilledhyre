@@ -751,3 +751,16 @@ nav ul li a:hover::before {
     color: #00c3ff !important;
   }
 }
+
+/* For 740px width */
+@media only screen and (max-width: 740px) {
+  .navbar {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    margin-right: 50px;
+    margin-left: 15px;
+  }
+}
